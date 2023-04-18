@@ -1,6 +1,5 @@
 // @flow
 import * as React from 'react';
-import DarkModeToggle from "../../components/darkModeToggle";
 
 type Props = {
     children: React.ReactNode;
@@ -133,36 +132,7 @@ const StarterLayout = (props: Props) => {
                 </header>
                 <main>
                     <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-                        {/* Replace with your content */}
-                        <div className="px-4 py-6 sm:px-0">
-                            <div className="border-4 border-dashed border-gray-200 rounded-lg min-h-96 p-10 ">
-                                <div className="flex flex-row items-center gap-1">
-                                    This container is from
-                                    <div
-                                        className={'bg-gray-200 dark:bg-gray-800 text-xs px-1 py-0.5 rounded-sm text-red-400'}
-                                        style={{fontFamily: 'monospace'}}>
-                                        ./src/layout/starterLayout/index.js
-                                    </div>
-                                </div>
-                                To use this layout, import it in your page and wrap your content with it.
-
-                                {/**
-                                 * Example:
-                                 * import StarterLayout from '/layout';
-                                 *
-                                 * const MyPage = () => {
-                                 *    return <div>My content</div>
-                                 *     }
-                                 *
-                                 * MyPage.Layout = StarterLayout;
-                                 *
-                                 * export default MyPage;
-                                 *
-                                 */}
-                                {props.children}
-                            </div>
-                            {/* /End replace */}
-                        </div>
+                            {props.children}
                     </div>
                 </main>
             </div>
