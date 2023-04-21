@@ -1,5 +1,14 @@
 import Head from 'next/head'
 import {StarterLayout} from "@/layout";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+
+// import required modules
+import { Navigation, Pagination, Autoplay } from "swiper";
 import {
     RiCalendarTodoFill,
     RiFacebookBoxFill,
@@ -10,6 +19,62 @@ import {
 } from "react-icons/ri";
 
 const Home = () => {
+    const speakers = [
+        {
+            "name": "Prof (Dr.) Pradeep Kumar Mishra",
+            "designation": "Vice Chancellor, Dr APJ Abdul Kalam Technical University, Lucknow, UP.",
+            "image": "https://unsplash.it/1500/800?random=img18",
+            "id": "a1b2c3d4"
+        },
+        {
+            "name": "Prof. (Dr.) Sri Niwas Singh",
+            "designation": "Director, Atal Bihari Vajpayee- Indian Institute of Information Technology and Management (ABV-IIITM), Gwalior, India / Chairman, India Council, IEEE India.",
+            "image": "https://unsplash.it/1500/800?random=img1",
+            "id": "e5f6g7h8"
+        },
+        {
+            "name": "Prof. (Dr.) P. Nagabhushan",
+            "designation": "Vice-Chancellor, Vignan's Foundation for Science, Technology & Research, Andhra Pradesh",
+            "image": "https://unsplash.it/1500/800?random=img19",
+            "id": "i9j0k1l2"
+        },
+        {
+            "name": "Prof. (Dr.) Satish K. Singh",
+            "designation": "IIIT Allahabad / Section Chair, IEEE UP Section.",
+            "image": "https://unsplash.it/1500/800?random=img6",
+            "id": "m3n4o5p6"
+        },
+        {
+            "name": "Dr. Ahmed A. Elngar",
+            "designation": "Associate Professor, Faculty of CS and AI, Beni-Suef University, Beni-Suef City, 62511, Egypt",
+            "image": "https://unsplash.it/1500/800?random=img14",
+            "id": "q7r8s9t0"
+        },
+        {
+            "name": "Dr. Kashif Nisar, SMIEEE",
+            "designation": "Victorian Institute of Technology, 14 Adam Street, Hindmarsh, Adelaide, South Australia, 5007",
+            "image": "https://unsplash.it/1500/800?random=img15",
+            "id": "u1v2w3x4"
+        },
+        {
+            "name": "Dr. Ana Clarke",
+            "designation": "Partner Director – Data & AI , Artificial Intelligence Services Australia.",
+            "image": "https://unsplash.it/1500/800?random=img16",
+            "id": "y5z6a1b2"
+        },
+        {
+            "name": "Prof. Nada Ratković, Croatia",
+            "designation": "Assistant Professor, Department of Quantitative Methods on Faculty of Economics, Business and Tourism, University Split.",
+            "image": "https://unsplash.it/1500/800?random=img17",
+            "id": "c3d4e5f6"
+        },
+        {
+            "name": "Prof. (Dr.) Celestine Iwendi",
+            "designation": "School of Creative Technologies, University of Bolton, United Kingdom / Board Member IEEE Sweden Section.",
+            "image": "https://unsplash.it/1500/800?random=img5",
+            "id": "g7h8i9j0"
+        }
+        ]
     return (
         <>
             <Head>
@@ -18,7 +83,7 @@ const Home = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
-            <main className={"px-4 md:px-6 lg:px-10"}>
+            <main>
                 {/*    landing   */}
                 <div className={"flex lg:flex-row flex-col items-center justify-center lg:text-start text-center"}>
                     <div>
@@ -126,6 +191,56 @@ const Home = () => {
                     </div>
                 </div>
                 <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
+
+                <div className={'flex flex-row items-center'}>
+                    <h1 className='text-2xl text-black font-extrabold my-5'>Hon'ble Speaker</h1>
+                    {/*<h4 className='text-md text-blue-500 font-regular my-5 ml-2 hover:underline cursor-pointer'>( view all )</h4>*/}
+                </div>
+
+                <div className={'w-full bg-gray-100 p-4 rounded-lg'}>
+                    <Swiper
+                        slidesPerView={1}
+                        spaceBetween={10}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            768: {
+                                slidesPerView: 4,
+                                spaceBetween: 40,
+                            }
+                        }}
+                        grabCursor={true}
+                        autoplay={{
+                            delay: 1000,
+                            disableOnInteraction: false,
+                            stopOnLastSlide: false,
+                            reverseDirection: true
+                        }}
+                        loop={true}
+                        modules={[Autoplay]}
+                        className="mySwiper mx-auto"
+                    >
+                        {
+                            speakers.map((speaker,index) => {
+                                return (
+                                    <SwiperSlide key={index}>
+                                        <div className={'col-span-1 flex flex-col items-center'}>
+                                            <img src={speaker.image} className={'h-56 w-64 object-cover mb-5 rounded-lg shadow-md'}/>
+                                            <span className={'font-bold text-xs text-center'}>{speaker.name}</span>
+                                            <span className={'font-light text-xs text-center'}>{speaker.designation}</span>
+                                        </div>
+                                    </SwiperSlide>
+                                )
+                            })
+                        }
+                    </Swiper>
+                </div>
+
+                <div className={'col-span-1 flex flex-col items-center gap-2 justify-center my-5'}>
+                    <button className={'px-4 py-2 text-sm text-white bg-sky-600 w-fit rounded-lg'}>View All</button>
+                </div>
             </main>
         </>
     )

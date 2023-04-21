@@ -5,7 +5,6 @@ import {ThemeProvider, useTheme} from "next-themes";
 import {Theme, toast, ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
-import {DarkModeToggle} from "components";
 
 type ComponentWithLayout = AppProps & {
     Component: AppProps['Component'] & {
@@ -17,6 +16,7 @@ export default function App({Component, pageProps}: ComponentWithLayout) {
     return (
         <ThemeProvider attribute="class" enableSystem={true} forcedTheme="light">
             <ToastThemeWrapper/>
+
             {
                 Component.pageLayout ?
                     (
