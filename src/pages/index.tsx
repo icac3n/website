@@ -75,6 +75,29 @@ const Home = () => {
             "id": "g7h8i9j0"
         }
         ]
+    const sliderImages = [
+        {
+            "image": "https://icac3n.in/static/media/img3.25e0387944fcd08c4ffb.png",
+            "id": "a1b2c3d4",
+            "alt": "image1"
+        },
+        {
+            "image": "https://icac3n.in/ICAC3N_2023/Header_ICAC3n-2023.jpeg",
+            "id": "e5f6g7h8",
+            "alt": "image2"
+        },
+        {
+            "image": "https://icac3n.in/static/media/img2.22f091ab3b6579b31a5a.jpg",
+            "id": "i9j0k1l2",
+            "alt": "image3"
+        },
+        {
+            "image": "https://icac3n.in/static/media/img4.5251edd07948620003f8.jpg",
+            "id": "i9j0k1l2",
+            "alt": "image3"
+        },
+
+    ]
     return (
         <>
             <Head>
@@ -86,7 +109,7 @@ const Home = () => {
             <main>
                 {/*    landing   */}
                 <div className={"flex lg:flex-row flex-col items-center justify-center lg:text-start text-center"}>
-                    <div>
+                    <div className={"flex flex-col justify-between h-full"}>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiCalendarTodoFill className={"hidden lg:block text-red-800"}/>
                             <p className={"text-red-800 font-semibold"}>15th and 16th December 2023</p>
@@ -103,11 +126,11 @@ const Home = () => {
                             </div>
                         </div>
                         <div
-                            className={"flex space-x-3 text-xl text-red-800 mt-4 items-center lg:justify-start justify-center mb-5"}>
-                            <RiTwitterFill/>
-                            <RiPhoneFill/>
-                            <RiFacebookBoxFill/>
-                            <RiMailFill/>
+                            className={"flex space-x-3 text-xl text-red-800 mt-4 items-center lg:justify-start justify-center"}>
+                            <RiTwitterFill className={'cursor-pointer'}/>
+                            <RiPhoneFill className={'cursor-pointer'}/>
+                            <RiFacebookBoxFill className={'cursor-pointer'}/>
+                            <RiMailFill className={'cursor-pointer'}/>
                         </div>
                         {/*<a href="#"*/}
                         {/*   className="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">*/}
@@ -120,12 +143,41 @@ const Home = () => {
                         {/*    </svg>*/}
                         {/*</a>*/}
                     </div>
-                    <div className={""}>
-                        <img className={"rounded-md"} src="http://icac3n.in/static/media/img3.25e0387944fcd08c4ffb.png"
-                             alt=""/>
-                    </div>
-                    <div>
+                    <div className={"lg:w-[50vw] w-full p-5"}>
+                        <Swiper
+                            slidesPerView={1}
+                            spaceBetween={10}
+                            grabCursor={true}
+                            autoplay={{
+                                delay: 1500,
+                                disableOnInteraction: false,
+                                stopOnLastSlide: false,
+                                reverseDirection: true
+                            }}
+                            loop={true}
+                            modules={[Autoplay]}
+                            className="mySwiper mx-auto rounded-md shadow-sm"
+                        >
+                            {
+                                sliderImages.map((image,index) => {
+                                    return(
+                                    <SwiperSlide key={index}>
+                                        {/*<img*/}
+                                        {/*    className={" w-20 max-w-[100vw] min-h-[50vh] max-h-[50vh] object-cover rounded-md"}*/}
+                                        {/*    src={image.image}*/}
+                                        {/*    alt=""/>*/}
+                                        <img
+                                            className={" w-full h-[50vh] object-cover rounded-md"}
+                                            src={image.image}
+                                            alt=""/>
+                                    </SwiperSlide>
 
+                                )
+
+                            })
+
+                            }
+                        </Swiper>
                     </div>
                 </div>
 
