@@ -5,27 +5,32 @@
 @tailwind utilities;
 
 @layer components {
-  .grow-on-hover {
-    @apply transform transition hover:scale-105 cursor-pointer ease-in-out duration-150;
-  }
 
-  .shrink-on-hover {
-    @apply transform transition hover:scale-95 cursor-pointer ease-in-out duration-150;
-  }
+    .heading {
+        @apply border-l-4 border-red-800 px-4
+    }
 
-  .up-on-hover {
-    @apply transform transition hover:-translate-y-0.5 cursor-pointer ease-in-out duration-150;
-  }
+    .grow-on-hover {
+        @apply transform transition hover:scale-105 cursor-pointer ease-in-out duration-150;
+    }
 
-  .down-on-hover {
-    @apply transform transition hover:translate-y-0.5 cursor-pointer ease-in-out duration-150;
-  }
+    .shrink-on-hover {
+        @apply transform transition hover:scale-95 cursor-pointer ease-in-out duration-150;
+    }
 
-  .left-on-hover {
-    @apply transform transition hover:-translate-x-0.5 cursor-pointer ease-in-out duration-150;
-  }
+    .up-on-hover {
+        @apply transform transition hover:-translate-y-0.5 cursor-pointer ease-in-out duration-150;
+    }
 
-  .right-on-hover {
-    @apply transform transition hover:translate-x-0.5 cursor-pointer ease-in-out duration-150;
-  }
+    .down-on-hover {
+        @apply transform transition hover:translate-y-0.5 cursor-pointer ease-in-out duration-150;
+    }
+
+    .left-on-hover {
+        @apply transform transition hover:-translate-x-0.5 cursor-pointer ease-in-out duration-150;
+    }
+
+    .right-on-hover {
+        @apply transform transition hover:translate-x-0.5 cursor-pointer ease-in-out duration-150;
+    }
 }
