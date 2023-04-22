@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import {StarterLayout} from "@/layout";
-import { Swiper, SwiperSlide } from "swiper/react";
+import {Swiper, SwiperSlide} from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 
 
 // import required modules
-import { Navigation, Pagination, Autoplay } from "swiper";
+import {Autoplay} from "swiper";
 import {
     RiCalendarTodoFill,
     RiFacebookBoxFill,
@@ -17,6 +17,8 @@ import {
     RiPhoneFill,
     RiTwitterFill
 } from "react-icons/ri";
+import ImportantDates from "../components/importantDates";
+import ImportantDownloads from "../components/importantDownloads";
 
 const Home = () => {
     const speakers = [
@@ -74,7 +76,7 @@ const Home = () => {
             "image": "https://unsplash.it/1500/800?random=img5",
             "id": "g7h8i9j0"
         }
-        ]
+    ]
     const sliderImages = [
         {
             "image": "https://icac3n.in/static/media/img3.25e0387944fcd08c4ffb.png",
@@ -182,65 +184,9 @@ const Home = () => {
                 </div>
 
                 <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
-                <div className={"space-y-3 grid grid-cols-1 lg:grid-cols-3 justify-items-end"}>
-                    <div className={"lg:col-span-2 lg:mr-10"}>
-                        <p className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About ICACCCN</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci autem consequatur cum
-                            cumque
-                            eos esse ex, laudantium maxime molestiae, nostrum quae quis quos similique soluta tempora!
-                            Id
-                            nemo quidem repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-                            cupiditate dolorem doloribus ducimus ea iste iure nam omnis perferendis, praesentium quam
-                            quia,
-                            quidem quis quisquam repellat, repudiandae ut vero voluptates.
-                            Id <br></br>
-                            nemo quidem repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-                            cupiditate dolorem doloribus ducimus ea iste iure nam omnis perferendis, praesentium quam
-                            quia,
-                            quidem quis quisquam repellat, repudiandae ut vero voluptates.</p>
-                    </div>
-                    <div className={"space-y-3 p-4 rounded-md bg-gray-100 w-full lg:max-w-sm"}>
-                        <div className={"flex space-x-2 items-start"}>
-                            <div>
-                                <p className={"font-medium"}>Paper Submission Guidelines</p>
-                                <p className={"text-sm text-gray-500"}>12 hrs ago</p>
-                            </div>
-                            <div className={"rounded-full bg-blue-600 my-1 bg-opacity-20"}>
-                                <p className={"px-2 py-0.2 text-sm text-blue-800"}>New</p>
-                            </div>
-                        </div>
-                        <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
-                        <div className={"flex space-x-2 items-center"}>
-                            {/*<div className={"rounded-full bg-blue-600 bg-opacity-20"}>*/}
-                            {/*    <p className={"px-2 py-0.5 text-sm text-blue-800"}>New</p>*/}
-                            {/*</div>*/}
-                            <div>
-                                <p className={"font-medium"}>New Speaker List Released</p>
-                                <p className={"text-sm text-gray-500"}>12 hrs ago</p>
-                            </div>
-                        </div>
-                        <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
-                        <div className={"flex space-x-2 items-start"}>
-                            <div>
-                                <p className={"font-medium"}>Apply for Speaker</p>
-                                <p className={"text-sm text-gray-500"}>12 hrs ago</p>
-                            </div>
-                            <div className={"rounded-full bg-yellow-600 bg-opacity-20"}>
-                                <p className={"px-2 py-0.5 text-sm text-yellow-800"}>Important</p>
-                            </div>
-                        </div>
-                        <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
-                        <div className={"flex space-x-2 items-center"}>
-                            {/*<div className={"rounded-full bg-blue-600 bg-opacity-20"}>*/}
-                            {/*    <p className={"px-2 py-0.5 text-sm text-blue-800"}>New</p>*/}
-                            {/*</div>*/}
-                            <div>
-                                <p className={"font-medium"}>New Speaker List Released</p>
-                                <p className={"text-sm text-gray-500"}>12 hrs ago</p>
-                            </div>
-                        </div>
-
-                    </div>
+                <div className={"flex flex-col space-y-5"}>
+                <ImportantDates/>
+                <ImportantDownloads/>
                 </div>
                 <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
 
@@ -275,13 +221,15 @@ const Home = () => {
                         className="mySwiper mx-auto"
                     >
                         {
-                            speakers.map((speaker,index) => {
+                            speakers.map((speaker, index) => {
                                 return (
                                     <SwiperSlide key={index}>
                                         <div className={'col-span-1 flex flex-col items-center'}>
-                                            <img src={speaker.image} className={'h-56 w-64 object-cover mb-5 rounded-lg shadow-md'}/>
+                                            <img src={speaker.image}
+                                                 className={'h-56 w-64 object-cover mb-5 rounded-lg shadow-md'}/>
                                             <span className={'font-bold text-xs text-center'}>{speaker.name}</span>
-                                            <span className={'font-light text-xs text-center'}>{speaker.designation}</span>
+                                            <span
+                                                className={'font-light text-xs text-center'}>{speaker.designation}</span>
                                         </div>
                                     </SwiperSlide>
                                 )
