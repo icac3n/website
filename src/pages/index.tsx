@@ -98,6 +98,11 @@ const Home = () => {
             "id": "i9j0k1l2",
             "alt": "image3"
         },
+        {
+            "image": "https://unsplash.it/1080/2000?random=3434",
+            "id": "i9j0k1l2",
+            "alt": "image3"
+        },
 
     ]
     return (
@@ -145,7 +150,7 @@ const Home = () => {
                         {/*    </svg>*/}
                         {/*</a>*/}
                     </div>
-                    <div className={"lg:w-[50vw] w-full p-5"}>
+                    <div className={"lg:w-[60%] flex h-full w-full px-5"}>
                         <Swiper
                             slidesPerView={1}
                             spaceBetween={10}
@@ -169,7 +174,7 @@ const Home = () => {
                                         {/*    src={image.image}*/}
                                         {/*    alt=""/>*/}
                                         <img
-                                            className={" w-full h-[50vh] object-cover rounded-md"}
+                                            className={" w-full h-80 object-cover rounded-md"}
                                             src={image.image}
                                             alt=""/>
                                     </SwiperSlide>
