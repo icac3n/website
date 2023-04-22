@@ -113,7 +113,7 @@ const Home = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
-            <main>
+            <main className={"mx-4"}>
                 {/*    landing   */}
                 <div className={"flex lg:flex-row flex-col items-center justify-center lg:text-start text-center"}>
                     <div className={"flex flex-col justify-between h-full"}>
