@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+    /** @type {import('tailwindcss').Config} */
 
 module.exports = {
     content: [
@@ -58,6 +58,8 @@ module.exports = {
                     800: "#11be4e",
                     900: "#0b6b30",
                 },
+                gred: '#D92F35',
+                gyellow: '#F9B816',
             }
         }
     },
