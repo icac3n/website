@@ -1,7 +1,7 @@
 import {StarterLayout} from "layout";
 import Button from "@/components/button";
 
-const SubmissionGuidelines = () => {
+const Guidelines = () => {
 
     return (
         <div className={"prose mx-4"}>
@@ -78,6 +78,4 @@ const SubmissionGuidelines = () => {
 
 }
 
-SubmissionGuidelines.pageLayout = StarterLayout;
-
-export default SubmissionGuidelines;
+export default Guidelines;

@@ -1,10 +1,10 @@
 import {StarterLayout} from "layout";
 
-const callOfPapers = () => {
+const callForPapers = () => {
 
     return (
         <div className={"prose mx-4"}>
-            <h1 className={"heading"}>Call of Papers</h1>
+            <h1 className={"heading"}>Call for Papers</h1>
             <p>Authors are solicited to contribute to the conference by submitting articles that illustrate research
                 results- projects, surveying works and industrial experiences that describe significant advances in
                 computing, communication control and Networking. Topics of interest for submission include, but are not
@@ -34,6 +34,4 @@ const callOfPapers = () => {
 
 }
 
-callOfPapers.pageLayout = StarterLayout;
-
-export default callOfPapers;
+export default callForPapers;

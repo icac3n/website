@@ -25,9 +25,6 @@ const impDateData = [
 export default function ImportantDownloads() {
 
     return (
-        <div className={"grid grid-cols-1 lg:grid-cols-3 justify-items-end"}>
-            <div className={"lg:col-span-2 lg:mr-10"}>
-            </div>
             <div className={"w-full lg:w-min-sm"}>
                 <div className={"mt-5 p-4 rounded-t-md bg-gray-200 border-l-4 border-red-600 w-full lg:max-w-sm"}>
                     <p className={"font-semibold text-lg"}>Important Downloads</p>
@@ -68,6 +65,5 @@ export default function ImportantDownloads() {
                     }
                 </div>
             </div>
-        </div>
     )
 }

@@ -5,7 +5,7 @@ import {ThemeProvider, useTheme} from "next-themes";
 import {Theme, toast, ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
-import {Navbar} from "components";
+import {Footer, Navbar} from "components";
 
 type ComponentWithLayout = AppProps & {
     Component: AppProps['Component'] & {
@@ -27,9 +27,12 @@ export default function App({Component, pageProps}: ComponentWithLayout) {
                     )
                     :
                     (
-                        <Component {...pageProps}/>
+                        <div className={'max-w-7xl mx-auto py-6 sm:px-6 lg:px-8'}>
+                            <Component {...pageProps}/>
+                        </div>
                     )
             }
+            <Footer/>
         </ThemeProvider>
     );
 }

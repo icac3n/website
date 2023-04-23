@@ -80,6 +80,4 @@ const Register = () => {
 
 }
 
-Register.pageLayout = StarterLayout;
-
 export default Register;
