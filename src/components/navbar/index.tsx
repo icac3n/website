@@ -29,7 +29,7 @@ function Index() {
         },
         {
             title: "Speakers",
-            link: "#",
+            link: "/speakers",
             enabled: true,
         },
         {
