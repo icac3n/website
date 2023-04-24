@@ -84,15 +84,15 @@ function Index() {
             dropdown: [
                 {
                     title: "Organizing Committee",
-                    link: "/organizing-committee",
+                    link: "/committee/organizing-committee",
                 },
                 {
                     title: "Technical Program Committee",
-                    link: "/technical-program-committee",
+                    link: "/committee/technical-program-committee",
                 },
                 {
                     title: "Advisory Board",
-                    link: "/advisory-board",
+                    link: "/committee/advisory-board",
                 },
             ],
             enabled: true,
@@ -114,26 +114,21 @@ function Index() {
         setMenu(!menuOpen);
     };
 
-    const [dropOpen, setDrop] = useState(false);
-    const dropToggle = () => {
-        setDrop(!dropOpen);
-    };
-
     const router = useRouter()
     // @ts-ignore
     // @ts-ignore
     return (
 
         <nav className="bg-red-800">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between gap-y-6 mx-auto p-4">
                 <Link href="#" className="flex items-center">
-                    <img src="./icac3nlogo.png" onClick={() => {
+                    <img src="/icac3nlogo.png" onClick={() => {
                         router.push("/")
                     }} className="mr-3 h-12 object-cover" alt="Logo"/>
                     <span className="font-semibold text-2xl tracking-tight text-white">ICAC3N</span>
                 </Link>
                 <button onClick={menuToggle} type="button"
-                        className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        className="inline-flex order-last items-center md:hidden p-2 ml-3 text-sm text-red-800 rounded-lg  hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-white"
                         aria-controls="navbar-dropdown" aria-expanded="false">
                     <span className="sr-only">Open main menu</span>
                     <svg className="w-8 h-8 text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
@@ -146,7 +141,7 @@ function Index() {
                 {menuOpen && <div className={"w-full md:block md:w-auto"}>
                     <ul className="flex flex-col gap-2 font-medium p-4 md:p-0 rounded-lg md:flex-row md:gap-5 md:mt-0 md:border-0">
                         {links.map((link, index) => (
-                            <>
+                            <div key={index}>
                                 {
                                     link.enabled && link.link &&
                                     <>
@@ -161,7 +156,7 @@ function Index() {
                                     link.enabled && link.dropdown &&
                                     <Dropdown title={link.title} dropdown={link.dropdown}/>
                                 }
-                            </>
+                            </div>
                         ))}
 
                     </ul>

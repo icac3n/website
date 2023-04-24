@@ -64,7 +64,8 @@ const Register = () => {
             <div className={"shadow-md w-fit rounded-md overflow-clip"}>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.738221246928!2d77.49505052708089!3d28.45730667576092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc1dc8b29c0e1%3A0x4ee84fe65c694f0!2sGALGOTIAS%20COLLEGE%20OF%20ENGINEERING%20AND%20TECHNOLOGY%2C%20Knowledge%20Park%20II%2C%20Greater%20Noida%2C%20Uttar%20Pradesh%20201310!5e0!3m2!1sen!2sin!4v1682150875715!5m2!1sen!2sin"
-                    width="600" height="450" allowFullScreen={false} loading="lazy"
+                    height="450" width="600" allowFullScreen={false} loading="lazy"
+                    className={'max-w-[95vw]'}
                     referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
