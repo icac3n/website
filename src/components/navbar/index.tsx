@@ -84,15 +84,15 @@ function Index() {
             dropdown: [
                 {
                     title: "Organizing Committee",
-                    link: "/organizing-committee",
+                    link: "/committee/organizing-committee",
                 },
                 {
                     title: "Technical Program Committee",
-                    link: "/technical-program-committee",
+                    link: "/committee/technical-program-committee",
                 },
                 {
                     title: "Advisory Board",
-                    link: "/advisory-board",
+                    link: "/committee/advisory-board",
                 },
             ],
             enabled: true,
