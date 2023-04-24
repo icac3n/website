@@ -61,7 +61,7 @@ const Speakers = () => {
     return(
         <div>
             <h1 className={'text-3xl font-bold text-center my-5'}>Speakers for ICACCCN 2023</h1>
-            <div className={'grid grid-cols-3 gap-x-5 gap-y-8'}>
+            <div className={'grid lg:grid-cols-3 grid-cols-1 gap-x-5 gap-y-8 px-5'}>
                 {
                     speakers.map((speaker,index) => {
                         return(
