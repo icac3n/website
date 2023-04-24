@@ -3,7 +3,7 @@ import {StarterLayout} from "layout";
 const callForPapers = () => {
 
     return (
-        <div className={"prose mx-4"}>
+        <div className={"prose mx-4 my-8"}>
             <h1 className={"heading"}>Call for Papers</h1>
             <p>Authors are solicited to contribute to the conference by submitting articles that illustrate research
                 results- projects, surveying works and industrial experiences that describe significant advances in

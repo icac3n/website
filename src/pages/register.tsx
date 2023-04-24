@@ -4,7 +4,7 @@ import Button from "@/components/button";
 const Register = () => {
 
     return (
-        <div className={"prose mx-4"}>
+        <div className={"prose mx-4 my-8"}>
             <h1 className={"heading"}>Registration</h1>
             <p>Learn How to Register for ICAC3N-23: A Guide to Submitting Your Papers for the International Conference
                 on Advances in Computing, Communication Control and Networking.</p>

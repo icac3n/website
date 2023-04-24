@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import {StarterLayout} from "@/layout";
 import {Swiper, SwiperSlide} from "swiper/react";
 
 // Import Swiper styles
@@ -21,6 +19,7 @@ import {
 import ImportantDates from "../components/importantDates";
 import ImportantDownloads from "../components/importantDownloads";
 import React from "react";
+import ImportantMessage from "@/components/importantMessage";
 
 const Home = () => {
 
@@ -119,14 +118,16 @@ const Home = () => {
             </Head>
             <main className={""}>
                 {/*    landing   */}
-                <div className={"flex lg:flex-row flex-col gap-5 items-center justify-center lg:text-start text-center"}>
+                <div
+                    className={"flex lg:flex-row flex-col gap-5 items-center justify-center lg:text-start text-center"}>
                     <div className={"flex flex-col justify-between h-full"}>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiCalendarTodoFill className={"hidden lg:block text-red-800"}/>
                             <p className={"text-red-800 font-semibold"}>15th and 16th December 2023</p>
                         </div>
 
-                        <p className={"text-3xl my-3 lg:my-5 font-bold mx-4 lg:mx-0"}>International Conference on Advances in
+                        <p className={"text-3xl my-3 lg:my-5 font-bold mx-4 lg:mx-0"}>International Conference on
+                            Advances in
                             Computing,
                             Communication Control and Networking</p>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
@@ -170,22 +171,22 @@ const Home = () => {
                             className="mySwiper mx-auto rounded-md shadow-sm"
                         >
                             {
-                                sliderImages.map((image,index) => {
-                                    return(
-                                    <SwiperSlide key={index}>
-                                        {/*<img*/}
-                                        {/*    className={" w-20 max-w-[100vw] min-h-[50vh] max-h-[50vh] object-cover rounded-md"}*/}
-                                        {/*    src={image.image}*/}
-                                        {/*    alt=""/>*/}
-                                        <img
-                                            className={" w-full h-80 object-cover rounded-md"}
-                                            src={image.image}
-                                            alt=""/>
-                                    </SwiperSlide>
+                                sliderImages.map((image, index) => {
+                                    return (
+                                        <SwiperSlide key={index}>
+                                            {/*<img*/}
+                                            {/*    className={" w-20 max-w-[100vw] min-h-[50vh] max-h-[50vh] object-cover rounded-md"}*/}
+                                            {/*    src={image.image}*/}
+                                            {/*    alt=""/>*/}
+                                            <img
+                                                className={" w-full h-80 object-cover rounded-md"}
+                                                src={image.image}
+                                                alt=""/>
+                                        </SwiperSlide>
 
-                                )
+                                    )
 
-                            })
+                                })
 
                             }
                         </Swiper>
@@ -194,29 +195,57 @@ const Home = () => {
 
                 <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
                 <div className={"flex flex-col space-y-5"}>
-                <div className={"grid grid-cols-1 lg:grid-cols-3 mx-5 md:mx-auto"}>
-                    <div className={"lg:col-span-2 lg:mr-10 col-span-full"}>
-                        <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About ICACCCN</h2>
-                        <p className={'text-justify'}>
-                            Galgotias Educational Institutions (GEI) have been inculcating practical skills and creating ‘Global Professionals’ for more than 18 years. Founded by Smt. Shakuntala Educational and Welfare Society, Galgotia Educational Institutions is currently led by Mr. Suneel Galgotia, Chairman and a resolute visionary. Galgotias College of Engineering & Technology is placed among the best in professional education in Dr. APJ Abdul Kalam Technical University (Formerly U.P. Technical University). It has achieved top positions in MBA, MCA and B.Tech. finals and has a record of 100% placements with the best corporate houses. It has also been ranked amongst the top engineering colleges in India by DATAQUEST NASSCOM survey and OUTLOOK-C For College Survey.
-                        </p>
-                        <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
-                        <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About College</h2>
-                        <p className={'text-justify'}>
-                            Galgotias Educational Institutions (GEI) have been inculcating practical skills and creating ‘Global Professionals’ for more than 18 years. Founded by Smt. Shakuntala Educational and Welfare Society, Galgotia Educational Institutions is currently led by Mr. Suneel Galgotia, Chairman and a resolute visionary. Galgotias College of Engineering & Technology is placed among the best in professional education in Dr. APJ Abdul Kalam Technical University (Formerly U.P. Technical University). It has achieved top positions in MBA, MCA and B.Tech. finals and has a record of 100% placements with the best corporate houses. It has also been ranked amongst the top engineering colleges in India by DATAQUEST NASSCOM survey and OUTLOOK-C For College Survey.
-                        </p>
-                        <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
-                        <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About CSE Department</h2>
-                        <p className={'text-justify'}>
-                            Galgotias Educational Institutions (GEI) have been inculcating practical skills and creating ‘Global Professionals’ for more than 18 years. Founded by Smt. Shakuntala Educational and Welfare Society, Galgotia Educational Institutions is currently led by Mr. Suneel Galgotia, Chairman and a resolute visionary. Galgotias College of Engineering & Technology is placed among the best in professional education in Dr. APJ Abdul Kalam Technical University (Formerly U.P. Technical University). It has achieved top positions in MBA, MCA and B.Tech. finals and has a record of 100% placements with the best corporate houses. It has also been ranked amongst the top engineering colleges in India by DATAQUEST NASSCOM survey and OUTLOOK-C For College Survey.
-                        </p>
+                    <div className={"grid grid-cols-1 lg:grid-cols-3 mx-5 md:mx-auto"}>
+                        <div className={"lg:col-span-2 lg:mr-10 col-span-full"}>
+                            <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
+                                ICACCCN</h2>
+                            <p className={'text-justify'}>
+                                Galgotias Educational Institutions (GEI) have been inculcating practical skills and
+                                creating ‘Global Professionals’ for more than 18 years. Founded by Smt. Shakuntala
+                                Educational and Welfare Society, Galgotia Educational Institutions is currently led by
+                                Mr. Suneel Galgotia, Chairman and a resolute visionary. Galgotias College of Engineering
+                                & Technology is placed among the best in professional education in Dr. APJ Abdul Kalam
+                                Technical University (Formerly U.P. Technical University). It has achieved top positions
+                                in MBA, MCA and B.Tech. finals and has a record of 100% placements with the best
+                                corporate houses. It has also been ranked amongst the top engineering colleges in India
+                                by DATAQUEST NASSCOM survey and OUTLOOK-C For College Survey.
+                            </p>
+                            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
+                            <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
+                                College</h2>
+                            <p className={'text-justify'}>
+                                Galgotias Educational Institutions (GEI) have been inculcating practical skills and
+                                creating ‘Global Professionals’ for more than 18 years. Founded by Smt. Shakuntala
+                                Educational and Welfare Society, Galgotia Educational Institutions is currently led by
+                                Mr. Suneel Galgotia, Chairman and a resolute visionary. Galgotias College of Engineering
+                                & Technology is placed among the best in professional education in Dr. APJ Abdul Kalam
+                                Technical University (Formerly U.P. Technical University). It has achieved top positions
+                                in MBA, MCA and B.Tech. finals and has a record of 100% placements with the best
+                                corporate houses. It has also been ranked amongst the top engineering colleges in India
+                                by DATAQUEST NASSCOM survey and OUTLOOK-C For College Survey.
+                            </p>
+                            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
+                            <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About CSE
+                                Department</h2>
+                            <p className={'text-justify'}>
+                                Galgotias Educational Institutions (GEI) have been inculcating practical skills and
+                                creating ‘Global Professionals’ for more than 18 years. Founded by Smt. Shakuntala
+                                Educational and Welfare Society, Galgotia Educational Institutions is currently led by
+                                Mr. Suneel Galgotia, Chairman and a resolute visionary. Galgotias College of Engineering
+                                & Technology is placed among the best in professional education in Dr. APJ Abdul Kalam
+                                Technical University (Formerly U.P. Technical University). It has achieved top positions
+                                in MBA, MCA and B.Tech. finals and has a record of 100% placements with the best
+                                corporate houses. It has also been ranked amongst the top engineering colleges in India
+                                by DATAQUEST NASSCOM survey and OUTLOOK-C For College Survey.
+                            </p>
 
+                        </div>
+                        <div className={"lg:col-span-1 col-span-full"}>
+                            <ImportantMessage/>
+                            <ImportantDates/>
+                            <ImportantDownloads/>
+                        </div>
                     </div>
-                    <div className={"lg:col-span-1 col-span-full"}>
-                        <ImportantDates/>
-                        <ImportantDownloads/>
-                    </div>
-                </div>
                 </div>
                 <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
 

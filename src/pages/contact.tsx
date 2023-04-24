@@ -3,7 +3,7 @@ import {StarterLayout} from "layout";
 const Register = () => {
 
     return (
-        <div className={"prose px-4"}>
+        <div className={"prose px-4 my-8"}>
             <h2 className={"heading"}>Contact Us</h2>
             <p>Please fill the provided form and we will get back to you as soon as possible.</p>
             <form action="#" className="space-y-8">
