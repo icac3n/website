@@ -1,4 +1,5 @@
 import {RiFacebookBoxFill, RiMailFill, RiPhoneFill, RiTwitterFill} from "react-icons/ri";
+import Link from "next/link";
 
 const Footer = () =>{
     return(
@@ -7,12 +8,12 @@ const Footer = () =>{
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between items-center">
                     <div className="mb-6 md:mb-0">
-                        <a href="https://flowbite.com/" className="flex items-center">
+                        <Link href="https://flowbite.com/" className="flex items-center">
                             <img src="/icaccn_logo.png" className="h-8 mr-3"
                                  alt="ICAC3N"/>
                             <span
                                 className="self-center text-2xl font-semibold whitespace-nowrap text-white">ICAC3N</span>
-                        </a>
+                        </Link>
                         <p className={"my-4 max-w-xs text-white"}> International Conference on Advances in
                             Computing, Communication Control and Networking (ICAC3N–23)</p>
                     </div>
@@ -21,10 +22,10 @@ const Footer = () =>{
                             <h2 className="mb-6 text-sm font-semibold uppercase text-white underline">Important</h2>
                             <ul className="text-gray-200 font-medium">
                                 <li className="mb-4">
-                                    <a href="/importantDates" className="hover:underline">Dates</a>
+                                    <Link href="/importantDates" className="hover:underline">Dates</Link>
                                 </li>
                                 <li>
-                                    <a href="/importantDownloads" className="hover:underline">Downloads</a>
+                                    <Link href="/importantDownloads" className="hover:underline">Downloads</Link>
                                 </li>
                             </ul>
                         </div>
@@ -32,11 +33,11 @@ const Footer = () =>{
                             <h2 className="mb-6 text-sm font-semibold uppercase text-white underline">Resources</h2>
                             <ul className="text-gray-200 font-medium">
                                 <li className="mb-4">
-                                    <a href="/register" className="hover:underline">Register</a>
+                                    <Link href="/register" className="hover:underline">Register</Link>
                                 </li>
                                 <li>
-                                    <a href="/guidelines.tsx" className="hover:underline">Guidelines
-                                    </a>
+                                    <Link href="/guidelines" className="hover:underline">Guidelines
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -47,7 +48,7 @@ const Footer = () =>{
                 <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"/>
                 <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-100 ">
-              <a href="" className="hover:underline my-2">Computer Science Department, GCET</a>.
+              <Link href="" className="hover:underline my-2">Computer Science Department, GCET</Link>.
           </span>
                     <div
                         className={"flex mt-4 space-x-6 text-2xl text-white sm:justify-center sm:mt-0"}>

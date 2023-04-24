@@ -1,6 +1,7 @@
 import React from "react";
 import {HiDownload} from "react-icons/hi";
 import {BsChevronRight} from "react-icons/bs";
+import Link from "next/link";
 
 const impDateData = [
     {
@@ -33,7 +34,7 @@ export default function ImportantDownloads() {
                     {
                         impDateData.map((item, index) => {
                             return (
-                                <a key={index} href={item.link} className={"cursor-pointer"}>
+                                <Link key={index} href={item.link} className={"cursor-pointer"}>
                                     <div className={"flex items-start justify-between"}>
                                         <div className={"flex space-x-2 items-start"}>
                                             <div>
@@ -59,7 +60,7 @@ export default function ImportantDownloads() {
                                     {index !== impDateData.length - 1 &&
                                         <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700"/>
                                     }
-                                </a>
+                                </Link>
                             )
                         })
                     }

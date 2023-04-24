@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {AiFillCaretDown} from "react-icons/ai";
 import {useRouter} from "next/router";
+import Link from "next/link";
 
 function Index() {
     const testObj = {
@@ -62,10 +63,10 @@ function Index() {
 
         <nav className="bg-red-800">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="#" className="flex items-center">
+                <Link href="#" className="flex items-center">
                     <img src="./icac3nlogo.png" onClick={()=>{router.push("/")}} className="mr-3 h-12 object-cover" alt="Logo"/>
                     <span className="font-semibold text-2xl tracking-tight text-white">ICAC3N</span>
-                </a>
+                </Link>
                 <button onClick={menuToggle} type="button"
                         className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                         aria-controls="navbar-dropdown" aria-expanded="false">
@@ -84,9 +85,9 @@ function Index() {
                                 {
                                     link.enabled &&
                                     <li key={index} className={"cursor-pointer text-white"}>
-                                        <a href={link.link}>
+                                        <Link href={link.link}>
                                             {link.title.toUpperCase()}
-                                        </a>
+                                        </Link>
                                     </li>
                                 }
                             </>
@@ -102,19 +103,19 @@ function Index() {
                                     <ul className="py-2 text-sm font-semibold text-gray-700"
                                         aria-labelledby="dropdownLargeButton">
                                         <li>
-                                            <a href="#"
-                                               className="block px-4 py-2 hover:bg-amber-200">Organising Committee</a>
+                                            <Link href="#"
+                                               className="block px-4 py-2 hover:bg-amber-200">Organising Committee</Link>
                                         </li>
                                         <li>
-                                            <a href="#"
+                                            <Link href="#"
                                                className="block px-4 py-2 hover:bg-amber-200">Technical Program
-                                                Committee</a>
+                                                Committee</Link>
                                         </li>
                                     </ul>
                                     <div className="py-1">
-                                        <a href="#"
+                                        <Link href="#"
                                            className="block px-4 font-semibold py-2 text-sm text-gray-700 hover:bg-amber-200">Advisory
-                                            Board</a>
+                                            Board</Link>
                                     </div>
                                 </div>
                             }
