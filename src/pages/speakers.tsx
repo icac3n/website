@@ -61,13 +61,13 @@ const Speakers = () => {
     return(
         <div>
             <h1 className={'text-3xl font-bold text-center my-5'}>Speakers for ICACCCN 2023</h1>
-            <div className={'grid grid-cols-3 gap-5'}>
+            <div className={'grid grid-cols-3 gap-x-5 gap-y-8'}>
                 {
                     speakers.map((speaker,index) => {
                         return(
-                            <div key={index} className={'col-span-1 flex flex-col items-center gap-1 bg-gray-100 rounded-lg p-3'}>
-                                <img src={speaker.image} className={'h-56 w-64 object-cover rounded-lg'} alt=""/>
-                                <span className={'font-bold text-xl text-center'}>{speaker.name}</span>
+                            <div key={index} className={'col-span-1 shadow-md flex flex-col items-center gap-1 bg-gray-100 rounded-lg p-3'}>
+                                <img src={speaker.image} className={'h-56 border-2 border-gray-300 w-64 object-cover rounded'} alt=""/>
+                                <span className={'font-semibold text-lg mt-3 text-center'}>{speaker.name}</span>
                                 <span
                                     className={'font-light text-sm text-center'}>{speaker.designation}</span>
                             </div>
