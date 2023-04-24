@@ -5,7 +5,7 @@ import {ThemeProvider, useTheme} from "next-themes";
 import {Theme, toast, ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
-import {Footer, Navbar} from "components";
+import {Footer, Navbar, MessageFlashSlider} from "components";
 
 type ComponentWithLayout = AppProps & {
     Component: AppProps['Component'] & {
@@ -18,6 +18,7 @@ export default function App({Component, pageProps}: ComponentWithLayout) {
         <ThemeProvider attribute="class" enableSystem={true} forcedTheme="light">
             <ToastThemeWrapper/>
             <Navbar/>
+            <MessageFlashSlider/>
             {
                 Component.pageLayout ?
                     (
