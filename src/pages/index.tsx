@@ -220,7 +220,7 @@ const Home = () => {
                 <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
 
                 <div className={'flex flex-row items-center mx-5 md:mx-auto'}>
-                    <h1 className='text-2xl text-black font-extrabold my-5'>Hon'ble Speaker</h1>
+                    <h1 className='text-2xl text-black font-extrabold my-5'>Hon&apos;ble Speaker</h1>
                     {/*<h4 className='text-md text-blue-500 font-regular my-5 ml-2 hover:underline cursor-pointer'>( view all )</h4>*/}
                 </div>
 
