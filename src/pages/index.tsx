@@ -126,7 +126,7 @@ const Home = () => {
                             <p className={"text-red-800 font-semibold"}>15th and 16th December 2023</p>
                         </div>
 
-                        <p className={"text-3xl my-3 lg:my-5 font-bold"}>International Conference on Advances in
+                        <p className={"text-3xl my-3 lg:my-5 font-bold mx-4 lg:mx-0"}>International Conference on Advances in
                             Computing,
                             Communication Control and Networking</p>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
