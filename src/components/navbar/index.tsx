@@ -1,13 +1,59 @@
-import React, {useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import {AiFillCaretDown} from "react-icons/ai";
 import {useRouter} from "next/router";
 import Link from "next/link";
 
-function Index() {
-    const testObj = {
-        Tabs: ["Home", "About", "Guidelines", "Speakers", "Call for Papers",],
-    };
+const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string, link: string }[] }) => {
+    const [dropOpen, setDropOpen] = useState(false);
+    const dropdownRef = useRef(null);
+    const dropToggle = () => setDropOpen(!dropOpen);
 
+    useEffect(() => {
+        const handleClickOutside = (event : any) => {
+            // @ts-ignore
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setDropOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
+    return(
+        <li ref={dropdownRef} onClick={dropToggle} className={"cursor-pointer relative"}>
+                                         <span className={"text-white inline-flex items-center"}>
+                                             {title.toUpperCase()} <AiFillCaretDown className={"ml-1"}/>
+                                         </span>
+            {
+                dropOpen &&
+                <div id="dropNav"
+                     className={"md:absolute -left-1/2 mt-3 z-10 font-normal bg-amber-100 divide-y divide-amber-800 rounded shadow md:w-52 w-full"}>
+                    <ul className="py-2 text-sm font-semibold text-gray-700"
+                        aria-labelledby="dropdownLargeButton">
+                        {
+                            dropdown.map((item, index) => {
+                                return(
+                                        <li key={index}>
+                                            <Link href={item.link} className="block px-4 py-2 hover:bg-amber-200">
+                                                {item.title}
+                                            </Link>
+                                        </li>
+                                    )
+
+                            })
+                        }
+                    </ul>
+                </div>
+            }
+        </li>
+    )
+}
+
+function Index() {
     const links = [
         {
             title: "Home",
@@ -32,6 +78,24 @@ function Index() {
         {
             title: "Speakers",
             link: "/speakers",
+            enabled: true,
+        },
+        {
+            title: "Committee",
+            dropdown: [
+                {
+                    title: "Organizing Committee",
+                    link: "/organizing-committee",
+                },
+                {
+                    title: "Technical Program Committee",
+                    link: "/technical-program-committee",
+                },
+                {
+                    title: "Advisory Board",
+                    link: "/advisory-board",
+                },
+            ],
             enabled: true,
         },
         {
@@ -64,7 +128,9 @@ function Index() {
         <nav className="bg-red-800">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <Link href="#" className="flex items-center">
-                    <img src="./icac3nlogo.png" onClick={()=>{router.push("/")}} className="mr-3 h-12 object-cover" alt="Logo"/>
+                    <img src="./icac3nlogo.png" onClick={() => {
+                        router.push("/")
+                    }} className="mr-3 h-12 object-cover" alt="Logo"/>
                     <span className="font-semibold text-2xl tracking-tight text-white">ICAC3N</span>
                 </Link>
                 <button onClick={menuToggle} type="button"
@@ -83,43 +149,22 @@ function Index() {
                         {links.map((link, index) => (
                             <>
                                 {
-                                    link.enabled &&
-                                    <li key={index} className={"cursor-pointer text-white"}>
-                                        <Link href={link.link}>
-                                            {link.title.toUpperCase()}
-                                        </Link>
-                                    </li>
+                                    link.enabled && link.link &&
+                                    <>
+                                        <li key={index} className={"cursor-pointer text-white"}>
+                                            <Link href={link.link}>
+                                                {link.title.toUpperCase()}
+                                            </Link>
+                                        </li>
+                                    </>
+                                }
+                                {
+                                    link.enabled && link.dropdown &&
+                                    <Dropdown title={link.title} dropdown={link.dropdown}/>
                                 }
                             </>
                         ))}
-                        <li onClick={dropToggle} className={"cursor-pointer relative"}>
-                             <span className={"text-white inline-flex items-center"}>
-                                 {'Committee'.toUpperCase()} <AiFillCaretDown className={"ml-1"}/>
-                             </span>
-                            {
-                                dropOpen &&
-                                <div id="dropNav"
-                                     className={"md:absolute lg:absolute mt-3 z-10 font-normal bg-amber-100 divide-y divide-amber-800 rounded shadow md:w-44 w-full"}>
-                                    <ul className="py-2 text-sm font-semibold text-gray-700"
-                                        aria-labelledby="dropdownLargeButton">
-                                        <li>
-                                            <Link href="#"
-                                               className="block px-4 py-2 hover:bg-amber-200">Organising Committee</Link>
-                                        </li>
-                                        <li>
-                                            <Link href="#"
-                                               className="block px-4 py-2 hover:bg-amber-200">Technical Program
-                                                Committee</Link>
-                                        </li>
-                                    </ul>
-                                    <div className="py-1">
-                                        <Link href="#"
-                                           className="block px-4 font-semibold py-2 text-sm text-gray-700 hover:bg-amber-200">Advisory
-                                            Board</Link>
-                                    </div>
-                                </div>
-                            }
-                        </li>
+
                     </ul>
                 </div>}
 
