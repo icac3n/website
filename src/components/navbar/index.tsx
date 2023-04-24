@@ -26,14 +26,13 @@ const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string,
     return(
         <li ref={dropdownRef} onClick={dropToggle} className={"cursor-pointer relative"}>
                                          <span className={"text-white inline-flex items-center"}>
-                                             {title.toUpperCase()} <AiFillCaretDown className={"ml-1"}/>
+                                             {title.toUpperCase()} <AiFillCaretDown className={`ml-1 ${dropOpen ? 'rotate-180':''}`}/>
                                          </span>
             {
                 dropOpen &&
                 <div id="dropNav"
-                     className={"md:absolute -left-1/2 mt-3 z-10 font-normal bg-amber-100 divide-y divide-amber-800 rounded shadow md:w-52 w-full"}>
-                    <ul className="py-2 text-sm font-semibold text-gray-700"
-                        aria-labelledby="dropdownLargeButton">
+                     className={"md:absolute -left-1/2 mt-3 z-10 font-normal bg-amber-100 divide-y divide-amber-800 rounded shadow-lg md:w-52 w-full"}>
+                    <ul className="py-2 text-sm font-semibold text-gray-700">
                         {
                             dropdown.map((item, index) => {
                                 return(
@@ -144,8 +143,8 @@ function Index() {
                               clipRule="evenodd"></path>
                     </svg>
                 </button>
-                {menuOpen && <div className={"w-full md:block md:mt-4 md:w-auto"}>
-                    <ul className="flex flex-col gap-2 font-medium p-4 md:p-0 mt-4 rounded-lg md:flex-row md:gap-5 md:mt-0 md:border-0">
+                {menuOpen && <div className={"w-full md:block md:w-auto"}>
+                    <ul className="flex flex-col gap-2 font-medium p-4 md:p-0 rounded-lg md:flex-row md:gap-5 md:mt-0 md:border-0">
                         {links.map((link, index) => (
                             <>
                                 {
