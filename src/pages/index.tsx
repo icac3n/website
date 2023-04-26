@@ -118,7 +118,8 @@ const Home = () => {
             </Head>
             <main className={"mx-8"}>
                 {/*    landing   */}
-                <h1 className={"text-3xl my-3 lg:my-5 font-bold lg:mx-0 text-center lg:text-justify"}>International Conference on
+                <h1 className={"text-3xl my-3 lg:my-5 font-bold lg:mx-0 text-center lg:text-justify"}>International
+                    Conference on
                     Advances in
                     Computing,
                     Communication Control and Networking</h1>
@@ -288,7 +289,7 @@ const Home = () => {
                                 return (
                                     <SwiperSlide key={index}>
                                         <div className={'col-span-1 flex flex-col items-center'}>
-                                            <img src={speaker.image}
+                                            <img src={speaker.image} alt={"Speaker's Photo"}
                                                  className={'h-56 w-64 object-cover mb-5 rounded-lg shadow-md'}/>
                                             <span className={'font-bold text-xs text-center'}>{speaker.name}</span>
                                             <span
