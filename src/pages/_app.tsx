@@ -7,6 +7,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import {Footer, Navbar, MessageFlashSlider} from "components";
 
+import { SessionProvider } from "next-auth/react"
+
 type ComponentWithLayout = AppProps & {
     Component: AppProps['Component'] & {
         pageLayout?: ComponentType
@@ -16,24 +18,26 @@ type ComponentWithLayout = AppProps & {
 export default function App({Component, pageProps}: ComponentWithLayout) {
     return (
         <ThemeProvider attribute="class" enableSystem={true} forcedTheme="light">
-            <ToastThemeWrapper/>
-            <Navbar/>
-            <MessageFlashSlider/>
-            {
-                Component.pageLayout ?
-                    (
-                        <Component.pageLayout {...pageProps}>
-                            <Component {...pageProps}/>
-                        </Component.pageLayout>
-                    )
-                    :
-                    (
-                        <div className={'max-w-7xl mx-auto py-6 sm:px-6 lg:px-8'}>
-                            <Component {...pageProps}/>
-                        </div>
-                    )
-            }
-            <Footer/>
+            <SessionProvider>
+                <ToastThemeWrapper/>
+                <Navbar/>
+                <MessageFlashSlider/>
+                {
+                    Component.pageLayout ?
+                        (
+                            <Component.pageLayout {...pageProps}>
+                                <Component {...pageProps}/>
+                            </Component.pageLayout>
+                        )
+                        :
+                        (
+                            <div className={'max-w-7xl mx-auto py-6 sm:px-6 lg:px-8'}>
+                                <Component {...pageProps}/>
+                            </div>
+                        )
+                }
+                <Footer/>
+            </SessionProvider>
         </ThemeProvider>
     );
 }
