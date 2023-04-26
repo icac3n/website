@@ -121,25 +121,33 @@ function Index() {
 
         <nav className="bg-red-800">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between gap-y-6 mx-auto p-4">
-                <Link href="#" className="flex items-center">
-                    <img src="/icac3nlogo.png" onClick={() => {
-                        router.push("/")
-                    }} className="mr-3 h-12 object-cover" alt="Logo"/>
-                    <span className="font-semibold text-2xl tracking-tight text-white">ICAC3N</span>
-                </Link>
-                <button onClick={menuToggle} type="button"
-                        className="inline-flex order-last items-center md:hidden p-2 ml-3 text-sm text-red-800 rounded-lg  hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-white"
-                        aria-controls="navbar-dropdown" aria-expanded="false">
-                    <span className="sr-only">Open main menu</span>
-                    <svg className="w-8 h-8 text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path fillRule="evenodd"
-                              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                              clipRule="evenodd"></path>
-                    </svg>
-                </button>
-                {menuOpen && <div className={"w-full md:block md:w-auto"}>
-                    <ul className="flex flex-col gap-2 font-medium p-4 md:p-0 rounded-lg md:flex-row md:gap-5 md:mt-0 md:border-0">
+                <div className={'lg:w-fit w-full flex flex-row justify-between items-center'}>
+                    <Link href="#" className="flex items-center">
+                        <img src="/icac3nlogo.png" onClick={() => {
+                            router.push("/")
+                        }} className="mr-3 h-12 object-cover" alt="Logo"/>
+                        <span className="font-semibold text-2xl tracking-tight text-white">ICAC3N</span>
+                    </Link>
+
+                    <div className={'flex flex-row gap-1 justify-normal items-center'}>
+                        <span onClick={menuToggle} type="button"
+                                className="inline-flex order-last items-center md:hidden p-2 text-sm text-red-800 rounded-lg  hover:bg-red-700 focus:outline-none focus:ring-none cursor-pointer"
+                                aria-controls="navbar-dropdown" aria-expanded="false">
+                            <span className="sr-only">Open main menu</span>
+                            <svg className="w-8 h-8 text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd"
+                                      d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                      clipRule="evenodd"></path>
+                            </svg>
+                        </span>
+                        <span className={'px-4 h-fit py-2 bg-sky-400 rounded-lg lg:hidden text-white cursor-pointer '}>Register</span>
+                    </div>
+
+                </div>
+
+                {menuOpen && <div className={"w-full md:block lg:w-auto"}>
+                    <ul className="flex flex-col gap-3 md:text-sm lg:gap-5 justify-between font-medium md:p-0 rounded-lg md:flex-row md:mt-0 md:border-0">
                         {links.map((link, index) => (
                             <div key={index}>
                                 {
