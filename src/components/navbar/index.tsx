@@ -2,11 +2,16 @@ import React, {useEffect, useRef, useState} from "react";
 import {AiFillCaretDown} from "react-icons/ai";
 import {useRouter} from "next/router";
 import Link from "next/link";
+import * as path from "path";
 
 const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string, link: string }[] }) => {
     const [dropOpen, setDropOpen] = useState(false);
     const dropdownRef = useRef(null);
     const dropToggle = () => setDropOpen(!dropOpen);
+
+    const {
+        asPath
+    } = useRouter();
 
     useEffect(() => {
         const handleClickOutside = (event: any) => {
@@ -23,12 +28,30 @@ const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string,
         };
     }, []);
 
+    const ifArchiveUrl = (url: string) => {
+        const regex = /\/archive\/20\d{2}/;
+        console.log({test: regex.test(url)})
+        return regex.test(url);
+    }
+
+    const getYearFromPath = (path: string) => {
+        const regex = /\/archive\/(\d{4})/; // Matches "/archive/" followed by four digits
+        const match = path.match(regex);
+        console.log({match})
+        if (match) {
+            return match[1];
+        } else {
+            return ""
+        }
+    }
+
     return (
         <li ref={dropdownRef} onClick={dropToggle} className={"cursor-pointer relative"}>
                                          <span
-                                             className={`${title.includes("2023") ? "py-2 px-3 grow-on-hover bg-red-900 rounded" : ""} inline-flex items-center text-white`}>
-                                             {title.toUpperCase()} <AiFillCaretDown
-                                             className={`ml-1 ${dropOpen ? 'rotate-180' : ''}`}/>
+                                             className={`${title.includes("202") ? "py-2 px-3 grow-on-hover bg-red-900 rounded" : ""} inline-flex items-center text-white`}>
+                                             {ifArchiveUrl(asPath) ? getYearFromPath(asPath) : title}
+                                             <AiFillCaretDown
+                                                 className={`ml-1 ${dropOpen ? 'rotate-180' : ''}`}/>
                                          </span>
             {
                 dropOpen &&
@@ -107,6 +130,10 @@ function Index() {
         {
             title: "2023",
             dropdown: [
+                {
+                    title: "ICAC3N 2023",
+                    link: "/",
+                },
                 {
                     title: "ICAC3N 2022",
                     link: "archive/2022",
