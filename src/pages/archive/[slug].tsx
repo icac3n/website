@@ -69,11 +69,14 @@ const Post = ({content, year}: {
                 <div
                     className={"flex lg:flex-row flex-col gap-5 items-center justify-center lg:text-start text-center"}>
                     <div className={"flex flex-col justify-between h-full"}>
-                        <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
-                            <RiCalendarTodoFill className={"hidden lg:block text-red-800"}/>
-                            <p className={"text-red-800 font-semibold"}>Year {year}</p>
-                        </div>
+                        {/*<div className={"flex items-center space-x-2 lg:justify-start justify-center"}>*/}
+                        {/*    <RiCalendarTodoFill className={"hidden lg:block text-red-800"}/>*/}
+                        {/*    <p className={"text-red-800 font-semibold"}>Year {year}</p>*/}
+                        {/*</div>*/}
 
+                        <div className={"rounded-full w-fit bg-red-600 bg-opacity-20"}>
+                            <p className={"px-3 py-0.5 text-sm text-red-800"}>Archive</p>
+                        </div>
                         <p className={"text-3xl my-3 lg:my-5 font-bold mx-4 lg:mx-0"}>International Conference on
                             Advances in
                             Computing,

@@ -49,7 +49,7 @@ const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string,
         <li ref={dropdownRef} onClick={dropToggle} className={"cursor-pointer relative list-none"}>
                                          <span
                                              className={`${title.includes("20") ? "py-2 mt-1 px-3 text-xs grow-on-hover bg-red-900 rounded" : ""} inline-flex items-center text-white`}>
-                                             {ifArchiveUrl(asPath) ? getYearFromPath(asPath) : title}
+                                             {ifArchiveUrl(asPath) && title.includes("20") ? getYearFromPath(asPath) : title.toUpperCase()}
                                              <AiFillCaretDown
                                                  className={`ml-1 ${dropOpen ? 'rotate-180' : ''}`}/>
                                          </span>
