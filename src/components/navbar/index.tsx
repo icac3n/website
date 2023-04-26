@@ -9,7 +9,7 @@ const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string,
     const dropToggle = () => setDropOpen(!dropOpen);
 
     useEffect(() => {
-        const handleClickOutside = (event : any) => {
+        const handleClickOutside = (event: any) => {
             // @ts-ignore
             if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
                 setDropOpen(false);
@@ -23,10 +23,12 @@ const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string,
         };
     }, []);
 
-    return(
+    return (
         <li ref={dropdownRef} onClick={dropToggle} className={"cursor-pointer relative"}>
-                                         <span className={"text-white inline-flex items-center"}>
-                                             {title.toUpperCase()} <AiFillCaretDown className={`ml-1 ${dropOpen ? 'rotate-180':''}`}/>
+                                         <span
+                                             className={`${title.includes("2023") ? "py-2 px-3 grow-on-hover bg-red-900 rounded" : ""} inline-flex items-center text-white`}>
+                                             {title.toUpperCase()} <AiFillCaretDown
+                                             className={`ml-1 ${dropOpen ? 'rotate-180' : ''}`}/>
                                          </span>
             {
                 dropOpen &&
@@ -35,13 +37,13 @@ const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string,
                     <ul className="py-2 text-sm font-semibold   text-gray-700">
                         {
                             dropdown.map((item, index) => {
-                                return(
-                                        <li key={index}>
-                                            <Link href={item.link} className="block px-4 py-2 hover:bg-amber-200">
-                                                {item.title}
-                                            </Link>
-                                        </li>
-                                    )
+                                return (
+                                    <li key={index}>
+                                        <Link href={item.link} className="block px-4 py-2 hover:bg-amber-200">
+                                            {item.title}
+                                        </Link>
+                                    </li>
+                                )
 
                             })
                         }
@@ -102,6 +104,28 @@ function Index() {
             link: "/contact",
             enabled: true,
         },
+        {
+            title: "2023",
+            dropdown: [
+                {
+                    title: "ICAC3N 2022",
+                    link: "archive/2022",
+                },
+                {
+                    title: "ICAC3N 2021",
+                    link: "archive/2021",
+                },
+                {
+                    title: "ICAC3N 2020",
+                    link: "archive/2020",
+                },
+                {
+                    title: "ICAC3N 2018",
+                    link: "archive/2018",
+                },
+            ],
+            enabled: true,
+        }
     ]
 
     const [menuOpen, setMenu] = useState(true);
@@ -126,17 +150,19 @@ function Index() {
 
                     <div className={'flex flex-row gap-1 justify-normal items-center'}>
                         <span onClick={menuToggle}
-                                className="inline-flex order-last items-center md:hidden p-2 text-sm text-red-800 rounded-lg  hover:bg-red-700 focus:outline-none focus:ring-none cursor-pointer"
-                                aria-controls="navbar-dropdown" aria-expanded="false">
+                              className="inline-flex order-last items-center md:hidden p-2 text-sm text-red-800 rounded-lg  hover:bg-red-700 focus:outline-none focus:ring-none cursor-pointer"
+                              aria-controls="navbar-dropdown" aria-expanded="false">
                             <span className="sr-only">Open main menu</span>
-                            <svg className="w-8 h-8 text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            <svg className="w-8 h-8 text-white" aria-hidden="true" fill="currentColor"
+                                 viewBox="0 0 20 20"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd"
                                       d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                                       clipRule="evenodd"></path>
                             </svg>
                         </span>
-                        <Link href={'/register'} className={'px-4 h-fit py-2 bg-sky-600 uppercase rounded-lg lg:hidden text-white cursor-pointer '}>Register</Link>
+                        <Link href={'/register'}
+                              className={'px-4 h-fit py-2 bg-sky-600 uppercase rounded-lg lg:hidden text-white cursor-pointer '}>Register</Link>
                     </div>
 
                 </div>
@@ -148,7 +174,8 @@ function Index() {
                                 {
                                     link.enabled && link.link &&
                                     <>
-                                        <li key={index} className={"cursor-pointer text-white"}>
+                                        <li key={index}
+                                            className={`cursor-pointer text-white`}>
                                             <Link href={link.link}>
                                                 {link.title.toUpperCase()}
                                             </Link>
@@ -162,7 +189,8 @@ function Index() {
                             </div>
                         ))}
 
-                        <Link href={'/register'} className={'px-4 h-fit py-2 bg-sky-600 rounded-lg uppercase hidden lg:block text-white cursor-pointer '}>Register</Link>
+                        <Link href={'/register'}
+                              className={'px-4 h-fit py-2 bg-sky-600 rounded-lg uppercase hidden lg:block text-white cursor-pointer '}>Register</Link>
                     </ul>
                 </div>}
 

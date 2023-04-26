@@ -1,4 +1,13 @@
-import Head from 'next/head'
+import speakerData from "../../../data/speakers.json";
+import Head from "next/head";
+import {
+    RiCalendarTodoFill,
+    RiFacebookBoxFill,
+    RiMailFill,
+    RiMapPin2Fill,
+    RiPhoneFill,
+    RiTwitterFill
+} from "react-icons/ri";
 import {Swiper, SwiperSlide} from "swiper/react";
 
 // Import Swiper styles
@@ -8,23 +17,16 @@ import "swiper/css/pagination";
 
 // import required modules
 import {Autoplay} from "swiper";
-import {
-    RiCalendarTodoFill,
-    RiFacebookBoxFill,
-    RiMailFill,
-    RiMapPin2Fill,
-    RiPhoneFill,
-    RiTwitterFill
-} from "react-icons/ri";
-import ImportantDates from "../components/importantDates";
-import ImportantDownloads from "../components/importantDownloads";
 import React from "react";
-import ImportantMessage from "@/components/importantMessage";
-import speakersData from '../../data/speakers.json'
 
-const Home = () => {
-
-    const speakers = speakersData["2023"]
+const Post = ({content, year}: {
+    content: {
+        name: string,
+        image: string,
+        designation: string,
+        id: string,
+    }[], year: string
+}) => {
     const sliderImages = [
         {
             "image": "https://icac3n.in/static/media/img3.25e0387944fcd08c4ffb.png",
@@ -57,7 +59,7 @@ const Home = () => {
     return (
         <>
             <Head>
-                <title>ICAC3N- Galgotias College of Engineering</title>
+                <title>ICAC3N {year}- Galgotias College of Engineering</title>
                 <meta name="description" content="Next JS Starter"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
@@ -69,13 +71,13 @@ const Home = () => {
                     <div className={"flex flex-col justify-between h-full"}>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiCalendarTodoFill className={"hidden lg:block text-red-800"}/>
-                            <p className={"text-red-800 font-semibold"}>15th and 16th December 2023</p>
+                            <p className={"text-red-800 font-semibold"}>Year {year}</p>
                         </div>
 
                         <p className={"text-3xl my-3 lg:my-5 font-bold mx-4 lg:mx-0"}>International Conference on
                             Advances in
                             Computing,
-                            Communication Control and Networking</p>
+                            Communication Control and Networking {year}</p>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiMapPin2Fill className={"hidden lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
@@ -142,7 +144,7 @@ const Home = () => {
                 <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
                 <div className={"flex flex-col space-y-5"}>
                     <div className={"grid grid-cols-1 lg:grid-cols-3 mx-5 md:mx-auto"}>
-                        <div className={"lg:col-span-2 lg:mr-10 col-span-full"}>
+                        <div className={"lg:mr-10 col-span-full"}>
                             <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
                                 ICACCCN</h2>
                             <p className={'text-justify'}>
@@ -186,11 +188,11 @@ const Home = () => {
                             </p>
 
                         </div>
-                        <div className={"lg:col-span-1 col-span-full"}>
-                            <ImportantMessage/>
-                            <ImportantDates/>
-                            <ImportantDownloads/>
-                        </div>
+                        {/*<div className={"lg:col-span-1 col-span-full"}>*/}
+                        {/*    /!*<ImportantMessage/>*!/*/}
+                        {/*    /!*<ImportantDates/>*!/*/}
+                        {/*    /!*<ImportantDownloads/>*!/*/}
+                        {/*</div>*/}
                     </div>
                 </div>
                 <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
@@ -226,7 +228,7 @@ const Home = () => {
                         className="mySwiper mx-auto"
                     >
                         {
-                            speakers.map((speaker, index) => {
+                            content.map((speaker, index) => {
                                 return (
                                     <SwiperSlide key={index}>
                                         <div className={'col-span-1 flex flex-col items-center'}>
@@ -249,7 +251,32 @@ const Home = () => {
             </main>
         </>
     )
-}
+};
 
+export const getStaticPaths = async () => {
+    const years = [
+        "2022",
+        "2021",
+        "2020",
+        "2018",
+    ]
 
-export default Home
+    const paths = years.map((post) => ({
+        params: {slug: post},
+    }));
+
+    console.log({paths})
+    return {paths, fallback: false};
+};
+
+export const getStaticProps = async ({params}: { params: any }) => {
+    console.log({params})
+    // @ts-ignore
+    const data = speakerData[params.slug]
+    return {
+        props:
+            {content: data, year: params.slug},
+    };
+};
+
+export default Post;
