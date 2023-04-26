@@ -116,29 +116,33 @@ const Home = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
-            <main className={""}>
+            <main className={"mx-8"}>
                 {/*    landing   */}
+                <h1 className={"text-3xl my-3 lg:my-5 font-bold lg:mx-0 text-center lg:text-justify"}>International Conference on
+                    Advances in
+                    Computing,
+                    Communication Control and Networking</h1>
                 <div
-                    className={"flex lg:flex-row flex-col gap-5 items-center justify-center lg:text-start text-center"}>
-                    <div className={"flex flex-col justify-between h-full"}>
+                    className={"mt-4 flex lg:flex-row flex-col gap-5 items-center justify-center lg:text-start text-center"}>
+                    <div className={"flex flex-col justify-between h-full self-start text-lg"}>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiCalendarTodoFill className={"hidden lg:block text-red-800"}/>
                             <p className={"text-red-800 font-semibold"}>15th and 16th December 2023</p>
                         </div>
 
-                        <p className={"text-3xl my-3 lg:my-5 font-bold mx-4 lg:mx-0"}>International Conference on
+                        <p className={"text-lg text-gray-800 tracking-tight leading-5 my-1 lg:my-5 mx-4 lg:mx-0"}>International Conference on
                             Advances in
                             Computing,
                             Communication Control and Networking</p>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
-                            <RiMapPin2Fill className={"hidden lg:block text-red-800"}/>
+                            <RiMapPin2Fill className={"hidden mt-1 self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
-                                <p className={"font-semibold text"}>Galgotias College of Engineering And Technology</p>
+                                <p className={"font-semibold text"}>Galgotia&rsquo;s College of Engineering And Technology</p>
                                 <p className={"text-sm"}>Knowledge Park I, Greater Noida</p>
                             </div>
                         </div>
                         <div
-                            className={"flex space-x-3 text-xl text-red-800 mt-4 items-center lg:justify-start justify-center"}>
+                            className={"md:ml-5 flex space-x-3 text-2xl text-red-800 mt-1 items-center lg:justify-start justify-center"}>
                             <RiTwitterFill className={'cursor-pointer'}/>
                             <RiPhoneFill className={'cursor-pointer'}/>
                             <RiFacebookBoxFill className={'cursor-pointer'}/>
@@ -155,7 +159,7 @@ const Home = () => {
                         {/*    </svg>*/}
                         {/*</Link>*/}
                     </div>
-                    <div className={"lg:w-[60%] flex h-full w-full px-5"}>
+                    <div className={"lg:w-[70%] flex h-full w-full px-5"}>
                         <Swiper
                             slidesPerView={1}
                             spaceBetween={10}
