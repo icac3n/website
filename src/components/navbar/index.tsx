@@ -70,11 +70,6 @@ function Index() {
             enabled: true,
         },
         {
-            title: "Register",
-            link: "/register",
-            enabled: true,
-        },
-        {
             title: "Speakers",
             link: "/speakers",
             enabled: true,
@@ -130,7 +125,7 @@ function Index() {
                     </Link>
 
                     <div className={'flex flex-row gap-1 justify-normal items-center'}>
-                        <span onClick={menuToggle} type="button"
+                        <span onClick={menuToggle}
                                 className="inline-flex order-last items-center md:hidden p-2 text-sm text-red-800 rounded-lg  hover:bg-red-700 focus:outline-none focus:ring-none cursor-pointer"
                                 aria-controls="navbar-dropdown" aria-expanded="false">
                             <span className="sr-only">Open main menu</span>
@@ -141,13 +136,13 @@ function Index() {
                                       clipRule="evenodd"></path>
                             </svg>
                         </span>
-                        <span className={'px-4 h-fit py-2 bg-sky-400 rounded-lg lg:hidden text-white cursor-pointer '}>Register</span>
+                        <Link href={'/register'} className={'px-4 h-fit py-2 bg-sky-600 uppercase rounded-lg lg:hidden text-white cursor-pointer '}>Register</Link>
                     </div>
 
                 </div>
 
                 {menuOpen && <div className={"w-full md:block lg:w-auto"}>
-                    <ul className="flex flex-col gap-3 md:text-sm lg:gap-5 justify-between font-medium md:p-0 rounded-lg md:flex-row md:mt-0 md:border-0">
+                    <ul className="flex flex-col gap-3 md:text-sm lg:gap-5 justify-between items-center font-medium md:p-0 rounded-lg md:flex-row md:mt-0 md:border-0">
                         {links.map((link, index) => (
                             <div key={index}>
                                 {
@@ -167,6 +162,7 @@ function Index() {
                             </div>
                         ))}
 
+                        <Link href={'/register'} className={'px-4 h-fit py-2 bg-sky-600 rounded-lg uppercase hidden lg:block text-white cursor-pointer '}>Register</Link>
                     </ul>
                 </div>}
 
