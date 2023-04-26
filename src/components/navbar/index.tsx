@@ -175,23 +175,23 @@ function Index() {
                         <span className="font-semibold text-2xl tracking-tight text-white mr-3">ICAC3N</span>
                         <Dropdown title={"2023"} dropdown={[
                             {
-                                title: "ICAC3N 2023",
+                                title: "2023",
                                 link: "/",
                             },
                             {
-                                title: "ICAC3N 2022",
+                                title: "2022",
                                 link: "/archive/2022",
                             },
                             {
-                                title: "ICAC3N 2021",
+                                title: "2021",
                                 link: "/archive/2021",
                             },
                             {
-                                title: "ICAC3N 2020",
+                                title: "2020",
                                 link: "/archive/2020",
                             },
                             {
-                                title: "ICAC3N 2018",
+                                title: "2018",
                                 link: "/archive/2018",
                             },
                         ]}/>
