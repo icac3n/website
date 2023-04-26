@@ -84,7 +84,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div
-                            className={"md:ml-5 flex space-x-3 text-2xl text-red-800 mt-1 items-center lg:justify-start justify-center"}>
+                            className={"md:ml-6 flex space-x-3 text-2xl text-red-800 mt-1 items-center lg:justify-start justify-center"}>
                             <RiTwitterFill className={'cursor-pointer'}/>
                             <RiPhoneFill className={'cursor-pointer'}/>
                             <RiFacebookBoxFill className={'cursor-pointer'}/>
