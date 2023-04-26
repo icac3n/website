@@ -46,7 +46,7 @@ const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string,
     }
 
     return (
-        <li ref={dropdownRef} onClick={dropToggle} className={"cursor-pointer relative"}>
+        <li ref={dropdownRef} onClick={dropToggle} className={"cursor-pointer relative list-none"}>
                                          <span
                                              className={`${title.includes("20") ? "py-2 mt-1 px-3 text-xs grow-on-hover bg-red-900 rounded" : ""} inline-flex items-center text-white`}>
                                              {ifArchiveUrl(asPath) ? getYearFromPath(asPath) : title}
@@ -172,7 +172,7 @@ function Index() {
                         <img src="/icac3nlogo.png" onClick={() => {
                             router.push("/")
                         }} className="mr-3 h-12 object-cover" alt="Logo"/>
-                        <span className="font-semibold text-2xl tracking-tight text-white">ICAC3N</span>
+                        <span className="font-semibold text-2xl tracking-tight text-white mr-3">ICAC3N</span>
                         <Dropdown title={"2023"} dropdown={[
                             {
                                 title: "ICAC3N 2023",
