@@ -48,7 +48,7 @@ const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string,
     return (
         <li ref={dropdownRef} onClick={dropToggle} className={"cursor-pointer relative"}>
                                          <span
-                                             className={`${title.includes("202") ? "py-2 px-3 grow-on-hover bg-red-900 rounded" : ""} inline-flex items-center text-white`}>
+                                             className={`${title.includes("20") ? "py-2 mt-1 px-3 text-xs grow-on-hover bg-red-900 rounded" : ""} inline-flex items-center text-white`}>
                                              {ifArchiveUrl(asPath) ? getYearFromPath(asPath) : title}
                                              <AiFillCaretDown
                                                  className={`ml-1 ${dropOpen ? 'rotate-180' : ''}`}/>
@@ -127,32 +127,32 @@ function Index() {
             link: "/contact",
             enabled: true,
         },
-        {
-            title: "2023",
-            dropdown: [
-                {
-                    title: "ICAC3N 2023",
-                    link: "/",
-                },
-                {
-                    title: "ICAC3N 2022",
-                    link: "archive/2022",
-                },
-                {
-                    title: "ICAC3N 2021",
-                    link: "archive/2021",
-                },
-                {
-                    title: "ICAC3N 2020",
-                    link: "archive/2020",
-                },
-                {
-                    title: "ICAC3N 2018",
-                    link: "archive/2018",
-                },
-            ],
-            enabled: true,
-        }
+        // {
+        //     title: "2023",
+        //     dropdown: [
+        //         {
+        //             title: "ICAC3N 2023",
+        //             link: "/",
+        //         },
+        //         {
+        //             title: "ICAC3N 2022",
+        //             link: "/archive/2022",
+        //         },
+        //         {
+        //             title: "ICAC3N 2021",
+        //             link: "archive/2021",
+        //         },
+        //         {
+        //             title: "ICAC3N 2020",
+        //             link: "archive/2020",
+        //         },
+        //         {
+        //             title: "ICAC3N 2018",
+        //             link: "archive/2018",
+        //         },
+        //     ],
+        //     enabled: true,
+        // }
     ]
 
     const [menuOpen, setMenu] = useState(true);
@@ -173,6 +173,28 @@ function Index() {
                             router.push("/")
                         }} className="mr-3 h-12 object-cover" alt="Logo"/>
                         <span className="font-semibold text-2xl tracking-tight text-white">ICAC3N</span>
+                        <Dropdown title={"2023"} dropdown={[
+                            {
+                                title: "ICAC3N 2023",
+                                link: "/",
+                            },
+                            {
+                                title: "ICAC3N 2022",
+                                link: "/archive/2022",
+                            },
+                            {
+                                title: "ICAC3N 2021",
+                                link: "/archive/2021",
+                            },
+                            {
+                                title: "ICAC3N 2020",
+                                link: "/archive/2020",
+                            },
+                            {
+                                title: "ICAC3N 2018",
+                                link: "/archive/2018",
+                            },
+                        ]}/>
                     </Link>
 
                     <div className={'flex flex-row gap-1 justify-normal items-center'}>
