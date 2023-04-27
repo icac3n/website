@@ -75,7 +75,7 @@ const Home = () => {
                     className={"flex lg:flex-row flex-col gap-5 items-center justify-center lg:text-start text-center mt-2"}>
                     <div className={"flex flex-col justify-between h-full self-start"}>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
-                            <RiCalendarTodoFill className={"hidden lg:block text-red-800"}/>
+                            <RiCalendarTodoFill className={"hidden text-xl lg:block text-red-800"}/>
                             <p className={"text-red-800 font-semibold"}>15th and 16th December 2023</p>
                         </div>
 
@@ -84,7 +84,7 @@ const Home = () => {
                             Computing,
                             Communication Control and Networking- ICAC3N</p>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
-                            <RiMapPin2Fill className={"hidden mt-1 self-start lg:block text-red-800"}/>
+                            <RiMapPin2Fill className={"hidden text-xl mt-1 self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
                                 <p className={"font-semibold text"}>Galgotias College of Engineering And
                                     Technology</p>
