@@ -20,7 +20,6 @@ import ImportantDates from "../components/importantDates";
 import ImportantDownloads from "../components/importantDownloads";
 import React from "react";
 import ImportantMessage from "@/components/importantMessage";
-import speakersData from '../../data/speakers.json'
 import Button from "@/components/button";
 import Link from "next/link";
 import {speakers} from "@/data/speakers";
@@ -94,16 +93,16 @@ const Home = () => {
                         <div
                             className={"flex space-x-5 text-2xl text-red-800 mt-4 items-center lg:justify-start justify-center"}>
                             <Link href={"https://twitter.com/icac3n"}>
-                                <RiTwitterFill className={'cursor-pointer grow-on-hover hover:text-red-600'}/>
+                                <RiTwitterFill className={'cursor-pointer grow-on-hover hover:text-sky-500'}/>
                             </Link>
                             <Link href={"tel:+91-7835878146"}>
-                                <RiPhoneFill className={'cursor-pointer  grow-on-hover hover:text-red-600'}/>
+                                <RiPhoneFill className={'cursor-pointer  grow-on-hover hover:text-emerald-500'}/>
                             </Link>
                             <Link href={"https://www.facebook.com/IEEE.ICAC3N.21"}>
-                                <RiFacebookBoxFill className={'cursor-pointer  grow-on-hover hover:text-red-600'}/>
+                                <RiFacebookBoxFill className={'cursor-pointer  grow-on-hover hover:text-indigo-700'}/>
                             </Link>
                             <Link href={"mailto:vishnu.sharma@galgotiacollege.edu"}>
-                                <RiMailFill className={'cursor-pointer  grow-on-hover hover:text-red-600'}/>
+                                <RiMailFill className={'cursor-pointer  grow-on-hover hover:text-amber-400'}/>
                             </Link>
                         </div>
                         {/*<Link href="#"*/}
