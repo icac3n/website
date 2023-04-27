@@ -157,15 +157,7 @@ const Home = () => {
                             <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
                                 ICACCCN</h2>
                             <p className={'text-justify'}>
-                                Galgotias Educational Institutions (GEI) have been inculcating practical skills and
-                                creating ‘Global Professionals’ for more than 18 years. Founded by Smt. Shakuntala
-                                Educational and Welfare Society, Galgotia Educational Institutions is currently led by
-                                Mr. Suneel Galgotia, Chairman and a resolute visionary. Galgotias College of Engineering
-                                & Technology is placed among the best in professional education in Dr. APJ Abdul Kalam
-                                Technical University (Formerly U.P. Technical University). It has achieved top positions
-                                in MBA, MCA and B.Tech. finals and has a record of 100% placements with the best
-                                corporate houses. It has also been ranked amongst the top engineering colleges in India
-                                by DATAQUEST NASSCOM survey and OUTLOOK-C For College Survey.
+                                ICAC3N is a prestigious international conference that brings together top researchers, scientists, engineers, and scholars from around the world to share their latest research findings and experiences in computing, communication control, and networking. Featuring keynote speeches, technical sessions, and workshops, the conference covers a wide range of topics such as cloud computing, AI, wireless communication systems, IoT, and cybersecurity. Organized annually by IEEE at various global locations, ICAC3N offers a stimulating platform for participants to network, collaborate and engage with experts in their fields. The conference proceedings are published on IEEE Xplore, making it accessible to researchers and scholars worldwide.
                             </p>
                             <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
                             <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
@@ -184,16 +176,8 @@ const Home = () => {
                             <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
                             <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About CSE
                                 Department</h2>
-                            <p className={'text-justify'}>
-                                Galgotias Educational Institutions (GEI) have been inculcating practical skills and
-                                creating ‘Global Professionals’ for more than 18 years. Founded by Smt. Shakuntala
-                                Educational and Welfare Society, Galgotia Educational Institutions is currently led by
-                                Mr. Suneel Galgotia, Chairman and a resolute visionary. Galgotias College of Engineering
-                                & Technology is placed among the best in professional education in Dr. APJ Abdul Kalam
-                                Technical University (Formerly U.P. Technical University). It has achieved top positions
-                                in MBA, MCA and B.Tech. finals and has a record of 100% placements with the best
-                                corporate houses. It has also been ranked amongst the top engineering colleges in India
-                                by DATAQUEST NASSCOM survey and OUTLOOK-C For College Survey.
+                            <p className={'text-justify whitespace-pre-wrap'}>
+                                The Computer Science & Engineering Department at GCET offers a UG program in Computer Science and Engineering. It has experienced faculty members, well-equipped labs, and promotes industry-institute collaboration. The department focuses on research areas such as Computer Networks, Database Systems, Multimedia, Image Processing, Software Engineering, Computer Architecture, Information System – Security and Data Mining. Students get opportunities to work on state-of-the-art projects, gain real-world experience, and have good alumni and industry relations. Galgotias Computer Science graduates get recruited by industry-leading companies.
                             </p>
 
                         </div>
@@ -205,60 +189,62 @@ const Home = () => {
                     </div>
                 </div>
                 <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
+                {/*<div>*/}
+                {/*    <div className={'flex flex-row items-center mx-5 md:mx-auto'}>*/}
+                {/*        <h1 className='text-2xl text-black font-extrabold my-5'>Hon&apos;ble Speakers</h1>*/}
+                {/*        /!*<h4 className='text-md text-blue-500 font-regular my-5 ml-2 hover:underline cursor-pointer'>( view all )</h4>*!/*/}
+                {/*    </div>*/}
 
-                <div className={'flex flex-row items-center mx-5 md:mx-auto'}>
-                    <h1 className='text-2xl text-black font-extrabold my-5'>Hon&apos;ble Speakers</h1>
-                    {/*<h4 className='text-md text-blue-500 font-regular my-5 ml-2 hover:underline cursor-pointer'>( view all )</h4>*/}
-                </div>
+                {/*    <div className={'w-full bg-gray-100 p-4 rounded-lg'}>*/}
+                {/*        <Swiper*/}
+                {/*            slidesPerView={1}*/}
+                {/*            spaceBetween={10}*/}
+                {/*            breakpoints={{*/}
+                {/*                640: {*/}
+                {/*                    slidesPerView: 2,*/}
+                {/*                    spaceBetween: 20,*/}
+                {/*                },*/}
+                {/*                768: {*/}
+                {/*                    slidesPerView: 4,*/}
+                {/*                    spaceBetween: 40,*/}
+                {/*                }*/}
+                {/*            }}*/}
+                {/*            grabCursor={true}*/}
+                {/*            autoplay={{*/}
+                {/*                delay: 1000,*/}
+                {/*                disableOnInteraction: false,*/}
+                {/*                stopOnLastSlide: false,*/}
+                {/*                reverseDirection: true*/}
+                {/*            }}*/}
+                {/*            loop={true}*/}
+                {/*            modules={[Autoplay]}*/}
+                {/*            className="mySwiper mx-auto"*/}
+                {/*        >*/}
+                {/*        {*/}
+                {/*            speakers.map((speaker, index) => {*/}
+                {/*                return (*/}
+                {/*                    <SwiperSlide key={index}>*/}
+                {/*                        <div className={'col-span-1 flex flex-col items-center'}>*/}
+                {/*                            <img src={speaker.image} alt={"Speaker's Photo"}*/}
+                {/*                                 className={'h-56 border-2 border-gray-300 w-64 object-cover mb-5 rounded-lg shadow-md'}/>*/}
+                {/*                            <span className={'font-bold text-sm text-center'}>{speaker.name}</span>*/}
+                {/*                            <span*/}
+                {/*                                className={'font-light text-xs text-center'}>{speaker.designation}</span>*/}
+                {/*                        </div>*/}
+                {/*                    </SwiperSlide>*/}
+                {/*                )*/}
+                {/*            })*/}
+                {/*        }*/}
+                {/*        </Swiper>*/}
+                {/*    </div>*/}
 
-                <div className={'w-full bg-gray-100 p-4 rounded-lg'}>
-                    <Swiper
-                        slidesPerView={1}
-                        spaceBetween={10}
-                        breakpoints={{
-                            640: {
-                                slidesPerView: 2,
-                                spaceBetween: 20,
-                            },
-                            768: {
-                                slidesPerView: 4,
-                                spaceBetween: 40,
-                            }
-                        }}
-                        grabCursor={true}
-                        autoplay={{
-                            delay: 1000,
-                            disableOnInteraction: false,
-                            stopOnLastSlide: false,
-                            reverseDirection: true
-                        }}
-                        loop={true}
-                        modules={[Autoplay]}
-                        className="mySwiper mx-auto"
-                    >
-                        {
-                            speakers.map((speaker, index) => {
-                                return (
-                                    <SwiperSlide key={index}>
-                                        <div className={'col-span-1 flex flex-col items-center'}>
-                                            <img src={speaker.image} alt={"Speaker's Photo"}
-                                                 className={'h-56 border-2 border-gray-300 w-64 object-cover mb-5 rounded-lg shadow-md'}/>
-                                            <span className={'font-bold text-sm text-center'}>{speaker.name}</span>
-                                            <span
-                                                className={'font-light text-xs text-center'}>{speaker.designation}</span>
-                                        </div>
-                                    </SwiperSlide>
-                                )
-                            })
-                        }
-                    </Swiper>
-                </div>
-
-                <div className={'col-span-1 flex flex-col items-center gap-2 justify-center my-5'}>
-                    <Button link={'/speakers'}
-                            className={'bg-sky-600 hover:bg-sky-700 shrink-on-hover focus:ring-4 focus:ring-sky-300 no-underline dark:focus:ring-sky-700'}
-                            hideIcon={false}>View all</Button>
-                </div>
+                {/*    <div className={'col-span-1 flex flex-col items-center gap-2 justify-center my-5'}>*/}
+                {/*        <Button link={'/speakers'}*/}
+                {/*                className={'bg-sky-600 hover:bg-sky-700 shrink-on-hover focus:ring-4 focus:ring-sky-300 no-underline dark:focus:ring-sky-700'}*/}
+                {/*                hideIcon={false}>View all</Button>*/}
+                {/*    </div>*/}
+                {/*    */}
+                {/*</div>*/}
             </main>
         </>
     )

@@ -5,18 +5,7 @@ import Link from "next/link";
 const impDownloadData = [
     {
         title: "Paper Format",
-        link: "#",
-        isImportant: false,
-        enabled: true,
-    },
-    {
-        title: "Program Schedule",
-        link: "#",
-        isImportant: true,
-        enabled: true,
-    }, {
-        title: "Guidelines",
-        link: "#",
+        link: "/documents/PAPER_ID_ICAC3N23.docx",
         isImportant: false,
         enabled: true,
     },

@@ -3,40 +3,41 @@ import React from "react";
 const impDateData = [
     {
         title: "Paper Submission Guidelines",
-        date: "13/04/2023",
+        date: "10/04/2023",
 
         isImportant: false,
         enabled: true,
     },
     {
         title: "Paper Submission Deadline",
-        date: "13/04/2023",
+        date: "31/07/2023",
 
         isImportant: true,
         enabled: true,
     }, {
         title: "Acceptance Notification",
-        date: "13/04/2023",
+        subtitle: "(within 4weeks from submission)",
+        date: "31/08/2023",
 
         isImportant: false,
         enabled: true,
     },
     {
         title: "Registration",
-        date: "13/04/2023",
+        date: "30/09/2023",
 
         isImportant: false,
         enabled: true,
     }, {
         title: "Camera Ready Paper",
-        date: "13/04/2023",
+        date: "30/09/2023",
 
         isImportant: false,
         enabled: true,
     },
     {
         title: "Conference Date",
-        date: "13/04/2023",
+        date: "15th - 16th December 2023",
 
         isImportant: false,
         enabled: true,
@@ -58,6 +59,7 @@ export default function ImportantDates() {
                                     <div className={"flex space-x-2 items-start"}>
                                         <div>
                                             <p className={"font-medium"}>{item.title}</p>
+                                            <p className={"font-light text-sm"}>{item?.subtitle}</p>
                                             <p className={"text-sm text-gray-500"}>{item.date}</p>
                                         </div>
                                         {index === 0 &&

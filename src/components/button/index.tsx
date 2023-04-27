@@ -6,7 +6,7 @@ export default function Button({
                                    hideIcon = false,
                                    children,
                                    className
-                               }: { link: string, children: React.ReactNode, className: string, hideIcon: boolean }) {
+                               }: { link: string , children?: React.ReactNode | string, className?: string | null, hideIcon?: boolean | null }) {
     return (
         <div>
             <Link href={link}

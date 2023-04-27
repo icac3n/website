@@ -48,16 +48,15 @@ const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string,
 
     return (
         <li ref={dropdownRef} onClick={dropToggle} className={"cursor-pointer relative list-none"}>
-                                         <span
-                                             className={`${title.includes("20") ? "py-2 mt-1 px-3 text-xs grow-on-hover bg-red-900 rounded" : ""} inline-flex items-center text-white`}>
-                                             {ifArchiveUrl(asPath) && title.includes("20") ? getYearFromPath(asPath) : title.toUpperCase()}
-                                             <AiFillCaretDown
-                                                 className={`ml-1 ${dropOpen ? 'rotate-180' : ''}`}/>
-                                         </span>
+             <span
+                 className={`${title.includes("20") ? "py-2 mt-1 px-3 text-xs grow-on-hover bg-red-900 rounded" : ""} inline-flex items-center text-white`}>
+                 {ifArchiveUrl(asPath) && title.includes("20") ? getYearFromPath(asPath) : title.toUpperCase()}
+                 <AiFillCaretDown
+                     className={`ml-1 ${dropOpen ? 'rotate-180' : ''}`}/>
+             </span>
             {
                 dropOpen &&
-                <div id="dropNav"
-                     className={"md:absolute -left-1/2 mt-3 z-10 font-normal bg-amber-100 divide-y divide-amber-800 rounded shadow-lg md:w-52 w-full"}>
+                <div id="dropNav" className={"md:absolute -left-1/2 mt-3 z-10 font-normal bg-amber-100 divide-y divide-amber-800 rounded shadow-lg md:w-52 w-full"}>
                     <ul className="py-2 text-sm font-semibold   text-gray-700">
                         {
                             dropdown.map((item, index) => {

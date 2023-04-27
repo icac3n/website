@@ -14,28 +14,22 @@ const MessageFlashSlider = () => {
     const messages = [
         {
             id: 1,
-            message: "Don't miss out on the keynote speech by Prof. (Dr.) Pradeep Kumar Mishra at 2 PM today!",
-            link: "/",
-            date: "24 Apr 2023"
+            message: "5th IEEE ICAC3N-23 paper submission link is valid until July 31, 2023.",
+            link: "/registration",
+            date: "27 Apr 2023"
         },
         {
             id: 2,
-            message: "Join us for the panel discussion on 'The Future of AI' at 4 PM today.",
-            link: "/",
-            date: "24 Apr 2023"
+            message: " 4th IEEE ICAC3N-22 Proceeding is available Online now on IEEE Xplore.",
+            link: "https://ieeexplore.ieee.org/xpl/conhome/10073967/proceeding",
+            date: "27 Apr 2023"
         },
         {
             id: 3,
-            message: "The poster presentation session is now open! Come explore the latest research in computer science and engineering.",
-            link: "/",
-            date: "25 Apr 2023"
+            message: "CONFERENCE WILL BE HELD IN BLENDED MODE (ONLINE AND OFFLINE BOTH)",
+            link: "#",
+            date: "27 Apr 2023"
         },
-        {
-            id: 4,
-            message: "Don't forget to attend the closing ceremony at 6 PM tomorrow, where we'll announce the winners of the best paper award.",
-            link: "/",
-            date: "26 Apr 2023"
-        }
     ];
 
 
