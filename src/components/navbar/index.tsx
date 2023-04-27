@@ -108,11 +108,6 @@ function Index() {
             enabled: true,
         },
         {
-            title: "Contact",
-            link: "/contact",
-            enabled: true,
-        },
-        {
             title: "Archive",
             dropdown: [
                 {
@@ -136,6 +131,11 @@ function Index() {
                     link: "/archive/2018",
                 }
             ],
+            enabled: true,
+        },
+        {
+            title: "Contact",
+            link: "/contact",
             enabled: true,
         },
     ]
