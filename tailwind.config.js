@@ -1,4 +1,4 @@
-    /** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */
 
 module.exports = {
     content: [
@@ -63,11 +63,12 @@ module.exports = {
             }
         }
     },
-    plugins:[
-    require('prettier-plugin-tailwindcss'),
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/line-clamp'),
-],
-    darkMode:"class",
+    plugins: [
+        require('prettier-plugin-tailwindcss'),
+        require('@tailwindcss/forms'),
+        require('@tailwindcss/typography'),
+        require('@tailwindcss/line-clamp'),
+        require('tailwind-scrollbar')({nocompatible: true}),
+    ],
+    darkMode: "class",
 }

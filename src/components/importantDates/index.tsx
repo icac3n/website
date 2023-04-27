@@ -50,7 +50,7 @@ export default function ImportantDates() {
                 <div className={"mt-5 p-4 rounded-t-md bg-gray-200 bg-gray-200 border-l-4 border-red-600 w-full lg:max-w-sm lg:min-w-lg"}>
                     <p className={"font-semibold text-lg"}>Important Dates</p>
                 </div>
-                <div className={"p-4 rounded-b-md bg-gray-100 w-full lg:max-w-sm"}>
+                <div className={"p-4 rounded-b-md bg-gray-100 w-full lg:max-w-sm lg:max-h-80 lg:overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-md scrollbar-track-gray-200"}>
                     {
                         impDateData.map((item, index) => {
                             return (

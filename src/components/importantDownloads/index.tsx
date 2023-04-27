@@ -2,7 +2,7 @@ import React from "react";
 import {BsChevronRight} from "react-icons/bs";
 import Link from "next/link";
 
-const impDateData = [
+const impDownloadData = [
     {
         title: "Paper Format",
         link: "#",
@@ -19,7 +19,7 @@ const impDateData = [
         link: "#",
         isImportant: false,
         enabled: true,
-    }
+    },
 ]
 
 export default function ImportantDownloads() {
@@ -29,9 +29,9 @@ export default function ImportantDownloads() {
             <div className={"mt-5 p-4 rounded-t-md bg-gray-200 border-l-4 border-red-600 w-full lg:max-w-sm"}>
                 <p className={"font-semibold text-lg"}>Important Downloads</p>
             </div>
-            <div className={"space-y-3 p-4 rounded-b-md bg-gray-100 w-full lg:max-w-sm"}>
+            <div className={"space-y-3 p-4 rounded-b-md bg-gray-100 w-full lg:max-w-sm lg:max-h-52 lg:overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-md scrollbar-track-gray-200"}>
                 {
-                    impDateData.map((item, index) => {
+                    impDownloadData.map((item, index) => {
                         return (
                             <Link key={index} href={item.link} className={"cursor-pointer"}>
                                 <div className={"flex items-start justify-between"}>
@@ -55,7 +55,7 @@ export default function ImportantDownloads() {
 
 
                                 </div>
-                                {index !== impDateData.length - 1 &&
+                                {index !== impDownloadData.length - 1 &&
                                     <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700"/>
                                 }
                             </Link>

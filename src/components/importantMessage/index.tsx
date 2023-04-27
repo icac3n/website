@@ -26,7 +26,7 @@ export default function ImportantMessage() {
             <div className={"mt-5 p-4 rounded-t-md bg-gray-200 border-l-4 border-red-600 w-full lg:max-w-sm"}>
                 <p className={"font-semibold text-lg"}>Important Notices</p>
             </div>
-            <div className={"space-y-3 p-4 rounded-b-md bg-gray-100 w-full lg:max-w-sm"}>
+            <div className={"space-y-3 p-4 rounded-b-md bg-gray-100 w-full lg:max-w-sm lg:max-h-52 lg:overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-md scrollbar-track-gray-200"}>
                 {
                     impImpData.map((item, index) => {
                         return (
