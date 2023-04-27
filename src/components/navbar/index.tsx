@@ -5,6 +5,7 @@ import Link from "next/link";
 import * as path from "path";
 import Button from "@/components/button";
 
+
 const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string, link: string }[] }) => {
     const [dropOpen, setDropOpen] = useState(false);
     const dropdownRef = useRef(null);
@@ -29,35 +30,19 @@ const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string,
         };
     }, []);
 
-    const ifArchiveUrl = (url: string) => {
-        const regex = /\/archive\/20\d{2}/;
-        console.log({test: regex.test(url)})
-        return regex.test(url);
-    }
-
-    const getYearFromPath = (path: string) => {
-        const regex = /\/archive\/(\d{4})/; // Matches "/archive/" followed by four digits
-        const match = path.match(regex);
-        console.log({match})
-        if (match) {
-            return match[1];
-        } else {
-            return ""
-        }
-    }
-
     return (
-        <li ref={dropdownRef} onClick={dropToggle} className={"cursor-pointer relative list-none"}>
+        <li ref={dropdownRef} onClick={dropToggle} className={"cursor-pointer relative list-none w-full"}>
              <span
                  className={`${title.includes("20") ? "py-2 mt-1 px-3 text-xs grow-on-hover bg-red-900 rounded" : ""} inline-flex items-center text-white`}>
-                 {ifArchiveUrl(asPath) && title.includes("20") ? getYearFromPath(asPath) : title.toUpperCase()}
+                 {title.toUpperCase()}
                  <AiFillCaretDown
                      className={`ml-1 ${dropOpen ? 'rotate-180' : ''}`}/>
              </span>
             {
                 dropOpen &&
-                <div id="dropNav" className={"md:absolute -left-1/2 mt-3 z-10 font-normal bg-amber-100 divide-y divide-amber-800 rounded shadow-lg md:w-52 w-full"}>
-                    <ul className="py-2 text-sm font-semibold   text-gray-700">
+                <div id="dropNav"
+                     className={"md:absolute -left-1/2 mt-3 z-10 font-normal bg-amber-100 divide-y divide-amber-800 rounded shadow-lg md:w-52 w-full"}>
+                    <ul className="py-2 text-sm font-semibold text-gray-700 w-full">
                         {
                             dropdown.map((item, index) => {
                                 return (
@@ -127,32 +112,32 @@ function Index() {
             link: "/contact",
             enabled: true,
         },
-        // {
-        //     title: "2023",
-        //     dropdown: [
-        //         {
-        //             title: "ICAC3N 2023",
-        //             link: "/",
-        //         },
-        //         {
-        //             title: "ICAC3N 2022",
-        //             link: "/archive/2022",
-        //         },
-        //         {
-        //             title: "ICAC3N 2021",
-        //             link: "archive/2021",
-        //         },
-        //         {
-        //             title: "ICAC3N 2020",
-        //             link: "archive/2020",
-        //         },
-        //         {
-        //             title: "ICAC3N 2018",
-        //             link: "archive/2018",
-        //         },
-        //     ],
-        //     enabled: true,
-        // }
+        {
+            title: "Archive",
+            dropdown: [
+                {
+                    title: "2023",
+                    link: "/",
+                },
+                {
+                    title: "2022",
+                    link: "/archive/2022",
+                },
+                {
+                    title: "2021",
+                    link: "/archive/2021",
+                },
+                {
+                    title: "2020",
+                    link: "/archive/2020",
+                },
+                {
+                    title: "2018",
+                    link: "/archive/2018",
+                }
+            ],
+            enabled: true,
+        },
     ]
 
     const [menuOpen, setMenu] = useState(true);
@@ -173,28 +158,7 @@ function Index() {
                             router.push("/")
                         }} className="mr-3 h-12 object-cover" alt="Logo"/>
                         <span className="font-semibold text-2xl tracking-tight text-white mr-3">ICAC3N</span>
-                        <Dropdown title={"2023"} dropdown={[
-                            {
-                                title: "2023",
-                                link: "/",
-                            },
-                            {
-                                title: "2022",
-                                link: "/archive/2022",
-                            },
-                            {
-                                title: "2021",
-                                link: "/archive/2021",
-                            },
-                            {
-                                title: "2020",
-                                link: "/archive/2020",
-                            },
-                            {
-                                title: "2018",
-                                link: "/archive/2018",
-                            },
-                        ]}/>
+
                     </Link>
 
                     <div className={'flex flex-row gap-1 justify-normal items-center'}>
@@ -217,9 +181,9 @@ function Index() {
                 </div>
 
                 {menuOpen && <div className={"w-full md:block lg:w-auto"}>
-                    <ul className="flex flex-col gap-3 md:text-sm lg:gap-5 justify-between items-center font-medium md:p-0 rounded-lg md:flex-row md:mt-0 md:border-0">
+                    <ul className="flex flex-col gap-3 md:text-sm lg:gap-5 justify-between md:items-center items-start font-medium md:p-0 rounded-lg md:flex-row md:mt-0 md:border-0">
                         {links.map((link, index) => (
-                            <div key={index}>
+                            <div key={index} className={'md:w-auto w-full'}>
                                 {
                                     link.enabled && link.link &&
                                     <>
@@ -238,7 +202,9 @@ function Index() {
                             </div>
                         ))}
 
-                        <Button link={'/register'} className={'hidden lg:block bg-sky-600 hover:bg-sky-700 shrink-on-hover focus:ring-4 focus:ring-sky-300 no-underline dark:focus:ring-sky-700'} hideIcon={true}>Register</Button>
+                        <Button link={'/register'}
+                                className={'hidden lg:block bg-sky-600 hover:bg-sky-700 shrink-on-hover focus:ring-4 focus:ring-sky-300 no-underline dark:focus:ring-sky-700'}
+                                hideIcon={true}>Register</Button>
                     </ul>
                 </div>}
 

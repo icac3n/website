@@ -1,7 +1,5 @@
-import speakerData from "../../../data/speakers.json";
-import proceedingData from "../../../data/proceedings.json";
 import Head from "next/head";
-import {RiFacebookBoxFill, RiMailFill, RiMapPin2Fill, RiPhoneFill, RiTwitterFill} from "react-icons/ri";
+import {RiMapPin2Fill} from "react-icons/ri";
 import {Swiper, SwiperSlide} from "swiper/react";
 
 // Import Swiper styles
@@ -13,7 +11,7 @@ import "swiper/css/pagination";
 import {Autoplay} from "swiper";
 import React from "react";
 import Button from "@/components/button";
-import Link from "next/link";
+import {archive} from "@/data/archive";
 
 const Post = ({content, year}: {
     content: {
@@ -25,31 +23,35 @@ const Post = ({content, year}: {
 }) => {
     const sliderImages = [
         {
-            "image": "https://icac3n.in/static/media/img3.25e0387944fcd08c4ffb.png",
+            "image": "/images/slider/image1.jpeg",
             "id": "a1b2c3d4",
             "alt": "image1"
         },
         {
-            "image": "https://icac3n.in/ICAC3N_2023/Header_ICAC3n-2023.jpeg",
+            "image": "/images/slider/image2.jpg",
             "id": "e5f6g7h8",
             "alt": "image2"
         },
         {
-            "image": "https://icac3n.in/static/media/img2.22f091ab3b6579b31a5a.jpg",
+            "image": "/images/slider/image3.jpg",
             "id": "i9j0k1l2",
             "alt": "image3"
         },
         {
-            "image": "https://icac3n.in/static/media/img4.5251edd07948620003f8.jpg",
+            "image": "/images/slider/image4.jpg",
             "id": "i9j0k1l2",
             "alt": "image3"
         },
         {
-            "image": "https://unsplash.it/1080/2000?random=3434",
+            "image": "/images/slider/image5.png",
             "id": "i9j0k1l2",
             "alt": "image3"
         },
-
+        {
+            "image": "/images/slider/image6.jpg",
+            "id": "i9j0k1l2",
+            "alt": "image3"
+        },
     ]
 
     // @ts-ignore
@@ -69,7 +71,8 @@ const Post = ({content, year}: {
                         <div className={"rounded-full mx-auto lg:mx-0 w-fit bg-red-600 bg-opacity-20"}>
                             <p className={"px-3 py-0.5 lg:text-base text-sm text-red-800"}>Archive</p>
                         </div>
-                        <p className={"text-3xl lg:text-4xl my-3 lg:my-5 font-bold mx-4 lg:mx-0"}>International Conference on
+                        <p className={"text-3xl lg:text-4xl my-3 lg:my-5 font-bold mx-4 lg:mx-0"}>International
+                            Conference on
                             Advances in
                             Computing,
                             Communication Control and Networking- ICAC3N {year}</p>
@@ -83,7 +86,8 @@ const Post = ({content, year}: {
                         </div>
                         <div className={"mt-5"}>
                             {/*@ts-ignore*/}
-                            <Button link={proceedingData[year]} className={""} hideIcon={false}>Proceedings on IEEE Xplore</Button>
+                            <Button link={archive[year].proceeding} className={""} hideIcon={false}>Proceedings on IEEE
+                                Xplore</Button>
                         </div>
                     </div>
                     <div className={"lg:w-[60%] flex h-full w-full px-5"}>
@@ -131,51 +135,88 @@ const Post = ({content, year}: {
                             <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
                                 ICACCCN</h2>
                             <p className={'text-justify'}>
-                                Galgotias Educational Institutions (GEI) have been inculcating practical skills and
-                                creating ‘Global Professionals’ for more than 18 years. Founded by Smt. Shakuntala
-                                Educational and Welfare Society, Galgotia Educational Institutions is currently led by
-                                Mr. Suneel Galgotia, Chairman and a resolute visionary. Galgotias College of Engineering
-                                & Technology is placed among the best in professional education in Dr. APJ Abdul Kalam
-                                Technical University (Formerly U.P. Technical University). It has achieved top positions
-                                in MBA, MCA and B.Tech. finals and has a record of 100% placements with the best
-                                corporate houses. It has also been ranked amongst the top engineering colleges in India
-                                by DATAQUEST NASSCOM survey and OUTLOOK-C For College Survey.
+                                ICAC3N is a prestigious international conference that brings together top researchers, scientists, engineers, and scholars from around the world to share their latest research findings and experiences in computing, communication control, and networking. Featuring keynote speeches, technical sessions, and workshops, the conference covers a wide range of topics such as cloud computing, AI, wireless communication systems, IoT, and cybersecurity. Organized annually by IEEE at various global locations, ICAC3N offers a stimulating platform for participants to network, collaborate and engage with experts in their fields. The conference proceedings are published on IEEE Xplore, making it accessible to researchers and scholars worldwide.
                             </p>
-                            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
-                            <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
-                                College</h2>
-                            <p className={'text-justify'}>
-                                Galgotias Educational Institutions (GEI) have been inculcating practical skills and
-                                creating ‘Global Professionals’ for more than 18 years. Founded by Smt. Shakuntala
-                                Educational and Welfare Society, Galgotia Educational Institutions is currently led by
-                                Mr. Suneel Galgotia, Chairman and a resolute visionary. Galgotias College of Engineering
-                                & Technology is placed among the best in professional education in Dr. APJ Abdul Kalam
-                                Technical University (Formerly U.P. Technical University). It has achieved top positions
-                                in MBA, MCA and B.Tech. finals and has a record of 100% placements with the best
-                                corporate houses. It has also been ranked amongst the top engineering colleges in India
-                                by DATAQUEST NASSCOM survey and OUTLOOK-C For College Survey.
-                            </p>
-                            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
-                            <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About CSE
-                                Department</h2>
-                            <p className={'text-justify'}>
-                                Galgotias Educational Institutions (GEI) have been inculcating practical skills and
-                                creating ‘Global Professionals’ for more than 18 years. Founded by Smt. Shakuntala
-                                Educational and Welfare Society, Galgotia Educational Institutions is currently led by
-                                Mr. Suneel Galgotia, Chairman and a resolute visionary. Galgotias College of Engineering
-                                & Technology is placed among the best in professional education in Dr. APJ Abdul Kalam
-                                Technical University (Formerly U.P. Technical University). It has achieved top positions
-                                in MBA, MCA and B.Tech. finals and has a record of 100% placements with the best
-                                corporate houses. It has also been ranked amongst the top engineering colleges in India
-                                by DATAQUEST NASSCOM survey and OUTLOOK-C For College Survey.
-                            </p>
-
                         </div>
-
                     </div>
                 </div>
                 <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
+                <div className={'select-none'}>
+                    <div className={'flex flex-row items-center mx-5 md:mx-auto'}>
+                        <h1 className='text-2xl text-black font-extrabold my-5'>Hon&apos;ble Speakers of {year}</h1>
+                        {/*<h4 className='text-md text-blue-500 font-regular my-5 ml-2 hover:underline cursor-pointer'>( view all )</h4>*/}
+                    </div>
+                    <div className={'w-full bg-gray-100 p-4 rounded-lg'}>
+                        <Swiper
+                            slidesPerView={1}
+                            spaceBetween={10}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 4,
+                                    spaceBetween: 40,
+                                }
+                            }}
+                            grabCursor={true}
+                            autoplay={{
+                                delay: 1000,
+                                disableOnInteraction: false,
+                                stopOnLastSlide: false,
+                                reverseDirection: true
+                            }}
+                            loop={true}
+                            modules={[Autoplay]}
+                            className="mySwiper mx-auto"
+                        >
+                            {
+                                // @ts-ignore
+                                archive[year].speakers.map((speaker, index) => {
+                                    return (
+                                        <SwiperSlide key={index}>
+                                            <div className={'col-span-1 flex flex-col items-center'}>
+                                                <img src={speaker.image} alt={"Speaker's Photo"}
+                                                     className={'h-56 border-2 border-gray-300 w-64 object-cover mb-5 rounded-lg shadow-md'}/>
+                                                <span className={'font-bold text-sm text-center'}>{speaker.name}</span>
+                                                <span
+                                                    className={'font-light text-xs text-center'}>{speaker.designation}</span>
+                                            </div>
+                                        </SwiperSlide>
+                                    )
+                                })
+                            }
+                        </Swiper>
+                    </div>
+                </div>
+                <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
+                <div className={"prose mx-4"}>
+                    <h1 className={"heading text-2xl"}>ORGANISING COMMITTEE</h1>
+                    {
+                        // @ts-ignore
+                        archive[year].organizingCommittee.map((committee, index) => {
+                            return(
+                                <div key={index}>
+                                    <h2 className={"heading"}>{committee.Category}</h2>
+                                    <ul>
+                                        {
+                                            // @ts-ignore
+                                            committee.Members.map((member, index) => {
+                                                return(
+                                                    <li key={index}>
+                                                        {member.Name}, {member.Designation}
+                                                    </li>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                            )
+                        })
+                    }
 
+                </div>
             </main>
         </>
     )
@@ -200,7 +241,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({params}: { params: any }) => {
     console.log({params})
     // @ts-ignore
-    const data = speakerData[params.slug]
+    const data = archive[params.slug].speakers
     return {
         props:
             {content: data, year: params.slug},
