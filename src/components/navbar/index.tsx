@@ -153,10 +153,8 @@ function Index() {
         <nav className="bg-red-800">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between gap-y-6 mx-auto p-4">
                 <div className={'lg:w-fit w-full flex flex-row justify-between items-center'}>
-                    <Link href="#" className="flex items-center">
-                        <img src="/icac3nlogo.png" onClick={() => {
-                            router.push("/")
-                        }} className="mr-3 h-12 object-cover" alt="Logo"/>
+                    <Link href="/" className="flex items-center">
+                        <img src="/icac3nlogo.png" className="mr-3 h-12 object-cover" alt="Logo"/>
                         <span className="font-semibold text-2xl tracking-tight text-white mr-3">ICAC3N</span>
 
                     </Link>

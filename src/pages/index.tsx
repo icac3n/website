@@ -185,7 +185,7 @@ const Home = () => {
                             </p>
 
                         </div>
-                        <div className={"lg:col-span-1 col-span-full"}>
+                        <div id={"important"} className={"lg:col-span-1 col-span-full"}>
                             <ImportantMessage/>
                             <ImportantDates/>
                             <ImportantDownloads/>

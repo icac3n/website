@@ -8,6 +8,7 @@ const Register = () => {
             <h1 className={"heading"}>Registration</h1>
             <p>Learn How to Register for ICAC3N-23: A Guide to Submitting Your Papers for the International Conference
                 on Advances in Computing, Communication Control and Networking.</p>
+            <Button link={"https://forms.gle/8acy23i3UbtwLkFXA"}>Register Now</Button>
             <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700"/>
             <h2 className={"heading"}>Registration Fee</h2>
             <div>

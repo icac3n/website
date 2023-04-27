@@ -23,10 +23,10 @@ const Footer = () => {
                             <h2 className="mb-4 font-semibold uppercase text-white underline">Important</h2>
                             <ul className="text-gray-200 font-medium">
                                 <li className="mb-4">
-                                    <Link href="/importantDates" className="hover:underline">Dates</Link>
+                                    <Link href="#important" className="hover:underline">Dates</Link>
                                 </li>
                                 <li>
-                                    <Link href="/importantDownloads" className="hover:underline">Downloads</Link>
+                                    <Link href="#important" className="hover:underline">Downloads</Link>
                                 </li>
                             </ul>
                         </div>
