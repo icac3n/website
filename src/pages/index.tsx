@@ -21,6 +21,8 @@ import ImportantDownloads from "../components/importantDownloads";
 import React from "react";
 import ImportantMessage from "@/components/importantMessage";
 import speakersData from '../../data/speakers.json'
+import Button from "@/components/button";
+import Link from "next/link";
 
 const Home = () => {
 
@@ -72,23 +74,32 @@ const Home = () => {
                             <p className={"text-red-800 font-semibold"}>15th and 16th December 2023</p>
                         </div>
 
-                        <p className={"text-3xl my-3 lg:my-5 font-bold mx-4 lg:mx-0"}>International Conference on
+                        <p className={"text-4xl lg:text-4xl break-words my-3 lg:my-5 font-bold mx-4 lg:mx-0"}>International Conference on
                             Advances in
                             Computing,
                             Communication Control and Networking</p>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiMapPin2Fill className={"hidden mt-1 self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
-                                <p className={"font-semibold text"}>Galgotia&rsquo;s College of Engineering And Technology</p>
+                                <p className={"font-semibold text"}>Galgotia&rsquo;s College of Engineering And
+                                    Technology</p>
                                 <p className={"text-sm"}>Knowledge Park I, Greater Noida</p>
                             </div>
                         </div>
                         <div
-                            className={"md:ml-6 flex space-x-3 text-2xl text-red-800 mt-1 items-center lg:justify-start justify-center"}>
-                            <RiTwitterFill className={'cursor-pointer'}/>
-                            <RiPhoneFill className={'cursor-pointer'}/>
-                            <RiFacebookBoxFill className={'cursor-pointer'}/>
-                            <RiMailFill className={'cursor-pointer'}/>
+                            className={"flex space-x-5 text-2xl text-red-800 mt-4 items-center lg:justify-start justify-center"}>
+                            <Link href={"https://twitter.com/icac3n"}>
+                                <RiTwitterFill className={'cursor-pointer grow-on-hover hover:text-red-600'}/>
+                            </Link>
+                            <Link href={"tel:+91-7835878146"}>
+                                <RiPhoneFill className={'cursor-pointer  grow-on-hover hover:text-red-600'}/>
+                            </Link>
+                            <Link href={"https://www.facebook.com/IEEE.ICAC3N.21"}>
+                                <RiFacebookBoxFill className={'cursor-pointer  grow-on-hover hover:text-red-600'}/>
+                            </Link>
+                            <Link href={"mailto:vishnu.sharma@galgotiacollege.edu"}>
+                                <RiMailFill className={'cursor-pointer  grow-on-hover hover:text-red-600'}/>
+                            </Link>
                         </div>
                         {/*<Link href="#"*/}
                         {/*   className="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">*/}
@@ -196,7 +207,7 @@ const Home = () => {
                 <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
 
                 <div className={'flex flex-row items-center mx-5 md:mx-auto'}>
-                    <h1 className='text-2xl text-black font-extrabold my-5'>Hon&apos;ble Speaker</h1>
+                    <h1 className='text-2xl text-black font-extrabold my-5'>Hon&apos;ble Speakers</h1>
                     {/*<h4 className='text-md text-blue-500 font-regular my-5 ml-2 hover:underline cursor-pointer'>( view all )</h4>*/}
                 </div>
 
@@ -244,7 +255,9 @@ const Home = () => {
                 </div>
 
                 <div className={'col-span-1 flex flex-col items-center gap-2 justify-center my-5'}>
-                    <button className={'px-4 py-2 text-sm text-white bg-sky-600 w-fit rounded-lg'}>View All</button>
+                    <Button link={'/speakers'}
+                            className={'bg-sky-600 hover:bg-sky-700 shrink-on-hover focus:ring-4 focus:ring-sky-300 no-underline dark:focus:ring-sky-700'}
+                            hideIcon={false}>View all</Button>
                 </div>
             </main>
         </>

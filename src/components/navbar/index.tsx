@@ -3,6 +3,7 @@ import {AiFillCaretDown} from "react-icons/ai";
 import {useRouter} from "next/router";
 import Link from "next/link";
 import * as path from "path";
+import Button from "@/components/button";
 
 const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string, link: string }[] }) => {
     const [dropOpen, setDropOpen] = useState(false);
@@ -238,8 +239,7 @@ function Index() {
                             </div>
                         ))}
 
-                        <Link href={'/register'}
-                              className={'px-4 h-fit py-2 bg-sky-600 rounded-lg uppercase hidden lg:block text-white cursor-pointer '}>Register</Link>
+                        <Button link={'/register'} className={'hidden lg:block bg-sky-600 hover:bg-sky-700 shrink-on-hover focus:ring-4 focus:ring-sky-300 no-underline dark:focus:ring-sky-700'} hideIcon={true}>Register</Button>
                     </ul>
                 </div>}
 
