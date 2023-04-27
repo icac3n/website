@@ -23,10 +23,10 @@ import ImportantMessage from "@/components/importantMessage";
 import speakersData from '../../data/speakers.json'
 import Button from "@/components/button";
 import Link from "next/link";
+import {speakers} from "@/data/speakers";
 
 const Home = () => {
 
-    const speakers = speakersData["2023"]
     const sliderImages = [
         {
             "image": "/images/slider/image1.jpeg",
@@ -194,62 +194,62 @@ const Home = () => {
                     </div>
                 </div>
                 <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
-                {/*<div>*/}
-                {/*    <div className={'flex flex-row items-center mx-5 md:mx-auto'}>*/}
-                {/*        <h1 className='text-2xl text-black font-extrabold my-5'>Hon&apos;ble Speakers</h1>*/}
-                {/*        /!*<h4 className='text-md text-blue-500 font-regular my-5 ml-2 hover:underline cursor-pointer'>( view all )</h4>*!/*/}
-                {/*    </div>*/}
+                <div className={'select-none'}>
+                    <div className={'flex flex-row items-center mx-5 md:mx-auto'}>
+                        <h1 className='text-2xl text-black font-extrabold my-5'>Hon&apos;ble Speakers</h1>
+                        {/*<h4 className='text-md text-blue-500 font-regular my-5 ml-2 hover:underline cursor-pointer'>( view all )</h4>*/}
+                    </div>
 
-                {/*    <div className={'w-full bg-gray-100 p-4 rounded-lg'}>*/}
-                {/*        <Swiper*/}
-                {/*            slidesPerView={1}*/}
-                {/*            spaceBetween={10}*/}
-                {/*            breakpoints={{*/}
-                {/*                640: {*/}
-                {/*                    slidesPerView: 2,*/}
-                {/*                    spaceBetween: 20,*/}
-                {/*                },*/}
-                {/*                768: {*/}
-                {/*                    slidesPerView: 4,*/}
-                {/*                    spaceBetween: 40,*/}
-                {/*                }*/}
-                {/*            }}*/}
-                {/*            grabCursor={true}*/}
-                {/*            autoplay={{*/}
-                {/*                delay: 1000,*/}
-                {/*                disableOnInteraction: false,*/}
-                {/*                stopOnLastSlide: false,*/}
-                {/*                reverseDirection: true*/}
-                {/*            }}*/}
-                {/*            loop={true}*/}
-                {/*            modules={[Autoplay]}*/}
-                {/*            className="mySwiper mx-auto"*/}
-                {/*        >*/}
-                {/*        {*/}
-                {/*            speakers.map((speaker, index) => {*/}
-                {/*                return (*/}
-                {/*                    <SwiperSlide key={index}>*/}
-                {/*                        <div className={'col-span-1 flex flex-col items-center'}>*/}
-                {/*                            <img src={speaker.image} alt={"Speaker's Photo"}*/}
-                {/*                                 className={'h-56 border-2 border-gray-300 w-64 object-cover mb-5 rounded-lg shadow-md'}/>*/}
-                {/*                            <span className={'font-bold text-sm text-center'}>{speaker.name}</span>*/}
-                {/*                            <span*/}
-                {/*                                className={'font-light text-xs text-center'}>{speaker.designation}</span>*/}
-                {/*                        </div>*/}
-                {/*                    </SwiperSlide>*/}
-                {/*                )*/}
-                {/*            })*/}
-                {/*        }*/}
-                {/*        </Swiper>*/}
-                {/*    </div>*/}
+                    <div className={'w-full bg-gray-100 p-4 rounded-lg'}>
+                        <Swiper
+                            slidesPerView={1}
+                            spaceBetween={10}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 4,
+                                    spaceBetween: 40,
+                                }
+                            }}
+                            grabCursor={true}
+                            autoplay={{
+                                delay: 1000,
+                                disableOnInteraction: false,
+                                stopOnLastSlide: false,
+                                reverseDirection: true
+                            }}
+                            loop={true}
+                            modules={[Autoplay]}
+                            className="mySwiper mx-auto"
+                        >
+                        {
+                            speakers.map((speaker, index) => {
+                                return (
+                                    <SwiperSlide key={index}>
+                                        <div className={'col-span-1 flex flex-col items-center'}>
+                                            <img src={speaker.image} alt={"Speaker's Photo"}
+                                                 className={'h-56 border-2 border-gray-300 w-64 object-cover mb-5 rounded-lg shadow-md'}/>
+                                            <span className={'font-bold text-sm text-center'}>{speaker.name}</span>
+                                            <span
+                                                className={'font-light text-xs text-center'}>{speaker.designation}</span>
+                                        </div>
+                                    </SwiperSlide>
+                                )
+                            })
+                        }
+                        </Swiper>
+                    </div>
 
-                {/*    <div className={'col-span-1 flex flex-col items-center gap-2 justify-center my-5'}>*/}
-                {/*        <Button link={'/speakers'}*/}
-                {/*                className={'bg-sky-600 hover:bg-sky-700 shrink-on-hover focus:ring-4 focus:ring-sky-300 no-underline dark:focus:ring-sky-700'}*/}
-                {/*                hideIcon={false}>View all</Button>*/}
-                {/*    </div>*/}
-                {/*    */}
-                {/*</div>*/}
+                    <div className={'col-span-1 flex flex-col items-center gap-2 justify-center my-5'}>
+                        <Button link={'/speakers'}
+                                className={'bg-sky-600 hover:bg-sky-700 shrink-on-hover focus:ring-4 focus:ring-sky-300 no-underline dark:focus:ring-sky-700'}
+                                hideIcon={false}>View all</Button>
+                    </div>
+
+                </div>
             </main>
         </>
     )
