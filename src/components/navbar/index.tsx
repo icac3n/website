@@ -41,7 +41,7 @@ const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string,
             {
                 dropOpen &&
                 <div id="dropNav"
-                     className={"md:absolute -left-1/2 mt-3 z-10 font-normal bg-amber-100 divide-y divide-amber-800 rounded shadow-lg md:w-52 w-full"}>
+                     className={`md:absolute w-fit -left-1/2 mt-3 z-10 font-normal bg-amber-100 divide-y divide-amber-800 rounded shadow-lg w-full ${title.toLowerCase().includes("archive") ? "md:w-36" : "md:w-52"}`}>
                     <ul className="py-2 text-sm font-semibold text-gray-700 w-full">
                         {
                             dropdown.map((item, index) => {
@@ -108,6 +108,11 @@ function Index() {
             enabled: true,
         },
         {
+            title: "Contact",
+            link: "/contact",
+            enabled: true,
+        },
+        {
             title: "Archive",
             dropdown: [
                 {
@@ -131,11 +136,6 @@ function Index() {
                     link: "/archive/2018",
                 }
             ],
-            enabled: true,
-        },
-        {
-            title: "Contact",
-            link: "/contact",
             enabled: true,
         },
     ]
