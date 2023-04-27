@@ -78,7 +78,8 @@ const Home = () => {
                             <p className={"text-red-800 font-semibold"}>15th and 16th December 2023</p>
                         </div>
 
-                        <p className={"text-3xl lg:text-4xl break-words my-3 lg:my-5 font-bold mx-4 lg:mx-0"}>International Conference on
+                        <p className={"text-3xl lg:text-4xl break-words my-3 lg:my-5 font-bold mx-2 lg:mx-0"}>International
+                            Conference on
                             Advances in
                             Computing,
                             Communication Control and Networking- ICAC3N</p>
