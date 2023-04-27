@@ -29,27 +29,32 @@ const Home = () => {
     const speakers = speakersData["2023"]
     const sliderImages = [
         {
-            "image": "https://icac3n.in/static/media/img3.25e0387944fcd08c4ffb.png",
+            "image": "/images/slider/image1.jpeg",
             "id": "a1b2c3d4",
             "alt": "image1"
         },
         {
-            "image": "https://icac3n.in/ICAC3N_2023/Header_ICAC3n-2023.jpeg",
+            "image": "/images/slider/image2.jpg",
             "id": "e5f6g7h8",
             "alt": "image2"
         },
         {
-            "image": "https://icac3n.in/static/media/img2.22f091ab3b6579b31a5a.jpg",
+            "image": "/images/slider/image3.jpg",
             "id": "i9j0k1l2",
             "alt": "image3"
         },
         {
-            "image": "https://icac3n.in/static/media/img4.5251edd07948620003f8.jpg",
+            "image": "/images/slider/image4.jpg",
             "id": "i9j0k1l2",
             "alt": "image3"
         },
         {
-            "image": "https://unsplash.it/1080/2000?random=3434",
+            "image": "/images/slider/image5.png",
+            "id": "i9j0k1l2",
+            "alt": "image3"
+        },
+        {
+            "image": "/images/slider/image6.jpg",
             "id": "i9j0k1l2",
             "alt": "image3"
         },
