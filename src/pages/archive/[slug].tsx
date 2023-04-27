@@ -66,8 +66,8 @@ const Post = ({content, year}: {
                 <div
                     className={"flex lg:flex-row flex-col gap-5 items-center justify-center lg:text-start text-center"}>
                     <div className={"flex flex-col justify-between h-full"}>
-                        <div className={"rounded-full w-fit bg-red-600 bg-opacity-20"}>
-                            <p className={"px-3 py-0.5 text-base text-red-800"}>Archive</p>
+                        <div className={"rounded-full mx-auto lg:mx-0 w-fit bg-red-600 bg-opacity-20"}>
+                            <p className={"px-3 py-0.5 lg:text-base text-sm text-red-800"}>Archive</p>
                         </div>
                         <p className={"text-3xl lg:text-4xl my-3 lg:my-5 font-bold mx-4 lg:mx-0"}>International Conference on
                             Advances in
