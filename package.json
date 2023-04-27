@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "zip": "rm -rf out && yarn run build && next export && zip -r build-$(date +%Y-%m-%d-%H-%M-%S).zip out/* && rm -rf out",
     "lint": "next lint"
   },
   "dependencies": {
