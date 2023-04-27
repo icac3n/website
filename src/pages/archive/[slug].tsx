@@ -1,13 +1,7 @@
 import speakerData from "../../../data/speakers.json";
+import proceedingData from "../../../data/proceedings.json";
 import Head from "next/head";
-import {
-    RiCalendarTodoFill,
-    RiFacebookBoxFill,
-    RiMailFill,
-    RiMapPin2Fill,
-    RiPhoneFill,
-    RiTwitterFill
-} from "react-icons/ri";
+import {RiFacebookBoxFill, RiMailFill, RiMapPin2Fill, RiPhoneFill, RiTwitterFill} from "react-icons/ri";
 import {Swiper, SwiperSlide} from "swiper/react";
 
 // Import Swiper styles
@@ -18,6 +12,8 @@ import "swiper/css/pagination";
 // import required modules
 import {Autoplay} from "swiper";
 import React from "react";
+import Button from "@/components/button";
+import Link from "next/link";
 
 const Post = ({content, year}: {
     content: {
@@ -56,6 +52,7 @@ const Post = ({content, year}: {
 
     ]
 
+    // @ts-ignore
     return (
         <>
             <Head>
@@ -69,42 +66,25 @@ const Post = ({content, year}: {
                 <div
                     className={"flex lg:flex-row flex-col gap-5 items-center justify-center lg:text-start text-center"}>
                     <div className={"flex flex-col justify-between h-full"}>
-                        {/*<div className={"flex items-center space-x-2 lg:justify-start justify-center"}>*/}
-                        {/*    <RiCalendarTodoFill className={"hidden lg:block text-red-800"}/>*/}
-                        {/*    <p className={"text-red-800 font-semibold"}>Year {year}</p>*/}
-                        {/*</div>*/}
-
                         <div className={"rounded-full w-fit bg-red-600 bg-opacity-20"}>
-                            <p className={"px-3 py-0.5 text-sm text-red-800"}>Archive</p>
+                            <p className={"px-3 py-0.5 text-base text-red-800"}>Archive</p>
                         </div>
-                        <p className={"text-3xl my-3 lg:my-5 font-bold mx-4 lg:mx-0"}>International Conference on
+                        <p className={"text-3xl lg:text-4xl my-3 lg:my-5 font-bold mx-4 lg:mx-0"}>International Conference on
                             Advances in
                             Computing,
-                            Communication Control and Networking {year}</p>
+                            Communication Control and Networking- ICAC3N {year}</p>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
-                            <RiMapPin2Fill className={"hidden lg:block text-red-800"}/>
+                            <RiMapPin2Fill className={"hidden mt-1 self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
-                                <p className={"font-semibold text"}>Galgotias College of Engineering And Technology</p>
+                                <p className={"font-semibold text"}>Galgotias College of Engineering And
+                                    Technology</p>
                                 <p className={"text-sm"}>Knowledge Park I, Greater Noida</p>
                             </div>
                         </div>
-                        <div
-                            className={"flex space-x-3 text-xl text-red-800 mt-4 items-center lg:justify-start justify-center"}>
-                            <RiTwitterFill className={'cursor-pointer'}/>
-                            <RiPhoneFill className={'cursor-pointer'}/>
-                            <RiFacebookBoxFill className={'cursor-pointer'}/>
-                            <RiMailFill className={'cursor-pointer'}/>
+                        <div className={"mt-5"}>
+                            {/*@ts-ignore*/}
+                            <Button link={proceedingData[year]} className={""} hideIcon={false}>Proceedings on IEEE Xplore</Button>
                         </div>
-                        {/*<Link href="#"*/}
-                        {/*   className="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">*/}
-                        {/*    Read more*/}
-                        {/*    <svg aria-hidden="true" className="ml-2 -mr-1 w-4 h-4" fill="currentColor"*/}
-                        {/*         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">*/}
-                        {/*        <path fill-rule="evenodd"*/}
-                        {/*              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"*/}
-                        {/*              clip-rule="evenodd"></path>*/}
-                        {/*    </svg>*/}
-                        {/*</Link>*/}
                     </div>
                     <div className={"lg:w-[60%] flex h-full w-full px-5"}>
                         <Swiper
@@ -191,66 +171,11 @@ const Post = ({content, year}: {
                             </p>
 
                         </div>
-                        {/*<div className={"lg:col-span-1 col-span-full"}>*/}
-                        {/*    /!*<ImportantMessage/>*!/*/}
-                        {/*    /!*<ImportantDates/>*!/*/}
-                        {/*    /!*<ImportantDownloads/>*!/*/}
-                        {/*</div>*/}
+
                     </div>
                 </div>
                 <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
 
-                <div className={'flex flex-row items-center mx-5 md:mx-auto'}>
-                    <h1 className='text-2xl text-black font-extrabold my-5'>Hon&apos;ble Speaker</h1>
-                    {/*<h4 className='text-md text-blue-500 font-regular my-5 ml-2 hover:underline cursor-pointer'>( view all )</h4>*/}
-                </div>
-
-                <div className={'w-full bg-gray-100 p-4 rounded-lg'}>
-                    <Swiper
-                        slidesPerView={1}
-                        spaceBetween={10}
-                        breakpoints={{
-                            640: {
-                                slidesPerView: 2,
-                                spaceBetween: 20,
-                            },
-                            768: {
-                                slidesPerView: 4,
-                                spaceBetween: 40,
-                            }
-                        }}
-                        grabCursor={true}
-                        autoplay={{
-                            delay: 1000,
-                            disableOnInteraction: false,
-                            stopOnLastSlide: false,
-                            reverseDirection: true
-                        }}
-                        loop={true}
-                        modules={[Autoplay]}
-                        className="mySwiper mx-auto"
-                    >
-                        {
-                            content.map((speaker, index) => {
-                                return (
-                                    <SwiperSlide key={index}>
-                                        <div className={'col-span-1 flex flex-col items-center'}>
-                                            <img src={speaker.image}
-                                                 className={'h-56 w-64 object-cover mb-5 rounded-lg shadow-md'}/>
-                                            <span className={'font-bold text-xs text-center'}>{speaker.name}</span>
-                                            <span
-                                                className={'font-light text-xs text-center'}>{speaker.designation}</span>
-                                        </div>
-                                    </SwiperSlide>
-                                )
-                            })
-                        }
-                    </Swiper>
-                </div>
-
-                <div className={'col-span-1 flex flex-col items-center gap-2 justify-center my-5'}>
-                    <button className={'px-4 py-2 text-sm text-white bg-sky-600 w-fit rounded-lg'}>View All</button>
-                </div>
             </main>
         </>
     )

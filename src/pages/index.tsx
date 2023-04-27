@@ -77,11 +77,11 @@ const Home = () => {
                         <p className={"text-3xl lg:text-4xl break-words my-3 lg:my-5 font-bold mx-4 lg:mx-0"}>International Conference on
                             Advances in
                             Computing,
-                            Communication Control and Networking</p>
+                            Communication Control and Networking- ICAC3N</p>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiMapPin2Fill className={"hidden mt-1 self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
-                                <p className={"font-semibold text"}>Galgotia&rsquo;s College of Engineering And
+                                <p className={"font-semibold text"}>Galgotias College of Engineering And
                                     Technology</p>
                                 <p className={"text-sm"}>Knowledge Park I, Greater Noida</p>
                             </div>
@@ -242,8 +242,8 @@ const Home = () => {
                                     <SwiperSlide key={index}>
                                         <div className={'col-span-1 flex flex-col items-center'}>
                                             <img src={speaker.image} alt={"Speaker's Photo"}
-                                                 className={'h-56 w-64 object-cover mb-5 rounded-lg shadow-md'}/>
-                                            <span className={'font-bold text-xs text-center'}>{speaker.name}</span>
+                                                 className={'h-56 border-2 border-gray-300 w-64 object-cover mb-5 rounded-lg shadow-md'}/>
+                                            <span className={'font-bold text-sm text-center'}>{speaker.name}</span>
                                             <span
                                                 className={'font-light text-xs text-center'}>{speaker.designation}</span>
                                         </div>
