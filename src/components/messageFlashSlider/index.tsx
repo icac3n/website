@@ -14,13 +14,13 @@ const MessageFlashSlider = () => {
     const messages = [
         {
             id: 1,
-            message: "5th IEEE ICAC3N-23 paper submission link is valid until July 31, 2023.",
+            message: "5th IEEE ICAC3N-23 paper submission link is valid until 31st July.",
             link: "/registration",
-            date: "27 Apr 2023"
+            date: "10 Apr 2023"
         },
         {
             id: 2,
-            message: " 4th IEEE ICAC3N-22 Proceeding is available Online now on IEEE Xplore.",
+            message: "4th IEEE ICAC3N-22 Proceeding is available Online now on IEEE Xplore.",
             link: "https://ieeexplore.ieee.org/xpl/conhome/10073967/proceeding",
             date: "27 Apr 2023"
         },
@@ -59,7 +59,7 @@ const MessageFlashSlider = () => {
                     spaceBetween={10}
                     grabCursor={true}
                     autoplay={{
-                        delay: 4000,
+                        delay: 10000,
                         disableOnInteraction: false,
                         stopOnLastSlide: false,
                         reverseDirection: true

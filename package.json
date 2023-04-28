@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "start-custom": "NODE_ENV=production node server.js",
+    "zip": "rm -rf out && yarn run build && next export && zip -r icac3n-build-$(date +%Y-%m-%d-%H-%M-%S).zip out/*",
     "lint": "next lint"
   },
   "dependencies": {
