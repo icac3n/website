@@ -5,7 +5,7 @@ import Link from "next/link";
 const impImpData = [
     {
         title: "Paper submission link validity",
-        description: "5th IEEE ICAC3N-23 paper submission link is valid until July 31, 2023",
+        description: "5th ICAC3N-23 paper submission link is valid until July 31, 2023",
         link: "/registration",
         isImportant: true,
         enabled: true,
