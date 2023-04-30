@@ -14,7 +14,7 @@ const MessageFlashSlider = () => {
     const messages = [
         {
             id: 1,
-            message: "5th IEEE ICAC3N-23 paper submission link is valid until 31st July.",
+            message: "5th ICAC3N-23 paper submission link is valid until 31st July.",
             link: "/registration",
             date: "10 Apr 2023"
         },
