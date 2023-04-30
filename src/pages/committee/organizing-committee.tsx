@@ -20,10 +20,6 @@ const OrganizingCommittee = () => {
             "Category": "Patrons",
             "Members": [
                 {
-                    "Name": "Prof. (Dr.) Pradeep Kumar Mishra",
-                    "Designation": "VC, AKTU"
-                },
-                {
                     "Name": "Prof. (Dr.) S.N. Singh",
                     "Designation": "ABV-IIITM, Gwalior"
                 },
