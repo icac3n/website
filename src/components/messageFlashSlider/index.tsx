@@ -14,7 +14,7 @@ const MessageFlashSlider = () => {
     const messages = [
         {
             id: 1,
-            message: "5th ICAC3N-23 paper submission link is valid until 31st July.",
+            message: "5th ICAC3N-23 paper submission link is valid until 31st August.",
             link: "/registration",
             date: "10 Apr 2023"
         },
@@ -77,8 +77,7 @@ const MessageFlashSlider = () => {
                                         message.link &&
                                         <Link href={message.link}>
                                             <p className={'text-black text-center md:text-md text-sm h-fit'}>
-                                        <span
-                                            className={'font-semibold md:text-sm text-xs'}> {message.date} | </span> {message.message}
+                                        <span className={'font-semibold md:text-sm text-xs'}> {message.date} | </span> {message.message}
                                             </p>
                                         </Link>
                                     }
