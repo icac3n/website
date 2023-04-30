@@ -13,7 +13,7 @@ const Footer = () => {
                             <img src="/icaccn_logo.png" className="h-8 mr-3"
                                  alt="ICAC3N"/>
                             <span
-                                className="self-center text-2xl font-semibold whitespace-nowrap text-white">ICAC3N</span>
+                                className="self-center text-2xl font-semibold whitespace-nowrap text-white">ICAC3N-23</span>
                         </Link>
                         <p className={"my-4 max-w-xs text-white"}>International Conference on Advances in
                             Computing, Communication Control and Networking (ICAC3N–23)</p>

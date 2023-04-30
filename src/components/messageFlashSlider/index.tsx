@@ -20,7 +20,7 @@ const MessageFlashSlider = () => {
         },
         {
             id: 2,
-            message: "4th IEEE ICAC3N-22 Proceeding is available Online now on IEEE Xplore.",
+            message: "4th ICAC3N-22 Proceeding is available Online now on Xplore.",
             link: "https://ieeexplore.ieee.org/xpl/conhome/10073967/proceeding",
             date: "27 Apr 2023"
         },

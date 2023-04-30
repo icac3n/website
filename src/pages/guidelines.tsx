@@ -55,7 +55,7 @@ const Guidelines = () => {
                 <Button className={''} hideIcon={null} link={"/documents/PAPER_ID_ICAC3N23.docx"}> Download IEEE Conference Template
                 </Button>
                 <h2 className={"heading"}>Plagiarism Policy</h2>
-                <p>ICAC3N-22 takes plagiarism very seriously and regard plagiarism as a professional misconduct. Papers
+                <p>ICAC3N-23 takes plagiarism very seriously and regard plagiarism as a professional misconduct. Papers
                     will be screened for plagiarism and when identified the paper will be rejected.</p>
 
                 <h2 className={"heading"}>Important Message</h2>

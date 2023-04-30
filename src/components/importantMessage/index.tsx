@@ -11,8 +11,8 @@ const impImpData = [
         enabled: true,
     },
     {
-        title: "4th IEEE ICAC3N-22 Proceedings",
-        description: "4th IEEE ICAC3N-22 Proceedings are available online now on IEEE Xplore",
+        title: "4th ICAC3N-22 Proceedings",
+        description: "4th ICAC3N-22 Proceedings are available online now on Xplore",
         link: "https://ieeexplore.ieee.org/xpl/conhome/10073967/proceeding",
         isImportant: true,
         enabled: true,
