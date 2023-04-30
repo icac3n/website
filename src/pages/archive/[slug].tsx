@@ -59,7 +59,7 @@ const Post = ({content, year}: {
         <>
             <Head>
                 <title>ICAC3N {year}- Galgotias College of Engineering</title>
-                <meta name="description" content="Next JS Starter"/>
+                <meta name="description" content="International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
@@ -70,12 +70,7 @@ const Post = ({content, year}: {
                     <div className={"flex flex-col justify-between h-full"}>
                         <div className={"rounded-full mx-auto lg:mx-0 w-fit bg-red-600 bg-opacity-20"}>
                             <p className={"px-3 py-0.5 lg:text-base text-sm text-red-800"}>Archive</p>
-                        </div>
-                        <p className={"text-3xl lg:text-4xl my-3 lg:my-5 font-bold mx-4 lg:mx-0"}>International
-                            Conference on
-                            Advances in
-                            Computing,
-                            Communication Control and Networking- ICAC3N {year}</p>
+                        </div>International Conference on Advances in Computing, Communication Control and Networking- ICAC3N{year}</p>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiMapPin2Fill className={"hidden mt-1 self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
