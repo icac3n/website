@@ -119,7 +119,7 @@ const Home = () => {
                             spaceBetween={10}
                             grabCursor={true}
                             autoplay={{
-                                delay: 1500,
+                                delay: 4000,
                                 disableOnInteraction: false,
                                 stopOnLastSlide: false,
                                 reverseDirection: true
