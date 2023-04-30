@@ -64,7 +64,7 @@ const OrganizingCommittee = () => {
                     "Designation": "HOD, CSE, GCET"
                 },
                 {
-                    "Name": "Prof. Manjeet Singh",
+                    "Name": "Prof. (Dr.) Manjeet Singh",
                     "Designation": "GCBK, Sonipat"
                 }
             ]
@@ -111,6 +111,10 @@ const OrganizingCommittee = () => {
             Category: "Publication Committee",
             Members: [
                 {
+                    "Name": "Prof. (Dr.) Manjeet Singh",
+                    "Designation": "GCBK, Sonipat"
+                },
+                {
                     Name: "Prof. (Dr.) Inderpreet Kaur",
                     Designation: "CSE, GCET"
                 },
@@ -140,6 +144,10 @@ const OrganizingCommittee = () => {
         {
             Category: "Finance Committee",
             Members: [
+                {
+                    "Name": "Prof. M. Chandraprabha",
+                    "Designation": "CSE, GCET"
+                },
                 {
                     Name: "Prof. (Dr.) Amrit Agrawal",
                     Designation: "CSE, GCET"
