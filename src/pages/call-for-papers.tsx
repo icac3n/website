@@ -1,6 +1,7 @@
 import {StarterLayout} from "layout";
 import Head from "next/head";
 import React from "react";
+import Button from "@/components/button";
 
 const callForPapers = () => {
 
@@ -58,6 +59,8 @@ const callForPapers = () => {
                     <li>Machine Learning &amp; Deep Learning with Cyber Security</li>
                     <li>Researches and Innovations on COVID-19</li>
                 </ul>
+
+                <Button link={"https://cmt3.research.microsoft.com/ICAC3N2023"} className={''} hideIcon={null}> Submit a Paper</Button>
             </div>
         </>
     )
