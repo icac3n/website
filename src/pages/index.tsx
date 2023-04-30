@@ -63,10 +63,31 @@ const Home = () => {
     return (
         <>
             <Head>
+
                 <title>ICAC3N- Galgotias College of Engineering</title>
-                <meta name="description" content="5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                <meta name="title" content="ICAC3N- Galgotias College of Engineering"/>
+                <meta name="description"
+                      content="5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
+
+                <meta property="og:type" content="website"/>
+                <meta property="og:url" content="https://icac3n.in/"/>
+                <meta property="og:title" content="ICAC3N- Galgotias College of Engineering"/>
+                <meta name="description"
+                      content="5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                <meta property="og:image"
+                      content="https://icac3n.in/api/og"/>
+
+
+                <meta property="twitter:card" content="summary_large_image"/>
+                <meta property="twitter:url" content="https://icac3n.in/"/>
+                <meta property="twitter:title" content="ICAC3N- Galgotias College of Engineering"/>
+                <meta property="twitter:description"
+                      content="5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                <meta property="twitter:image"
+                      content="https://icac3n.in/api/og"/>
+
             </Head>
             <main className={"mx-8"}>
                 {/*    landing   */}
@@ -78,7 +99,9 @@ const Home = () => {
                             <p className={"text-red-800 font-semibold"}>15th and 16th December 2023</p>
                         </div>
 
-                        <p className={"text-3xl lg:text-4xl break-words my-3 lg:my-5 font-bold mx-2 lg:mx-0"}>5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</p>
+                        <p className={"text-3xl lg:text-4xl break-words my-3 lg:my-5 font-bold mx-2 lg:mx-0"}>5th
+                            International Conference on Advances in Computing, Communication Control and Networking-
+                            ICAC3N</p>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiMapPin2Fill className={"hidden text-xl mt-1 self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
