@@ -93,8 +93,7 @@ const Guidelines = () => {
                             IEEE template. If author found violating registration guidelines and instructions provided from
                             time to time at any stage during publication the registration of paper will be cancelled.
                         </li>
-                        <li>Transfer of e-copyright and presenting paper in conference is mandatory, without this paper will
-                            not be published on IEEE explore.
+                        <li>Transfer of e-copyright and presenting paper in conference is mandatory.
                         </li>
                         <li>Corresponding author (as per CMT) keep checking their e-mail regularly (including spam) in this
                             regard and for supplying any other desired information on time.
