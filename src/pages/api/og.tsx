@@ -40,10 +40,10 @@ export default async function handler(
                             <div tw="flex space-x-4">
                                 <img src="https://i.ibb.co/CHXYtfP/download.png" tw="w-20"/>
                             </div>
-                            <p tw="font-bold text-3xl text-center">5th International Conference on Advances in</p>
-                            <p tw="font-bold text-3xl -mt-4 text-center">Computing, Communication Control and Networking- ICAC3N</p>
-                            <p tw="font-bold text-2xl -mt-1">2023</p>
-                            <p tw="font text-xl mt-12 text-center">Galgotias College of Engineering and Technology</p>
+                            <p tw="font-bold text-4xl text-center">5th International Conference on Advances in</p>
+                            <p tw="font-bold text-4xl -mt-4 text-center">Computing, Communication Control and Networking- ICAC3N</p>
+                            <p tw="font-bold text-3xl -mt-1">2023</p>
+                            <p tw="font text-3xl mt-12 text-center">Galgotias College of Engineering and Technology</p>
                         </div>
                     </div>
                 </div>
