@@ -49,8 +49,8 @@ const Register = () => {
                 <h2 className={"heading"}>Camera Ready Format</h2>
                 <p>Authors are requested to follow the IEEE conference paper format.</p>
                 <div className={"flex flex-col space-y-4"}>
-                    <Button link={"/document/PAPER_ID_ICAC3N23.docx"} >Download Docx File</Button>
-                    <Button link={"/document/PAPER_ID_ICAC3N23.pdf"}>Download PDF File</Button>
+                    <Button link={"/documents/PAPER_ID_ICAC3N23.docx"} >Download Docx File</Button>
+                    <Button link={"/documents/PAPER_ID_ICAC3N23.pdf"}>Download PDF File</Button>
                 </div>
 
                 <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700"/>
@@ -59,7 +59,7 @@ const Register = () => {
                     Please follow the below format for the presentation. The presentation should be in the PPT format.
                 </p>
                 <div className={"flex flex-col space-y-4"}>
-                    <Button link={"/document/SamplePPTICAC3N-23.pptx"}>Download PPTX File</Button>
+                    <Button link={"/documents/SamplePPTICAC3N-23.pptx"}>Download PPTX File</Button>
                 </div>
 
 
