@@ -59,7 +59,8 @@ const Post = ({content, year}: {
         <>
             <Head>
                 <title>ICAC3N {year}- Galgotias College of Engineering</title>
-                <meta name="description" content="Next JS Starter"/>
+                <meta name="description"
+                      content="International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
@@ -71,11 +72,7 @@ const Post = ({content, year}: {
                         <div className={"rounded-full mx-auto lg:mx-0 w-fit bg-red-600 bg-opacity-20"}>
                             <p className={"px-3 py-0.5 lg:text-base text-sm text-red-800"}>Archive</p>
                         </div>
-                        <p className={"text-3xl lg:text-4xl my-3 lg:my-5 font-bold mx-4 lg:mx-0"}>International
-                            Conference on
-                            Advances in
-                            Computing,
-                            Communication Control and Networking- ICAC3N {year}</p>
+                        <p className={"text-3xl lg:text-4xl my-3 lg:my-5 font-bold mx-4 lg:mx-0"}>International Conference on Advances in Computing, Communication Control and Networking- ICAC3N{year}</p>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiMapPin2Fill className={"hidden mt-1 self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
@@ -135,7 +132,20 @@ const Post = ({content, year}: {
                             <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
                                 ICACCCN</h2>
                             <p className={'text-justify'}>
-                                ICAC3N is a prestigious international conference that brings together top researchers, scientists, engineers, and scholars from around the world to share their latest research findings and experiences in computing, communication control, and networking. Featuring keynote speeches, technical sessions, and workshops, the conference covers a wide range of topics such as cloud computing, AI, wireless communication systems, IoT, and cybersecurity. Organized annually by IEEE at various global locations, ICAC3N offers a stimulating platform for participants to network, collaborate and engage with experts in their fields. The conference proceedings are published on IEEE Xplore, making it accessible to researchers and scholars worldwide.
+                                ICAC3N is a prestigious international conference that brings together top researchers,
+                                scientists, engineers, and scholars from around the world to share their latest research
+                                findings and experiences in computing, communication control, and networking. Featuring
+                                keynote
+                                speeches, technical sessions, and workshops, the conference covers a wide range of
+                                topics such
+                                as cloud computing, AI, wireless communication systems, IoT, and cybersecurity.
+                                Organized
+                                annually by IEEE at various global locations, ICAC3N offers a stimulating platform for
+                                participants to network, collaborate and engage with experts in their fields. The
+                                conference
+                                proceedings are published on IEEE Xplore, making it accessible to researchers and
+                                scholars
+                                worldwide.
                             </p>
                         </div>
                     </div>
@@ -196,14 +206,14 @@ const Post = ({content, year}: {
                     {
                         // @ts-ignore
                         archive[year].organizingCommittee.map((committee, index) => {
-                            return(
+                            return (
                                 <div key={index}>
                                     <h2 className={"heading"}>{committee.Category}</h2>
                                     <ul>
                                         {
                                             // @ts-ignore
                                             committee.Members.map((member, index) => {
-                                                return(
+                                                return (
                                                     <li key={index}>
                                                         {member.Name}, {member.Designation}
                                                     </li>

@@ -64,7 +64,7 @@ const Home = () => {
         <>
             <Head>
                 <title>ICAC3N- Galgotias College of Engineering</title>
-                <meta name="description" content="Next JS Starter"/>
+                <meta name="description" content="5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
@@ -78,11 +78,7 @@ const Home = () => {
                             <p className={"text-red-800 font-semibold"}>15th and 16th December 2023</p>
                         </div>
 
-                        <p className={"text-3xl lg:text-4xl break-words my-3 lg:my-5 font-bold mx-2 lg:mx-0"}>5th International
-                            Conference on
-                            Advances in
-                            Computing,
-                            Communication Control and Networking- ICAC3N</p>
+                        <p className={"text-3xl lg:text-4xl break-words my-3 lg:my-5 font-bold mx-2 lg:mx-0"}>5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</p>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiMapPin2Fill className={"hidden text-xl mt-1 self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
@@ -162,7 +158,15 @@ const Home = () => {
                             <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
                                 ICACCCN</h2>
                             <p className={'text-justify'}>
-                                ICAC3N is a prestigious international conference that brings together top researchers, scientists, engineers, and scholars from around the world to share their latest research findings and experiences in computing, communication control, and networking. Featuring keynote speeches, technical sessions, and workshops, the conference covers a wide range of topics such as cloud computing, AI, wireless communication systems, IoT, and cybersecurity. Organized annually by IEEE at various global locations, ICAC3N offers a stimulating platform for participants to network, collaborate and engage with experts in their fields. The conference proceedings are published on IEEE Xplore, making it accessible to researchers and scholars worldwide.
+                                ICAC3N is a prestigious international conference that brings together top researchers,
+                                scientists, engineers, and scholars from around the world to share their latest research
+                                findings and experiences in computing, communication control, and networking. Featuring
+                                keynote speeches, technical sessions, and workshops, the conference covers a wide range
+                                of topics such as cloud computing, AI, wireless communication systems, IoT, and
+                                cybersecurity. Organized annually by IEEE at various global locations, ICAC3N offers a
+                                stimulating platform for participants to network, collaborate and engage with experts in
+                                their fields. The conference proceedings are published on IEEE Xplore, making it
+                                accessible to researchers and scholars worldwide.
                             </p>
                             <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
                             <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
@@ -182,7 +186,14 @@ const Home = () => {
                             <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About CSE
                                 Department</h2>
                             <p className={'text-justify whitespace-pre-wrap'}>
-                                The Computer Science & Engineering Department at GCET offers a UG program in Computer Science and Engineering. It has experienced faculty members, well-equipped labs, and promotes industry-institute collaboration. The department focuses on research areas such as Computer Networks, Database Systems, Multimedia, Image Processing, Software Engineering, Computer Architecture, Information System – Security and Data Mining. Students get opportunities to work on state-of-the-art projects, gain real-world experience, and have good alumni and industry relations. Galgotias Computer Science graduates get recruited by industry-leading companies.
+                                The Computer Science & Engineering Department at GCET offers a UG program in Computer
+                                Science and Engineering. It has experienced faculty members, well-equipped labs, and
+                                promotes industry-institute collaboration. The department focuses on research areas such
+                                as Computer Networks, Database Systems, Multimedia, Image Processing, Software
+                                Engineering, Computer Architecture, Information System – Security and Data Mining.
+                                Students get opportunities to work on state-of-the-art projects, gain real-world
+                                experience, and have good alumni and industry relations. Galgotias Computer Science
+                                graduates get recruited by industry-leading companies.
                             </p>
 
                         </div>
@@ -225,21 +236,21 @@ const Home = () => {
                             modules={[Autoplay]}
                             className="mySwiper mx-auto"
                         >
-                        {
-                            speakers.map((speaker, index) => {
-                                return (
-                                    <SwiperSlide key={index}>
-                                        <div className={'col-span-1 flex flex-col items-center'}>
-                                            <img src={speaker.image} alt={"Speaker's Photo"}
-                                                 className={'h-56 border-2 border-gray-300 w-64 object-cover mb-5 rounded-lg shadow-md'}/>
-                                            <span className={'font-bold text-sm text-center'}>{speaker.name}</span>
-                                            <span
-                                                className={'font-light text-xs text-center'}>{speaker.designation}</span>
-                                        </div>
-                                    </SwiperSlide>
-                                )
-                            })
-                        }
+                            {
+                                speakers.map((speaker, index) => {
+                                    return (
+                                        <SwiperSlide key={index}>
+                                            <div className={'col-span-1 flex flex-col items-center'}>
+                                                <img src={speaker.image} alt={"Speaker's Photo"}
+                                                     className={'h-56 border-2 border-gray-300 w-64 object-cover mb-5 rounded-lg shadow-md'}/>
+                                                <span className={'font-bold text-sm text-center'}>{speaker.name}</span>
+                                                <span
+                                                    className={'font-light text-xs text-center'}>{speaker.designation}</span>
+                                            </div>
+                                        </SwiperSlide>
+                                    )
+                                })
+                            }
                         </Swiper>
                     </div>
 
