@@ -12,7 +12,7 @@ const Register = () => {
             <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700"/>
             <h2 className={"heading"}>Registration Fee</h2>
             <div>
-                <img src="https://icac3n.in/static/media/Registration%20Fee.cb89086a69c6cb382932.jpg" alt=""/>
+                <img src="images/misc/registration_fee.jpg" alt=""/>
                 <p>* Including 18% GST</p>
             </div>
 

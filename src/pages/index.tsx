@@ -176,7 +176,7 @@ const Home = () => {
 
                 <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
                 <div className={"flex flex-col space-y-5"}>
-                    <div className={"grid grid-cols-1 lg:grid-cols-3 mx-5 md:mx-auto"}>
+                    <div className={"grid grid-cols-1 lg:grid-cols-3 mx-2 md:mx-auto"}>
                         <div className={"lg:col-span-2 lg:mr-10 col-span-full"}>
                             <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
                                 ICACCCN</h2>

@@ -140,7 +140,7 @@ function Index() {
         },
     ]
 
-    const [menuOpen, setMenu] = useState(true);
+    const [menuOpen, setMenu] = useState(false);
     const menuToggle = () => {
         setMenu(!menuOpen);
     };
@@ -178,7 +178,7 @@ function Index() {
 
                 </div>
 
-                {menuOpen && <div className={"w-full md:block lg:w-auto"}>
+                {<div className={`${menuOpen ? "w-full md:block lg:w-auto" : "hidden md:block"}`}>
                     <ul className="flex flex-col gap-3 md:text-sm lg:gap-5 justify-between md:items-center items-start font-medium md:p-0 rounded-lg md:flex-row md:mt-0 md:border-0">
                         {links.map((link, index) => (
                             <div key={index} className={'md:w-auto w-full'}>

@@ -60,6 +60,7 @@ const Footer = () => {
                 <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-100">
               <Link href="" className="hover:underline mt-2 py-3">Computer Science Department, GCET</Link>.
+              <p className="py-1 block">Made by <a href={"https://github.com/hardikprakash"} className={"hover:underline cursor-pointer"}>Hardik Prakash</a>, <a className={"hover:underline cursor-pointer"} href={"https://prakharshukla.dev"}>Prakhar Shukla</a> and <a className={"hover:underline cursor-pointer"} href={"https://github.com/areeburrub"}>Areeb ur Rub</a></p>
           </span>
                     <div
                         className={"flex mt-4 space-x-6 text-2xl text-white sm:justify-center sm:mt-0"}>
