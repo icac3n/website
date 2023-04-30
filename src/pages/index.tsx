@@ -28,11 +28,6 @@ const Home = () => {
 
     const sliderImages = [
         {
-            "image": "/images/slider/image1.jpeg",
-            "id": "a1b2c3d4",
-            "alt": "image1"
-        },
-        {
             "image": "/images/slider/image2.jpg",
             "id": "e5f6g7h8",
             "alt": "image2"
