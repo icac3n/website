@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6">
                 <div className="md:flex md:justify-between items-center">
                     <div className="mb-6 md:mb-0">
-                        <Link href="https://flowbite.com/" className="flex items-center">
+                        <Link href="/" className="flex items-center">
                             <img src="/icaccn_logo.png" className="h-8 mr-3"
                                  alt="ICAC3N"/>
                             <span
