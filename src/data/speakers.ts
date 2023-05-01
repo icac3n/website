@@ -30,7 +30,7 @@ export const speakers = [
     {
         "name": "Prof. (Dr.) Anand Nayyar",
         "designation": "School of Computer Science, Faculty of Information Technology, Duy Tan University, Da Nang, Viet Nam",
-        "image": "/images/speakers/Prof. (Dr.) Anand Nayyar.webp",
+        "image": "/images/speakers/Prof. (Dr.) Anand Nayyar.jpg",
         "id": "42",
         "national": false
     },
