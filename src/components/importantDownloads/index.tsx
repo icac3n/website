@@ -4,8 +4,18 @@ import Link from "next/link";
 
 const impDownloadData = [
     {
-        title: "Paper Format",
+        title: "Paper Format (.docx)",
         link: "/documents/PAPER_ID_ICAC3N23.docx",
+        isImportant: false,
+        enabled: true,
+    },{
+        title: "Paper Format (.pdf)",
+        link: "/documents/PAPER_ID_ICAC3N23.pdf",
+        isImportant: false,
+        enabled: true,
+    }, {
+        title: "Sample PPT (.pptx)",
+        link: "/documents/SamplePPTICAC3N-23.pptx",
         isImportant: false,
         enabled: true,
     },

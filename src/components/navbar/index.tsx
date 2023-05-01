@@ -65,11 +65,6 @@ const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string,
 function Index() {
     const links = [
         {
-            title: "Home",
-            link: "/",
-            enabled: true,
-        },
-        {
             title: "About",
             link: "/about",
             enabled: true,
@@ -112,6 +107,11 @@ function Index() {
             link: "/contact",
             enabled: true,
         },
+        // {
+        //     title: "Register",
+        //     link: "/registration",
+        //     enabled: true,
+        // },
         {
             title: "Archive",
             dropdown: [
@@ -150,16 +150,17 @@ function Index() {
     // @ts-ignore
     return (
 
-        <nav className="bg-red-800">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between gap-y-6 mx-auto p-4">
-                <div className={'lg:w-fit w-full flex flex-row justify-between items-center'}>
-                    <Link href="/" className="flex items-center">
-                        <img src="/icac3nlogo.png" className="mr-3 h-12 object-cover" alt="Logo"/>
-                        <span className="font-semibold text-2xl tracking-tight text-white mr-3">ICAC3N</span>
+        <div>
+            <nav className="bg-red-800">
+                <div className="max-w-screen-xl flex flex-wrap items-center justify-between gap-y-6 mx-auto p-4">
+                    <div className={'lg:w-fit w-full flex flex-row justify-between items-center'}>
+                        <Link href="/" className="flex items-center">
+                            <img src="/icac3nlogo.png" className="mr-3 h-12 object-cover" alt="Logo"/>
+                            <span className="font-semibold text-2xl tracking-tight text-white mr-3">ICAC3N</span>
 
-                    </Link>
+                        </Link>
 
-                    <div className={'flex flex-row gap-1 justify-normal items-center'}>
+                        <div className={'flex flex-row gap-1 justify-normal items-center'}>
                         <span onClick={menuToggle}
                               className="inline-flex order-last items-center md:hidden p-2 text-sm text-red-800 rounded-lg  hover:bg-red-700 focus:outline-none focus:ring-none cursor-pointer"
                               aria-controls="navbar-dropdown" aria-expanded="false">
@@ -172,42 +173,49 @@ function Index() {
                                       clipRule="evenodd"></path>
                             </svg>
                         </span>
-                        <Link href={'/register'}
-                              className={'px-4 h-fit py-2 bg-sky-600 uppercase rounded-lg lg:hidden text-white cursor-pointer '}>Register</Link>
+                            <Link href={'/register'}
+                                  className={'px-4 h-fit hidden md:inline-block py-2 bg-sky-600 rounded-lg lg:hidden text-white cursor-pointer '}>Register</Link>
+                            <Link href={'https://cmt3.research.microsoft.com/ICAC3N2023'}
+                                  className={'px-4 h-fit py-2 bg-sky-600 mx-2 rounded-lg lg:hidden text-white cursor-pointer '}>Submit&nbsp;Paper</Link>
+                        </div>
+
                     </div>
 
+                    {<div className={`${menuOpen ? "w-full md:block lg:w-auto" : "hidden md:block"}`}>
+                        <ul className="flex flex-col gap-3 md:text-sm lg:gap-5 justify-between md:items-center items-start font-medium md:p-0 rounded-lg md:flex-row md:mt-0 md:border-0">
+                            {links.map((link, index) => (
+                                <div key={index} className={'md:w-auto w-full'}>
+                                    {
+                                        link.enabled && link.link &&
+                                        <>
+                                            <li key={index}
+                                                className={`cursor-pointer text-white`}>
+                                                <Link href={link.link}>
+                                                    {link.title.toUpperCase()}
+                                                </Link>
+                                            </li>
+                                        </>
+                                    }
+                                    {
+                                        link.enabled && link.dropdown &&
+                                        <Dropdown title={link.title} dropdown={link.dropdown}/>
+                                    }
+                                </div>
+                            ))}
+
+                            <Button link={'https://cmt3.research.microsoft.com/ICAC3N2023'}
+                                    className={'hidden lg:block mr-0 bg-sky-600 hover:bg-sky-700 shrink-on-hover focus:ring-4 focus:ring-sky-300 no-underline dark:focus:ring-sky-700'}
+                                    hideIcon={true}>Submit Paper</Button>
+                            <Button link={'/register'}
+                                    className={'hidden lg:block bg-sky-600 hover:bg-sky-700 shrink-on-hover focus:ring-4 focus:ring-sky-300 no-underline dark:focus:ring-sky-700'}
+                                    hideIcon={true}>Register</Button>
+                        </ul>
+                    </div>}
+
                 </div>
-
-                {<div className={`${menuOpen ? "w-full md:block lg:w-auto" : "hidden md:block"}`}>
-                    <ul className="flex flex-col gap-3 md:text-sm lg:gap-5 justify-between md:items-center items-start font-medium md:p-0 rounded-lg md:flex-row md:mt-0 md:border-0">
-                        {links.map((link, index) => (
-                            <div key={index} className={'md:w-auto w-full'}>
-                                {
-                                    link.enabled && link.link &&
-                                    <>
-                                        <li key={index}
-                                            className={`cursor-pointer text-white`}>
-                                            <Link href={link.link}>
-                                                {link.title.toUpperCase()}
-                                            </Link>
-                                        </li>
-                                    </>
-                                }
-                                {
-                                    link.enabled && link.dropdown &&
-                                    <Dropdown title={link.title} dropdown={link.dropdown}/>
-                                }
-                            </div>
-                        ))}
-
-                        <Button link={'/register'}
-                                className={'hidden lg:block bg-sky-600 hover:bg-sky-700 shrink-on-hover focus:ring-4 focus:ring-sky-300 no-underline dark:focus:ring-sky-700'}
-                                hideIcon={true}>Register</Button>
-                    </ul>
-                </div>}
-
-            </div>
-        </nav>);
+            </nav>
+        </div>
+    );
 }
 
 export default Index;
