@@ -15,8 +15,8 @@ const Speakers = () => {
                                 <div className={'col-span-1 w-full h-40'}>
                                     <img src={speaker.image} className={'h-full w-full object-cover rounded-lg '} alt={speaker.name}/>
                                 </div>
-                                <div className={" flex flex-col gap-1 col-span-2 my-2"}>
-                                    <div className={"-ml-1"}>
+                                <div className={"flex flex-col gap-1 col-span-2 my-2"}>
+                                    <div className={"py-2"}>
                                         {!speaker.national &&
                                             <div
                                                 className={"rounded-full w-fit font-semibold bg-blue-800 bg-opacity-20"}>
@@ -34,7 +34,7 @@ const Speakers = () => {
                                     </div>
                                     <span className={'font-semibold text-lg'}>{speaker.name}</span>
                                     <span
-                                        className={'font-light text-xs'}>{speaker.designation}</span>
+                                        className={'font-light text-xs pr-2'}>{speaker.designation}</span>
                                 </div>
                             </div>
                         )
