@@ -28,11 +28,6 @@ const Home = () => {
 
     const sliderImages = [
         {
-            "image": "/images/slider/image1.jpeg",
-            "id": "a1b2c3d4",
-            "alt": "image1"
-        },
-        {
             "image": "/images/slider/image2.jpg",
             "id": "e5f6g7h8",
             "alt": "image2"
@@ -186,10 +181,7 @@ const Home = () => {
                                 findings and experiences in computing, communication control, and networking. Featuring
                                 keynote speeches, technical sessions, and workshops, the conference covers a wide range
                                 of topics such as cloud computing, AI, wireless communication systems, IoT, and
-                                cybersecurity. Organized annually by IEEE at various global locations, ICAC3N offers a
-                                stimulating platform for participants to network, collaborate and engage with experts in
-                                their fields. The conference proceedings are published on IEEE Xplore, making it
-                                accessible to researchers and scholars worldwide.
+                                cybersecurity.
                             </p>
                             <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
                             <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About

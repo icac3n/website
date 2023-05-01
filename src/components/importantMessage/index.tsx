@@ -2,8 +2,8 @@ import React from "react";
 
 const impImpData = [
     {
-        title: "Paper submission link validity",
-        description: "5th ICAC3N-23 paper submission link is valid until July 31, 2023",
+        title: "Paper submission link open",
+        description: "5th ICAC3N-23 paper submission link is open till August 31, 2023",
         link: "/registration",
         isImportant: true,
         enabled: true,
