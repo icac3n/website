@@ -16,9 +16,44 @@ export const speakers = [
     {
         "name": "Prof. (Dr.) Satish K. Singh",
         "designation": "IIIT Allahabad / Section Chair, IEEE UP Section.",
-        "image": "/images/speakers/Prof. (Dr.) Satish K. Singh.jpeg",
+        "image": "/images/speakers/Prof. (Dr.) Satish K. Singh.jpg",
         "id": "4",
         "national": true
+    },
+    {
+        "name": "Prof. (Dr.) Shaymaa R. Tahhan",
+        "designation": "Laser and Optoelectronics Department, College of Engineering, Al-Nahrain University, Baghdad, Iraq",
+        "image": "/images/speakers/Prof. (Dr.) Shaymaa R. Tahhan.jpeg",
+        "id": "41",
+        "national": false
+    },
+    {
+        "name": "Prof. (Dr.) Anand Nayyar",
+        "designation": "School of Computer Science, Faculty of Information Technology, Duy Tan University, Da Nang, Viet Nam",
+        "image": "/images/speakers/Prof. (Dr.) Anand Nayyar.webp",
+        "id": "42",
+        "national": false
+    },
+    {
+        "name": "Dr. Sandeep Kajal",
+        "designation": "Postdocotral Researcher at the Department of Mechanical and Material Enginnering, University of Western Ontario, Canada",
+        "image": "/images/speakers/Dr. Sandeep Kajal.jpeg",
+        "id": "43",
+        "national": false
+    },
+    {
+        "name": "Dr. Ajay Beniwal",
+        "designation": "Postdocotral Researcher at the Department of Mechanical and Material Enginnering, University of Western Ontario, Canada",
+        "image": "/images/speakers/Dr. Ajay Beniwal.jpg",
+        "id": "44",
+        "national": false
+    },
+    {
+        "name": "Dr. Neyara Radwan",
+        "designation": "Associate Professor, Quality Assurance Officer, ph.D program, KAU, Saudi Arabia|International Keynote Speaker",
+        "image": "/images/speakers/Dr. Neyara Radwan.jpeg",
+        "id": "45",
+        "national": false
     },
     {
         "name": "Dr. Ahmed A. Elngar",
