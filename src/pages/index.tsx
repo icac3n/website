@@ -30,27 +30,22 @@ const Home = () => {
         {
             "image": "/images/slider/image2.jpg",
             "id": "e5f6g7h8",
-            "alt": "image2"
+            "alt": "Mr. Sunil Galgotia with CM Yogi Adityanath"
         },
         {
             "image": "/images/slider/image3.jpg",
             "id": "i9j0k1l2",
-            "alt": "image3"
+            "alt": "Mr. Dhruv Galgotia with Former President Pranab Mukherjee"
         },
         {
             "image": "/images/slider/image4.jpg",
             "id": "i9j0k1l2",
-            "alt": "image3"
-        },
-        {
-            "image": "/images/slider/image5.png",
-            "id": "i9j0k1l2",
-            "alt": "image3"
+            "alt": "Mr. Sunil Galgotia with PM Narendra Modi"
         },
         {
             "image": "/images/slider/image6.jpg",
             "id": "i9j0k1l2",
-            "alt": "image3"
+            "alt": "Ranked 1st in UP by Times of India Ranking 2020"
         },
 
     ]
@@ -131,7 +126,7 @@ const Home = () => {
                         {/*    </svg>*/}
                         {/*</Link>*/}
                     </div>
-                    <div className={"lg:w-[60%] flex h-full w-full px-5"}>
+                    <div className={"lg:w-[60%] flex h-full w-full px-1"}>
                         <Swiper
                             slidesPerView={1}
                             spaceBetween={10}
@@ -144,7 +139,7 @@ const Home = () => {
                             }}
                             loop={true}
                             modules={[Autoplay]}
-                            className="mySwiper mx-auto rounded-md shadow-sm"
+                            className="mySwiper mx-auto rounded-md"
                         >
                             {
                                 sliderImages.map((image, index) => {
@@ -155,7 +150,7 @@ const Home = () => {
                                             {/*    src={image.image}*/}
                                             {/*    alt=""/>*/}
                                             <img
-                                                className={" w-full h-80 object-cover rounded-md"}
+                                                className={" h-full w-[30rem] mx-auto object-cover rounded-md shadow-lg"}
                                                 src={image.image}
                                                 alt=""/>
                                         </SwiperSlide>
