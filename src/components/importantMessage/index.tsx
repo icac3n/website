@@ -29,7 +29,7 @@ export default function ImportantMessage() {
                 {
                     impImpData.map((item, index) => {
                         return (
-                            <div key={index} className={``}>
+                            <a href={item.link} key={index} className={"cursor-pointer"}>
                                 <div
                                     className={`flex flex-col space-x-2 items-start ${item.isImportant ? "-mx-4 -my-5 p-4 bg-red-100" : ""}`}>
                                     <div>
@@ -66,11 +66,11 @@ export default function ImportantMessage() {
                                 {index !== impImpData.length - 1 &&
                                     <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700"/>
                                 }
-                            </div>
+                            </a>
                         )
                     })
                 }
             </div>
         </div>
-)
+    )
 }
