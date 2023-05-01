@@ -12,7 +12,7 @@ const Speakers = () => {
                         return (
                             <div key={index}
                                  className={'col-span-1 shadow-md grid grid-cols-3 gap-3 bg-gray-100 rounded-lg'}>
-                                <div className={'col-span-1 w-full h-40'}>
+                                <div className={'col-span-1 w-full h-44'}>
                                     <img src={speaker.image} className={'h-full w-full object-cover rounded-lg '} alt={speaker.name}/>
                                 </div>
                                 <div className={"flex flex-col gap-1 col-span-2 my-2"}>
