@@ -194,8 +194,8 @@ const Home = () => {
                                 by DATAQUEST NASSCOM survey and OUTLOOK-C For College Survey.
                             </p>
                             <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
-                            <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About CSE
-                                Department</h2>
+                            <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
+                                Department of Computer Science</h2>
                             <p className={'text-justify whitespace-pre-wrap'}>
                                 The Computer Science & Engineering Department at GCET offers a UG program in Computer
                                 Science and Engineering. It has experienced faculty members, well-equipped labs, and
