@@ -103,15 +103,16 @@ function Index() {
             enabled: true,
         },
         {
-            title: "Contact",
-            link: "/contact",
-            enabled: true,
-        },
-        {
             title: "Register",
             link: "/registration",
             enabled: true,
         },
+        {
+            title: "Contact",
+            link: "/contact",
+            enabled: true,
+        },
+
         {
             title: "Archive",
             dropdown: [
@@ -161,6 +162,7 @@ function Index() {
                         <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
                         <span className="mx-2">•</span>
                         <span className="mx-4">Conference Record Number #60023</span>
+                        <span className="mx-2">•</span>
                     </div>
 
                     <div className="absolute top-0 animate-marquee2 whitespace-nowrap">
