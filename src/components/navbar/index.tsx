@@ -65,6 +65,11 @@ const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string,
 function Index() {
     const links = [
         {
+            title: "Home",
+            link: "/",
+            enabled: true,
+        },
+        {
             title: "About",
             link: "/about",
             enabled: true,
