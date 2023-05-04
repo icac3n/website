@@ -107,11 +107,11 @@ function Index() {
             link: "/contact",
             enabled: true,
         },
-        // {
-        //     title: "Register",
-        //     link: "/registration",
-        //     enabled: true,
-        // },
+        {
+            title: "Register",
+            link: "/registration",
+            enabled: true,
+        },
         {
             title: "Archive",
             dropdown: [
@@ -151,6 +151,23 @@ function Index() {
     return (
 
         <div>
+            <div className={"py-1 px-3 bg-stone-800"}>
+                <div className="relative flex overflow-x-hidden text-white text-sm">
+                    <div className="animate-marquee whitespace-nowrap">
+                        <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
+                        <span className="mx-4">Conference Record Number #60023</span>
+                        <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
+                        <span className="mx-4">Conference Record Number #60023</span>
+                    </div>
+
+                    <div className="absolute top-0 animate-marquee2 whitespace-nowrap">
+                        <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
+                        <span className="mx-4">Conference Record Number #60023</span>
+                        <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
+                        <span className="mx-4">Conference Record Number #60023</span>
+                    </div>
+                </div>
+            </div>
             <nav className="bg-red-800">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between gap-y-6 mx-auto p-4">
                     <div className={'lg:w-fit w-full flex flex-row justify-between items-center'}>
@@ -173,8 +190,6 @@ function Index() {
                                       clipRule="evenodd"></path>
                             </svg>
                         </span>
-                            <Link href={'/register'}
-                                  className={'px-4 h-fit hidden md:inline-block py-2 bg-sky-600 rounded-lg lg:hidden text-white cursor-pointer '}>Register</Link>
                             <Link href={'https://cmt3.research.microsoft.com/ICAC3N2023'}
                                   className={'px-4 h-fit py-2 bg-sky-600 mx-2 rounded-lg lg:hidden text-white cursor-pointer '}>Submit&nbsp;Paper</Link>
                         </div>
@@ -206,15 +221,15 @@ function Index() {
                             <Button link={'https://cmt3.research.microsoft.com/ICAC3N2023'}
                                     className={'hidden lg:block mr-0 bg-sky-600 hover:bg-sky-700 shrink-on-hover focus:ring-4 focus:ring-sky-300 no-underline dark:focus:ring-sky-700'}
                                     hideIcon={true}>Submit Paper</Button>
-                            <Button link={'/register'}
-                                    className={'hidden lg:block bg-sky-600 hover:bg-sky-700 shrink-on-hover focus:ring-4 focus:ring-sky-300 no-underline dark:focus:ring-sky-700'}
-                                    hideIcon={true}>Register</Button>
                         </ul>
                     </div>}
 
                 </div>
             </nav>
+
+
         </div>
+
     );
 }
 

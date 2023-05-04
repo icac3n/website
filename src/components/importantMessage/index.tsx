@@ -31,34 +31,26 @@ export default function ImportantMessage() {
                         return (
                             <a href={item.link} key={index} className={"cursor-pointer"}>
                                 <div
-                                    className={`flex flex-col space-x-2 items-start ${item.isImportant ? "-mx-4 -my-5 p-4 bg-red-100" : ""}`}>
+                                    className={`flex flex-col space-x-2 items-start ${item.isImportant ? "-mx-4 -my-5 p-4 bg-orange-100" : ""}`}>
                                     <div>
                                         <div className={"flex space-x-2 mt-2"}>
-                                            <p className={`font-medium ${item.isImportant ? "text-red-800" : ""}`}>{item.title}</p>
+                                            <p className={`font-medium ${item.isImportant ? "text-orange-800" : ""}`}>{item.title}</p>
                                             {index === 0 && !item.isImportant &&
-                                                <div className={"rounded-full bg-blue-800 font-semibold bg-opacity-20"}>
+                                                <div className={"rounded-full bg--800 font-semibold bg-opacity-20"}>
                                                     <p className={"px-2 py-0.5 text-sm text-blue-800"}>New</p>
                                                 </div>
                                             }
                                             {item.isImportant &&
                                                 <div className={"flex space-x-2 items-center justify-center"}>
-
                                                     <div
-                                                        className={"rounded-full bg-red-800 font-semibold bg-opacity-20"}>
-                                                        <p className={"px-2 py-0.5 text-xs text-red-800"}>Important</p>
-                                                    </div>
-
-                                                    <div className={"relative pl-1"}>
-                                                        <div
-                                                            className="absolute w-4 h-4 rounded-full bg-red-600 bg-opacity-50 animate-ping"></div>
-                                                        <div
-                                                            className="relative w-4 h-4 rounded-full bg-opacity-100 bg-red-600"></div>
+                                                        className={"rounded-full bg-orange-800 font-semibold bg-opacity-20"}>
+                                                        <p className={"px-2 py-0.5 text-xs text-orange-800"}>Important</p>
                                                     </div>
                                                 </div>
                                             }
                                         </div>
 
-                                        <p className={`font-light text-sm mt-1 ${item.isImportant ? "text-red-800" : ""}`}>{item?.description}</p>
+                                        <p className={`font-light text-sm mt-1 ${item.isImportant ? "text-orange-800" : ""}`}>{item?.description}</p>
                                     </div>
 
 

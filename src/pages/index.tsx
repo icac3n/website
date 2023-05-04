@@ -23,6 +23,7 @@ import ImportantMessage from "@/components/importantMessage";
 import Button from "@/components/button";
 import Link from "next/link";
 import {speakers} from "@/data/speakers";
+import Counter from "@/components/counter";
 
 const Home = () => {
 
@@ -92,6 +93,7 @@ const Home = () => {
                         <p className={"text-3xl lg:text-4xl break-words my-3 lg:my-5 font-bold mx-2 lg:mx-0"}>5th
                             International Conference on Advances in Computing, Communication Control and Networking-
                             ICAC3N</p>
+
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiMapPin2Fill className={"hidden text-xl mt-1 self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
