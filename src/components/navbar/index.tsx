@@ -155,15 +155,21 @@ function Index() {
                 <div className="relative flex overflow-x-hidden text-white text-sm">
                     <div className="animate-marquee whitespace-nowrap">
                         <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
+                        <span className="mx-2">•</span>
                         <span className="mx-4">Conference Record Number #60023</span>
+                        <span className="mx-2">•</span>
                         <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
+                        <span className="mx-2">•</span>
                         <span className="mx-4">Conference Record Number #60023</span>
                     </div>
 
                     <div className="absolute top-0 animate-marquee2 whitespace-nowrap">
                         <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
+                        <span className="mx-2">•</span>
                         <span className="mx-4">Conference Record Number #60023</span>
+                        <span className="mx-2">•</span>
                         <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
+                        <span className="mx-2">•</span>
                         <span className="mx-4">Conference Record Number #60023</span>
                     </div>
                 </div>

@@ -54,7 +54,6 @@ const Home = () => {
     return (
         <>
             <Head>
-
                 <title>ICAC3N- Galgotias College of Engineering</title>
                 <meta name="title" content="ICAC3N- Galgotias College of Engineering"/>
                 <meta name="description"
