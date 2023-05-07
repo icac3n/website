@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import {Swiper, SwiperSlide} from "swiper/react";
-
+import dynamic from "next/dynamic";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -23,9 +23,32 @@ import ImportantMessage from "@/components/importantMessage";
 import Button from "@/components/button";
 import Link from "next/link";
 import {speakers} from "@/data/speakers";
-import Counter from "@/components/counter";
+
+const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
+    ssr: false,
+});
+
 
 const Home = () => {
+
+    const counterData = [
+        {
+            maxCount: 1000,
+            subTitle: 'Papers Published'
+        },
+        {
+            maxCount: 1000,
+            subTitle: 'Members'
+        },
+        {
+            maxCount: 1000,
+            subTitle: 'Participants'
+        },
+        {
+            maxCount: 1000,
+            subTitle: 'Active Standards'
+        }
+    ]
 
     const sliderImages = [
         {
@@ -206,7 +229,36 @@ const Home = () => {
                                 experience, and have good alumni and industry relations. Galgotias Computer Science
                                 graduates get recruited by industry-leading companies.
                             </p>
+                            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
 
+                            <div
+                                className={"w-full grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-4 md:flex-row justify-between my-8 mt-16 gap-x-8 px-4 md:px-0"}>
+                                {
+                                    counterData.map((item, index)=>{
+                                        return(
+                                            <div key={index} className={"flex-col items-center text-center"}>
+                                                <div className={"inline-flex text-3xl lg:text-4xl md:text-4xl"}>
+                                                    <AnimatedNumbers
+                                                        includeComma
+                                                        animateToNumber={item.maxCount}
+                                                        locale="en-US"
+                                                        configs={[
+                                                            {mass: 1, tension: 220, friction: 100},
+                                                            {mass: 1, tension: 180, friction: 130},
+                                                            {mass: 1, tension: 280, friction: 90},
+                                                            {mass: 1, tension: 180, friction: 135},
+                                                            {mass: 1, tension: 260, friction: 100},
+                                                            {mass: 1, tension: 210, friction: 180},
+                                                        ]}
+                                                    ></AnimatedNumbers>
+                                                    <p className={"self-center text-3xl lg:text-4xl md:text-4xl"}>+</p>
+                                                </div>
+                                                <p className={"font-light tracking-tight text-md text-center md:text-lg lg:text-lg lg:mt-2 md:mt-0 mb-3"}>{item.subTitle}</p>
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </div>
                         </div>
                         <div id={"important"} className={"lg:col-span-1 col-span-full"}>
                             <ImportantMessage/>
@@ -254,15 +306,17 @@ const Home = () => {
                                             <div className={'col-span-1 flex flex-col items-center'}>
                                                 <img src={speaker.image} alt={"Speaker's Photo"}
                                                      className={'h-56 border-2 border-gray-300 w-64 object-cover mb-5 rounded-lg shadow-md'}/>
-                                                { !speaker.national &&
+                                                {!speaker.national &&
                                                     <div className={"rounded-full my-2 bg-blue-800 bg-opacity-20"}>
-                                                        <p className={"px-2 py-0.5 text-sm text-blue    -800"}>International Speaker</p>
+                                                        <p className={"px-2 py-0.5 text-sm text-blue    -800"}>International
+                                                            Speaker</p>
                                                     </div>
                                                 }
                                                 {
                                                     speaker.national &&
                                                     <div className={"rounded-full my-2 bg-amber-600 bg-opacity-20"}>
-                                                        <p className={"px-2 py-0.5 text-sm text-amber-800"}>National Speaker</p>
+                                                        <p className={"px-2 py-0.5 text-sm text-amber-800"}>National
+                                                            Speaker</p>
                                                     </div>
                                                 }
                                                 <span className={'font-bold text-sm text-center'}>{speaker.name}</span>
