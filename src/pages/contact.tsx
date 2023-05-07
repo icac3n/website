@@ -7,8 +7,8 @@ const Register = () => {
         <>
 
             <Head>
-                <title>Contact - ICAC3N- Galgotias College of Engineering</title>
-                <meta name="title" content="Contact - ICAC3N- Galgotias College of Engineering"/>
+                <title>Contact - ICAC3N - Galgotias College of Engineering and Technology</title>
+                <meta name="title" content="Contact - ICAC3N - Galgotias College of Engineering and Technology"/>
                 <meta name="description"
                       content="Contact - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -16,7 +16,7 @@ const Register = () => {
 
                 <meta property="og:type" content="website"/>
                 <meta property="og:url" content="https://icac3n.in/"/>
-                <meta property="og:title" content="Contact - ICAC3N- Galgotias College of Engineering"/>
+                <meta property="og:title" content="Contact - ICAC3N - Galgotias College of Engineering and Technology"/>
                 <meta name="description"
                       content="Contact - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
                 <meta property="og:image"
@@ -25,7 +25,7 @@ const Register = () => {
 
                 <meta property="twitter:card" content="summary_large_image"/>
                 <meta property="twitter:url" content="https://icac3n.in/"/>
-                <meta property="Contact - twitter:title" content="Contact - ICAC3N- Galgotias College of Engineering"/>
+                <meta property="Contact - twitter:title" content="Contact - ICAC3N - Galgotias College of Engineering and Technology"/>
                 <meta property="twitter:description"
                       content="Contact - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
                 <meta property="twitter:image"

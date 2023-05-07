@@ -9,7 +9,7 @@ const Register = () => {
         <>
 
             <Head>
-                <title>Register - ICAC3N- Galgotias College of Engineering</title>
+                <title>Register - ICAC3N - Galgotias College of Engineering and Technology</title>
                 <meta name="title" content="Register - ICAC3N - Galgotias College of Engineering"/>
                 <meta name="description"
                       content="Register - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
