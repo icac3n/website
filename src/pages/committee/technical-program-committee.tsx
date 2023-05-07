@@ -40,7 +40,7 @@ const TechnicalProgramCommittee = () => {
         <>
             <Head>
                 <title>Technical Program Committee - ICAC3N - Galgotias College of Engineering</title>
-                <meta name="title" content="Technical Program Committee - ICAC3N- Galgotias College of Engineering"/>
+                <meta name="title" content="Technical Program Committee - ICAC3N - Galgotias College of Engineering and Technology"/>
                 <meta name="description"
                       content="Technical Program Committee - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -48,7 +48,7 @@ const TechnicalProgramCommittee = () => {
 
                 <meta property="og:type" content="website"/>
                 <meta property="og:url" content="https://icac3n.in/"/>
-                <meta property="og:title" content="Technical Program Committee - ICAC3N- Galgotias College of Engineering"/>
+                <meta property="og:title" content="Technical Program Committee - ICAC3N - Galgotias College of Engineering and Technology"/>
                 <meta name="description"
                       content="Technical Program Committee - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
                 <meta property="og:image"
@@ -57,7 +57,7 @@ const TechnicalProgramCommittee = () => {
 
                 <meta property="twitter:card" content="summary_large_image"/>
                 <meta property="twitter:url" content="https://icac3n.in/"/>
-                <meta property="Technical Program Committee - twitter:title" content="Technical Program Committee - ICAC3N- Galgotias College of Engineering"/>
+                <meta property="Technical Program Committee - twitter:title" content="Technical Program Committee - ICAC3N - Galgotias College of Engineering and Technology"/>
                 <meta property="twitter:description"
                       content="Technical Program Committee - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
                 <meta property="twitter:image"

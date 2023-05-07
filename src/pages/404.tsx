@@ -8,7 +8,7 @@ const callForPapers = () => {
         <>
             <Head>
                 <title>404 - ICAC3N - Galgotias College of Engineering</title>
-                <meta name="title" content="404 - ICAC3N- Galgotias College of Engineering"/>
+                <meta name="title" content="404 - ICAC3N - Galgotias College of Engineering and Technology"/>
                 <meta name="description"
                       content="404 - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -16,7 +16,7 @@ const callForPapers = () => {
 
                 <meta property="og:type" content="website"/>
                 <meta property="og:url" content="https://icac3n.in/"/>
-                <meta property="og:title" content="404 - ICAC3N- Galgotias College of Engineering"/>
+                <meta property="og:title" content="404 - ICAC3N - Galgotias College of Engineering and Technology"/>
                 <meta name="description"
                       content="404 - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
                 <meta property="og:image"
@@ -25,7 +25,7 @@ const callForPapers = () => {
 
                 <meta property="twitter:card" content="summary_large_image"/>
                 <meta property="twitter:url" content="https://icac3n.in/"/>
-                <meta property="404 - twitter:title" content="404 - ICAC3N- Galgotias College of Engineering"/>
+                <meta property="404 - twitter:title" content="404 - ICAC3N - Galgotias College of Engineering and Technology"/>
                 <meta property="twitter:description"
                       content="404 - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
                 <meta property="twitter:image"
