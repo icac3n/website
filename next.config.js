@@ -17,6 +17,11 @@ const nextConfig = {
       destination: '/call-for-papers',
       permanent: true,
     },
+    {
+        source: '/IEEEFORMAT/:slug',
+        destination: '/',
+        permanent: true,
+    }
   ]
 },
 }
