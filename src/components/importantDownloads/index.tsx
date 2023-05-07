@@ -15,7 +15,7 @@ const impDownloadData = [
         enabled: true,
     }, {
         title: "Sample PPT (.pptx)",
-        link: "/documents/SamplePPTICAC3N-23.pptx",
+        link: "/documents/SamplePPTICAC3N-2023.pptx",
         isImportant: false,
         enabled: true,
     },

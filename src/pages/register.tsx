@@ -37,11 +37,11 @@ const Register = () => {
                 <h1 className={"heading"}>Registration</h1>
                 <p>Learn How to Register for ICAC3N-23: A Guide to Submitting Your Papers for the International Conference
                     on Advances in Computing, Communication Control and Networking.</p>
-                <Button link={"https://forms.gle/8acy23i3UbtwLkFXA"}>Register Now</Button>
+                <Button link={"https://forms.gle/NR6eA7N2Akp9S51XA"}>Register Now</Button>
                 <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700"/>
                 <h2 className={"heading"}>Registration Fee</h2>
                 <div>
-                    <img src="images/misc/registration_fee.jpg" alt=""/>
+                    <img src="images/misc/registration_fee.png" alt=""/>
                     <p>* Including 18% GST</p>
                 </div>
 
@@ -59,7 +59,7 @@ const Register = () => {
                     Please follow the below format for the presentation. The presentation should be in the PPT format.
                 </p>
                 <div className={"flex flex-col space-y-4"}>
-                    <Button link={"/documents/SamplePPTICAC3N-23.pptx"}>Download PPTX File</Button>
+                    <Button link={"/documents/SamplePPTICAC3N-2023.pptx"}>Download PPTX File</Button>
                 </div>
 
 
