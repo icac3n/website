@@ -78,10 +78,6 @@ const Register = () => {
                         <td>Email:</td>
                         <td><a href="mailto:">vishnu.sharma@galgotiacollege.edu</a></td>
                     </tr>
-                    <tr>
-                        <td>Gmail:</td>
-                        <td><a href="mailto:">vishnusharma97@gmail.com</a></td>
-                    </tr>
                     </tbody>
                 </table>
                 <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700"/>
