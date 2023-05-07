@@ -5,10 +5,15 @@ import dynamic from "next/dynamic";
 import "swiper/css";
 import "swiper/css/pagination";
 
+import {Navigation, Pagination} from "swiper";
+
 
 // import required modules
 import {Autoplay} from "swiper";
 import {
+    RiArticleFill, RiArticleLine,
+    RiBuildingFill,
+    RiBuildingLine,
     RiCalendarTodoFill,
     RiFacebookBoxFill,
     RiMailFill,
@@ -33,19 +38,19 @@ const Home = () => {
 
     const counterData = [
         {
-            maxCount: 1000,
+            maxCount: 600,
             subTitle: 'Papers Published'
         },
         {
-            maxCount: 1000,
+            maxCount: 200,
             subTitle: 'Members'
         },
         {
-            maxCount: 1000,
+            maxCount: 1400,
             subTitle: 'Participants'
         },
         {
-            maxCount: 1000,
+            maxCount: 500,
             subTitle: 'Active Standards'
         }
     ]
@@ -106,20 +111,32 @@ const Home = () => {
                 {/*    landing   */}
                 <div
                     className={"flex lg:flex-row flex-col gap-5 items-center justify-center lg:text-start text-center mt-2"}>
-                    <div className={"flex flex-col justify-between h-full self-start"}>
+                    <div className={"flex flex-col justify-between h-full self-start gap-2"}>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiCalendarTodoFill className={"hidden text-xl lg:block text-red-800"}/>
                             <p className={"text-red-800 font-semibold"}>15th and 16th December 2023</p>
                         </div>
 
-                        <p className={"text-3xl lg:text-4xl break-words my-3 lg:my-5 font-bold mx-2 lg:mx-0"}>5th
+                        <p className={"text-3xl lg:text-4xl break-words my-3 lg:my-2 font-bold mx-2 lg:mx-0"}>5th
                             International Conference on Advances in Computing, Communication Control and Networking-
                             ICAC3N</p>
 
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
+                            <RiArticleLine className={"hidden text-xl self-start lg:block text-red-800"}/>
+                            <div className={"text-red-800"}>
+                                <p className={"font-semibold text"} itemProp={"conference-record-number"}>Conference Record Number #60023</p>
+                            </div>
+                        </div>
+                        <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
+                            <RiBuildingFill className={"hidden text-xl self-start lg:block text-red-800"}/>
+                            <div className={"text-red-800"}>
+                                <p className={"font-semibold text"} itemProp={"organizing-department"}>Computer Science and Engineering Department</p>
+                            </div>
+                        </div>
+                        <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiMapPin2Fill className={"hidden text-xl mt-1 self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
-                                <p className={"font-semibold text"}>Galgotias College of Engineering And
+                                <p className={"font-semibold text"} itemProp={"organizing-college"}>Galgotias College of Engineering And
                                     Technology</p>
                                 <p className={"text-sm"}>Knowledge Park I, Greater Noida</p>
                             </div>
@@ -155,6 +172,11 @@ const Home = () => {
                             slidesPerView={1}
                             spaceBetween={10}
                             grabCursor={true}
+                            pagination={{
+                                clickable: true,
+                                dynamicBullets: true,
+
+                            }}
                             autoplay={{
                                 delay: 4000,
                                 disableOnInteraction: false,
@@ -162,7 +184,7 @@ const Home = () => {
                                 reverseDirection: true
                             }}
                             loop={true}
-                            modules={[Autoplay]}
+                            modules={[Autoplay,Pagination, Navigation]}
                             className="mySwiper mx-auto rounded-md"
                         >
                             {
@@ -236,7 +258,7 @@ const Home = () => {
                                 {
                                     counterData.map((item, index)=>{
                                         return(
-                                            <div key={index} className={"flex-col items-center text-center bg-amber-50 border-x-4 border-amber-400 rounded-xl px-2 py-4"}>
+                                            <div key={index} className={"flex-col items-center text-center bg-gray-100 border-x-0 border-red-200 rounded-xl px-2 py-4"}>
                                                 <div className={"inline-flex text-3xl lg:text-4xl md:text-4xl"}>
                                                     <AnimatedNumbers
                                                         includeComma
