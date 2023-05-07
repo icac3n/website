@@ -236,7 +236,7 @@ const Home = () => {
                                 {
                                     counterData.map((item, index)=>{
                                         return(
-                                            <div key={index} className={"flex-col items-center text-center"}>
+                                            <div key={index} className={"flex-col items-center text-center bg-amber-50 border-x-4 border-amber-400 rounded-xl px-2 py-4"}>
                                                 <div className={"inline-flex text-3xl lg:text-4xl md:text-4xl"}>
                                                     <AnimatedNumbers
                                                         includeComma
@@ -253,7 +253,7 @@ const Home = () => {
                                                     ></AnimatedNumbers>
                                                     <p className={"self-center text-3xl lg:text-4xl md:text-4xl"}>+</p>
                                                 </div>
-                                                <p className={"font-light tracking-tight text-md text-center md:text-lg lg:text-lg lg:mt-2 md:mt-0 mb-3"}>{item.subTitle}</p>
+                                                <p className={"font-light tracking-tight text-md text-center md:text-lg lg:text-lg lg:mt-2 md:mt-0"}>{item.subTitle}</p>
                                             </div>
                                         )
                                     })
