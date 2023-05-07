@@ -68,7 +68,7 @@ const Register = () => {
                     <tbody>
                     <tr>
                         <td>Email</td>
-                        <td><a href="mailto:">icac3n22@gmail.com</a></td>
+                        <td><a href="mailto:">icac3n23@gmail.com</a></td>
                     </tr>
                     <tr>
                         <td>Contact No.</td>

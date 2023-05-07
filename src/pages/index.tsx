@@ -23,6 +23,7 @@ import ImportantMessage from "@/components/importantMessage";
 import Button from "@/components/button";
 import Link from "next/link";
 import {speakers} from "@/data/speakers";
+import Counter from "@/components/counter";
 
 const Home = () => {
 
@@ -53,7 +54,6 @@ const Home = () => {
     return (
         <>
             <Head>
-
                 <title>ICAC3N- Galgotias College of Engineering</title>
                 <meta name="title" content="ICAC3N- Galgotias College of Engineering"/>
                 <meta name="description"
@@ -92,6 +92,7 @@ const Home = () => {
                         <p className={"text-3xl lg:text-4xl break-words my-3 lg:my-5 font-bold mx-2 lg:mx-0"}>5th
                             International Conference on Advances in Computing, Communication Control and Networking-
                             ICAC3N</p>
+
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiMapPin2Fill className={"hidden text-xl mt-1 self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
@@ -193,8 +194,8 @@ const Home = () => {
                                 by DATAQUEST NASSCOM survey and OUTLOOK-C For College Survey.
                             </p>
                             <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
-                            <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About CSE
-                                Department</h2>
+                            <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
+                                Department of Computer Science</h2>
                             <p className={'text-justify whitespace-pre-wrap'}>
                                 The Computer Science & Engineering Department at GCET offers a UG program in Computer
                                 Science and Engineering. It has experienced faculty members, well-equipped labs, and
