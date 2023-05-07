@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import {Footer, Navbar, MessageFlashSlider} from "components";
 
 import { SessionProvider } from "next-auth/react"
+import { Analytics } from '@vercel/analytics/react';
 
 type ComponentWithLayout = AppProps & {
     Component: AppProps['Component'] & {
@@ -37,6 +38,7 @@ export default function App({Component, pageProps}: ComponentWithLayout) {
                         )
                 }
                 <Footer/>
+                <Analytics />
             </SessionProvider>
         </ThemeProvider>
     );
