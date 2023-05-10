@@ -1,6 +1,7 @@
 import {RiFacebookBoxFill, RiMailFill, RiPhoneFill, RiTwitterFill} from "react-icons/ri";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const Footer = () => {
     return (
@@ -10,8 +11,9 @@ const Footer = () => {
                 <div className="md:flex md:justify-between items-center">
                     <div className="mb-6 md:mb-0">
                         <Link href="/" className="flex items-center">
-                            <img src="/icaccn_logo.png" className="h-8 mr-3"
-                                 alt="ICAC3N"/>
+                            <div className={'h-8'}>
+                                <Image width={35} height={35} src="/icac3nlogo.png" className="mr-3 object-cover" alt="Logo"/>
+                            </div>
                             <span
                                 className="self-center text-2xl font-semibold whitespace-nowrap text-white">ICAC3N-23</span>
                         </Link>
@@ -65,16 +67,16 @@ const Footer = () => {
                     <div
                         className={"flex mt-4 space-x-6 text-2xl text-white sm:justify-center sm:mt-0"}>
                         <Link href={"https://twitter.com/icac3n"}>
-                            <RiTwitterFill className={'cursor-pointer grow-on-hover hover:text-sky-400'}/>
+                            <RiTwitterFill className={'cursor-pointer grow-on-hover hover:text-sky-400'} aria-label={'icac3n twitter'}/>
                         </Link>
                         <Link href={"tel:+91-7835878146"}>
-                            <RiPhoneFill className={'cursor-pointer  grow-on-hover hover:text-emerald-500'}/>
+                            <RiPhoneFill className={'cursor-pointer  grow-on-hover hover:text-emerald-500'} aria-label={'icac3n phone'}/>
                         </Link>
                         <Link href={"https://www.facebook.com/IEEE.ICAC3N.21"}>
-                            <RiFacebookBoxFill className={'cursor-pointer  grow-on-hover hover:text-indigo-500'}/>
+                            <RiFacebookBoxFill className={'cursor-pointer  grow-on-hover hover:text-indigo-500'} aria-label={'icac3n facebook'}/>
                         </Link>
                         <Link href={"mailto:vishnu.sharma@galgotiacollege.edu"}>
-                            <RiMailFill className={'cursor-pointer  grow-on-hover hover:text-amber-400'}/>
+                            <RiMailFill className={'cursor-pointer  grow-on-hover hover:text-amber-400'} aria-label={'icac3n mail'}/>
                         </Link>
                     </div>
 

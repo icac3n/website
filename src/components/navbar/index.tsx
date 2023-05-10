@@ -5,6 +5,8 @@ import Link from "next/link";
 import * as path from "path";
 import Button from "@/components/button";
 
+import {motion} from "framer-motion";
+import Image from "next/image";
 
 const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string, link: string }[] }) => {
     const [dropOpen, setDropOpen] = useState(false);
@@ -154,6 +156,21 @@ function Index() {
     const router = useRouter()
     // @ts-ignore
     // @ts-ignore
+
+    const marqueeVariants = {
+        animate: {
+            x: [0, -1035],
+            transition: {
+                x: {
+                    repeat: Infinity,
+                    repeatType: "loop",
+                    duration: 5,
+                    ease: "linear",
+                },
+            },
+        },
+    };
+
     return (
 
         <div>
@@ -185,17 +202,18 @@ function Index() {
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between gap-y-6 mx-auto p-4">
                     <div className={'lg:w-fit w-full flex flex-row justify-between items-center'}>
                         <Link href="/" className="flex items-center">
-                            <img src="/icac3nlogo.png" className="mr-3 h-12 object-cover" alt="Logo"/>
+                            <div className={'h-12'}>
+                                <Image width={50} height={50} src="/icac3nlogo.png" className="mr-3 object-cover" alt="Logo"/>
+                            </div>
                             <span className="font-semibold text-2xl tracking-tight text-white mr-3">ICAC3N</span>
 
                         </Link>
 
                         <div className={'flex flex-row gap-1 justify-normal items-center'}>
                         <span onClick={menuToggle}
-                              className="inline-flex order-last items-center md:hidden p-2 text-sm text-red-800 rounded-lg  hover:bg-red-700 focus:outline-none focus:ring-none cursor-pointer"
-                              aria-controls="navbar-dropdown" aria-expanded="false">
+                              className="inline-flex order-last items-center md:hidden p-2 text-sm text-red-800 rounded-lg  hover:bg-red-700 focus:outline-none focus:ring-none cursor-pointer">
                             <span className="sr-only">Open main menu</span>
-                            <svg className="w-8 h-8 text-white" aria-hidden="true" fill="currentColor"
+                            <svg className="w-8 h-8 text-white" fill="currentColor"
                                  viewBox="0 0 20 20"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd"
