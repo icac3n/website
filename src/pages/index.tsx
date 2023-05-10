@@ -29,10 +29,11 @@ import Button from "@/components/button";
 import Link from "next/link";
 import {speakers} from "@/data/speakers";
 
-const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
-    ssr: false,
-});
+// const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
+//     ssr: false,
+// });
 
+import Carousel from "framer-motion-carousel"
 
 const Home = () => {
 
@@ -109,9 +110,8 @@ const Home = () => {
             </Head>
             <main className={"mx-8"}>
                 {/*    landing   */}
-                <div
-                    className={"flex lg:flex-row flex-col gap-5 items-center justify-center lg:text-start text-center mt-2"}>
-                    <div className={"flex flex-col justify-between h-full self-start gap-2"}>
+                <div className={"grid grid-cols-5 gap-5 items-center justify-center lg:text-start text-center mt-2"}>
+                    <div className={"col-span-full lg:col-span-2 flex flex-col justify-between h-full self-start gap-2"}>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiCalendarTodoFill className={"hidden text-xl lg:block text-red-800"}/>
                             <p className={"text-red-800 font-semibold"}>15th and 16th December 2023</p>
@@ -174,46 +174,49 @@ const Home = () => {
                         {/*    </svg>*/}
                         {/*</Link>*/}
                     </div>
-                    <div className={"lg:w-[60%] flex h-full w-full px-1"}>
-                        <Swiper
-                            slidesPerView={1}
-                            spaceBetween={10}
-                            grabCursor={true}
-                            pagination={{
-                                clickable: true,
-                                dynamicBullets: true,
-
-                            }}
-                            autoplay={{
-                                delay: 4000,
-                                disableOnInteraction: false,
-                                stopOnLastSlide: false,
-                                reverseDirection: true
-                            }}
+                    <div className={"col-span-full lg:col-span-3 flex h-full w-full px-1 rounded-lg overflow-hidden"}>
+                        <Carousel
+                            autoPlay={true}
+                            interval={4000}
                             loop={true}
-                            modules={[Autoplay,Pagination, Navigation]}
-                            className="mySwiper mx-auto rounded-md"
+                            renderArrowLeft={()=>null}
+                            renderArrowRight={({activeIndex,handleNext})=> null}
+                            renderDots={({setActiveIndex, activeIndex})=>{
+                                return(
+                                    <div className={'absolute bottom-0 left-0 w-full h-10 bg-gray-800 bg-opacity-20 flex flex-row gap-2 items-center justify-center rounded-lg'}>
+                                        {
+                                            sliderImages.map((image, index)=>{
+                                                return(
+                                                    <div
+                                                        key={index}
+                                                        className={`${index==activeIndex ? "bg-amber-400":"bg-white"} w-3 h-3 rounded-full cursor-pointer hover:bg-red-600 transition duration-300 ease-in-out rounded-lg`}
+                                                        onClick={()=>setActiveIndex(index)}>
+
+                                                    </div>
+                                                )
+                                            })
+                                        }
+                                    </div>
+                                )
+                            }}
                         >
-                            {
-                                sliderImages.map((image, index) => {
-                                    return (
-                                        <SwiperSlide key={index}>
-                                            {/*<img*/}
-                                            {/*    className={" w-20 max-w-[100vw] min-h-[50vh] max-h-[50vh] object-cover rounded-md"}*/}
-                                            {/*    src={image.image}*/}
-                                            {/*    alt=""/>*/}
-                                            <img
-                                                className={" h-full w-[30rem] mx-auto object-cover rounded-md shadow-lg"}
-                                                src={image.image}
-                                                alt=""/>
-                                        </SwiperSlide>
+                                {
+                                    sliderImages.map((image, index) => {
+                                        return (
+                                            <div key={index} className={"flex h-full w-full cursor-grab active:cursor-grabbing"}>
+                                                <img
+                                                    draggable={false}
+                                                    className={" h-full mx-auto object-cover rounded-md shadow-lg"}
+                                                    src={image.image}
+                                                    alt=""
+                                                />
+                                            </div>
+                                        )
 
-                                    )
+                                    })
 
-                                })
-
-                            }
-                        </Swiper>
+                                }
+                        </Carousel>
                     </div>
                 </div>
 
