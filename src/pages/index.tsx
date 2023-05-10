@@ -34,6 +34,7 @@ import {speakers} from "@/data/speakers";
 // });
 
 import Carousel from "framer-motion-carousel"
+import Image from "next/image";
 
 const Home = () => {
 
@@ -150,16 +151,16 @@ const Home = () => {
                         </div>
                         <div
                             className={"flex space-x-5 text-2xl text-red-800 mt-4 items-center lg:justify-start justify-center"}>
-                            <Link href={"https://twitter.com/icac3n"}>
+                            <Link href={"https://twitter.com/icac3n"} aria-label={'icac3n twitter'}>
                                 <RiTwitterFill className={'cursor-pointer grow-on-hover hover:text-sky-500'}/>
                             </Link>
-                            <Link href={"tel:+91-7835878146"}>
+                            <Link href={"tel:+91-7835878146"} aria-label={'icac3n phone'}>
                                 <RiPhoneFill className={'cursor-pointer  grow-on-hover hover:text-emerald-500'}/>
                             </Link>
-                            <Link href={"https://www.facebook.com/IEEE.ICAC3N.21"}>
+                            <Link href={"https://www.facebook.com/IEEE.ICAC3N.21"} aria-label={'icac3n facebook'}>
                                 <RiFacebookBoxFill className={'cursor-pointer  grow-on-hover hover:text-indigo-700'}/>
                             </Link>
-                            <Link href={"mailto:vishnu.sharma@galgotiacollege.edu"}>
+                            <Link href={"mailto:vishnu.sharma@galgotiacollege.edu"} aria-label={'icac3n mail'}>
                                 <RiMailFill className={'cursor-pointer  grow-on-hover hover:text-amber-400'}/>
                             </Link>
                         </div>
@@ -204,7 +205,9 @@ const Home = () => {
                                     sliderImages.map((image, index) => {
                                         return (
                                             <div key={index} className={"flex h-full w-full cursor-grab active:cursor-grabbing"}>
-                                                <img
+                                                <Image
+                                                    height={2000}
+                                                    width={3000}
                                                     draggable={false}
                                                     className={" h-full mx-auto object-cover rounded-md shadow-lg"}
                                                     src={image.image}

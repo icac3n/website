@@ -65,16 +65,16 @@ const Footer = () => {
                     <div
                         className={"flex mt-4 space-x-6 text-2xl text-white sm:justify-center sm:mt-0"}>
                         <Link href={"https://twitter.com/icac3n"}>
-                            <RiTwitterFill className={'cursor-pointer grow-on-hover hover:text-sky-400'}/>
+                            <RiTwitterFill className={'cursor-pointer grow-on-hover hover:text-sky-400'} aria-label={'icac3n twitter'}/>
                         </Link>
                         <Link href={"tel:+91-7835878146"}>
-                            <RiPhoneFill className={'cursor-pointer  grow-on-hover hover:text-emerald-500'}/>
+                            <RiPhoneFill className={'cursor-pointer  grow-on-hover hover:text-emerald-500'} aria-label={'icac3n phone'}/>
                         </Link>
                         <Link href={"https://www.facebook.com/IEEE.ICAC3N.21"}>
-                            <RiFacebookBoxFill className={'cursor-pointer  grow-on-hover hover:text-indigo-500'}/>
+                            <RiFacebookBoxFill className={'cursor-pointer  grow-on-hover hover:text-indigo-500'} aria-label={'icac3n facebook'}/>
                         </Link>
                         <Link href={"mailto:vishnu.sharma@galgotiacollege.edu"}>
-                            <RiMailFill className={'cursor-pointer  grow-on-hover hover:text-amber-400'}/>
+                            <RiMailFill className={'cursor-pointer  grow-on-hover hover:text-amber-400'} aria-label={'icac3n mail'}/>
                         </Link>
                     </div>
 

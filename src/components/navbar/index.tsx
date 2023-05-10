@@ -192,10 +192,9 @@ function Index() {
 
                         <div className={'flex flex-row gap-1 justify-normal items-center'}>
                         <span onClick={menuToggle}
-                              className="inline-flex order-last items-center md:hidden p-2 text-sm text-red-800 rounded-lg  hover:bg-red-700 focus:outline-none focus:ring-none cursor-pointer"
-                              aria-controls="navbar-dropdown" aria-expanded="false">
+                              className="inline-flex order-last items-center md:hidden p-2 text-sm text-red-800 rounded-lg  hover:bg-red-700 focus:outline-none focus:ring-none cursor-pointer">
                             <span className="sr-only">Open main menu</span>
-                            <svg className="w-8 h-8 text-white" aria-hidden="true" fill="currentColor"
+                            <svg className="w-8 h-8 text-white" fill="currentColor"
                                  viewBox="0 0 20 20"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd"
