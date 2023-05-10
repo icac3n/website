@@ -9,7 +9,7 @@ import {Autoplay} from "swiper";
 import {FaAngleLeft, FaAngleRight} from "react-icons/fa";
 import {useCallback, useRef} from "react";
 import Link from "next/link";
-
+import Carousel from 'framer-motion-carousel';
 const MessageFlashSlider = () => {
     const messages = [
         {
@@ -35,58 +35,56 @@ const MessageFlashSlider = () => {
 
     const sliderRef = useRef(null);
 
+
     const handlePrev = useCallback(() => {
         if (!sliderRef.current) return;
         // @ts-ignore
-        sliderRef.current.swiper.slidePrev();
+        sliderRef.current.handlePrev();
     }, []);
 
     const handleNext = useCallback(() => {
         if (!sliderRef.current) return;
         // @ts-ignore
-        sliderRef.current.swiper.slideNext();
+        sliderRef.current.handleNext();
     }, []);
+
     return (
         <div className={'w-full min-h-10 bg-amber-400'}>
-            <div className={'w-full flex justify-between items-center py-2'}>
+            <div className={'w-full flex justify-between items-center py-2 mx-auto'}>
                 <div className={'lg:px-10 px-1 font-bold text-xl cursor-pointer'} onClick={handlePrev}>
                     <FaAngleLeft/>
                 </div>
-                <Swiper
-                    ref={sliderRef}
-                    className="mySwiper w-full"
-                    slidesPerView={1}
-                    spaceBetween={10}
-                    grabCursor={true}
-                    autoplay={{
-                        delay: 10000,
-                        disableOnInteraction: false,
-                        stopOnLastSlide: false,
-                        reverseDirection: true
-                    }}
+                <Carousel
+                    autoPlay={true}
                     loop={true}
-                    modules={[Autoplay]}
-
+                    interval={8000}
+                    renderArrowLeft={({activeIndex,handlePrev}) => <></>}
+                    renderArrowRight={({activeIndex,handleNext}) => <></>}
+                    renderDots={({activeIndex,setActiveIndex}) => <></>}
+                    ref={sliderRef}
                 >
+
                     {
                         messages.map((message) => {
                             return (
-                                <SwiperSlide key={message.id}
-                                             className={'w-full flex flex-col items-center justify-center my-auto h-full'}>
+                                <div key={message.id}
+                                     className={'w-full flex flex-col items-center justify-center my-auto h-full'}
+                                     draggable={false}
+                                >
                                     {
                                         message.link &&
-                                        <Link href={message.link}>
+                                        <Link href={message.link} draggable={false}>
                                             <p className={'text-black text-center md:text-md text-sm h-fit'}>
                                         <span className={'font-semibold md:text-sm text-xs'}> {message.date} | </span> {message.message}
                                             </p>
                                         </Link>
                                     }
-                                </SwiperSlide>
+                                </div>
                             )
                         })
                     }
+                </Carousel>
 
-                </Swiper>
                 <div className={'lg:px-10 px-1 font-bold text-xl cursor-pointer'} onClick={handleNext}>
                     <FaAngleRight/>
                 </div>

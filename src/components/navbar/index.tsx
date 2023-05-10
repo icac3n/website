@@ -5,6 +5,7 @@ import Link from "next/link";
 import * as path from "path";
 import Button from "@/components/button";
 
+import {motion} from "framer-motion";
 
 const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string, link: string }[] }) => {
     const [dropOpen, setDropOpen] = useState(false);
@@ -154,6 +155,21 @@ function Index() {
     const router = useRouter()
     // @ts-ignore
     // @ts-ignore
+
+    const marqueeVariants = {
+        animate: {
+            x: [0, -1035],
+            transition: {
+                x: {
+                    repeat: Infinity,
+                    repeatType: "loop",
+                    duration: 5,
+                    ease: "linear",
+                },
+            },
+        },
+    };
+
     return (
 
         <div>
