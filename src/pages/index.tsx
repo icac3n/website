@@ -117,11 +117,18 @@ const Home = () => {
                             <p className={"text-red-800 font-semibold"}>15th and 16th December 2023</p>
                         </div>
 
+                        <div className={" lg:hidden flex items-center space-x-2 lg:justify-start justify-center"}>
+                            <RiArticleLine className={"hidden text-xl self-start lg:block text-red-800"}/>
+                            <div className={"text-red-800"}>
+                                <p className={"font-semibold text"} itemProp={"conference-record-number"}>Conference Record Number #60023</p>
+                            </div>
+                        </div>
+
                         <p className={"text-3xl lg:text-4xl break-words my-3 lg:my-2 font-bold mx-2 lg:mx-0"}>5th
                             International Conference on Advances in Computing, Communication Control and Networking-
                             ICAC3N</p>
 
-                        <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
+                        <div className={"hidden lg:flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiArticleLine className={"hidden text-xl self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
                                 <p className={"font-semibold text"} itemProp={"conference-record-number"}>Conference Record Number #60023</p>
@@ -253,34 +260,38 @@ const Home = () => {
                             </p>
                             <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
 
-                            <div
-                                className={"w-full grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-4 md:flex-row justify-between my-8 mt-16 gap-x-8 px-4 md:px-0"}>
-                                {
-                                    counterData.map((item, index)=>{
-                                        return(
-                                            <div key={index} className={"flex-col items-center text-center bg-gray-100 border-x-0 border-red-200 rounded-xl px-2 py-4"}>
-                                                <div className={"inline-flex text-3xl lg:text-4xl md:text-4xl"}>
-                                                    <AnimatedNumbers
-                                                        includeComma
-                                                        animateToNumber={item.maxCount}
-                                                        locale="en-US"
-                                                        configs={[
-                                                            {mass: 1, tension: 220, friction: 100},
-                                                            {mass: 1, tension: 180, friction: 130},
-                                                            {mass: 1, tension: 280, friction: 90},
-                                                            {mass: 1, tension: 180, friction: 135},
-                                                            {mass: 1, tension: 260, friction: 100},
-                                                            {mass: 1, tension: 210, friction: 180},
-                                                        ]}
-                                                    ></AnimatedNumbers>
-                                                    <p className={"self-center text-3xl lg:text-4xl md:text-4xl"}>+</p>
-                                                </div>
-                                                <p className={"font-light tracking-tight text-md text-center md:text-lg lg:text-lg lg:mt-2 md:mt-0"}>{item.subTitle}</p>
-                                            </div>
-                                        )
-                                    })
-                                }
-                            </div>
+
+                            {/* Counter Disabled */}
+                            {/*<div*/}
+                            {/*    className={"w-full grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-4 md:flex-row justify-between my-8 mt-16 gap-x-8 px-4 md:px-0"}>*/}
+                            {/*    {*/}
+                            {/*        counterData.map((item, index)=>{*/}
+                            {/*            return(*/}
+                            {/*                <div key={index} className={"flex-col items-center text-center bg-gray-100 border-x-0 border-red-200 rounded-xl px-2 py-4"}>*/}
+                            {/*                    <div className={"inline-flex text-3xl lg:text-4xl md:text-4xl"}>*/}
+                            {/*                        <AnimatedNumbers*/}
+                            {/*                            includeComma*/}
+                            {/*                            animateToNumber={item.maxCount}*/}
+                            {/*                            locale="en-US"*/}
+                            {/*                            configs={[*/}
+                            {/*                                {mass: 1, tension: 220, friction: 100},*/}
+                            {/*                                {mass: 1, tension: 180, friction: 130},*/}
+                            {/*                                {mass: 1, tension: 280, friction: 90},*/}
+                            {/*                                {mass: 1, tension: 180, friction: 135},*/}
+                            {/*                                {mass: 1, tension: 260, friction: 100},*/}
+                            {/*                                {mass: 1, tension: 210, friction: 180},*/}
+                            {/*                            ]}*/}
+                            {/*                        ></AnimatedNumbers>*/}
+                            {/*                        <p className={"self-center text-3xl lg:text-4xl md:text-4xl"}>+</p>*/}
+                            {/*                    </div>*/}
+                            {/*                    <p className={"font-light tracking-tight text-md text-center md:text-lg lg:text-lg lg:mt-2 md:mt-0"}>{item.subTitle}</p>*/}
+                            {/*                </div>*/}
+                            {/*            )*/}
+                            {/*        })*/}
+                            {/*    }*/}
+                            {/*</div>*/}
+
+
                         </div>
                         <div id={"important"} className={"lg:col-span-1 col-span-full"}>
                             <ImportantMessage/>
