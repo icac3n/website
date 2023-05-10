@@ -6,6 +6,7 @@ import * as path from "path";
 import Button from "@/components/button";
 
 import {motion} from "framer-motion";
+import Image from "next/image";
 
 const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string, link: string }[] }) => {
     const [dropOpen, setDropOpen] = useState(false);
@@ -201,7 +202,9 @@ function Index() {
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between gap-y-6 mx-auto p-4">
                     <div className={'lg:w-fit w-full flex flex-row justify-between items-center'}>
                         <Link href="/" className="flex items-center">
-                            <img src="/icac3nlogo.png" className="mr-3 h-12 object-cover" alt="Logo"/>
+                            <div className={'h-12'}>
+                                <Image width={50} height={50} src="/icac3nlogo.png" className="mr-3 object-cover" alt="Logo"/>
+                            </div>
                             <span className="font-semibold text-2xl tracking-tight text-white mr-3">ICAC3N</span>
 
                         </Link>

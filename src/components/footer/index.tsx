@@ -1,6 +1,7 @@
 import {RiFacebookBoxFill, RiMailFill, RiPhoneFill, RiTwitterFill} from "react-icons/ri";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const Footer = () => {
     return (
@@ -10,8 +11,9 @@ const Footer = () => {
                 <div className="md:flex md:justify-between items-center">
                     <div className="mb-6 md:mb-0">
                         <Link href="/" className="flex items-center">
-                            <img src="/icaccn_logo.png" className="h-8 mr-3"
-                                 alt="ICAC3N"/>
+                            <div className={'h-8'}>
+                                <Image width={35} height={35} src="/icac3nlogo.png" className="mr-3 object-cover" alt="Logo"/>
+                            </div>
                             <span
                                 className="self-center text-2xl font-semibold whitespace-nowrap text-white">ICAC3N-23</span>
                         </Link>
