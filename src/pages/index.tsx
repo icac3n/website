@@ -348,7 +348,7 @@ const Home = () => {
                                                      className={'h-56 border-2 border-gray-300 w-64 object-cover mb-5 rounded-lg shadow-md'}/>
                                                 {!speaker.national &&
                                                     <div className={"rounded-full my-2 bg-blue-800 bg-opacity-20"}>
-                                                        <p className={"px-2 py-0.5 text-sm text-blue    -800"}>International
+                                                        <p className={"px-2 py-0.5 text-sm text-blue-800"}>International
                                                             Speaker</p>
                                                     </div>
                                                 }
