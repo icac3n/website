@@ -25,12 +25,12 @@ import Button from "@/components/button";
 import Link from "next/link";
 import {speakers} from "@/data/speakers";
 
-const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
+import dynamic from 'next/dynamic'
+const AnimatedNumbers = dynamic(() => import('react-animated-numbers'), {
     ssr: false,
-});
+})
 import Carousel from "framer-motion-carousel"
 import Image from "next/image";
-import dynamic from "next/dynamic";
 
 const Home = () => {
 
