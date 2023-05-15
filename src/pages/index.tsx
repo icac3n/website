@@ -3,7 +3,6 @@ import {Swiper, SwiperSlide} from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import axios from "axios";
 
 // import required modules
 import {Autoplay} from "swiper";
@@ -26,11 +25,13 @@ import Link from "next/link";
 import {speakers} from "@/data/speakers";
 
 import dynamic from 'next/dynamic'
+import Carousel from "framer-motion-carousel"
+import Image from "next/image";
+import axios from "axios";
+
 const AnimatedNumbers = dynamic(() => import('react-animated-numbers'), {
     ssr: false,
 })
-import Carousel from "framer-motion-carousel"
-import Image from "next/image";
 
 const Home = () => {
 
@@ -79,15 +80,33 @@ const Home = () => {
 
     ]
 
-
-    useEffect(() => {
-        const options = {method: 'GET', url: '/api/counter'};
+    const fetch = (i: number) => {
+        const options = {method: 'GET', url: `/api/counter?i=${i}`};
         axios.request(options).then(function (response) {
             console.log(response.data);
             setVisitorCounter(response.data.counter)
         }).catch(function (error) {
             console.error(error);
         });
+    }
+
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            let lastSession = (localStorage.getItem("token"));
+            if (lastSession === null) {
+                console.log("null")
+                localStorage.setItem("token", Date.now().toString())
+                fetch(1)
+            } else if (parseInt(lastSession) - Date.now() > 21600000) {
+                console.log("expired")
+                localStorage.setItem("token", Date.now().toString())
+                fetch(1)
+            } else {
+                console.log("not expired")
+                fetch(0)
+            }
+        }
     }, [])
 
     return (
@@ -120,7 +139,8 @@ const Home = () => {
             </Head>
             <main className={"mx-8"}>
                 {/*    landing   */}
-                <div className={"grid grid-cols-5 gap-5 items-center justify-center lg:text-start text-center mt-2"}>
+                <div
+                    className={"grid grid-cols-5 gap-5 items-center justify-center lg:text-start text-center mt-2"}>
                     <div
                         className={"col-span-full lg:col-span-2 flex flex-col justify-between h-full self-start gap-2"}>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
@@ -150,14 +170,16 @@ const Home = () => {
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiBuildingFill className={"hidden text-xl self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
-                                <p className={"font-semibold text"} itemProp={"organizing-department"}>Computer Science
+                                <p className={"font-semibold text"} itemProp={"organizing-department"}>Computer
+                                    Science
                                     and Engineering Department</p>
                             </div>
                         </div>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiMapPin2Fill className={"hidden text-xl mt-1 self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
-                                <p className={"font-semibold text"} itemProp={"organizing-college"}>Galgotias College of
+                                <p className={"font-semibold text"} itemProp={"organizing-college"}>Galgotias
+                                    College of
                                     Engineering And
                                     Technology</p>
                                 <p className={"text-sm"}>Knowledge Park I, Greater Noida</p>
@@ -172,7 +194,8 @@ const Home = () => {
                                 <RiPhoneFill className={'cursor-pointer  grow-on-hover hover:text-emerald-500'}/>
                             </Link>
                             <Link href={"https://www.facebook.com/IEEE.ICAC3N.21"} aria-label={'icac3n facebook'}>
-                                <RiFacebookBoxFill className={'cursor-pointer  grow-on-hover hover:text-indigo-700'}/>
+                                <RiFacebookBoxFill
+                                    className={'cursor-pointer  grow-on-hover hover:text-indigo-700'}/>
                             </Link>
                             <Link href={"mailto:vishnu.sharma@galgotiacollege.edu"} aria-label={'icac3n mail'}>
                                 <RiMailFill className={'cursor-pointer  grow-on-hover hover:text-amber-400'}/>
@@ -189,7 +212,8 @@ const Home = () => {
                         {/*    </svg>*/}
                         {/*</Link>*/}
                     </div>
-                    <div className={"col-span-full lg:col-span-3 flex h-full w-full px-1 rounded-lg overflow-hidden"}>
+                    <div
+                        className={"col-span-full lg:col-span-3 flex h-full w-full px-1 rounded-lg overflow-hidden"}>
                         <Carousel
                             autoPlay={true}
                             interval={4000}
@@ -246,10 +270,14 @@ const Home = () => {
                             <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
                                 ICACCCN</h2>
                             <p className={'text-justify'}>
-                                ICAC3N is a prestigious international conference that brings together top researchers,
-                                scientists, engineers, and scholars from around the world to share their latest research
-                                findings and experiences in computing, communication control, and networking. Featuring
-                                keynote speeches, technical sessions, and workshops, the conference covers a wide range
+                                ICAC3N is a prestigious international conference that brings together top
+                                researchers,
+                                scientists, engineers, and scholars from around the world to share their latest
+                                research
+                                findings and experiences in computing, communication control, and networking.
+                                Featuring
+                                keynote speeches, technical sessions, and workshops, the conference covers a wide
+                                range
                                 of topics such as cloud computing, AI, wireless communication systems, IoT, and
                                 cybersecurity.
                             </p>
@@ -259,21 +287,28 @@ const Home = () => {
                             <p className={'text-justify'}>
                                 Galgotias Educational Institutions (GEI) have been inculcating practical skills and
                                 creating ‘Global Professionals’ for more than 18 years. Founded by Smt. Shakuntala
-                                Educational and Welfare Society, Galgotia Educational Institutions is currently led by
-                                Mr. Suneel Galgotia, Chairman and a resolute visionary. Galgotias College of Engineering
-                                & Technology is placed among the best in professional education in Dr. APJ Abdul Kalam
-                                Technical University (Formerly U.P. Technical University). It has achieved top positions
+                                Educational and Welfare Society, Galgotia Educational Institutions is currently led
+                                by
+                                Mr. Suneel Galgotia, Chairman and a resolute visionary. Galgotias College of
+                                Engineering
+                                & Technology is placed among the best in professional education in Dr. APJ Abdul
+                                Kalam
+                                Technical University (Formerly U.P. Technical University). It has achieved top
+                                positions
                                 in MBA, MCA and B.Tech. finals and has a record of 100% placements with the best
-                                corporate houses. It has also been ranked amongst the top engineering colleges in India
+                                corporate houses. It has also been ranked amongst the top engineering colleges in
+                                India
                                 by DATAQUEST NASSCOM survey and OUTLOOK-C For College Survey.
                             </p>
                             <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
                             <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
                                 Department of Computer Science</h2>
                             <p className={'text-justify whitespace-pre-wrap'}>
-                                The Computer Science & Engineering Department at GCET offers a UG program in Computer
+                                The Computer Science & Engineering Department at GCET offers a UG program in
+                                Computer
                                 Science and Engineering. It has experienced faculty members, well-equipped labs, and
-                                promotes industry-institute collaboration. The department focuses on research areas such
+                                promotes industry-institute collaboration. The department focuses on research areas
+                                such
                                 as Computer Networks, Database Systems, Multimedia, Image Processing, Software
                                 Engineering, Computer Architecture, Information System – Security and Data Mining.
                                 Students get opportunities to work on state-of-the-art projects, gain real-world
@@ -283,9 +318,8 @@ const Home = () => {
                             <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
 
 
-
                             <div
-                                 className={"flex-col items-center justify-center text-center rounded-lg px-2 py-7"}>
+                                className={"flex-col items-center justify-center text-center rounded-lg px-2 py-7"}>
 
                                 <div className={"inline-flex text-3xl font-extrabold lg:text-6xl md:text-4xl"}>
                                     <AnimatedNumbers
@@ -397,7 +431,8 @@ const Home = () => {
                                                             Speaker</p>
                                                     </div>
                                                 }
-                                                <span className={'font-bold text-sm text-center'}>{speaker.name}</span>
+                                                <span
+                                                    className={'font-bold text-sm text-center'}>{speaker.name}</span>
 
                                                 <span
                                                     className={'font-light text-xs text-center'}>{speaker.designation}</span>
