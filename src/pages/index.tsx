@@ -1,19 +1,15 @@
 import Head from 'next/head'
 import {Swiper, SwiperSlide} from "swiper/react";
-import dynamic from "next/dynamic";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-import {Navigation, Pagination} from "swiper";
-
+import axios from "axios";
 
 // import required modules
 import {Autoplay} from "swiper";
 import {
-    RiArticleFill, RiArticleLine,
+    RiArticleLine,
     RiBuildingFill,
-    RiBuildingLine,
     RiCalendarTodoFill,
     RiFacebookBoxFill,
     RiMailFill,
@@ -23,20 +19,22 @@ import {
 } from "react-icons/ri";
 import ImportantDates from "../components/importantDates";
 import ImportantDownloads from "../components/importantDownloads";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import ImportantMessage from "@/components/importantMessage";
 import Button from "@/components/button";
 import Link from "next/link";
 import {speakers} from "@/data/speakers";
 
-// const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
-//     ssr: false,
-// });
-
+const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
+    ssr: false,
+});
 import Carousel from "framer-motion-carousel"
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 const Home = () => {
+
+    const [visitorCounter, setVisitorCounter] = useState(1000);
 
     const counterData = [
         {
@@ -82,6 +80,16 @@ const Home = () => {
     ]
 
 
+    useEffect(() => {
+        const options = {method: 'GET', url: '/api/counter'};
+        axios.request(options).then(function (response) {
+            console.log(response.data);
+            setVisitorCounter(response.data.counter)
+        }).catch(function (error) {
+            console.error(error);
+        });
+    }, [])
+
     return (
         <>
             <Head>
@@ -113,7 +121,8 @@ const Home = () => {
             <main className={"mx-8"}>
                 {/*    landing   */}
                 <div className={"grid grid-cols-5 gap-5 items-center justify-center lg:text-start text-center mt-2"}>
-                    <div className={"col-span-full lg:col-span-2 flex flex-col justify-between h-full self-start gap-2"}>
+                    <div
+                        className={"col-span-full lg:col-span-2 flex flex-col justify-between h-full self-start gap-2"}>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiCalendarTodoFill className={"hidden text-xl lg:block text-red-800"}/>
                             <p className={"text-red-800 font-semibold"}>15th and 16th December 2023</p>
@@ -122,7 +131,8 @@ const Home = () => {
                         <div className={" lg:hidden flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiArticleLine className={"hidden text-xl self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
-                                <p className={"font-semibold text"} itemProp={"conference-record-number"}>Conference Record Number #60023</p>
+                                <p className={"font-semibold text"} itemProp={"conference-record-number"}>Conference
+                                    Record Number #60023</p>
                             </div>
                         </div>
 
@@ -133,19 +143,22 @@ const Home = () => {
                         <div className={"hidden lg:flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiArticleLine className={"hidden text-xl self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
-                                <p className={"font-semibold text"} itemProp={"conference-record-number"}>Conference Record Number #60023</p>
+                                <p className={"font-semibold text"} itemProp={"conference-record-number"}>Conference
+                                    Record Number #60023</p>
                             </div>
                         </div>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiBuildingFill className={"hidden text-xl self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
-                                <p className={"font-semibold text"} itemProp={"organizing-department"}>Computer Science and Engineering Department</p>
+                                <p className={"font-semibold text"} itemProp={"organizing-department"}>Computer Science
+                                    and Engineering Department</p>
                             </div>
                         </div>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiMapPin2Fill className={"hidden text-xl mt-1 self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
-                                <p className={"font-semibold text"} itemProp={"organizing-college"}>Galgotias College of Engineering And
+                                <p className={"font-semibold text"} itemProp={"organizing-college"}>Galgotias College of
+                                    Engineering And
                                     Technology</p>
                                 <p className={"text-sm"}>Knowledge Park I, Greater Noida</p>
                             </div>
@@ -181,18 +194,19 @@ const Home = () => {
                             autoPlay={true}
                             interval={4000}
                             loop={true}
-                            renderArrowLeft={()=>null}
-                            renderArrowRight={({activeIndex,handleNext})=> null}
-                            renderDots={({setActiveIndex, activeIndex})=>{
-                                return(
-                                    <div className={'absolute bottom-0 left-0 w-full h-10 bg-gray-800 bg-opacity-20 flex flex-row gap-2 items-center justify-center rounded-lg'}>
+                            renderArrowLeft={() => null}
+                            renderArrowRight={({activeIndex, handleNext}) => null}
+                            renderDots={({setActiveIndex, activeIndex}) => {
+                                return (
+                                    <div
+                                        className={'absolute bottom-0 left-0 w-full h-10 bg-gray-800 bg-opacity-20 flex flex-row gap-2 items-center justify-center rounded-lg'}>
                                         {
-                                            sliderImages.map((image, index)=>{
-                                                return(
+                                            sliderImages.map((image, index) => {
+                                                return (
                                                     <div
                                                         key={index}
-                                                        className={`${index==activeIndex ? "bg-amber-400":"bg-white"} w-3 h-3 rounded-full cursor-pointer hover:bg-red-600 transition duration-300 ease-in-out rounded-lg`}
-                                                        onClick={()=>setActiveIndex(index)}>
+                                                        className={`${index == activeIndex ? "bg-amber-400" : "bg-white"} w-3 h-3 rounded-full cursor-pointer hover:bg-red-600 transition duration-300 ease-in-out rounded-lg`}
+                                                        onClick={() => setActiveIndex(index)}>
 
                                                     </div>
                                                 )
@@ -202,24 +216,25 @@ const Home = () => {
                                 )
                             }}
                         >
-                                {
-                                    sliderImages.map((image, index) => {
-                                        return (
-                                            <div key={index} className={"flex h-full w-full cursor-grab active:cursor-grabbing"}>
-                                                <Image
-                                                    height={2000}
-                                                    width={3000}
-                                                    draggable={false}
-                                                    className={" h-full mx-auto object-cover rounded-md shadow-lg"}
-                                                    src={image.image}
-                                                    alt=""
-                                                />
-                                            </div>
-                                        )
+                            {
+                                sliderImages.map((image, index) => {
+                                    return (
+                                        <div key={index}
+                                             className={"flex h-full w-full cursor-grab active:cursor-grabbing"}>
+                                            <Image
+                                                height={2000}
+                                                width={3000}
+                                                draggable={false}
+                                                className={" h-full mx-auto object-cover rounded-md shadow-lg"}
+                                                src={image.image}
+                                                alt=""
+                                            />
+                                        </div>
+                                    )
 
-                                    })
+                                })
 
-                                }
+                            }
                         </Carousel>
                     </div>
                 </div>
@@ -266,6 +281,29 @@ const Home = () => {
                                 graduates get recruited by industry-leading companies.
                             </p>
                             <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
+
+
+
+                            <div
+                                 className={"flex-col items-center justify-center text-center rounded-lg px-2 py-7"}>
+
+                                <div className={"inline-flex text-3xl font-extrabold lg:text-6xl md:text-4xl"}>
+                                    <AnimatedNumbers
+                                        includeComma
+                                        animateToNumber={visitorCounter}
+                                        locale="en-US"
+                                        configs={[
+                                            {mass: 1, tension: 220, friction: 100},
+                                            {mass: 1, tension: 180, friction: 130},
+                                            {mass: 1, tension: 280, friction: 90},
+                                            {mass: 1, tension: 180, friction: 135},
+                                            {mass: 1, tension: 260, friction: 100},
+                                            {mass: 1, tension: 210, friction: 180},
+                                        ]}
+                                    ></AnimatedNumbers>
+                                </div>
+                                <p className={"py-2 lg:py-4 text-lg lg:text-xl font-semibold"}>Visitors</p>
+                            </div>
 
 
                             {/* Counter Disabled */}
