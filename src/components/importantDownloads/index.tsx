@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const impDownloadData = [
     {
-        title: "Paper Format (.docx)",
+        title: "ICAC3N-2023 Brochure (.pdf)",
         link: "/documents/ICAC3N-2023 Brochure.pdf",
         isImportant: false,
         enabled: true,
