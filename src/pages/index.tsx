@@ -57,29 +57,7 @@ const Home = () => {
         }
     ]
 
-    const sliderImages = [
-        {
-            "image": "/images/slider/image2.jpg",
-            "id": "e5f6g7h8",
-            "alt": "Mr. Sunil Galgotia with CM Yogi Adityanath"
-        },
-        {
-            "image": "/images/slider/image3.jpg",
-            "id": "i9j0k1l2",
-            "alt": "Mr. Dhruv Galgotia with Former President Pranab Mukherjee"
-        },
-        {
-            "image": "/images/slider/image4.jpg",
-            "id": "i9j0k1l2",
-            "alt": "Mr. Sunil Galgotia with PM Narendra Modi"
-        },
-        {
-            "image": "/images/slider/image6.jpg",
-            "id": "i9j0k1l2",
-            "alt": "Ranked 1st in UP by Times of India Ranking 2020"
-        },
 
-    ]
 
 
     return (
