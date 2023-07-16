@@ -4,11 +4,18 @@ import Link from "next/link";
 
 const impDownloadData = [
     {
+        title: "ICAC3N-2023 Brochure (.pdf)",
+        link: "/documents/ICAC3N-2023 Brochure.pdf",
+        isImportant: false,
+        enabled: true,
+    },
+    {
         title: "Paper Format (.docx)",
         link: "/documents/PAPER_ID_ICAC3N23.docx",
         isImportant: false,
         enabled: true,
-    },{
+    },
+    {
         title: "Paper Format (.pdf)",
         link: "/documents/PAPER_ID_ICAC3N23.pdf",
         isImportant: false,

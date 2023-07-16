@@ -80,6 +80,8 @@ const Home = () => {
 
     ]
 
+
+
     const fetch = (i: number) => {
         const options = {method: 'GET', url: `/api/counter?i=${i}`};
         axios.request(options).then(function (response) {
