@@ -3,7 +3,6 @@ import {AiFillCaretDown} from "react-icons/ai";
 import {useRouter} from "next/router";
 import Link from "next/link";
 import * as path from "path";
-import Button from "@/components/button";
 import Image from "next/image";
 
 const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string, link: string }[] }) => {
@@ -198,7 +197,7 @@ function Index() {
             </div>
             <nav className="bg-red-800">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between gap-y-6 mx-auto p-4">
-                    <div className={'lg:w-fit w-full flex flex-row justify-between items-center'}>
+                    <div className={'w-full flex flex-row justify-between items-center'}>
                         <Link href="/" className="flex items-center">
                             <div className={'h-12'}>
                                 <Image width={50} height={50} src="/icac3nlogo.png" className="mr-3 object-cover"
@@ -212,29 +211,26 @@ function Index() {
                         </Link>
 
                         <div className={'flex flex-row gap-1 justify-normal items-center'}>
-                        <span onClick={menuToggle}
-                              className="inline-flex order-last items-center md:hidden p-2 text-sm text-red-800 rounded-lg  hover:bg-red-700 focus:outline-none focus:ring-none cursor-pointer">
-                            <span className="sr-only">Open main menu</span>
-                            <svg className="w-8 h-8 text-white" fill="currentColor"
-                                 viewBox="0 0 20 20"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path fillRule="evenodd"
-                                      d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                      clipRule="evenodd"></path>
-                            </svg>
-                        </span>
-
                             <Link href={'https://cmt3.research.microsoft.com/ICAC3N2023'}
                                   className={'px-4 h-fit py-2 bg-sky-600 mx-2 rounded-lg hidden md:block text-white cursor-pointer '}>Submit&nbsp;Paper</Link>
+                            <span onClick={menuToggle}
+                                  className="inline-flex order-last items-center md:hidden p-2 text-sm text-red-800 rounded-lg  hover:bg-red-700 focus:outline-none focus:ring-none cursor-pointer">
+                                <span className="sr-only">Open main menu</span>
+                                <svg className="w-8 h-8 text-white" fill="currentColor"
+                                     viewBox="0 0 20 20"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd"
+                                          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                          clipRule="evenodd"></path>
+                                </svg>
+                            </span>
+
                         </div>
 
                     </div>
 
                     {<div className={`${menuOpen ? "w-full md:block lg:w-auto" : "hidden md:block"}`}>
-                        <div className={"my-4"}>
-                            <Link href={'https://cmt3.research.microsoft.com/ICAC3N2023'}
-                                  className={'px-4 h-fit py-2 bg-sky-600 rounded-lg md:hidden text-white cursor-pointer '}>Submit&nbsp;Paper</Link>
-                        </div>
+
                         <ul className="flex flex-col gap-3 md:text-sm lg:gap-5 justify-between md:items-center items-start font-medium md:p-0 rounded-lg md:flex-row md:mt-0 md:border-0">
                             {links.map((link, index) => (
                                 <div key={index} className={'md:w-auto w-full'}>
@@ -256,11 +252,11 @@ function Index() {
                                 </div>
 
                             ))}
-
-                            <Button link={'https://cmt3.research.microsoft.com/ICAC3N2023'}
-                                    className={'hidden lg:block mr-0 bg-sky-600 hover:bg-sky-700 shrink-on-hover focus:ring-4 focus:ring-sky-300 no-underline dark:focus:ring-sky-700'}
-                                    hideIcon={true}>Submit Paper</Button>
                         </ul>
+                        <div className={"mb-6 mt-8"}>
+                            <Link href={'https://cmt3.research.microsoft.com/ICAC3N2023'}
+                                  className={'px-4 h-fit py-3 bg-sky-600 rounded-lg md:hidden text-white cursor-pointer '}>Submit&nbsp;Paper</Link>
+                        </div>
                     </div>
                     }
 
