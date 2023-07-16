@@ -175,6 +175,7 @@ const Home = () => {
                                     and Engineering Department</p>
                             </div>
                         </div>
+
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiMapPin2Fill className={"hidden text-xl mt-1 self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
@@ -184,6 +185,12 @@ const Home = () => {
                                     Technology</p>
                                 <p className={"text-sm"}>Knowledge Park I, Greater Noida</p>
                             </div>
+
+                        </div>
+
+                        <div className={"flex items-center justify-center mt-4"}>
+                            <Link href={'https://cmt3.research.microsoft.com/ICAC3N2023'}
+                                  className={'px-4 h-fit py-2 bg-red-700 rounded-lg w-fit md:hidden block text-white cursor-pointer '}>Submit&nbsp;Paper</Link>
                         </div>
                         <div
                             className={"flex space-x-5 text-2xl text-red-800 mt-4 items-center lg:justify-start justify-center"}>

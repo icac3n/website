@@ -4,8 +4,6 @@ import {useRouter} from "next/router";
 import Link from "next/link";
 import * as path from "path";
 import Button from "@/components/button";
-
-import {motion} from "framer-motion";
 import Image from "next/image";
 
 const Dropdown = ({title, dropdown}: { title: string, dropdown: { title: string, link: string }[] }) => {
@@ -203,10 +201,14 @@ function Index() {
                     <div className={'lg:w-fit w-full flex flex-row justify-between items-center'}>
                         <Link href="/" className="flex items-center">
                             <div className={'h-12'}>
-                                <Image width={50} height={50} src="/icac3nlogo.png" className="mr-3 object-cover" alt="Logo"/>
+                                <Image width={50} height={50} src="/icac3nlogo.png" className="mr-3 object-cover"
+                                       alt="Logo"/>
                             </div>
                             <span className="font-semibold text-2xl tracking-tight text-white mr-3">ICAC3N</span>
-
+                            <div
+                                className={"bg-gray-50 flex justify-center items-center pl-3 pr-4 pt-4 pb-3 rounded-md"}>
+                                <Image src={"/IEEE_up.png"} alt={"IEEE UP Logo"} height={100} width={75}/>
+                            </div>
                         </Link>
 
                         <div className={'flex flex-row gap-1 justify-normal items-center'}>
@@ -221,13 +223,18 @@ function Index() {
                                       clipRule="evenodd"></path>
                             </svg>
                         </span>
+
                             <Link href={'https://cmt3.research.microsoft.com/ICAC3N2023'}
-                                  className={'px-4 h-fit py-2 bg-sky-600 mx-2 rounded-lg lg:hidden text-white cursor-pointer '}>Submit&nbsp;Paper</Link>
+                                  className={'px-4 h-fit py-2 bg-sky-600 mx-2 rounded-lg hidden md:block text-white cursor-pointer '}>Submit&nbsp;Paper</Link>
                         </div>
 
                     </div>
 
                     {<div className={`${menuOpen ? "w-full md:block lg:w-auto" : "hidden md:block"}`}>
+                        <div className={"my-4"}>
+                            <Link href={'https://cmt3.research.microsoft.com/ICAC3N2023'}
+                                  className={'px-4 h-fit py-2 bg-sky-600 rounded-lg md:hidden text-white cursor-pointer '}>Submit&nbsp;Paper</Link>
+                        </div>
                         <ul className="flex flex-col gap-3 md:text-sm lg:gap-5 justify-between md:items-center items-start font-medium md:p-0 rounded-lg md:flex-row md:mt-0 md:border-0">
                             {links.map((link, index) => (
                                 <div key={index} className={'md:w-auto w-full'}>
@@ -247,13 +254,15 @@ function Index() {
                                         <Dropdown title={link.title} dropdown={link.dropdown}/>
                                     }
                                 </div>
+
                             ))}
 
                             <Button link={'https://cmt3.research.microsoft.com/ICAC3N2023'}
                                     className={'hidden lg:block mr-0 bg-sky-600 hover:bg-sky-700 shrink-on-hover focus:ring-4 focus:ring-sky-300 no-underline dark:focus:ring-sky-700'}
                                     hideIcon={true}>Submit Paper</Button>
                         </ul>
-                    </div>}
+                    </div>
+                    }
 
                 </div>
             </nav>
@@ -261,7 +270,8 @@ function Index() {
 
         </div>
 
-    );
+    )
+        ;
 }
 
 export default Index;
