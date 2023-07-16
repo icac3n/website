@@ -253,7 +253,7 @@ function Index() {
 
                             ))}
                         </ul>
-                        <div className={"mb-6 mt-8"}>
+                        <div className={"block md:hidden mb-6 mt-8"}>
                             <Link href={'https://cmt3.research.microsoft.com/ICAC3N2023'}
                                   className={'px-4 h-fit py-3 bg-sky-600 rounded-lg md:hidden text-white cursor-pointer '}>Submit&nbsp;Paper</Link>
                         </div>
