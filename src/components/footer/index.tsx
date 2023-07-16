@@ -19,6 +19,10 @@ const Footer = () => {
                         </Link>
                         <p className={"my-4 max-w-xs text-white"}>International Conference on Advances in
                             Computing, Communication Control and Networking (ICAC3N–23)</p>
+                        <div
+                            className={"w-fit bg-gray-50 flex justify-center items-center pl-3 pr-4 pt-4 pb-3 rounded-md"}>
+                            <Image src={"/IEEE_up.png"} alt={"IEEE UP Logo"} height={100} width={100}/>
+                        </div>
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>

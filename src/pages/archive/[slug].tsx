@@ -73,6 +73,8 @@ const Post = ({content, year}: {
                             <p className={"px-3 py-0.5 lg:text-base text-sm text-red-800"}>Archive</p>
                         </div>
                         <p className={"text-3xl lg:text-4xl my-3 lg:my-5 font-bold mx-4 lg:mx-0"}>International Conference on Advances in Computing, Communication Control and Networking- ICAC3N{year}</p>
+
+
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiMapPin2Fill className={"hidden mt-1 self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>

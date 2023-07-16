@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import {ComponentType, useEffect, useState} from "react";
+import React, {ComponentType, useEffect, useState} from "react";
 import type {AppProps} from "next/app";
 import {ThemeProvider, useTheme} from "next-themes";
 import {Theme, toast, ToastContainer} from "react-toastify";
@@ -9,6 +9,8 @@ import {Footer, Navbar, MessageFlashSlider} from "components";
 
 import { SessionProvider } from "next-auth/react"
 import { Analytics } from '@vercel/analytics/react';
+import Image from "next/image";
+import {TailwindIndicator} from "@/components/ui/tailwind-indicator";
 
 type ComponentWithLayout = AppProps & {
     Component: AppProps['Component'] & {
@@ -22,6 +24,7 @@ export default function App({Component, pageProps}: ComponentWithLayout) {
             <SessionProvider>
                 <ToastThemeWrapper/>
                 <Navbar/>
+
                 <MessageFlashSlider/>
                 {
                     Component.pageLayout ?
@@ -39,6 +42,7 @@ export default function App({Component, pageProps}: ComponentWithLayout) {
                 }
                 <Footer/>
                 <Analytics />
+                <TailwindIndicator />
             </SessionProvider>
         </ThemeProvider>
     );
