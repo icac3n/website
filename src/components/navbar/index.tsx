@@ -178,9 +178,13 @@ function Index() {
                         <span className="mx-2">•</span>
                         <span className="mx-4">Conference Record Number #60023</span>
                         <span className="mx-2">•</span>
+                        <span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>
+                        <span className="mx-2">•</span>
                         <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
                         <span className="mx-2">•</span>
                         <span className="mx-4">Conference Record Number #60023</span>
+                        <span className="mx-2">•</span>
+                        <span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>
                         <span className="mx-2">•</span>
                     </div>
 
@@ -189,9 +193,13 @@ function Index() {
                         <span className="mx-2">•</span>
                         <span className="mx-4">Conference Record Number #60023</span>
                         <span className="mx-2">•</span>
+                        <span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>
+                        <span className="mx-2">•</span>
                         <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
                         <span className="mx-2">•</span>
                         <span className="mx-4">Conference Record Number #60023</span>
+                        <span className="mx-2">•</span>
+                        <span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>
                     </div>
                 </div>
             </div>
