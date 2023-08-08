@@ -157,6 +157,14 @@ const Home = () => {
                                     Record Number #60023</p>
                             </div>
                         </div>
+                        <div className={" lg:hidden flex items-center space-x-2 lg:justify-start justify-center"}>
+                            <RiArticleLine className={"hidden text-xl self-start lg:block text-red-800"}/>
+                            <div className={"text-red-800"}>
+                                <p className={"font-semibold text"}>
+                                    IEEE XPLORE COMPLIANT ISBN No. <span itemProp={"ISBN-number"}>979-8-3503-3086-1</span>
+                                </p>
+                            </div>
+                        </div>
 
                         <p className={"text-3xl lg:text-4xl break-words my-3 lg:my-2 font-bold mx-2 lg:mx-0"}>5th
                             International Conference on Advances in Computing, Communication Control and Networking-
@@ -167,6 +175,14 @@ const Home = () => {
                             <div className={"text-red-800"}>
                                 <p className={"font-semibold text"} itemProp={"conference-record-number"}>Conference
                                     Record Number #60023</p>
+                            </div>
+                        </div>
+                        <div className={"hidden lg:flex items-center space-x-2 lg:justify-start justify-center"}>
+                            <RiArticleLine className={"hidden text-xl self-start lg:block text-red-800"}/>
+                            <div className={"text-red-800"}>
+                                <p className={"font-semibold text"} itemProp={"conference-record-number"}>
+                                    IEEE XPLORE COMPLIANT ISBN No. <span itemProp={"ISBN-number"}>979-8-3503-3086-1</span>
+                                </p>
                             </div>
                         </div>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
