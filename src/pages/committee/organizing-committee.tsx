@@ -20,13 +20,14 @@ const OrganizingCommittee = () => {
         {
             "Category": "Patrons",
             "Members": [
+                
+                {
+                    "Name": "Gp. Capt. (R) Dr. P K Chopra, VSM",
+                    "Designation": "Director General"
+                },
                 {
                     "Name": "Prof. (Dr.) S.N. Singh",
                     "Designation": "ABV-IIITM, Gwalior"
-                },
-                {
-                    "Name": "Prof. (Dr.) P. Nagabhushan",
-                    "Designation": "VC, VFSTR, AP"
                 }
             ]
         },
