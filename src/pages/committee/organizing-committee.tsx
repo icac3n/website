@@ -256,15 +256,15 @@ const OrganizingCommittee = () => {
             ],
             Students: [
                 {
-                    Name: "Raunak Gupta",
+                    Name: "Mr. Raunak Gupta",
                     Designation: "CSE, GCET"
                 },
                 {
-                    Name: "Yash Gupta",
+                    Name: "Mr. Yash Gupta",
                     Designation: "CSE-AI, GCET"
                 },
                 {
-                    Name: "Pratyaksh Kumar",
+                    Name: "Mr. Pratyaksh Kumar",
                     Designation: "CSE, GCET",
                     
                 }
