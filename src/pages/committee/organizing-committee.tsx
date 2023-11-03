@@ -305,12 +305,12 @@ const OrganizingCommittee = () => {
                     organizingCommittee.map((committee, index) => {
                         return (
                             <div key={index} itemProp="department">
-                                <h2 className={"heading"} itemProp="name">{committee.Category}</h2>
+                                <h2 className={"heading"} itemProp="name" id={committee.Category}>{committee.Category}</h2>
                                 <ul>
                                     {
                                         committee.Members.map((member, index) => {
                                             return (
-                                                <li key={index} itemProp="member">
+                                                <li key={index} itemProp="member" id={member.Name}>
                                                     <span itemProp="name">{member.Name}</span>, <span
                                                     itemProp="jobTitle">{member.Designation}</span>
                                                 </li>
@@ -325,7 +325,7 @@ const OrganizingCommittee = () => {
                                         {
                                             committee?.Students.map((member, index) => {
                                                 return (
-                                                    <li key={index} itemProp="member">
+                                                    <li key={index} itemProp="member" id={member.Name}>
                                                         <span itemProp="name">{member.Name}</span>, <span
                                                         itemProp="jobTitle">{member.Designation}</span>
                                                     </li>
