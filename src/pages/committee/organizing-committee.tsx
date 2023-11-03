@@ -74,6 +74,10 @@ const OrganizingCommittee = () => {
             "Category": "Technical Program Chairs",
             "Members": [
                 {
+                    "Name": "Prof. (Dr.) Sachin Kumar",
+                    "Designation": "Dean (R&D), CSE, GCET"
+                },
+                {
                     "Name": "Prof. (Dr.) S. K. Singh",
                     "Designation": "CSE, GCET"
                 },
@@ -88,6 +92,14 @@ const OrganizingCommittee = () => {
                 {
                     "Name": "Prof. (Dr.) Vinit Kumar",
                     "Designation": "CSE, GCET"
+                },
+                {
+                    "Name": "Prof. (Dr.) Sachi Gupta",
+                    "Designation": "CSE, GCET"
+                },
+                {
+                    "Name": "Prof. (Dr.) Arun Kumar",
+                    "Designation": "CSE, GCET"
                 }
             ]
         },
@@ -95,11 +107,19 @@ const OrganizingCommittee = () => {
             "Category": "Organizing Committee",
             "Members": [
                 {
-                    "Name": "Prof. M. Chandraprabha",
+                    "Name": "Prof. (Dr.) Ratna Nitin Patil",
                     "Designation": "CSE, GCET"
                 },
                 {
-                    "Name": "Prof. Rishabh Jain",
+                    "Name": "Prof. (Dr.) Youddha Beer Singh",
+                    "Designation": "CSE, GCET"
+                },
+                {
+                    "Name": "Prof. (Dr.) Mayank Dixit",
+                    "Designation": "CSE, GCET"
+                },
+                {
+                    "Name": "Prof. Aparna Singh",
                     "Designation": "CSE, GCET"
                 },
                 {
@@ -112,15 +132,15 @@ const OrganizingCommittee = () => {
             Category: "Publication Committee",
             Members: [
                 {
+                    "Name": "Prof. (Dr.) Vandna Rani Verma",
+                    "Designation": "CSE, GCET"
+                },
+                {
                     "Name": "Prof. (Dr.) Manjeet Singh",
                     "Designation": "GCBK, Sonipat"
                 },
                 {
                     Name: "Prof. (Dr.) Inderpreet Kaur",
-                    Designation: "CSE, GCET"
-                },
-                {
-                    Name: "Prof. (Dr.) Shelja Sharma",
                     Designation: "CSE, GCET"
                 },
                 {
@@ -133,11 +153,11 @@ const OrganizingCommittee = () => {
             Category: "Publicity Committee",
             Members: [
                 {
-                    Name: "Prof. Mayank Dixit",
+                    Name: "Prof. Manish Sharma",
                     Designation: "CSE, GCET"
                 },
                 {
-                    Name: "Prof. Namita Mishra",
+                    Name: "Prof. Mukesh Kumar Singh",
                     Designation: "CSE, GCET"
                 }
             ]
@@ -146,22 +166,26 @@ const OrganizingCommittee = () => {
             Category: "Finance Committee",
             Members: [
                 {
-                    "Name": "Prof. M. Chandraprabha",
+                    "Name": "Prof. (Dr.) Aditya Dev Mishra",
                     "Designation": "CSE, GCET"
                 },
                 {
-                    Name: "Prof. (Dr.) Amrit Agrawal",
-                    Designation: "CSE, GCET"
+                    "Name": "Prof. M. Krishan Kumar Sarawswat",
+                    "Designation": "CSE, GCET"
                 },
                 {
-                    Name: "Prof. Manish Sharma",
-                    Designation: "CSE, GCET"
+                    "Name": "Prof. M. Chandraprabha",
+                    "Designation": "CSE, GCET"
                 }
             ]
         },
         {
             Category: "Hospitality Committee",
             Members: [
+                {
+                    Name: "Prof. (Dr.) Rupali Khare",
+                    Designation: "CSE, GCET"
+                },
                 {
                     Name: "Prof. Ritu Dewan",
                     Designation: "CSE, GCET"
@@ -218,7 +242,7 @@ const OrganizingCommittee = () => {
             Category: "Sponsorship/Media Committee",
             Members: [
                 {
-                    Name: "Prof. M. Dinesh Babu",
+                    Name: "Prof. (Dr.) Pallavi Goel",
                     Designation: "CSE, GCET"
                 },
                 {
@@ -226,8 +250,23 @@ const OrganizingCommittee = () => {
                     Designation: "CSE, GCET"
                 },
                 {
-                    Name: "Prof. Ruchika Sharma",
+                    Name: "Prof. Arti Ranjan",
                     Designation: "CSE, GCET"
+                }
+            ],
+            Students: [
+                {
+                    Name: "Raunak Gupta",
+                    Designation: "CSE, GCET"
+                },
+                {
+                    Name: "Yash Gupta",
+                    Designation: "CSE-AI, GCET"
+                },
+                {
+                    Name: "Pratyaksh Kumar",
+                    Designation: "CSE, GCET",
+                    
                 }
             ]
         }
@@ -278,6 +317,24 @@ const OrganizingCommittee = () => {
                                             )
                                         })
                                     }
+                                {
+                                    committee.Students != undefined && 
+                                    <li className="list-none">
+                                        <h3 className={"heading"} itemProp="name">Student Co-Ordinator{committee?.Students?.length == 1 ? '' :'s' }</h3>
+                                    <ul>
+                                        {
+                                            committee?.Students.map((member, index) => {
+                                                return (
+                                                    <li key={index} itemProp="member">
+                                                        <span itemProp="name">{member.Name}</span>, <span
+                                                        itemProp="jobTitle">{member.Designation}</span>
+                                                    </li>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+                                    </li>
+                                }
                                 </ul>
                             </div>
                         )
