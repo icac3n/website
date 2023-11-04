@@ -12,7 +12,7 @@ const OrganizingCommittee = () => {
                     "Designation": "Chairman"
                 },
                 {
-                    "Name": "Shri Dhruv Galgotia",
+                    "Name": "Dr. Dhruv Galgotia",
                     "Designation": "CEO"
                 }
             ]
@@ -170,7 +170,7 @@ const OrganizingCommittee = () => {
                     "Designation": "CSE, GCET"
                 },
                 {
-                    "Name": "Prof. M. Krishan Kumar Sarawswat",
+                    "Name": "Prof. (Dr.) Krishan Kumar Saraswat, CSE, GCET",
                     "Designation": "CSE, GCET"
                 },
                 {
