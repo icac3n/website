@@ -57,7 +57,7 @@ export const speakers = [
     },
     {
         "name": "Dr. Ajay Beniwal",
-        "designation": "Postdocotral Researcher at the Department of Mechanical and Material Enginnering, University of Western Ontario, Canada",
+        "designation": "Marie Curie Fellow at University of Glasgow, United Kingdom",
         "image": "/images/speakers/Dr. Ajay Beniwal.jpg",
         "id": "44",
         "national": false
