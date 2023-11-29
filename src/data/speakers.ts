@@ -7,6 +7,20 @@ export const speakers = [
         "national": true
     },
     {
+        "name": "Prof. (Dr.) M.N.Doja",
+        "designation": "Director IIIT, Sonepat",
+        "image": "/images/speakers/Prof. (Dr.) M.N.Doja.jpg",
+        "id": "2.1",
+        "national": true
+      },
+      {
+        "name": "Prof. (Dr.) S. K. Singh",
+        "designation": "Vice Chancellor, Rajasthan Technical University, Kota",
+        "image": "/images/speakers/Prof. (Dr.) S. K. Singh.jpg",
+        "id": "2.2",
+        "national": true
+      },
+    {
         "name": "Prof. (Dr.) P. Nagabhushan",
         "designation": "Vice-Chancellor, Vignan's Foundation for Science, Technology & Research, Andhra Pradesh",
         "image": "/images/speakers/Prof. (Dr.) P. Nagabhushan.jpg",
