@@ -12,14 +12,21 @@ export const speakers = [
         "image": "/images/speakers/Prof. (Dr.) M.N.Doja.jpg",
         "id": "2.1",
         "national": true
-      },
-      {
+    },
+    {
         "name": "Prof. (Dr.) S. K. Singh",
         "designation": "Vice Chancellor, Rajasthan Technical University, Kota",
         "image": "/images/speakers/Prof. (Dr.) S. K. Singh.jpg",
         "id": "2.2",
         "national": true
-      },
+    },
+    {
+        "name": "Dr. Virender Ranga",
+        "designation": "Associate Professor, Department of Information Technology, Delhi Technological University",
+        "image": "/images/speakers/Dr. Virender Ranga.jpg",
+        "id": "2.2",
+        "national": true
+    },    
     {
         "name": "Prof. (Dr.) P. Nagabhushan",
         "designation": "Vice-Chancellor, Vignan's Foundation for Science, Technology & Research, Andhra Pradesh",
