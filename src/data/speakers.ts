@@ -106,7 +106,7 @@ export const speakers = [
     },
     {
         "name": "Prof. (Dr.) Deepak Garg",
-        "designation": "Director leadingindia.ai and Head CSE, Bennett University and Director, NVIDIA-Bennett Centre of Research on AI",
+        "designation": "Vice Chancellor, SR University and Director leadingindia.ai and Head CSE, Bennett University and Director, NVIDIA-Bennett Centre of Research on AI",
         "image": "/images/speakers/Prof. (Dr.) Deepak Garg.jpeg",
         "id": "12",
         "national": true
