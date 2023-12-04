@@ -22,7 +22,7 @@ export const speakers = [
     },
     {
         "name": "Dr. Akhilesh Tiwari",
-        "designation": "Secretary IEEE and Associate Professor in IIIT Allahabd",
+        "designation": "Secretary IEEE and Associate Professor in IIIT Allahabad",
         "image": "/images/speakers/Dr. Akhilesh Tiwari.jpg",
         "id": "2.3",
         "national": true
