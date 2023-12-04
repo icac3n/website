@@ -84,8 +84,8 @@ export const speakers = [
         "national": false
     },
     {
-        "name": "Dr. Kashif Nisar, SMIEEE",
-        "designation": "Victorian Institute of Technology, 14 Adam Street, Hindmarsh, Adelaide, South Australia, 5007",
+        "name": "Dr. Kashif Nisar | PhD, SMIEEE",
+        "designation": "Swinburne University of Technology, Sydney Campus, Parramatta, New South Wales, 2150, Australia",
         "image": "/images/speakers/Dr. Kashif Nisar, SMIEEE.jpg",
         "id": "6",
         "national": false
