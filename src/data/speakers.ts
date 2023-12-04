@@ -21,10 +21,17 @@ export const speakers = [
         "national": true
     },
     {
+        "name": "Dr. Akhilesh Tiwari",
+        "designation": "Secretary IEEE and Associate Professor in IIIT Allahabd",
+        "image": "/images/speakers/Dr. Akhilesh Tiwari.jpg",
+        "id": "2.3",
+        "national": true
+    },
+    {
         "name": "Dr. Virender Ranga",
         "designation": "Associate Professor, Department of Information Technology, Delhi Technological University",
         "image": "/images/speakers/Dr. Virender Ranga.jpg",
-        "id": "2.2",
+        "id": "2.4",
         "national": true
     },    
     {
@@ -84,8 +91,8 @@ export const speakers = [
         "national": false
     },
     {
-        "name": "Dr. Kashif Nisar | PhD, SMIEEE",
-        "designation": "Swinburne University of Technology, Sydney Campus, Parramatta, New South Wales, 2150, Australia",
+        "name": "Dr. Kashif Nisar",
+        "designation": "Victorian Institute of Technology, Adelaide, South Australia",
         "image": "/images/speakers/Dr. Kashif Nisar, SMIEEE.jpg",
         "id": "6",
         "national": false
@@ -98,7 +105,7 @@ export const speakers = [
         "national": false
     },
     {
-        "name": "Prof. Nada Ratković, Croatia",
+        "name": "Prof. Nada Ratković",
         "designation": "Assistant Professor, Department of Quantitative Methods on Faculty of Economics, Business and Tourism, University Split.",
         "image": "/images/speakers/Prof. Nada Ratković, Croatia.jpg",
         "id": "8",
@@ -127,7 +134,7 @@ export const speakers = [
     },
     {
         "name": "Prof. (Dr.) Malay Kishore Dutta",
-        "designation": "Director, Dean PG studies and Research, Dr. A.P.J. Abdul Kalam Technical University, Lucknow",
+        "designation": "Director, Centre for Artificial Intelligence & Dean Student Research, Amity University, Noida, India",
         "image": "/images/speakers/Prof. (Dr.) Malay Kishore Dutta.jpeg",
         "id": "15",
         "national": true
