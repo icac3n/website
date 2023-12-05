@@ -78,7 +78,7 @@ export const speakers = [
     },
     {
         "name": "Dr. Neyara Radwan",
-        "designation": "Associate Professor, Quality Assurance Officer, ph.D program, KAU, Saudi Arabia|International Keynote Speaker",
+        "designation": "Associate Professor, Industrial Engineering Dept., College of Applied Sciences, Al Mareefa University & Mechanical Dept., Faculty of Engineering, Suez Canal University, Egypt.",
         "image": "/images/speakers/Dr. Neyara Radwan.jpeg",
         "id": "45",
         "national": false
