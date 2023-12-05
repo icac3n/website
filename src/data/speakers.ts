@@ -92,7 +92,7 @@ export const speakers = [
     },
     {
         "name": "Dr. Kashif Nisar",
-        "designation": "Swinburne University of Technology, Sydney",
+        "designation": "Swinburne University of Technology, Sydney, New South Wales, Australia",
         "image": "/images/speakers/Dr. Kashif Nisar, SMIEEE.jpg",
         "id": "6",
         "national": false
