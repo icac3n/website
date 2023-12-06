@@ -77,8 +77,8 @@ export const speakers = [
         "national": false
     },
     {
-        "name": "Dr. Neyara Radwan",
-        "designation": "Associate Professor, Industrial Engineering Dept., College of Applied Sciences, Al Mareefa University & Mechanical Dept., Faculty of Engineering, Suez Canal University, Egypt.",
+        "name": "Prof. Dr. Neyara Radwan",
+        "designation": "Associate Professor Industrial Engineering Dept., College of Applied Sciences, AL MAAREFA UNIVERSITY, Saudi Arabia & Mechanical Dept., Faculty of Engineering, Suez Canal University, Egypt",
         "image": "/images/speakers/Dr. Neyara Radwan.jpeg",
         "id": "45",
         "national": false
