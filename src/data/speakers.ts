@@ -99,7 +99,7 @@ export const speakers = [
     },
     {
         "name": "Dr. Ana Clarke",
-        "designation": "Partner Director – Data & AI , Artificial Intelligence Services Australia.",
+        "designation": "Founder and CEO of AC SmartData",
         "image": "/images/speakers/Dr. Ana Clarke.jpg",
         "id": "7",
         "national": false
