@@ -28,12 +28,19 @@ import dynamic from 'next/dynamic'
 import Carousel from "framer-motion-carousel"
 import Image from "next/image";
 import axios from "axios";
+import InaugurationPdf from "@/components/inaugurationPdf";
+import EntryModal from "@/components/entryModal";
 
 const AnimatedNumbers = dynamic(() => import('react-animated-numbers'), {
     ssr: false,
 })
 
 const Home = () => {
+
+    const [
+        showModal,
+        setShowModal
+    ] = useState(false);
 
     const [visitorCounter, setVisitorCounter] = useState(1000);
 
@@ -80,6 +87,15 @@ const Home = () => {
 
     ]
 
+    useEffect(() => {
+        let isModalShown = sessionStorage.getItem('alreadyShown');
+        if (isModalShown != 'already_shown') {
+            setTimeout(() => {
+                setShowModal(true)
+            }, 1000)
+            sessionStorage.setItem('alreadyShow', 'already_shown');
+        }
+    }, []);
 
 
     const fetch = (i: number) => {
@@ -140,6 +156,7 @@ const Home = () => {
 
             </Head>
             <main className={"mx-8"}>
+                <EntryModal showModal={showModal} setShowModal={setShowModal}/>
                 {/*    landing   */}
                 <div
                     className={"grid grid-cols-5 gap-5 items-center justify-center lg:text-start text-center mt-2"}>
@@ -161,7 +178,8 @@ const Home = () => {
                             <RiArticleLine className={"hidden text-xl self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
                                 <p className={"font-semibold text"}>
-                                    IEEE XPLORE COMPLIANT ISBN No. <span itemProp={"ISBN-number"}>979-8-3503-3086-1</span>
+                                    IEEE XPLORE COMPLIANT ISBN No. <span
+                                    itemProp={"ISBN-number"}>979-8-3503-3086-1</span>
                                 </p>
                             </div>
                         </div>
@@ -181,7 +199,8 @@ const Home = () => {
                             <RiArticleLine className={"hidden text-xl self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
                                 <p className={"font-semibold text"} itemProp={"conference-record-number"}>
-                                    IEEE XPLORE COMPLIANT ISBN No. <span itemProp={"ISBN-number"}>979-8-3503-3086-1</span>
+                                    IEEE XPLORE COMPLIANT ISBN No. <span
+                                    itemProp={"ISBN-number"}>979-8-3503-3086-1</span>
                                 </p>
                             </div>
                         </div>
@@ -398,6 +417,7 @@ const Home = () => {
 
                         </div>
                         <div id={"important"} className={"lg:col-span-1 col-span-full"}>
+                            <InaugurationPdf/>
                             <ImportantMessage/>
                             <ImportantDates/>
                             <ImportantDownloads/>

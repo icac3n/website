@@ -12,6 +12,7 @@ export default function Button({
             <Link href={link}
                   className={`inline-flex items-center justify-center px-5 py-2 mr-3 text-base font-medium text-center text-white rounded-lg ${className ? className : "bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 no-underline dark:focus:ring-red-900"}`}>
                 {children}
+
                 {!hideIcon &&
                     <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
                          xmlns="http://www.w3.org/2000/svg">

@@ -21,6 +21,7 @@ export default function ImportantMessage() {
 
     return (
         <div className={"w-full lg:w-min-sm"}>
+
             <div className={"mt-5 p-4 rounded-t-md bg-gray-200 border-l-4 border-red-600 w-full lg:max-w-sm"}>
                 <p className={"font-semibold text-lg"}>Important Notices</p>
             </div>
