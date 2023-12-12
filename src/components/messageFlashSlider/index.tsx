@@ -12,6 +12,24 @@ import Link from "next/link";
 import Carousel from 'framer-motion-carousel';
 const MessageFlashSlider = () => {
     const messages = [
+        // {
+        //     id: 1,
+        //     message: "Paper Submission and Registration is Closed.",
+        //     link: "#",
+        //     date: "13 Sept 2023"
+        // },
+        // {
+        //     id: 2,
+        //     message: "4th ICAC3N-22 Proceeding is available Online now on Xplore.",
+        //     link: "https://ieeexplore.ieee.org/xpl/conhome/10073967/proceeding",
+        //     date: "27 Apr 2023"
+        // },
+        // {
+        //     id: 3,
+        //     message: "CONFERENCE WILL BE HELD IN BLENDED MODE (ONLINE AND OFFLINE BOTH)",
+        //     link: "#",
+        //     date: "27 Apr 2023"
+        // },
         {
             id: 1,
             message: "Paper Submission and Registration is Closed.",
@@ -20,15 +38,21 @@ const MessageFlashSlider = () => {
         },
         {
             id: 2,
-            message: "4th ICAC3N-22 Proceeding is available Online now on Xplore.",
-            link: "https://ieeexplore.ieee.org/xpl/conhome/10073967/proceeding",
+            message: "CONFERENCE WILL BE HELD IN BLENDED MODE (ONLINE AND OFFLINE BOTH)",
+            link: "#",
             date: "27 Apr 2023"
         },
         {
             id: 3,
-            message: "CONFERENCE WILL BE HELD IN BLENDED MODE (ONLINE AND OFFLINE BOTH)",
-            link: "#",
-            date: "27 Apr 2023"
+            message: "Final Presntation Schedule ICAC3N-2023 (.pdf)",
+            link: "/documents/Final Presentation Schedule ICAC3N-2023.pdf",
+            date: "12 Dec 2023"
+        },
+        {
+            id: 4,
+            message: "Zoom Link for Presentation ICAC3N-2023 (.pdf)",
+            link: "/documents/Zoom Link for Presentation ICAC3N-2023.pdf",
+            date: "12 Dec 2023"
         },
     ];
 
