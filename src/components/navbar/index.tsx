@@ -23,6 +23,7 @@ const Dropdown = ({
             // @ts-ignore
             if (
                 dropdownRef.current &&
+                // @ts-ignore
                 !dropdownRef.current.contains(event.target)
             ) {
                 setDropOpen(false);
