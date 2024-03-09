@@ -7,7 +7,7 @@ export default function Button({
     children,
     disabled = false,
     className
-}: { link: string, disabled: boolean, children?: React.ReactNode | string, className?: string | null, hideIcon?: boolean | null }) {
+}: { link: string, disabled?: boolean, children?: React.ReactNode | string, className?: string | null, hideIcon?: boolean | null }) {
     return (
         <div>
             <button disabled={disabled}>

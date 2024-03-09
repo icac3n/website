@@ -84,8 +84,9 @@ const Post = ({ content, year }: {
                             </div>
                         </div>
                         <div className={"mt-5"}>
-                            {/*@ts-ignore*/}
+
                             {year !== "2023" &&
+                                // @ts-ignore
                                 <Button link={archive[year].proceeding} className={""} hideIcon={false}>Proceedings on IEEE
                                     Xplore</Button>
                             }
