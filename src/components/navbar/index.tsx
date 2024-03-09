@@ -90,14 +90,14 @@ function Index() {
                     title: "Organizing Committee",
                     link: "/committee/organizing-committee",
                 },
-                {
-                    title: "Technical Program Committee",
-                    link: "/committee/technical-program-committee",
-                },
-                {
-                    title: "Advisory Board",
-                    link: "/committee/advisory-board",
-                },
+                // {
+                //     title: "Technical Program Committee",
+                //     link: "/committee/technical-program-committee",
+                // },
+                // {
+                //     title: "Advisory Board",
+                //     link: "/committee/advisory-board",
+                // },
             ],
             enabled: true,
         },
@@ -122,7 +122,7 @@ function Index() {
             dropdown: [
                 {
                     title: "ICAC3N - 2023",
-                    link: "/",
+                    link: "/archive/2023",
                 },
                 {
                     title: "ICAC3N - 2022",
@@ -171,7 +171,7 @@ function Index() {
     return (
 
         <div>
-            <div className={"py-1 px-3 bg-stone-800"}>
+            {/* <div className={"py-1 px-3 bg-stone-800"}>
                 <div className="relative flex overflow-x-hidden text-white text-sm">
                     <div className="animate-marquee whitespace-nowrap">
                         <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
@@ -202,7 +202,7 @@ function Index() {
                         <span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <nav className="bg-red-800">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between gap-y-6 mx-auto p-4">
                     <div className={'w-full flex flex-row justify-between items-center'}>

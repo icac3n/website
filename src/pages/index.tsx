@@ -86,16 +86,16 @@ const Home = () => {
         },
 
     ]
-
-    useEffect(() => {
-        let isModalShown = sessionStorage.getItem('alreadyShown');
-        if (isModalShown != 'already_shown') {
-            setTimeout(() => {
-                setShowModal(true)
-            }, 1000)
-            sessionStorage.setItem('alreadyShow', 'already_shown');
-        }
-    }, []);
+    
+    // useEffect(() => {
+    //     let isModalShown = sessionStorage.getItem('alreadyShown');
+    //     if (isModalShown != 'already_shown') {
+    //         setTimeout(() => {
+    //             setShowModal(true)
+    //         }, 1000)
+    //         sessionStorage.setItem('alreadyShow', 'already_shown');
+    //     }
+    // }, []);
 
 
     const fetch = (i: number) => {
@@ -209,7 +209,7 @@ const Home = () => {
                             <div className={"text-red-800"}>
                                 <p className={"font-semibold text"} itemProp={"organizing-department"}>Computer
                                     Science
-                                    and Engineering Department</p>
+                                    and Engineering, MCA and Information Technology Departments</p>
                             </div>
                         </div>
 
