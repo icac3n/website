@@ -12,7 +12,7 @@ const OrganizingCommittee = () => {
                     "Designation": "Chairman"
                 },
                 {
-                    "Name": "Shri Dhruv Galgotia",
+                    "Name": "Dr. Dhruv Galgotia",
                     "Designation": "CEO"
                 }
             ]
@@ -20,13 +20,14 @@ const OrganizingCommittee = () => {
         {
             "Category": "Patrons",
             "Members": [
+                
+                {
+                    "Name": "Gp. Capt. (R) Dr. P K Chopra, VSM",
+                    "Designation": "Director General"
+                },
                 {
                     "Name": "Prof. (Dr.) S.N. Singh",
                     "Designation": "ABV-IIITM, Gwalior"
-                },
-                {
-                    "Name": "Prof. (Dr.) P. Nagabhushan",
-                    "Designation": "VC, VFSTR, AP"
                 }
             ]
         },
@@ -169,7 +170,7 @@ const OrganizingCommittee = () => {
                     "Designation": "CSE, GCET"
                 },
                 {
-                    "Name": "Prof. M. Krishan Kumar Sarawswat",
+                    "Name": "Prof. (Dr.) Krishan Kumar Saraswat, CSE, GCET",
                     "Designation": "CSE, GCET"
                 },
                 {
@@ -255,15 +256,15 @@ const OrganizingCommittee = () => {
             ],
             Students: [
                 {
-                    Name: "Raunak Gupta",
+                    Name: "Mr. Raunak Gupta",
                     Designation: "CSE, GCET"
                 },
                 {
-                    Name: "Yash Gupta",
+                    Name: "Mr. Yash Gupta",
                     Designation: "CSE-AI, GCET"
                 },
                 {
-                    Name: "Pratyaksh Kumar",
+                    Name: "Mr. Pratyaksh Kumar",
                     Designation: "CSE, GCET",
                     
                 }
@@ -304,12 +305,12 @@ const OrganizingCommittee = () => {
                     organizingCommittee.map((committee, index) => {
                         return (
                             <div key={index} itemProp="department">
-                                <h2 className={"heading"} itemProp="name">{committee.Category}</h2>
+                                <h2 className={"heading"} itemProp="name" id={committee.Category}>{committee.Category}</h2>
                                 <ul>
                                     {
                                         committee.Members.map((member, index) => {
                                             return (
-                                                <li key={index} itemProp="member">
+                                                <li key={index} itemProp="member" id={member.Name}>
                                                     <span itemProp="name">{member.Name}</span>, <span
                                                     itemProp="jobTitle">{member.Designation}</span>
                                                 </li>
@@ -324,7 +325,7 @@ const OrganizingCommittee = () => {
                                         {
                                             committee?.Students.map((member, index) => {
                                                 return (
-                                                    <li key={index} itemProp="member">
+                                                    <li key={index} itemProp="member" id={member.Name}>
                                                         <span itemProp="name">{member.Name}</span>, <span
                                                         itemProp="jobTitle">{member.Designation}</span>
                                                     </li>

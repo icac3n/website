@@ -4,6 +4,18 @@ import Link from "next/link";
 
 const impDownloadData = [
     {
+        title: "Final Presntation Schedule ICAC3N-2023 (.pdf)",
+        link: "/documents/Final Presentation Schedule ICAC3N-2023.pdf",
+        isImportant: true,
+        enabled: true,
+    },
+    {
+        title: "Zoom Link for Presentation ICAC3N-2023 (.pdf)",
+        link: "/documents/Zoom Link for Presentation ICAC3N-2023.pdf",
+        isImportant: true,
+        enabled: true,
+    },
+    {
         title: "ICAC3N-2023 Brochure (.pdf)",
         link: "/documents/ICAC3N-2023 Brochure.pdf",
         isImportant: false,

@@ -10,7 +10,7 @@ const impDateData = [
     },
     {
         title: "Abstract Submission Deadline",
-        date: "01/07/2023",
+        date: "31/07/2023",
 
         isImportant: true,
         enabled: true,

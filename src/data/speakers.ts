@@ -7,6 +7,34 @@ export const speakers = [
         "national": true
     },
     {
+        "name": "Prof. (Dr.) M.N.Doja",
+        "designation": "Director IIIT, Sonepat",
+        "image": "/images/speakers/Prof. (Dr.) M.N.Doja.jpg",
+        "id": "2.1",
+        "national": true
+    },
+    {
+        "name": "Prof. (Dr.) S. K. Singh",
+        "designation": "Vice Chancellor, Rajasthan Technical University, Kota",
+        "image": "/images/speakers/Prof. (Dr.) S. K. Singh.jpg",
+        "id": "2.2",
+        "national": true
+    },
+    {
+        "name": "Dr. Akhilesh Tiwari",
+        "designation": "Secretary IEEE and Associate Professor in IIIT Allahabad",
+        "image": "/images/speakers/Dr. Akhilesh Tiwari.jpg",
+        "id": "2.3",
+        "national": true
+    },
+    {
+        "name": "Dr. Virender Ranga",
+        "designation": "Associate Professor, Department of Information Technology, Delhi Technological University",
+        "image": "/images/speakers/Dr. Virender Ranga.jpg",
+        "id": "2.4",
+        "national": true
+    },    
+    {
         "name": "Prof. (Dr.) P. Nagabhushan",
         "designation": "Vice-Chancellor, Vignan's Foundation for Science, Technology & Research, Andhra Pradesh",
         "image": "/images/speakers/Prof. (Dr.) P. Nagabhushan.jpg",
@@ -43,14 +71,14 @@ export const speakers = [
     },
     {
         "name": "Dr. Ajay Beniwal",
-        "designation": "Postdocotral Researcher at the Department of Mechanical and Material Enginnering, University of Western Ontario, Canada",
+        "designation": "Marie Curie Fellow at University of Glasgow, United Kingdom",
         "image": "/images/speakers/Dr. Ajay Beniwal.jpg",
         "id": "44",
         "national": false
     },
     {
-        "name": "Dr. Neyara Radwan",
-        "designation": "Associate Professor, Quality Assurance Officer, ph.D program, KAU, Saudi Arabia|International Keynote Speaker",
+        "name": "Prof. Dr. Neyara Radwan",
+        "designation": "Associate Professor Industrial Engineering Dept., College of Applied Sciences, AL MAAREFA UNIVERSITY, Saudi Arabia & Mechanical Dept., Faculty of Engineering, Suez Canal University, Egypt",
         "image": "/images/speakers/Dr. Neyara Radwan.jpeg",
         "id": "45",
         "national": false
@@ -63,21 +91,21 @@ export const speakers = [
         "national": false
     },
     {
-        "name": "Dr. Kashif Nisar, SMIEEE",
-        "designation": "Victorian Institute of Technology, 14 Adam Street, Hindmarsh, Adelaide, South Australia, 5007",
+        "name": "Dr. Kashif Nisar",
+        "designation": "Swinburne University of Technology, Sydney, New South Wales, Australia",
         "image": "/images/speakers/Dr. Kashif Nisar, SMIEEE.jpg",
         "id": "6",
         "national": false
     },
     {
         "name": "Dr. Ana Clarke",
-        "designation": "Partner Director – Data & AI , Artificial Intelligence Services Australia.",
+        "designation": "Founder and CEO of AC SmartData",
         "image": "/images/speakers/Dr. Ana Clarke.jpg",
         "id": "7",
         "national": false
     },
     {
-        "name": "Prof. Nada Ratković, Croatia",
+        "name": "Prof. Nada Ratković",
         "designation": "Assistant Professor, Department of Quantitative Methods on Faculty of Economics, Business and Tourism, University Split.",
         "image": "/images/speakers/Prof. Nada Ratković, Croatia.jpg",
         "id": "8",
@@ -85,7 +113,7 @@ export const speakers = [
     },
     {
         "name": "Prof. (Dr.) Deepak Garg",
-        "designation": "Director leadingindia.ai and Head CSE, Bennett University and Director, NVIDIA-Bennett Centre of Research on AI",
+        "designation": "Vice Chancellor @ SR University | PhD in AI | Founder leadingindia.ai",
         "image": "/images/speakers/Prof. (Dr.) Deepak Garg.jpeg",
         "id": "12",
         "national": true
@@ -106,7 +134,7 @@ export const speakers = [
     },
     {
         "name": "Prof. (Dr.) Malay Kishore Dutta",
-        "designation": "Director, Dean PG studies and Research, Dr. A.P.J. Abdul Kalam Technical University, Lucknow",
+        "designation": "Director, Centre for Artificial Intelligence & Dean Student Research, Amity University, Noida, India",
         "image": "/images/speakers/Prof. (Dr.) Malay Kishore Dutta.jpeg",
         "id": "15",
         "national": true
