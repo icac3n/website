@@ -552,8 +552,8 @@ const Home = () => {
             </div>
             <div id={"important"} className={"col-span-full lg:col-span-1"}>
               <InaugurationPdf />
-              <ImportantMessage />
-              <ImportantDates />
+              {/* <ImportantMessage />
+              <ImportantDates /> */}
               <ImportantDownloads />
             </div>
           </div>
