@@ -175,7 +175,7 @@ const Home = () => {
               "col-span-full flex h-full flex-col justify-between gap-2 self-start lg:col-span-2"
             }
           >
-            <div
+            {/* <div
               className={
                 "flex items-center justify-center space-x-2 lg:justify-start"
               }
@@ -186,9 +186,9 @@ const Home = () => {
               <p className={"font-semibold text-red-800"}>
                 15th and 16th December 2023
               </p>
-            </div>
+            </div> */}
 
-            <div
+            {/* <div
               className={
                 " flex items-center justify-center space-x-2 lg:hidden lg:justify-start"
               }
@@ -219,7 +219,7 @@ const Home = () => {
                   <span itemProp={"ISBN-number"}>979-8-3503-3086-1</span>
                 </p>
               </div>
-            </div>
+            </div> */}
 
             <p
               className={
@@ -230,7 +230,7 @@ const Home = () => {
               Communication Control and Networking- ICAC3N
             </p>
 
-            <div
+            {/* <div
               className={
                 "hidden items-center justify-center space-x-2 lg:flex lg:justify-start"
               }
@@ -264,7 +264,7 @@ const Home = () => {
                   <span itemProp={"ISBN-number"}>979-8-3503-3086-1</span>
                 </p>
               </div>
-            </div>
+            </div> */}
             <div
               className={
                 "flex items-center justify-center space-x-2 lg:justify-start"
