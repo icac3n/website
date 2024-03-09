@@ -60,7 +60,7 @@ const callForPapers = () => {
                     <li>Researches and Innovations on COVID-19</li>
                 </ul>
 
-                <Button link={"https://cmt3.research.microsoft.com/ICAC3N2023"} className={''} hideIcon={null}> Submit a Paper</Button>
+                {/*<Button link={"https://cmt3.research.microsoft.com/ICAC3N2023"} className={''} hideIcon={null}> Submit a Paper</Button>*/}
             </div>
         </>
     )

@@ -3,49 +3,49 @@ import React from "react";
 const impDateData = [
     {
         title: "Paper Submission Starts",
-        date: "10/04/2023",
+        date: "Yet to be Announced",
 
         isImportant: false,
         enabled: true,
     },
     {
         title: "Abstract Submission Deadline",
-        date: "31/07/2023",
+        date: "Yet to be Announced",
 
         isImportant: true,
         enabled: true,
     },
     {
         title: "Paper Submission Deadline",
-        date: "31/08/2023",
+        date: "Yet to be Announced",
 
         isImportant: true,
         enabled: true,
     }, {
         title: "Notification of Acceptance",
         subtitle: "(within 4weeks from submission)",
-        date: "30/09/2023",
+        date: "Yet to be Announced",
 
         isImportant: false,
         enabled: true,
     },
     {
         title: "Registration",
-        date: "31/10/2023",
+        date: "Yet to be Announced",
 
         isImportant: false,
         enabled: true,
     },
     {
         title: "Camera Ready Paper",
-        date: "20/11/2023",
+        date: "Yet to be Announced",
 
         isImportant: false,
         enabled: true,
     },
     {
         title: "Conference Date",
-        date: "15th - 16th December 2023",
+        date: "Yet to be Announced",
 
         isImportant: false,
         enabled: true,

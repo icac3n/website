@@ -164,7 +164,7 @@ const Home = () => {
                         className={"col-span-full lg:col-span-2 flex flex-col justify-between h-full self-start gap-2"}>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiCalendarTodoFill className={"hidden text-xl lg:block text-red-800"}/>
-                            <p className={"text-red-800 font-semibold"}>15th and 16th December 2023</p>
+                            <p className={"text-red-800 font-semibold"}>Date yet to be announced</p>
                         </div>
 
                         <div className={" lg:hidden flex items-center space-x-2 lg:justify-start justify-center"}>
