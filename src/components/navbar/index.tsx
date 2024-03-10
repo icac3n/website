@@ -175,31 +175,31 @@ function Index() {
                 <div className="relative flex overflow-x-hidden text-white text-sm">
                     <div className="animate-marquee whitespace-nowrap">
                         <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
-                        <span className="mx-2">•</span>
-                        <span className="mx-4">Conference Record Number #60023</span>
-                        <span className="mx-2">•</span>
-                        <span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>
+                        {/*<span className="mx-2">•</span>*/}
+                        {/*<span className="mx-4">Conference Record Number #60023</span>*/}
+                        {/*<span className="mx-2">•</span>*/}
+                        {/*<span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>*/}
                         <span className="mx-2">•</span>
                         <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
-                        <span className="mx-2">•</span>
-                        <span className="mx-4">Conference Record Number #60023</span>
-                        <span className="mx-2">•</span>
-                        <span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>
+                        {/*<span className="mx-2">•</span>*/}
+                        {/*<span className="mx-4">Conference Record Number #60023</span>*/}
+                        {/*<span className="mx-2">•</span>*/}
+                        {/*<span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>*/}
                         <span className="mx-2">•</span>
                     </div>
 
                     <div className="absolute top-0 animate-marquee2 whitespace-nowrap">
                         <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
-                        <span className="mx-2">•</span>
-                        <span className="mx-4">Conference Record Number #60023</span>
-                        <span className="mx-2">•</span>
-                        <span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>
+                        {/*<span className="mx-2">•</span>*/}
+                        {/*<span className="mx-4">Conference Record Number #60023</span>*/}
+                        {/*<span className="mx-2">•</span>*/}
+                        {/*<span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>*/}
                         <span className="mx-2">•</span>
                         <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
                         <span className="mx-2">•</span>
-                        <span className="mx-4">Conference Record Number #60023</span>
-                        <span className="mx-2">•</span>
-                        <span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>
+                        {/*<span className="mx-4">Conference Record Number #60023</span>*/}
+                        {/*<span className="mx-2">•</span>*/}
+                        {/*<span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>*/}
                     </div>
                 </div>
             </div>
@@ -212,10 +212,10 @@ function Index() {
                                        alt="Logo"/>
                             </div>
                             <span className="font-semibold text-2xl tracking-tight text-white mr-3">ICAC3N</span>
-                            <div
-                                className={"bg-gray-50 flex justify-center items-center pl-3 pr-4 pt-4 pb-3 rounded-md"}>
-                                <Image src={"/IEEE_up.png"} alt={"IEEE UP Logo"} height={100} width={75}/>
-                            </div>
+                            {/*<div*/}
+                            {/*    className={"bg-gray-50 flex justify-center items-center pl-3 pr-4 pt-4 pb-3 rounded-md"}>*/}
+                            {/*    <Image src={"/IEEE_up.png"} alt={"IEEE UP Logo"} height={100} width={75}/>*/}
+                            {/*</div>*/}
                         </Link>
 
                         <div className={'flex flex-row gap-1 justify-normal items-center'}>

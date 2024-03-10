@@ -2,42 +2,49 @@ import React from "react";
 import {BsChevronRight} from "react-icons/bs";
 import Link from "next/link";
 
-const impDownloadData = [
-    {
-        title: "Final Presntation Schedule ICAC3N-2023 (.pdf)",
-        link: "/documents/Final Presentation Schedule ICAC3N-2023.pdf",
-        isImportant: true,
-        enabled: true,
-    },
-    {
-        title: "Zoom Link for Presentation ICAC3N-2023 (.pdf)",
-        link: "/documents/Zoom Link for Presentation ICAC3N-2023.pdf",
-        isImportant: true,
-        enabled: true,
-    },
-    {
-        title: "ICAC3N-2023 Brochure (.pdf)",
-        link: "/documents/ICAC3N-2023 Brochure.pdf",
-        isImportant: false,
-        enabled: true,
-    },
-    {
-        title: "Paper Format (.docx)",
-        link: "/documents/PAPER_ID_ICAC3N23.docx",
-        isImportant: false,
-        enabled: true,
-    },
-    {
-        title: "Paper Format (.pdf)",
-        link: "/documents/PAPER_ID_ICAC3N23.pdf",
-        isImportant: false,
-        enabled: true,
-    }, {
-        title: "Sample PPT (.pptx)",
-        link: "/documents/SamplePPTICAC3N-2023.pptx",
-        isImportant: false,
-        enabled: true,
-    },
+interface Downloads {
+    title : string,
+    link : string,
+    isImportant : boolean,
+    enabled : boolean
+}
+
+const impDownloadData : Downloads[] = [
+    // {
+    //     title: "Final Presntation Schedule ICAC3N-2023 (.pdf)",
+    //     link: "/documents/Final Presentation Schedule ICAC3N-2023.pdf",
+    //     isImportant: true,
+    //     enabled: true,
+    // },
+    // {
+    //     title: "Zoom Link for Presentation ICAC3N-2023 (.pdf)",
+    //     link: "/documents/Zoom Link for Presentation ICAC3N-2023.pdf",
+    //     isImportant: true,
+    //     enabled: true,
+    // },
+    // {
+    //     title: "ICAC3N-2023 Brochure (.pdf)",
+    //     link: "/documents/ICAC3N-2023 Brochure.pdf",
+    //     isImportant: false,
+    //     enabled: true,
+    // },
+    // {
+    //     title: "Paper Format (.docx)",
+    //     link: "/documents/PAPER_ID_ICAC3N23.docx",
+    //     isImportant: false,
+    //     enabled: true,
+    // },
+    // {
+    //     title: "Paper Format (.pdf)",
+    //     link: "/documents/PAPER_ID_ICAC3N23.pdf",
+    //     isImportant: false,
+    //     enabled: true,
+    // }, {
+    //     title: "Sample PPT (.pptx)",
+    //     link: "/documents/SamplePPTICAC3N-2023.pptx",
+    //     isImportant: false,
+    //     enabled: true,
+    // },
 ]
 
 export default function ImportantDownloads() {
@@ -80,6 +87,14 @@ export default function ImportantDownloads() {
                         )
                     })
                 }
+
+                {
+                    impDownloadData.length == 0 &&
+                    <>
+                        <h3>Nothing to Download Yet</h3>
+                    </>
+                }
+
             </div>
         </div>
     )

@@ -1,20 +1,28 @@
 import React from "react";
 
-const impImpData = [
-    {
-        title: "Paper submission link open",
-        description: "5th ICAC3N-23 paper submission link is open till August 31, 2023",
-        link: "/registration",
-        isImportant: true,
-        enabled: true,
-    },
-    {
-        title: "4th ICAC3N-22 Proceedings",
-        description: "4th ICAC3N-22 Proceedings are available online now on Xplore",
-        link: "https://ieeexplore.ieee.org/xpl/conhome/10073967/proceeding",
-        isImportant: false,
-        enabled: true,
-    }
+interface imporatantNotice {
+    title : string
+    description : string
+    link : string
+    isImportant : boolean
+    enabled : boolean
+}
+
+const impImpData : imporatantNotice[] = [
+    // {
+    //     title: "Paper submission link open",
+    //     description: "5th ICAC3N-23 paper submission link is open till August 31, 2023",
+    //     link: "/registration",
+    //     isImportant: true,
+    //     enabled: true,
+    // },
+    // {
+    //     title: "4th ICAC3N-22 Proceedings",
+    //     description: "4th ICAC3N-22 Proceedings are available online now on Xplore",
+    //     link: "https://ieeexplore.ieee.org/xpl/conhome/10073967/proceeding",
+    //     isImportant: false,
+    //     enabled: true,
+    // }
 ]
 
 export default function ImportantMessage() {
@@ -63,6 +71,14 @@ export default function ImportantMessage() {
                         )
                     })
                 }
+
+                {
+                    impImpData.length == 0 &&
+                    <>
+                        <h3>No Important Notices Yet</h3>
+                    </>
+                }
+
             </div>
         </div>
     )
