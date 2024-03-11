@@ -52,7 +52,7 @@ const OrganizingCommittee = () => {
             "Category": "Convener & Conference Organising Chair",
             "Members": [
                 {
-                    "Name": "Prof. (Dr.) Vishnu Sharma",
+                    "Name": "Prof. (Dr.) Sachin Kumar",
                     "Designation": "HOD, CSE, GCET"
                 }
             ]
@@ -61,7 +61,7 @@ const OrganizingCommittee = () => {
             "Category": "Conference Chair",
             "Members": [
                 {
-                    "Name": "Prof. (Dr.) Vishnu Sharma",
+                    "Name": "Prof. (Dr.) Sachin Kumar",
                     "Designation": "HOD, CSE, GCET"
                 },
                 {
@@ -75,7 +75,7 @@ const OrganizingCommittee = () => {
             "Members": [
                 {
                     "Name": "Prof. (Dr.) Sachin Kumar",
-                    "Designation": "Dean (R&D), CSE, GCET"
+                    "Designation": "HOD, CSE, GCET"
                 },
                 {
                     "Name": "Prof. (Dr.) S. K. Singh",

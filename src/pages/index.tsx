@@ -164,46 +164,46 @@ const Home = () => {
                         className={"col-span-full lg:col-span-2 flex flex-col justify-between h-full self-start gap-2"}>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiCalendarTodoFill className={"hidden text-xl lg:block text-red-800"}/>
-                            <p className={"text-red-800 font-semibold"}>15th and 16th December 2023</p>
+                            <p className={"text-red-800 font-semibold"}>Date yet to be announced</p>
                         </div>
 
-                        <div className={" lg:hidden flex items-center space-x-2 lg:justify-start justify-center"}>
-                            <RiArticleLine className={"hidden text-xl self-start lg:block text-red-800"}/>
-                            <div className={"text-red-800"}>
-                                <p className={"font-semibold text"} itemProp={"conference-record-number"}>Conference
-                                    Record Number #60023</p>
-                            </div>
-                        </div>
-                        <div className={" lg:hidden flex items-center space-x-2 lg:justify-start justify-center"}>
-                            <RiArticleLine className={"hidden text-xl self-start lg:block text-red-800"}/>
-                            <div className={"text-red-800"}>
-                                <p className={"font-semibold text"}>
-                                    IEEE XPLORE COMPLIANT ISBN No. <span
-                                    itemProp={"ISBN-number"}>979-8-3503-3086-1</span>
-                                </p>
-                            </div>
-                        </div>
+                        {/*<div className={" lg:hidden flex items-center space-x-2 lg:justify-start justify-center"}>*/}
+                        {/*    <RiArticleLine className={"hidden text-xl self-start lg:block text-red-800"}/>*/}
+                        {/*    <div className={"text-red-800"}>*/}
+                        {/*        <p className={"font-semibold text"} itemProp={"conference-record-number"}>Conference*/}
+                        {/*            Record Number #60023</p>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className={" lg:hidden flex items-center space-x-2 lg:justify-start justify-center"}>*/}
+                        {/*    <RiArticleLine className={"hidden text-xl self-start lg:block text-red-800"}/>*/}
+                        {/*    <div className={"text-red-800"}>*/}
+                        {/*        <p className={"font-semibold text"}>*/}
+                        {/*            IEEE XPLORE COMPLIANT ISBN No. <span*/}
+                        {/*            itemProp={"ISBN-number"}>979-8-3503-3086-1</span>*/}
+                        {/*        </p>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
 
                         <p className={"text-3xl lg:text-4xl break-words my-3 lg:my-2 font-bold mx-2 lg:mx-0"}>5th
                             International Conference on Advances in Computing, Communication Control and Networking-
                             ICAC3N</p>
 
-                        <div className={"hidden lg:flex items-center space-x-2 lg:justify-start justify-center"}>
-                            <RiArticleLine className={"hidden text-xl self-start lg:block text-red-800"}/>
-                            <div className={"text-red-800"}>
-                                <p className={"font-semibold text"} itemProp={"conference-record-number"}>Conference
-                                    Record Number #60023</p>
-                            </div>
-                        </div>
-                        <div className={"hidden lg:flex items-center space-x-2 lg:justify-start justify-center"}>
-                            <RiArticleLine className={"hidden text-xl self-start lg:block text-red-800"}/>
-                            <div className={"text-red-800"}>
-                                <p className={"font-semibold text"} itemProp={"conference-record-number"}>
-                                    IEEE XPLORE COMPLIANT ISBN No. <span
-                                    itemProp={"ISBN-number"}>979-8-3503-3086-1</span>
-                                </p>
-                            </div>
-                        </div>
+                        {/*<div className={"hidden lg:flex items-center space-x-2 lg:justify-start justify-center"}>*/}
+                        {/*    <RiArticleLine className={"hidden text-xl self-start lg:block text-red-800"}/>*/}
+                        {/*    <div className={"text-red-800"}>*/}
+                        {/*        <p className={"font-semibold text"} itemProp={"conference-record-number"}>Conference*/}
+                        {/*            Record Number #60023</p>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className={"hidden lg:flex items-center space-x-2 lg:justify-start justify-center"}>*/}
+                        {/*    <RiArticleLine className={"hidden text-xl self-start lg:block text-red-800"}/>*/}
+                        {/*    <div className={"text-red-800"}>*/}
+                        {/*        <p className={"font-semibold text"} itemProp={"conference-record-number"}>*/}
+                        {/*            IEEE XPLORE COMPLIANT ISBN No. <span*/}
+                        {/*            itemProp={"ISBN-number"}>979-8-3503-3086-1</span>*/}
+                        {/*        </p>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiBuildingFill className={"hidden text-xl self-start lg:block text-red-800"}/>
                             <div className={"text-red-800"}>
@@ -225,10 +225,10 @@ const Home = () => {
 
                         </div>
 
-                        <div className={"flex items-center justify-center mt-4"}>
-                            <Link href={'https://cmt3.research.microsoft.com/ICAC3N2023'}
-                                  className={'px-4 h-fit py-2 bg-red-700 rounded-lg w-fit md:hidden block text-white cursor-pointer '}>Submit&nbsp;Paper</Link>
-                        </div>
+                        {/*<div className={"flex items-center justify-center mt-4"}>*/}
+                        {/*    <Link href={'https://cmt3.research.microsoft.com/ICAC3N2023'}*/}
+                        {/*          className={'px-4 h-fit py-2 bg-red-700 rounded-lg w-fit md:hidden block text-white cursor-pointer '}>Submit&nbsp;Paper</Link>*/}
+                        {/*</div>*/}
                         <div
                             className={"flex space-x-5 text-2xl text-red-800 mt-4 items-center lg:justify-start justify-center"}>
                             <Link href={"https://twitter.com/icac3n"} aria-label={'icac3n twitter'}>
@@ -241,7 +241,7 @@ const Home = () => {
                                 <RiFacebookBoxFill
                                     className={'cursor-pointer  grow-on-hover hover:text-indigo-700'}/>
                             </Link>
-                            <Link href={"mailto:vishnu.sharma@galgotiacollege.edu"} aria-label={'icac3n mail'}>
+                            <Link href={"mailto:sachin.kumar@galgotiacollege.edu"} aria-label={'icac3n mail'}>
                                 <RiMailFill className={'cursor-pointer  grow-on-hover hover:text-amber-400'}/>
                             </Link>
                         </div>
@@ -417,7 +417,8 @@ const Home = () => {
 
                         </div>
                         <div id={"important"} className={"lg:col-span-1 col-span-full"}>
-                            <InaugurationPdf/>
+                            {/*Inauguration Brochure */}
+                            {/*<InaugurationPdf/>*/}
                             <ImportantMessage/>
                             <ImportantDates/>
                             <ImportantDownloads/>
@@ -427,7 +428,7 @@ const Home = () => {
                 <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
                 <div className={'select-none'}>
                     <div className={'flex flex-row items-center mx-5 md:mx-auto'}>
-                        <h1 className='text-2xl text-black font-extrabold my-5'>Hon&apos;ble Speakers</h1>
+                        <h1 className='text-2xl text-black font-extrabold my-5'>Hon&apos;ble Past Speakers</h1>
                         {/*<h4 className='text-md text-blue-500 font-regular my-5 ml-2 hover:underline cursor-pointer'>( view all )</h4>*/}
                     </div>
 

@@ -1,55 +1,63 @@
 import React from "react";
 
-const impDateData = [
-    {
-        title: "Paper Submission Starts",
-        date: "10/04/2023",
+interface ImportantDate {
+    title : string
+    subtitle : string
+    date : string
+    isImportant : boolean
+    enabled : boolean
+}
 
-        isImportant: false,
-        enabled: true,
-    },
-    {
-        title: "Abstract Submission Deadline",
-        date: "31/07/2023",
-
-        isImportant: true,
-        enabled: true,
-    },
-    {
-        title: "Paper Submission Deadline",
-        date: "31/08/2023",
-
-        isImportant: true,
-        enabled: true,
-    }, {
-        title: "Notification of Acceptance",
-        subtitle: "(within 4weeks from submission)",
-        date: "30/09/2023",
-
-        isImportant: false,
-        enabled: true,
-    },
-    {
-        title: "Registration",
-        date: "31/10/2023",
-
-        isImportant: false,
-        enabled: true,
-    },
-    {
-        title: "Camera Ready Paper",
-        date: "20/11/2023",
-
-        isImportant: false,
-        enabled: true,
-    },
-    {
-        title: "Conference Date",
-        date: "15th - 16th December 2023",
-
-        isImportant: false,
-        enabled: true,
-    }
+const impDateData: ImportantDate[] = [
+    // {
+    //     title: "Paper Submission Starts",
+    //     date: "Yet to be Announced",
+    //
+    //     isImportant: false,
+    //     enabled: true,
+    // },
+    // {
+    //     title: "Abstract Submission Deadline",
+    //     date: "Yet to be Announced",
+    //
+    //     isImportant: true,
+    //     enabled: true,
+    // },
+    // {
+    //     title: "Paper Submission Deadline",
+    //     date: "Yet to be Announced",
+    //
+    //     isImportant: true,
+    //     enabled: true,
+    // }, {
+    //     title: "Notification of Acceptance",
+    //     subtitle: "(within 4weeks from submission)",
+    //     date: "Yet to be Announced",
+    //
+    //     isImportant: false,
+    //     enabled: true,
+    // },
+    // {
+    //     title: "Registration",
+    //     date: "Yet to be Announced",
+    //
+    //     isImportant: false,
+    //     enabled: true,
+    // },
+    // {
+    //     title: "Camera Ready Paper",
+    //     date: "Yet to be Announced",
+    //
+    //     isImportant: false,
+    //     enabled: true,
+    // },
+    // {
+    //     title: "Conference Date",
+    //     date: "Yet to be Announced",
+    //
+    //     isImportant: false,
+    //     enabled: true,
+    // }
 ]
 
 export default function ImportantDates() {
@@ -97,6 +105,13 @@ export default function ImportantDates() {
                         )
                     })
                 }
+                {
+                    impDateData.length == 0 &&
+                    <>
+                        <h3>No Dates Announced Yet</h3>
+                    </>
+                }
+
             </div>
         </div>
     )
