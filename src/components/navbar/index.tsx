@@ -203,6 +203,7 @@ function Index() {
         //             </div>
         //         </div>
         //     </div> */}
+        <div>
             <nav className="bg-red-800">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between gap-y-6 mx-auto p-4">
                     <div className={'w-full flex flex-row justify-between items-center'}>
