@@ -25,7 +25,7 @@ export default function App({Component, pageProps}: ComponentWithLayout) {
                 <ToastThemeWrapper/>
                 <Navbar/>
 
-                <MessageFlashSlider/>
+                {/* <MessageFlashSlider/> */}
                 {
                     Component.pageLayout ?
                         (

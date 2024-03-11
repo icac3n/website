@@ -1,6 +1,6 @@
 import Head from "next/head";
-import {RiMapPin2Fill} from "react-icons/ri";
-import {Swiper, SwiperSlide} from "swiper/react";
+import { RiMapPin2Fill } from "react-icons/ri";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -8,12 +8,12 @@ import "swiper/css/pagination";
 
 
 // import required modules
-import {Autoplay} from "swiper";
+import { Autoplay } from "swiper";
 import React from "react";
 import Button from "@/components/button";
-import {archive} from "@/data/archive";
+import { archive } from "@/data/archive";
 
-const Post = ({content, year}: {
+const Post = ({ content, year }: {
     content: {
         name: string,
         image: string,
@@ -22,11 +22,11 @@ const Post = ({content, year}: {
     }[], year: string
 }) => {
     const sliderImages = [
-        {
-            "image": "/images/slider/image1.jpeg",
-            "id": "a1b2c3d4",
-            "alt": "image1"
-        },
+        // {
+        //     "image": "/images/slider/image1.jpeg",
+        //     "id": "a1b2c3d4",
+        //     "alt": "image1"
+        // },
         {
             "image": "/images/slider/image2.jpg",
             "id": "e5f6g7h8",
@@ -60,9 +60,9 @@ const Post = ({content, year}: {
             <Head>
                 <title>ICAC3N {year}- Galgotias College of Engineering</title>
                 <meta name="description"
-                      content="International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <link rel="icon" href="/favicon.ico"/>
+                    content="International Conference on Advances in Computing, Communication Control and Networking- ICAC3N" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={""}>
                 {/*    landing   */}
@@ -76,7 +76,7 @@ const Post = ({content, year}: {
 
 
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
-                            <RiMapPin2Fill className={"hidden mt-1 self-start lg:block text-red-800"}/>
+                            <RiMapPin2Fill className={"hidden mt-1 self-start lg:block text-red-800"} />
                             <div className={"text-red-800"}>
                                 <p className={"font-semibold text"}>Galgotias College of Engineering And
                                     Technology</p>
@@ -84,9 +84,12 @@ const Post = ({content, year}: {
                             </div>
                         </div>
                         <div className={"mt-5"}>
-                            {/*@ts-ignore*/}
-                            <Button link={archive[year].proceeding} className={""} hideIcon={false}>Proceedings on IEEE
-                                Xplore</Button>
+
+                            {year !== "2023" &&
+                                // @ts-ignore
+                                <Button link={archive[year].proceeding} className={""} hideIcon={false}>Proceedings on IEEE
+                                    Xplore</Button>
+                            }
                         </div>
                     </div>
                     <div className={"lg:w-[60%] flex h-full w-full px-5"}>
@@ -115,7 +118,7 @@ const Post = ({content, year}: {
                                             <img
                                                 className={" w-full h-80 object-cover rounded-md"}
                                                 src={image.image}
-                                                alt=""/>
+                                                alt="" />
                                         </SwiperSlide>
 
                                     )
@@ -127,7 +130,7 @@ const Post = ({content, year}: {
                     </div>
                 </div>
 
-                <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
+                <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
                 <div className={"flex flex-col space-y-5"}>
                     <div className={"grid grid-cols-1 lg:grid-cols-3 mx-5 md:mx-auto"}>
                         <div className={"lg:mr-10 col-span-full"}>
@@ -152,7 +155,7 @@ const Post = ({content, year}: {
                         </div>
                     </div>
                 </div>
-                <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
+                <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
                 <div className={'select-none'}>
                     <div className={'flex flex-row items-center mx-5 md:mx-auto'}>
                         <h1 className='text-2xl text-black font-extrabold my-5'>Hon&apos;ble Speakers of {year}</h1>
@@ -190,7 +193,7 @@ const Post = ({content, year}: {
                                         <SwiperSlide key={index}>
                                             <div className={'col-span-1 flex flex-col items-center'}>
                                                 <img src={speaker.image} alt={"Speaker's Photo"}
-                                                     className={'h-56 border-2 border-gray-300 w-64 object-cover mb-5 rounded-lg shadow-md'}/>
+                                                    className={'h-56 border-2 border-gray-300 w-64 object-cover mb-5 rounded-lg shadow-md'} />
                                                 <span className={'font-bold text-sm text-center'}>{speaker.name}</span>
                                                 <span
                                                     className={'font-light text-xs text-center'}>{speaker.designation}</span>
@@ -202,7 +205,7 @@ const Post = ({content, year}: {
                         </Swiper>
                     </div>
                 </div>
-                <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
+                <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
                 <div className={"prose mx-4"}>
                     <h1 className={"heading text-2xl"}>ORGANISING COMMITTEE</h1>
                     {
@@ -236,6 +239,7 @@ const Post = ({content, year}: {
 
 export const getStaticPaths = async () => {
     const years = [
+        "2023",
         "2022",
         "2021",
         "2020",
@@ -243,20 +247,20 @@ export const getStaticPaths = async () => {
     ]
 
     const paths = years.map((post) => ({
-        params: {slug: post},
+        params: { slug: post },
     }));
 
-    console.log({paths})
-    return {paths, fallback: false};
+    console.log({ paths })
+    return { paths, fallback: false };
 };
 
-export const getStaticProps = async ({params}: { params: any }) => {
-    console.log({params})
+export const getStaticProps = async ({ params }: { params: any }) => {
+    console.log({ params })
     // @ts-ignore
     const data = archive[params.slug].speakers
     return {
         props:
-            {content: data, year: params.slug},
+            { content: data, year: params.slug },
     };
 };
 
