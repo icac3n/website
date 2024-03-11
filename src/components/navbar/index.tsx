@@ -170,39 +170,39 @@ function Index() {
 
     return (
 
-        <div>
-            {/* <div className={"py-1 px-3 bg-stone-800"}>
-                <div className="relative flex overflow-x-hidden text-white text-sm">
-                    <div className="animate-marquee whitespace-nowrap">
-                        <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
-                        {/*<span className="mx-2">•</span>*/}
-                        {/*<span className="mx-4">Conference Record Number #60023</span>*/}
-                        {/*<span className="mx-2">•</span>*/}
-                        {/*<span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>*/}
-                        <span className="mx-2">•</span>
-                        <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
-                        {/*<span className="mx-2">•</span>*/}
-                        {/*<span className="mx-4">Conference Record Number #60023</span>*/}
-                        {/*<span className="mx-2">•</span>*/}
-                        {/*<span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>*/}
-                        <span className="mx-2">•</span>
-                    </div>
+        // <div>
+        //     {/* <div className={"py-1 px-3 bg-stone-800"}>
+        //         <div className="relative flex overflow-x-hidden text-white text-sm">
+        //             <div className="animate-marquee whitespace-nowrap">
+        //                 <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
+        //                 {/*<span className="mx-2">•</span>*/}
+        //                 {/*<span className="mx-4">Conference Record Number #60023</span>*/}
+        //                 {/*<span className="mx-2">•</span>*/}
+        //                 {/*<span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>*/}
+        //                 <span className="mx-2">•</span>
+        //                 <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
+        //                 {/*<span className="mx-2">•</span>*/}
+        //                 {/*<span className="mx-4">Conference Record Number #60023</span>*/}
+        //                 {/*<span className="mx-2">•</span>*/}
+        //                 {/*<span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>*/}
+        //                 <span className="mx-2">•</span>
+        //             </div>
 
-                    <div className="absolute top-0 animate-marquee2 whitespace-nowrap">
-                        <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
-                        {/*<span className="mx-2">•</span>*/}
-                        {/*<span className="mx-4">Conference Record Number #60023</span>*/}
-                        {/*<span className="mx-2">•</span>*/}
-                        {/*<span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>*/}
-                        <span className="mx-2">•</span>
-                        <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
-                        <span className="mx-2">•</span>
-                        {/*<span className="mx-4">Conference Record Number #60023</span>*/}
-                        {/*<span className="mx-2">•</span>*/}
-                        {/*<span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>*/}
-                    </div>
-                </div>
-            </div> */}
+        //             <div className="absolute top-0 animate-marquee2 whitespace-nowrap">
+        //                 <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
+        //                 {/*<span className="mx-2">•</span>*/}
+        //                 {/*<span className="mx-4">Conference Record Number #60023</span>*/}
+        //                 {/*<span className="mx-2">•</span>*/}
+        //                 {/*<span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>*/}
+        //                 <span className="mx-2">•</span>
+        //                 <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
+        //                 <span className="mx-2">•</span>
+        //                 {/*<span className="mx-4">Conference Record Number #60023</span>*/}
+        //                 {/*<span className="mx-2">•</span>*/}
+        //                 {/*<span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>*/}
+        //             </div>
+        //         </div>
+        //     </div> */}
             <nav className="bg-red-800">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between gap-y-6 mx-auto p-4">
                     <div className={'w-full flex flex-row justify-between items-center'}>
