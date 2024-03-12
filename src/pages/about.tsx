@@ -7,28 +7,28 @@ const AboutPage = () => {
         <>
             <Head>
                 <title>About - ICAC3N - Galgotias College of Engineering</title>
-                <meta name="title" content="About - ICAC3N - Galgotias College of Engineering and Technology"/>
+                <meta name="title" content="About - ICAC3N - Galgotias College of Engineering and Technology" />
                 <meta name="description"
-                      content="ICAC3N is a prestigious international conference that brings together top researchers, scientists, engineers, and scholars from around the world to share their latest research findings and experiences in computing, communication control, and networking. Featuring keynote speeches, technical sessions, and workshops, the conference covers a wide range of topics such as cloud computing, AI, wireless communication systems, IoT, and cybersecurity. Organized annually by IEEE at various global locations, ICAC3N offers a stimulating platform for participants to network, collaborate and engage with experts in their fields. The conference proceedings are published on IEEE Xplore, making it accessible to researchers and scholars worldwide."/>
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <link rel="icon" href="/favicon.ico"/>
+                    content="ICAC3N is a prestigious international conference that brings together top researchers, scientists, engineers, and scholars from around the world to share their latest research findings and experiences in computing, communication control, and networking. Featuring keynote speeches, technical sessions, and workshops, the conference covers a wide range of topics such as cloud computing, AI, wireless communication systems, IoT, and cybersecurity. Organized annually by IEEE at various global locations, ICAC3N offers a stimulating platform for participants to network, collaborate and engage with experts in their fields. The conference proceedings are published on IEEE Xplore, making it accessible to researchers and scholars worldwide." />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href="/favicon.ico" />
 
-                <meta property="og:type" content="website"/>
-                <meta property="og:url" content="https://icac3n.in/"/>
-                <meta property="og:title" content="About - ICAC3N - Galgotias College of Engineering and Technology"/>
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://icac3n.in/" />
+                <meta property="og:title" content="About - ICAC3N - Galgotias College of Engineering and Technology" />
                 <meta name="description"
-                      content="ICAC3N is a prestigious international conference that brings together top researchers, scientists, engineers, and scholars from around the world to share their latest research findings and experiences in computing, communication control, and networking. Featuring keynote speeches, technical sessions, and workshops, the conference covers a wide range of topics such as cloud computing, AI, wireless communication systems, IoT, and cybersecurity. Organized annually by IEEE at various global locations, ICAC3N offers a stimulating platform for participants to network, collaborate and engage with experts in their fields. The conference proceedings are published on IEEE Xplore, making it accessible to researchers and scholars worldwide."/>
+                    content="ICAC3N is a prestigious international conference that brings together top researchers, scientists, engineers, and scholars from around the world to share their latest research findings and experiences in computing, communication control, and networking. Featuring keynote speeches, technical sessions, and workshops, the conference covers a wide range of topics such as cloud computing, AI, wireless communication systems, IoT, and cybersecurity. Organized annually by IEEE at various global locations, ICAC3N offers a stimulating platform for participants to network, collaborate and engage with experts in their fields. The conference proceedings are published on IEEE Xplore, making it accessible to researchers and scholars worldwide." />
                 <meta property="og:image"
-                      content="https://icac3n.in/api/og"/>
+                    content="https://icac3n.in/api/og" />
 
 
-                <meta property="twitter:card" content="summary_large_image"/>
-                <meta property="twitter:url" content="https://icac3n.in/"/>
-                <meta property="About - twitter:title" content="About - ICAC3N - Galgotias College of Engineering and Technology"/>
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://icac3n.in/" />
+                <meta property="About - twitter:title" content="About - ICAC3N - Galgotias College of Engineering and Technology" />
                 <meta property="twitter:description"
-                      content="ICAC3N is a prestigious international conference that brings together top researchers, scientists, engineers, and scholars from around the world to share their latest research findings and experiences in computing, communication control, and networking. Featuring keynote speeches, technical sessions, and workshops, the conference covers a wide range of topics such as cloud computing, AI, wireless communication systems, IoT, and cybersecurity. Organized annually by IEEE at various global locations, ICAC3N offers a stimulating platform for participants to network, collaborate and engage with experts in their fields. The conference proceedings are published on IEEE Xplore, making it accessible to researchers and scholars worldwide."/>
+                    content="ICAC3N is a prestigious international conference that brings together top researchers, scientists, engineers, and scholars from around the world to share their latest research findings and experiences in computing, communication control, and networking. Featuring keynote speeches, technical sessions, and workshops, the conference covers a wide range of topics such as cloud computing, AI, wireless communication systems, IoT, and cybersecurity. Organized annually by IEEE at various global locations, ICAC3N offers a stimulating platform for participants to network, collaborate and engage with experts in their fields. The conference proceedings are published on IEEE Xplore, making it accessible to researchers and scholars worldwide." />
                 <meta property="twitter:image"
-                      content="https://icac3n.in/api/og"/>
+                    content="https://icac3n.in/api/og" />
             </Head>
             <div>
                 <div className={"prose max-w-screen-lg mx-4"}>
@@ -43,7 +43,7 @@ const AboutPage = () => {
                         best corporate houses. It has also been ranked amongst the top engineering colleges in India by
                         DATAQUEST NASSCOM survey and OUTLOOK-C For College Survey.
                     </p>
-                    <img src={'/aboutGEI.jpg'} alt={'GEI includes'}/>
+                    <img src={'/aboutGEI.jpg'} alt={'GEI includes'} />
                     <p>
                         Galgotia Educational Institutions combine a supremely empowering educational process, industry
                         stalwarts in their faculty, global educational associations and relentless placement efforts, to
@@ -53,7 +53,7 @@ const AboutPage = () => {
                         created.
                     </p>
                 </div>
-                <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
+                <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
                 <div className={"prose max-w-screen-lg mx-4"}>
                     <h1 className={"heading"}>About GCET</h1>
                     <p className={'text-justify'}>
@@ -66,7 +66,7 @@ const AboutPage = () => {
                         acclaim and has been recognized as one of the top ranking institutions imparting high quality
                         education.
                     </p>
-                    <img src={'/gcet.jpg'} alt={'GEI includes'}/>
+                    <img src={'/gcet.jpg'} alt={'GEI includes'} />
                     <p>
                         The Campus, spread over 19 acres is located on an 8-lane expressway connecting Greater Noida with
                         Noida and New Delhi. It is truly a self-sufficient campus with spacious and beautifully academic
@@ -74,48 +74,31 @@ const AboutPage = () => {
                         halls as well as indoor and outdoor games facilities and a multi-cuisine cafeteria.
                     </p>
                 </div>
-    
-                <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
-    
+
+                <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+
                 <div className={"prose max-w-screen-lg mx-4"}>
-                    <h1 className={"heading"}>About CSE</h1>
+                    <h1 className={"heading"}>About Information Technology Department</h1>
                     <p className={'text-justify'}>
-                        The Computer Science & Engineering Department is one of the Departments of GCET that came in to
-                        existence in 2000. The department has grown significantly after its inception and currently offers a
-                        UG program in Computer Science and Engineering which enriches the knowledge of Practical Engineers
-                        from the nearby Industries and Research Institutions which includes Government and Private Sectors
-                        utilizing the locational opportunity of National Capital Region.
-    
-                        The department of Computer Science provides world-class research and education in modern computer
-                        science. The department has a cohesive team of well experienced faculty members having wide
-                        experience in recent technologies like Cloud computing, Grid Computing, High Performance Computing,
-                        Multimedia etc. It has different computer labs like Data Structure lab, Operating System lab,
-                        Multimedia lab, Web Technology lab, Research & Development lab. It also promotes active
-                        industry-institute collaboration by identifying areas of interest.
-                        <br/>
-                        <br/>
-    
-                        Some of the major research areas which the faculty members and students working on are Computer
-                        Networks, Database Systems, Multimedia, Image Processing, Software Engineering, Computer
-                        Architecture, Information System – Security and Data Mining.
-                        <br/>
-                        <br/>
-                        The department excels in varied focus areas ranging from curriculum as prescribed by AKTU to game
-                        engineering. An extracurricular calendar of events and competitions give students ample
-                        opportunities to work together while gaining real-world experience that prepare them for their
-                        future careers. The department has extensive student engagement framework through regular
-                        interactions, annual educational tours, regular feedback mechanism, professional chapters and
-                        societies. The focus of the department is on state-of-the-art projects to be done by our B.Tech
-                        students, excellent teaching learning process, better alumni relations, good industry linked program
-                        and outcome based education.
-    
-                        Galgotias Computer Science graduates are recruited by industry-leading companies where they work to
-                        develop the hard and soft technologies we use everyday – the innovations that will make this world a
-                        better place for future generations.
-    
+                        The department of Information Technology offers engineering programme at the undergraduate as well as at the post graduate levels. The course is designed to provide comprehensive knowledge of information technology with emphasis on applications together with a judicious blend of technical skills. The department emphasis the use of learning tools for the acquisition of knowledge and skills. Role-play, case study, project work, practical exposure, assignments, quiz, seminars, industry visits are some of the methods used for teaching learning process. The curriculum provides not only technical knowledge but also the exposure to recent technologies. To impart good quality engineering education, the department focuses on development of practical and application oriented minds. It is our attempt to make students learn by doing rather than by simply learning of topics and subjects.
+
+                        The vibrant faculty members of the department possess demonstrated expertise in many areas of information technology and flair for teaching different courses. The department consists of a medley of faculty members with industrial and academic experience. The department has qualified and experienced faculty in the areas of Artificial Intelligence, Computer Networks, Data Mining, Database Systems, Neural Networks, Web Technology, Wireless and Sensor Networks, and Operating System. There are fully equipped laboratories in department such as: Computer Programming Lab, DBMS Lab, Software Engineering Lab, Networking Lab, Project Lab, R & D Lab. Research in the department focuses on creating and evaluating innovative learning that is inspired by technical progress. The key areas of research of the faculty members include semantic web, data mining, software reliability, wireless sensor networks, network security, big data analytics and cloud computing. The department has organized various national and international conferences.
                     </p>
                 </div>
-    
+                <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+                <div className={"prose max-w-screen-lg mx-4"}>
+                    <h1 className={"heading"}>About Computer Applications Department</h1>
+                    <p className={'text-justify'}>
+                        The Department of Computer Applications, established in the year 2003 is one of the oldest and pioneer departments of Galgotias College of Engineering and Technology. It offers the two year Post Graduate Program – Masters of Computer Applications (MCA), which is affiliated to Abdul Kalam Technical University (AKTU). It has highly qualified, committed and research-oriented faculty members who share the mission and vision of the institution in imparting quality education to the students.
+
+                        <br />
+                        The focus of the Department is to develop and to strengthen young minds to make them globally competitive by inculcating the capabilities of critical thinking, problem solving, analysis, design, research, team work, communication skills, and readiness for lifelong learning in areas of Artificial Intelligence, Machine Learning, Pattern Recognition, Cloud Computing, Internet of Things and Blockchain.
+
+                        <br />
+                        To keep itself abreast with latest developments in Computer Applications, the department makes extensive efforts to develop partnerships with industry. The department enjoys the privilege of having spacious and well-equipped laboratories that provide students, the industrial environment much needed for real life training
+                    </p>
+                </div>
+
             </div>
         </>
     )

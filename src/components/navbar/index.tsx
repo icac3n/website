@@ -73,11 +73,11 @@ function Index() {
             link: "/about",
             enabled: true,
         },
-        {
-            title: "Guidelines",
-            link: "/guidelines",
-            enabled: true,
-        },
+        // {
+        //     title: "Guidelines",
+        //     link: "/guidelines",
+        //     enabled: false,
+        // },
         {
             title: "Speakers",
             link: "/speakers",

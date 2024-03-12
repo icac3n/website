@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import {Swiper, SwiperSlide} from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import {Autoplay} from "swiper";
+import { Autoplay } from "swiper";
 import {
     RiArticleLine,
     RiBuildingFill,
@@ -18,11 +18,11 @@ import {
 } from "react-icons/ri";
 import ImportantDates from "../components/importantDates";
 import ImportantDownloads from "../components/importantDownloads";
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import ImportantMessage from "@/components/importantMessage";
 import Button from "@/components/button";
 import Link from "next/link";
-import {speakers} from "@/data/speakers";
+import { speakers } from "@/data/speakers";
 
 import dynamic from 'next/dynamic'
 import Carousel from "framer-motion-carousel"
@@ -86,7 +86,7 @@ const Home = () => {
         },
 
     ]
-    
+
     // useEffect(() => {
     //     let isModalShown = sessionStorage.getItem('alreadyShown');
     //     if (isModalShown != 'already_shown') {
@@ -99,7 +99,7 @@ const Home = () => {
 
 
     const fetch = (i: number) => {
-        const options = {method: 'GET', url: `/api/counter?i=${i}`};
+        const options = { method: 'GET', url: `/api/counter?i=${i}` };
         axios.request(options).then(function (response) {
             console.log(response.data);
             setVisitorCounter(response.data.counter)
@@ -131,40 +131,40 @@ const Home = () => {
         <>
             <Head>
                 <title>ICAC3N - Galgotias College of Engineering and Technology </title>
-                <meta name="title" content="ICAC3N - Galgotias College of Engineering and Technology"/>
+                <meta name="title" content="ICAC3N - Galgotias College of Engineering and Technology" />
                 <meta name="description"
-                      content="5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <link rel="icon" href="/favicon.ico"/>
+                    content="5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href="/favicon.ico" />
 
-                <meta property="og:type" content="website"/>
-                <meta property="og:url" content="https://icac3n.in/"/>
-                <meta property="og:title" content="ICAC3N - Galgotias College of Engineering and Technology"/>
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://icac3n.in/" />
+                <meta property="og:title" content="ICAC3N - Galgotias College of Engineering and Technology" />
                 <meta name="description"
-                      content="5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                    content="5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N" />
                 <meta property="og:image"
-                      content="https://icac3n.in/api/og"/>
+                    content="https://icac3n.in/api/og" />
 
 
-                <meta property="twitter:card" content="summary_large_image"/>
-                <meta property="twitter:url" content="https://icac3n.in/"/>
-                <meta property="twitter:title" content="ICAC3N - Galgotias College of Engineering and Technology"/>
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://icac3n.in/" />
+                <meta property="twitter:title" content="ICAC3N - Galgotias College of Engineering and Technology" />
                 <meta property="twitter:description"
-                      content="5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                    content="5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N" />
                 <meta property="twitter:image"
-                      content="https://icac3n.in/api/og"/>
+                    content="https://icac3n.in/api/og" />
 
             </Head>
             <main className={"mx-8"}>
-                <EntryModal showModal={showModal} setShowModal={setShowModal}/>
+                <EntryModal showModal={showModal} setShowModal={setShowModal} />
                 {/*    landing   */}
                 <div
                     className={"grid grid-cols-5 gap-5 items-center justify-center lg:text-start text-center mt-2"}>
                     <div
                         className={"col-span-full lg:col-span-2 flex flex-col justify-between h-full self-start gap-2"}>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
-                            <RiCalendarTodoFill className={"hidden text-xl lg:block text-red-800"}/>
-                            <p className={"text-red-800 font-semibold"}>Date yet to be announced</p>
+                            <RiCalendarTodoFill className={"hidden text-xl lg:block text-red-800"} />
+                            <p className={"text-red-800 font-semibold"}>7th & 8th March, 2025</p>
                         </div>
 
                         {/*<div className={" lg:hidden flex items-center space-x-2 lg:justify-start justify-center"}>*/}
@@ -184,7 +184,7 @@ const Home = () => {
                         {/*    </div>*/}
                         {/*</div>*/}
 
-                        <p className={"text-3xl lg:text-4xl break-words my-3 lg:my-2 font-bold mx-2 lg:mx-0"}>5th
+                        <p className={"text-3xl lg:text-4xl break-words my-3 lg:my-2 font-bold mx-2 lg:mx-0"}>6th
                             International Conference on Advances in Computing, Communication Control and Networking-
                             ICAC3N</p>
 
@@ -205,16 +205,16 @@ const Home = () => {
                         {/*    </div>*/}
                         {/*</div>*/}
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
-                            <RiBuildingFill className={"hidden text-xl self-start lg:block text-red-800"}/>
+                            <RiBuildingFill className={"hidden text-xl self-start lg:block text-red-800"} />
                             <div className={"text-red-800"}>
                                 <p className={"font-semibold text"} itemProp={"organizing-department"}>Computer
                                     Science
-                                    and Engineering, MCA and Information Technology Departments</p>
+                                    and Engineering, Computer Applications and Information Technology Departments</p>
                             </div>
                         </div>
 
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
-                            <RiMapPin2Fill className={"hidden text-xl mt-1 self-start lg:block text-red-800"}/>
+                            <RiMapPin2Fill className={"hidden text-xl mt-1 self-start lg:block text-red-800"} />
                             <div className={"text-red-800"}>
                                 <p className={"font-semibold text"} itemProp={"organizing-college"}>Galgotias
                                     College of
@@ -232,17 +232,17 @@ const Home = () => {
                         <div
                             className={"flex space-x-5 text-2xl text-red-800 mt-4 items-center lg:justify-start justify-center"}>
                             <Link href={"https://twitter.com/icac3n"} aria-label={'icac3n twitter'}>
-                                <RiTwitterFill className={'cursor-pointer grow-on-hover hover:text-sky-500'}/>
+                                <RiTwitterFill className={'cursor-pointer grow-on-hover hover:text-sky-500'} />
                             </Link>
                             <Link href={"tel:+91-7835878146"} aria-label={'icac3n phone'}>
-                                <RiPhoneFill className={'cursor-pointer  grow-on-hover hover:text-emerald-500'}/>
+                                <RiPhoneFill className={'cursor-pointer  grow-on-hover hover:text-emerald-500'} />
                             </Link>
                             <Link href={"https://www.facebook.com/IEEE.ICAC3N.21"} aria-label={'icac3n facebook'}>
                                 <RiFacebookBoxFill
-                                    className={'cursor-pointer  grow-on-hover hover:text-indigo-700'}/>
+                                    className={'cursor-pointer  grow-on-hover hover:text-indigo-700'} />
                             </Link>
                             <Link href={"mailto:sachin.kumar@galgotiacollege.edu"} aria-label={'icac3n mail'}>
-                                <RiMailFill className={'cursor-pointer  grow-on-hover hover:text-amber-400'}/>
+                                <RiMailFill className={'cursor-pointer  grow-on-hover hover:text-amber-400'} />
                             </Link>
                         </div>
                         {/*<Link href="#"*/}
@@ -263,8 +263,8 @@ const Home = () => {
                             interval={4000}
                             loop={true}
                             renderArrowLeft={() => null}
-                            renderArrowRight={({activeIndex, handleNext}) => null}
-                            renderDots={({setActiveIndex, activeIndex}) => {
+                            renderArrowRight={({ activeIndex, handleNext }) => null}
+                            renderDots={({ setActiveIndex, activeIndex }) => {
                                 return (
                                     <div
                                         className={'absolute bottom-0 left-0 w-full h-10 bg-gray-800 bg-opacity-20 flex flex-row gap-2 items-center justify-center rounded-lg'}>
@@ -288,7 +288,7 @@ const Home = () => {
                                 sliderImages.map((image, index) => {
                                     return (
                                         <div key={index}
-                                             className={"flex h-full w-full cursor-grab active:cursor-grabbing"}>
+                                            className={"flex h-full w-full cursor-grab active:cursor-grabbing"}>
                                             <Image
                                                 height={2000}
                                                 width={3000}
@@ -307,7 +307,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
+                <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
                 <div className={"flex flex-col space-y-5"}>
                     <div className={"grid grid-cols-1 lg:grid-cols-3 mx-2 md:mx-auto"}>
                         <div className={"lg:col-span-2 lg:mr-10 col-span-full"}>
@@ -325,7 +325,7 @@ const Home = () => {
                                 of topics such as cloud computing, AI, wireless communication systems, IoT, and
                                 cybersecurity.
                             </p>
-                            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
+                            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
                             <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
                                 College</h2>
                             <p className={'text-justify'}>
@@ -344,7 +344,7 @@ const Home = () => {
                                 India
                                 by DATAQUEST NASSCOM survey and OUTLOOK-C For College Survey.
                             </p>
-                            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
+                            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
                             <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
                                 Department of Computer Science</h2>
                             <p className={'text-justify whitespace-pre-wrap'}>
@@ -359,7 +359,22 @@ const Home = () => {
                                 experience, and have good alumni and industry relations. Galgotias Computer Science
                                 graduates get recruited by industry-leading companies.
                             </p>
-                            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
+
+                            <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
+                                Department of Information Technology</h2>
+                            <p className={'text-justify whitespace-pre-wrap'}>
+                                The department of Information Technology offers engineering programme at the undergraduate as well as at the post graduate levels. The course is designed to provide comprehensive knowledge of information technology with emphasis on applications together with a judicious blend of technical skills.
+                                <br />
+                                The department emphasis the use of learning tools for the acquisition of knowledge and skills. Role-play, case study, project work, practical exposure, assignments, quiz, seminars, industry visits are some of the methods used for teaching learning process. The curriculum provides not only technical knowledge but also the exposure to recent technologies.
+                            </p>
+
+                            <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
+                                Department of Computer Applications</h2>
+                            <p className={'text-justify whitespace-pre-wrap'}>
+                               
+                                The Department of Computer Applications, established in the year 2003 is one of the oldest and pioneer departments of Galgotias College of Engineering and Technology. It offers the two year Post Graduate Program – Masters of Computer Applications (MCA), which is affiliated to Abdul Kalam Technical University (AKTU). It has highly qualified, committed and research-oriented faculty members who share the mission and vision of the institution in imparting quality education to the students.
+                            </p>
+                            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
 
 
                             <div
@@ -371,12 +386,12 @@ const Home = () => {
                                         animateToNumber={visitorCounter}
                                         locale="en-US"
                                         configs={[
-                                            {mass: 1, tension: 220, friction: 100},
-                                            {mass: 1, tension: 180, friction: 130},
-                                            {mass: 1, tension: 280, friction: 90},
-                                            {mass: 1, tension: 180, friction: 135},
-                                            {mass: 1, tension: 260, friction: 100},
-                                            {mass: 1, tension: 210, friction: 180},
+                                            { mass: 1, tension: 220, friction: 100 },
+                                            { mass: 1, tension: 180, friction: 130 },
+                                            { mass: 1, tension: 280, friction: 90 },
+                                            { mass: 1, tension: 180, friction: 135 },
+                                            { mass: 1, tension: 260, friction: 100 },
+                                            { mass: 1, tension: 210, friction: 180 },
                                         ]}
                                     ></AnimatedNumbers>
                                 </div>
@@ -419,13 +434,13 @@ const Home = () => {
                         <div id={"important"} className={"lg:col-span-1 col-span-full"}>
                             {/*Inauguration Brochure */}
                             {/*<InaugurationPdf/>*/}
-                            <ImportantMessage/>
-                            <ImportantDates/>
-                            <ImportantDownloads/>
+                            <ImportantMessage />
+                            <ImportantDates />
+                            <ImportantDownloads />
                         </div>
                     </div>
                 </div>
-                <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"/>
+                <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
                 <div className={'select-none'}>
                     <div className={'flex flex-row items-center mx-5 md:mx-auto'}>
                         <h1 className='text-2xl text-black font-extrabold my-5'>Hon&apos;ble Past Speakers</h1>
@@ -463,7 +478,7 @@ const Home = () => {
                                         <SwiperSlide key={index}>
                                             <div className={'col-span-1 flex flex-col items-center'}>
                                                 <img src={speaker.image} alt={"Speaker's Photo"}
-                                                     className={'h-56 border-2 border-gray-300 w-64 object-cover mb-5 rounded-lg shadow-md'}/>
+                                                    className={'h-56 border-2 border-gray-300 w-64 object-cover mb-5 rounded-lg shadow-md'} />
                                                 {!speaker.national &&
                                                     <div className={"rounded-full my-2 bg-blue-800 bg-opacity-20"}>
                                                         <p className={"px-2 py-0.5 text-sm text-blue-800"}>International
@@ -492,12 +507,12 @@ const Home = () => {
 
                     <div className={'col-span-1 flex flex-col items-center gap-2 justify-center my-5'}>
                         <Button link={'/speakers'}
-                                className={'bg-sky-600 hover:bg-sky-700 shrink-on-hover focus:ring-4 focus:ring-sky-300 no-underline dark:focus:ring-sky-700'}
-                                hideIcon={false}>View all</Button>
+                            className={'bg-sky-600 hover:bg-sky-700 shrink-on-hover focus:ring-4 focus:ring-sky-300 no-underline dark:focus:ring-sky-700'}
+                            hideIcon={false}>View all</Button>
                     </div>
 
                 </div>
-            </main>
+            </main >
         </>
     )
 }

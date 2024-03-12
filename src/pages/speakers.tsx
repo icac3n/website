@@ -32,7 +32,7 @@ const Speakers = () => {
                       content="https://icac3n.in/api/og"/>
             </Head>
             <div className={"my-8 min-h-[calc(100vh-28.8rem)]"}>
-                <h1 className={'text-3xl font-bold text-center mb-10'}>Speakers for ICACCCN 2023</h1>
+                <h1 className={'text-3xl font-bold text-center mb-10'}>Past Speakers of ICACCCN 2023</h1>
                 <div className={'grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-5 gap-y-8 px-5'}>
                     {
                         speakers.map((speaker, index) => {
