@@ -9,28 +9,28 @@ const Register = () => {
 
             <Head>
                 <title>Register - ICAC3N - Galgotias College of Engineering and Technology</title>
-                <meta name="title" content="Register - ICAC3N - Galgotias College of Engineering"/>
+                <meta name="title" content="Register - ICAC3N - Galgotias College of Engineering" />
                 <meta name="description"
-                      content="Register - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <link rel="icon" href="/favicon.ico"/>
+                    content="Register - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href="/favicon.ico" />
 
-                <meta property="og:type" content="website"/>
-                <meta property="og:url" content="https://icac3n.in/"/>
-                <meta property="og:title" content="Register - ICAC3N - Galgotias College of Engineering"/>
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://icac3n.in/" />
+                <meta property="og:title" content="Register - ICAC3N - Galgotias College of Engineering" />
                 <meta name="description"
-                      content="Register - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                    content="Register - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N" />
                 <meta property="og:image"
-                      content="https://icac3n.in/api/og"/>
+                    content="https://icac3n.in/api/og" />
 
 
-                <meta property="twitter:card" content="summary_large_image"/>
-                <meta property="twitter:url" content="https://icac3n.in/"/>
-                <meta property="twitter:title" content="Register - ICAC3N - Galgotias College of Engineering"/>
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://icac3n.in/" />
+                <meta property="twitter:title" content="Register - ICAC3N - Galgotias College of Engineering" />
                 <meta property="twitter:description"
-                      content="Register - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                    content="Register - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N" />
                 <meta property="twitter:image"
-                      content="https://icac3n.in/api/og"/>
+                    content="https://icac3n.in/api/og" />
             </Head>
             <div className={"prose mx-4 my-8"}>
                 <h1 className={"heading"}>Registration</h1>
@@ -38,15 +38,15 @@ const Register = () => {
                     on Advances in Computing, Communication Control and Networking.</p>
                 <h3>Yet to be Announced</h3>
                 {/*<Button link={"https://forms.gle/NR6eA7N2Akp9S51XA"}>Register Now</Button>*/}
-                <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700"/>
-                <h2 className={"heading"}>Registration Fee</h2>
-                <h3>Yet to be Announced</h3>
+                {/* <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700" /> */}
+                    {/* <h2 className={"heading"}>Registration Fee</h2>
+                    <h3>Yet to be Announced</h3> */}
                 {/*<div>*/}
                 {/*    <img src="images/misc/registration_fee.png" alt=""/>*/}
                 {/*    <p>* Including 18% GST</p>*/}
                 {/*</div>*/}
 
-                <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700"/>
+                {/* <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700"/>
                 <h2 className={"heading"}>Camera Ready Format</h2>
                 <p>Authors are requested to follow the IEEE conference paper format.</p>
                 <div className={"flex flex-col space-y-4"}>
@@ -106,6 +106,7 @@ const Register = () => {
                     </tr>
                     </tbody>
                 </table>
+                */}
             </div>
         </>
     )

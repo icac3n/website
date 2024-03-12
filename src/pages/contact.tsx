@@ -62,7 +62,7 @@ const Register = () => {
                     </button>
                 </form>
                 <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700"/>
-                <h1 className={"heading"}>Get in Touch</h1>
+                {/* <h1 className={"heading"}>Get in Touch</h1>
                 <p>You can contact us on any of the following platforms, and we will get back to you.</p>
                 <table className="table-auto">
                     <tbody>
@@ -79,8 +79,8 @@ const Register = () => {
                         <td><a href="mailto:">vishnu.sharma@galgotiacollege.edu</a></td>
                     </tr>
                     </tbody>
-                </table>
-                <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700"/>
+                </table> */}
+                {/* <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700"/> */}
                 <h1 className={"heading"}>Location</h1>
                 <p><strong>Galgotias College of Engineering and Technology</strong>, 1, Knowledge Park II, Greater
                     Noida,

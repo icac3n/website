@@ -15,10 +15,10 @@ const Footer = () => {
                                 <Image width={35} height={35} src="/icac3nlogo.png" className="mr-3 object-cover" alt="Logo" />
                             </div>
                             <span
-                                className="self-center text-2xl font-semibold whitespace-nowrap text-white">ICAC3N-23</span>
+                                className="self-center text-2xl font-semibold whitespace-nowrap text-white">ICAC3N-25</span>
                         </Link>
                         <p className={"my-4 max-w-xs text-white"}>International Conference on Advances in
-                            Computing, Communication Control and Networking (ICAC3N–23)</p>
+                            Computing, Communication Control and Networking (ICAC3N–25)</p>
 
 
                         {/*<div*/}
@@ -31,18 +31,28 @@ const Footer = () => {
                             <h2 className="mb-4 font-semibold uppercase text-white underline">Important</h2>
                             <ul className="text-gray-200 font-medium">
                                 <li className="mb-4">
-                                    <Link href="/dates" className="hover:underline">Dates</Link>
+                                    <button disabled={true} className="flex items-center justify-center gap-2">
+                                        <p className="text-gray-100/60">Dates</p>
+                                        <span className="px-2 py-0.5 rounded-full bg-black/30 text-xs">Soon</span>
+                                        {/* <Link href="/dates" className="text-gray-100/60">Dates</Link> */}
+                                    </button>
                                 </li>
                                 <li>
-                                    <Link href="/dates" className="hover:underline">Downloads</Link>
+                                    <button disabled={true} className="flex items-center justify-center gap-2">
+                                        <p className="text-gray-100/60">Downloads</p>
+                                        <span className="px-2 py-0.5 rounded-full bg-black/30 text-xs">Soon</span>
+                                        {/* <Link href="/dates" className="text-gray-100/60">Downloads</Link> */}
+                                    </button>
                                 </li>
                             </ul>
                         </div>
                         <div>
                             <h2 className="mb-4 font-semibold uppercase text-white underline">Resources</h2>
                             <ul className="text-gray-200 font-medium">
-                                <li className="mb-4">
-                                    <Link href="/register" className="hover:underline">Register</Link>
+                                <li className="flex mb-4 items-center justify-start gap-2">
+                                    <p className="text-gray-100/60">Register</p>
+                                    <span className="px-2 py-0.5 rounded-full bg-black/30 text-xs">Soon</span>
+                                    {/* <Link href="/register" className="hover:underline">Register</Link> */}
                                 </li>
                                 <li>
                                     <Link href="/guidelines" className="hover:underline">Guidelines
