@@ -209,7 +209,7 @@ const Home = () => {
                             <div className={"text-red-800"}>
                                 <p className={"font-semibold text"} itemProp={"organizing-department"}>Computer
                                     Science
-                                    and Engineering, MCA and Information Technology Departments</p>
+                                    and Engineering, Computer Applications and Information Technology Departments</p>
                             </div>
                         </div>
 
@@ -359,6 +359,21 @@ const Home = () => {
                                 experience, and have good alumni and industry relations. Galgotias Computer Science
                                 graduates get recruited by industry-leading companies.
                             </p>
+
+                            <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
+                                Department of Information Technology</h2>
+                            <p className={'text-justify whitespace-pre-wrap'}>
+                                The department of Information Technology offers engineering programme at the undergraduate as well as at the post graduate levels. The course is designed to provide comprehensive knowledge of information technology with emphasis on applications together with a judicious blend of technical skills.
+                                <br />
+                                The department emphasis the use of learning tools for the acquisition of knowledge and skills. Role-play, case study, project work, practical exposure, assignments, quiz, seminars, industry visits are some of the methods used for teaching learning process. The curriculum provides not only technical knowledge but also the exposure to recent technologies.
+                            </p>
+
+                            <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
+                                Department of Computer Applications</h2>
+                            <p className={'text-justify whitespace-pre-wrap'}>
+                               
+                                The Department of Computer Applications, established in the year 2003 is one of the oldest and pioneer departments of Galgotias College of Engineering and Technology. It offers the two year Post Graduate Program – Masters of Computer Applications (MCA), which is affiliated to Abdul Kalam Technical University (AKTU). It has highly qualified, committed and research-oriented faculty members who share the mission and vision of the institution in imparting quality education to the students.
+                            </p>
                             <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
 
 
@@ -497,7 +512,7 @@ const Home = () => {
                     </div>
 
                 </div>
-            </main>
+            </main >
         </>
     )
 }

@@ -79,7 +79,7 @@ const Footer = () => {
                     <span className="text-sm text-gray-100 max-w-sm">
                         <Link href="" className="hover:underline mt-2 py-3">Computer
                             Science
-                            and Engineering, MCA and Information Technology Departments, GCET</Link>.
+                            and Engineering, Computer Applications and Information Technology Departments, GCET</Link>.
                         <p className="py-1 block text-white/60 text-xs">Designed by <a href={"https://github.com/hardikprakash"} className={"hover:underline cursor-pointer"}>Hardik Prakash</a>, <a className={"hover:underline cursor-pointer"} href={"https://prakharshukla.dev"}>Prakhar Shukla</a> and <a className={"hover:underline cursor-pointer"} href={"https://github.com/areeburrub"}>Areeb ur Rub</a></p>
                     </span>
                     <div
