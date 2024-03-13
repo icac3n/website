@@ -205,7 +205,7 @@ const Home = () => {
                         {/*    </div>*/}
                         {/*</div>*/}
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
-                            <RiBuildingFill className={"hidden text-xl self-start lg:block text-red-800"} />
+                            <RiBuildingFill className={"hidden text-xl self-start lg:block text-red-800 w-8 h-8"} />
                             <div className={"text-red-800"}>
                                 <p className={"font-semibold text"} itemProp={"organizing-department"}>Computer
                                     Science
