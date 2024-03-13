@@ -9,7 +9,7 @@ const OrganizingCommittee = () => {
             "Category": "Chief Patron",
             "Members": [
                 {
-                    "Name": "Shri.Suneel Galgotia",
+                    "Name": "Shri Suneel Galgotia",
                     "Designation": "Chairman"
                 },
                 {
