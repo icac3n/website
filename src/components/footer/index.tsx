@@ -64,7 +64,8 @@ const Footer = () => {
                             <h2 className="mb-4 font-semibold uppercase text-white underline">Latest</h2>
                             <ul className="text-gray-200 font-medium">
                                 <li className="mb-4">
-                                    <Link href="/speakers" className="hover:underline">Speakers</Link>
+                                <p className="text-gray-100/60">Speakers</p>
+                                    <span className="px-2 py-0.5 rounded-full bg-black/30 text-xs">Soon</span>
                                 </li>
                                 <li>
                                     <Link href="/committee/organizing-committee" className="hover:underline">Committee

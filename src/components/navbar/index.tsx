@@ -78,11 +78,11 @@ function Index() {
         //     link: "/guidelines",
         //     enabled: false,
         // },
-        {
-            title: "Speakers",
-            link: "/speakers",
-            enabled: true,
-        },
+        // {
+        //     title: "Speakers",
+        //     link: "/speakers",
+        //     enabled: true,
+        // },
         {
             title: "Committee",
             dropdown: [
