@@ -19,6 +19,31 @@ const OrganizingCommittee = () => {
             ]
         },
         {
+            "Category": "Patrons",
+            "Members": [
+                {
+                    "Name": "Prof. (Dr.) S.N. Singh",
+                    "Designation": "Director, ABV-IIITM, Gwalior"
+                },
+                {
+                    "Name": "Prof. (Dr.) S. K. Singh",
+                    "Designation": "IIIT, Allahabad"
+                },
+                {
+                    "Name": "Prof. (Dr.) Rajat Kumar Singh",
+                    "Designation": "IIIT, Allahabad"
+                },
+                {
+                    "Name": "Prof. (Dr.) Avadhesh Kumar",
+                    "Designation": "Pro-Vice-Chancellor, GU"
+                },
+                {
+                    "Name": "Gp. Capt. (R) Dr. P K Chopra, VSM",
+                    "Designation": "Director General, GEI"
+                }
+            ]
+        },
+        {
             "Category": "Conference General Chair and Conference Convener",
             "Members": [
                 {
@@ -196,7 +221,7 @@ const OrganizingCommittee = () => {
                                         committee.Members.map((member, index) => {
                                             return (
                                                 <li key={index} itemProp="member" id={member.Name}>
-                                                    <span className="font-semibold" itemProp="name">{member.Name}</span><br/><span
+                                                    <span className="font-semibold" itemProp="name">{member.Name}</span><br /><span
                                                         itemProp="jobTitle" className="text-sm">{member.Designation}</span>
                                                 </li>
                                             )
