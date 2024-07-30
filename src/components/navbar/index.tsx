@@ -237,7 +237,7 @@ function Index() {
                                                     <li key={index}
                                                         className={`cursor-pointer text-white`}>
                                                         <Link href={link.link}>
-                                                            {link.title.toUpperCase()}
+                                                            {link?.title.toUpperCase()}
                                                         </Link>
                                                     </li>
                                                 </>
