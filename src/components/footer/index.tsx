@@ -17,8 +17,7 @@ const Footer = () => {
                             <span
                                 className="self-center text-2xl font-semibold whitespace-nowrap text-white">ICRTICC-25</span>
                         </Link>
-                        <p className={"my-4 max-w-xs text-white"}>International Conference on Advances in
-                            Computing, Communication Control and Networking (ICRTICC–25)</p>
+                        <p className={"my-4 max-w-xs text-white"}>International Conference on Recent Trends in Intelligent Computing and Communication (ICRTICC–25)</p>
 
 
                         {/*<div*/}
@@ -63,7 +62,7 @@ const Footer = () => {
                         <div>
                             <h2 className="mb-4 font-semibold uppercase text-white underline">Latest</h2>
                             <ul className="text-gray-200 font-medium">
-                                <li className="mb-4">
+                                <li className="flex items-centermb-4">
                                 <p className="text-gray-100/60">Speakers</p>
                                     <span className="px-2 py-0.5 rounded-full bg-black/30 text-xs">Soon</span>
                                 </li>

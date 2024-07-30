@@ -441,11 +441,15 @@ const Home = () => {
                     </div>
                 </div>
                 <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+
+                {/* SPEAKERS SECTION STARTS HERE */}
+
+                {/* 
                 <div className={'select-none'}>
                     <div className={'flex flex-row items-center mx-5 md:mx-auto'}>
                         <h1 className='text-2xl text-black font-extrabold my-5'>Hon&apos;ble Past Speakers</h1>
-                        {/*<h4 className='text-md text-blue-500 font-regular my-5 ml-2 hover:underline cursor-pointer'>( view all )</h4>*/}
                     </div>
+
 
                     <div className={'w-full bg-gray-100 p-4 rounded-lg'}>
                         <Swiper
@@ -503,7 +507,7 @@ const Home = () => {
                                 })
                             }
                         </Swiper>
-                    </div>
+                    </div> 
 
                     <div className={'col-span-1 flex flex-col items-center gap-2 justify-center my-5'}>
                         <Button link={'/speakers'}
@@ -512,6 +516,7 @@ const Home = () => {
                     </div>
 
                 </div>
+                */}
             </main >
         </>
     )
