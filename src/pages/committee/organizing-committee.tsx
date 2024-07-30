@@ -213,46 +213,45 @@ const OrganizingCommittee = () => {
                 <h1 className={"heading"} itemProp="name">ORGANISING COMMITTEE</h1>
 
                 <h3>Yet to be announced</h3>
-
-                {/* {
-                    organizingCommittee.map((committee, index) => {
-                        return (
-                            <div key={index} itemProp="department">
-                                <h2 className={"heading"} itemProp="name" id={committee.Category}>{committee.Category}</h2>
-                                <ul>
-                                    {
-                                        committee.Members.map((member, index) => {
-                                            return (
-                                                <li key={index} itemProp="member" id={member.Name}>
-                                                    <span className="font-semibold" itemProp="name">{member.Name}</span><br /><span
-                                                        itemProp="jobTitle" className="text-sm">{member.Designation}</span>
-                                                </li>
-                                            )
-                                        })
-                                    }
-                                    {/* {
-                                        committee.Students != undefined &&
-                                        <li className="list-none">
-                                            <h3 className={"heading"} itemProp="name">Student Co-Ordinator{committee?.Students?.length == 1 ? '' : 's'}</h3>
-                                            <ul>
-                                                {
-                                                    committee?.Students.map((member, index) => {
-                                                        return (
-                                                            <li key={index} itemProp="member" id={member.Name}>
-                                                                <span itemProp="name">{member.Name}</span>, <span
-                                                                    itemProp="jobTitle">{member.Designation}</span>
-                                                            </li>
-                                                        )
-                                                    })
-                                                }
-                                            </ul>
-                                        </li>
-                                    } */}
-                                </ul>
-                            </div>
-                        )
-                    })
-                } */}
+                {
+                    // organizingCommittee.map((committee, index) => {
+                    //     return (
+                    //         <div key={index} itemProp="department">
+                    //             <h2 className={"heading"} itemProp="name" id={committee.Category}>{committee.Category}</h2>
+                    //             <ul>
+                    //                 {
+                    //                     committee.Members.map((member, index) => {
+                    //                         return (
+                    //                             <li key={index} itemProp="member" id={member.Name}>
+                    //                                 <span className="font-semibold" itemProp="name">{member.Name}</span><br /><span
+                    //                                     itemProp="jobTitle" className="text-sm">{member.Designation}</span>
+                    //                             </li>
+                    //                         )
+                    //                     })
+                    //                 }
+                    //                 {/* {
+                    //                     committee.Students != undefined &&
+                    //                     <li className="list-none">
+                    //                         <h3 className={"heading"} itemProp="name">Student Co-Ordinator{committee?.Students?.length == 1 ? '' : 's'}</h3>
+                    //                         <ul>
+                    //                             {
+                    //                                 committee?.Students.map((member, index) => {
+                    //                                     return (
+                    //                                         <li key={index} itemProp="member" id={member.Name}>
+                    //                                             <span itemProp="name">{member.Name}</span>, <span
+                    //                                                 itemProp="jobTitle">{member.Designation}</span>
+                    //                                         </li>
+                    //                                     )
+                    //                                 })
+                    //                             }
+                    //                         </ul>
+                    //                     </li>
+                    //                 } */}
+                    //             </ul>
+                    //         </div>
+                    //     )
+                    // })
+                }
 
             </div>
         </>
