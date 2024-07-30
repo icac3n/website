@@ -1,4 +1,13 @@
-export const speakers = [
+
+interface speakerData {
+    name: string;
+    designation: string;
+    image: string;
+    id: string;
+    national: boolean;
+}
+
+export const speakers: speakerData[]  = [
     // No Speakers Yet
     // {
     //     "name": "Prof. (Dr.) Sri Niwas Singh",
