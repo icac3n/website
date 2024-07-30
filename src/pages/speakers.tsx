@@ -35,7 +35,7 @@ const Speakers = () => {
                 <h1 className={'text-3xl font-bold text-center mb-10'}>Past Speakers of ICACCCN 2023</h1>
                 <div className={'grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-5 gap-y-8 px-5'}>
                     {
-                        if speakers.length > 0 {
+                        if (speakers.length > 0) {
                             speakers.map((speaker, index) => {
                                 return (
                                     <div key={index}
