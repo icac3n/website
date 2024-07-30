@@ -228,9 +228,10 @@ function Index() {
 
                         <ul className="flex flex-col gap-3 md:text-sm lg:gap-5 justify-between md:items-center items-start font-medium md:p-0 rounded-lg md:flex-row md:mt-0 md:border-0">
                             {links.map((link, index) => (
+                                
+                                link.enabled && link.link &&
                                 <div key={index} className={'md:w-auto w-full'}>
                                     {
-                                        link.enabled && link.link &&
                                         <>
                                             <li key={index}
                                                 className={`cursor-pointer text-white`}>
