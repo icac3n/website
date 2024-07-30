@@ -211,7 +211,10 @@ const OrganizingCommittee = () => {
             </Head>
             <div className={"prose mx-4"} itemScope itemType="https://schema.org/Organization">
                 <h1 className={"heading"} itemProp="name">ORGANISING COMMITTEE</h1>
-                {
+
+                <h3>Yet to be announced</h3>
+
+                {/* {
                     organizingCommittee.map((committee, index) => {
                         return (
                             <div key={index} itemProp="department">
@@ -249,7 +252,7 @@ const OrganizingCommittee = () => {
                             </div>
                         )
                     })
-                }
+                } */}
 
             </div>
         </>
