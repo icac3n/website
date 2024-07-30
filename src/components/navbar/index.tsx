@@ -109,7 +109,7 @@ function Index() {
         {
             title: "Register",
             link: "/registration",
-            enabled: fasle,
+            enabled: false,
         },
         {
             title: "Contact",
