@@ -11,37 +11,37 @@ interface Downloads {
 
 const impDownloadData : Downloads[] = [
     // {
-    //     title: "Final Presntation Schedule ICAC3N-2023 (.pdf)",
-    //     link: "/documents/Final Presentation Schedule ICAC3N-2023.pdf",
+    //     title: "Final Presntation Schedule ICRTICC-2023 (.pdf)",
+    //     link: "/documents/Final Presentation Schedule ICRTICC-2023.pdf",
     //     isImportant: true,
     //     enabled: true,
     // },
     // {
-    //     title: "Zoom Link for Presentation ICAC3N-2023 (.pdf)",
-    //     link: "/documents/Zoom Link for Presentation ICAC3N-2023.pdf",
+    //     title: "Zoom Link for Presentation ICRTICC-2023 (.pdf)",
+    //     link: "/documents/Zoom Link for Presentation ICRTICC-2023.pdf",
     //     isImportant: true,
     //     enabled: true,
     // },
     // {
-    //     title: "ICAC3N-2023 Brochure (.pdf)",
-    //     link: "/documents/ICAC3N-2023 Brochure.pdf",
+    //     title: "ICRTICC-2023 Brochure (.pdf)",
+    //     link: "/documents/ICRTICC-2023 Brochure.pdf",
     //     isImportant: false,
     //     enabled: true,
     // },
     // {
     //     title: "Paper Format (.docx)",
-    //     link: "/documents/PAPER_ID_ICAC3N23.docx",
+    //     link: "/documents/PAPER_ID_ICRTICC23.docx",
     //     isImportant: false,
     //     enabled: true,
     // },
     // {
     //     title: "Paper Format (.pdf)",
-    //     link: "/documents/PAPER_ID_ICAC3N23.pdf",
+    //     link: "/documents/PAPER_ID_ICRTICC23.pdf",
     //     isImportant: false,
     //     enabled: true,
     // }, {
     //     title: "Sample PPT (.pptx)",
-    //     link: "/documents/SamplePPTICAC3N-2023.pptx",
+    //     link: "/documents/SamplePPTICRTICC-2023.pptx",
     //     isImportant: false,
     //     enabled: true,
     // },

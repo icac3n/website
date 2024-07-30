@@ -9,7 +9,7 @@
     "build": "next build && prisma generate",
     "start": "next start",
     "start-custom": "NODE_ENV=production node server.js",
-    "zip": "rm -rf out && yarn run build && next export && zip -r icac3n-build-$(date +%Y-%m-%d-%H-%M-%S).zip out/*",
+    "zip": "rm -rf out && yarn run build && next export && zip -r ICRTICC-build-$(date +%Y-%m-%d-%H-%M-%S).zip out/*",
     "lint": "next lint"
   },
   "dependencies": {

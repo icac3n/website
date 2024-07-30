@@ -104,12 +104,12 @@ function Index() {
         {
             title: "Call for Papers",
             link: "/call-for-papers",
-            enabled: true,
+            enabled: false,
         },
         {
             title: "Register",
             link: "/registration",
-            enabled: true,
+            enabled: fasle,
         },
         {
             title: "Contact",
@@ -121,27 +121,11 @@ function Index() {
             title: "Archive",
             dropdown: [
                 {
-                    title: "ICAC3N - 2023",
+                    title: "ICRTICC - 2023",
                     link: "/archive/2023",
                 },
-                {
-                    title: "ICAC3N - 2022",
-                    link: "/archive/2022",
-                },
-                {
-                    title: "ICAC3N - 2021",
-                    link: "/archive/2021",
-                },
-                {
-                    title: "ICAC3N - 2020",
-                    link: "/archive/2020",
-                },
-                {
-                    title: "ICAC3N - 2018",
-                    link: "/archive/2018",
-                }
             ],
-            enabled: true,
+            enabled: false,
         },
     ]
 
@@ -174,13 +158,13 @@ function Index() {
         //     {/* <div className={"py-1 px-3 bg-stone-800"}>
         //         <div className="relative flex overflow-x-hidden text-white text-sm">
         //             <div className="animate-marquee whitespace-nowrap">
-        //                 <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
+        //                 <span className="mx-4">International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC</span>
         //                 {/*<span className="mx-2">•</span>*/}
         //                 {/*<span className="mx-4">Conference Record Number #60023</span>*/}
         //                 {/*<span className="mx-2">•</span>*/}
         //                 {/*<span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>*/}
         //                 <span className="mx-2">•</span>
-        //                 <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
+        //                 <span className="mx-4">International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC</span>
         //                 {/*<span className="mx-2">•</span>*/}
         //                 {/*<span className="mx-4">Conference Record Number #60023</span>*/}
         //                 {/*<span className="mx-2">•</span>*/}
@@ -189,13 +173,13 @@ function Index() {
         //             </div>
 
         //             <div className="absolute top-0 animate-marquee2 whitespace-nowrap">
-        //                 <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
+        //                 <span className="mx-4">International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC</span>
         //                 {/*<span className="mx-2">•</span>*/}
         //                 {/*<span className="mx-4">Conference Record Number #60023</span>*/}
         //                 {/*<span className="mx-2">•</span>*/}
         //                 {/*<span className="mx-4">IEEE XPLORE COMPLIANT ISBN No. 979-8-3503-3086-1</span>*/}
         //                 <span className="mx-2">•</span>
-        //                 <span className="mx-4">5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N</span>
+        //                 <span className="mx-4">International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC</span>
         //                 <span className="mx-2">•</span>
         //                 {/*<span className="mx-4">Conference Record Number #60023</span>*/}
         //                 {/*<span className="mx-2">•</span>*/}
@@ -209,10 +193,10 @@ function Index() {
                     <div className={'w-full flex flex-row justify-between items-center'}>
                         <Link href="/" className="flex items-center">
                             <div className={'h-12'}>
-                                <Image width={50} height={50} src="/icac3nlogo.png" className="mr-3 object-cover"
+                                <Image width={50} height={50} src="/ICRTICClogo.png" className="mr-3 object-cover"
                                        alt="Logo"/>
                             </div>
-                            <span className="font-semibold text-2xl tracking-tight text-white mr-3">ICAC3N</span>
+                            <span className="font-semibold text-2xl tracking-tight text-white mr-3">ICRTICC</span>
                             {/*<div*/}
                             {/*    className={"bg-gray-50 flex justify-center items-center pl-3 pr-4 pt-4 pb-3 rounded-md"}>*/}
                             {/*    <Image src={"/IEEE_up.png"} alt={"IEEE UP Logo"} height={100} width={75}/>*/}
@@ -221,7 +205,7 @@ function Index() {
 
                         <div className={'flex flex-row gap-1 justify-normal items-center'}>
 
-                            {/*<Link href={'https://cmt3.research.microsoft.com/ICAC3N2023'}*/}
+                            {/*<Link href={'https://cmt3.research.microsoft.com/ICRTICC2023'}*/}
                             {/*      className={'px-4 h-fit py-2 bg-sky-600 mx-2 rounded-lg hidden md:block text-white cursor-pointer '}>Submit&nbsp;Paper</Link>*/}
 
                             <span onClick={menuToggle}
@@ -265,7 +249,7 @@ function Index() {
                             ))}
                         </ul>
                         <div className={"block md:hidden mb-6 mt-8"}>
-                            {/*<Link href={'https://cmt3.research.microsoft.com/ICAC3N2023'}*/}
+                            {/*<Link href={'https://cmt3.research.microsoft.com/ICRTICC2023'}*/}
                             {/*      className={'px-4 h-fit py-3 bg-sky-600 rounded-lg md:hidden text-white cursor-pointer '}>Submit&nbsp;Paper</Link>*/}
                         </div>
                     </div>

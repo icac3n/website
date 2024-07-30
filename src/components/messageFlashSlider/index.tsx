@@ -35,14 +35,14 @@ const MessageFlashSlider = () => {
         // },
         // {
         //     id: 3,
-        //     message: "Final Presntation Schedule ICAC3N-2023 (.pdf)",
-        //     link: "/documents/Final Presentation Schedule ICAC3N-2023.pdf",
+        //     message: "Final Presntation Schedule ICRTICC-2023 (.pdf)",
+        //     link: "/documents/Final Presentation Schedule ICRTICC-2023.pdf",
         //     date: "12 Dec 2023"
         // },
         // {
         //     id: 4,
-        //     message: "Zoom Link for Presentation ICAC3N-2023 (.pdf)",
-        //     link: "/documents/Zoom Link for Presentation ICAC3N-2023.pdf",
+        //     message: "Zoom Link for Presentation ICRTICC-2023 (.pdf)",
+        //     link: "/documents/Zoom Link for Presentation ICRTICC-2023.pdf",
         //     date: "12 Dec 2023"
         // },
     ];

@@ -8,33 +8,33 @@ const Register = () => {
         <>
 
             <Head>
-                <title>Register - ICAC3N - Galgotias College of Engineering and Technology</title>
-                <meta name="title" content="Register - ICAC3N - Galgotias College of Engineering" />
+                <title>Register - ICRTICC - Galgotias College of Engineering and Technology</title>
+                <meta name="title" content="Register - ICRTICC - Galgotias College of Engineering" />
                 <meta name="description"
-                    content="Register - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N" />
+                    content="Register - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
 
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://icac3n.in/" />
-                <meta property="og:title" content="Register - ICAC3N - Galgotias College of Engineering" />
+                <meta property="og:url" content="https://ICRTICC.com/" />
+                <meta property="og:title" content="Register - ICRTICC - Galgotias College of Engineering" />
                 <meta name="description"
-                    content="Register - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N" />
+                    content="Register - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC" />
                 <meta property="og:image"
-                    content="https://icac3n.in/api/og" />
+                    content="https://ICRTICC.com/api/og" />
 
 
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content="https://icac3n.in/" />
-                <meta property="twitter:title" content="Register - ICAC3N - Galgotias College of Engineering" />
+                <meta property="twitter:url" content="https://ICRTICC.com/" />
+                <meta property="twitter:title" content="Register - ICRTICC - Galgotias College of Engineering" />
                 <meta property="twitter:description"
-                    content="Register - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N" />
+                    content="Register - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC" />
                 <meta property="twitter:image"
-                    content="https://icac3n.in/api/og" />
+                    content="https://ICRTICC.com/api/og" />
             </Head>
             <div className={"prose mx-4 my-8"}>
                 <h1 className={"heading"}>Registration</h1>
-                <p>Learn How to Register for ICAC3N-23: A Guide to Submitting Your Papers for the International Conference
+                <p>Learn How to Register for ICRTICC-23: A Guide to Submitting Your Papers for the International Conference
                     on Advances in Computing, Communication Control and Networking.</p>
                 <h3>Yet to be Announced</h3>
                 {/*<Button link={"https://forms.gle/NR6eA7N2Akp9S51XA"}>Register Now</Button>*/}
@@ -50,8 +50,8 @@ const Register = () => {
                 <h2 className={"heading"}>Camera Ready Format</h2>
                 <p>Authors are requested to follow the IEEE conference paper format.</p>
                 <div className={"flex flex-col space-y-4"}>
-                    <Button link={"/documents/PAPER_ID_ICAC3N23.docx"} >Download Docx File</Button>
-                    <Button link={"/documents/PAPER_ID_ICAC3N23.pdf"}>Download PDF File</Button>
+                    <Button link={"/documents/PAPER_ID_ICRTICC23.docx"} >Download Docx File</Button>
+                    <Button link={"/documents/PAPER_ID_ICRTICC23.pdf"}>Download PDF File</Button>
                 </div>
 
                 <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700"/>
@@ -60,7 +60,7 @@ const Register = () => {
                     Please follow the below format for the presentation. The presentation should be in the PPT format.
                 </p>
                 <div className={"flex flex-col space-y-4"}>
-                    <Button link={"/documents/SamplePPTICAC3N-2023.pptx"}>Download PPTX File</Button>
+                    <Button link={"/documents/SamplePPTICRTICC-2023.pptx"}>Download PPTX File</Button>
                 </div>
 
 

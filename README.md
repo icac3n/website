@@ -1,6 +1,6 @@
-# ICAC3N Website
+# ICRTICC Website
 
-This repository contains the code for the ICAC3N (International Conference on Advances in Computing, Communication, and Networking) website. The website is built using Next.js and styled with Tailwind CSS.
+This repository contains the code for the ICRTICC (International Conference on Advances in Computing, Communication, and Networking) website. The website is built using Next.js and styled with Tailwind CSS.
 
 ## Technologies Used
 

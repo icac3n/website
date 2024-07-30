@@ -185,29 +185,29 @@ const OrganizingCommittee = () => {
     return (
         <>
             <Head>
-                <title>Organizing Committee - ICAC3N - Galgotias College of Engineering</title>
-                <meta name="title" content="Organizing Committee - ICAC3N - Galgotias College of Engineering and Technology" />
+                <title>Organizing Committee - ICRTICC - Galgotias College of Engineering</title>
+                <meta name="title" content="Organizing Committee - ICRTICC - Galgotias College of Engineering and Technology" />
                 <meta name="description"
-                    content="Organizing Committee - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N" />
+                    content="Organizing Committee - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
 
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://icac3n.in/" />
-                <meta property="og:title" content="Organizing Committee - ICAC3N - Galgotias College of Engineering and Technology" />
+                <meta property="og:url" content="https://ICRTICC.com/" />
+                <meta property="og:title" content="Organizing Committee - ICRTICC - Galgotias College of Engineering and Technology" />
                 <meta name="description"
-                    content="Organizing Committee - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N" />
+                    content="Organizing Committee - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC" />
                 <meta property="og:image"
-                    content="https://icac3n.in/api/og" />
+                    content="https://ICRTICC.com/api/og" />
 
 
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content="https://icac3n.in/" />
-                <meta property="Organizing Committee - twitter:title" content="Organizing Committee - ICAC3N - Galgotias College of Engineering and Technology" />
+                <meta property="twitter:url" content="https://ICRTICC.com/" />
+                <meta property="Organizing Committee - twitter:title" content="Organizing Committee - ICRTICC - Galgotias College of Engineering and Technology" />
                 <meta property="twitter:description"
-                    content="Organizing Committee - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N" />
+                    content="Organizing Committee - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC" />
                 <meta property="twitter:image"
-                    content="https://icac3n.in/api/og" />
+                    content="https://ICRTICC.com/api/og" />
             </Head>
             <div className={"prose mx-4"} itemScope itemType="https://schema.org/Organization">
                 <h1 className={"heading"} itemProp="name">ORGANISING COMMITTEE</h1>

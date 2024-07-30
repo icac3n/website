@@ -7,29 +7,29 @@ const Register = () => {
         <>
 
             <Head>
-                <title>Contact - ICAC3N - Galgotias College of Engineering and Technology</title>
-                <meta name="title" content="Contact - ICAC3N - Galgotias College of Engineering and Technology"/>
+                <title>Contact - ICRTICC - Galgotias College of Engineering and Technology</title>
+                <meta name="title" content="Contact - ICRTICC - Galgotias College of Engineering and Technology"/>
                 <meta name="description"
-                      content="Contact - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                      content="Contact - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
 
                 <meta property="og:type" content="website"/>
-                <meta property="og:url" content="https://icac3n.in/"/>
-                <meta property="og:title" content="Contact - ICAC3N - Galgotias College of Engineering and Technology"/>
+                <meta property="og:url" content="https://ICRTICC.com/"/>
+                <meta property="og:title" content="Contact - ICRTICC - Galgotias College of Engineering and Technology"/>
                 <meta name="description"
-                      content="Contact - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                      content="Contact - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
                 <meta property="og:image"
-                      content="https://icac3n.in/api/og"/>
+                      content="https://ICRTICC.com/api/og"/>
 
 
                 <meta property="twitter:card" content="summary_large_image"/>
-                <meta property="twitter:url" content="https://icac3n.in/"/>
-                <meta property="Contact - twitter:title" content="Contact - ICAC3N - Galgotias College of Engineering and Technology"/>
+                <meta property="twitter:url" content="https://ICRTICC.com/"/>
+                <meta property="Contact - twitter:title" content="Contact - ICRTICC - Galgotias College of Engineering and Technology"/>
                 <meta property="twitter:description"
-                      content="Contact - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                      content="Contact - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
                 <meta property="twitter:image"
-                      content="https://icac3n.in/api/og"/>
+                      content="https://ICRTICC.com/api/og"/>
             </Head>
             <div className={"prose px-4 my-8"}>
                 <h1 className={"heading"}>Contact Us </h1>
@@ -62,25 +62,26 @@ const Register = () => {
                     </button>
                 </form>
                 <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700"/>
-                {/* <h1 className={"heading"}>Get in Touch</h1>
+                <h1 className={"heading"}>Get in Touch</h1>
                 <p>You can contact us on any of the following platforms, and we will get back to you.</p>
                 <table className="table-auto">
                     <tbody>
                     <tr>
                         <td>Email</td>
-                        <td><a href="mailto:">icac3n23@gmail.com</a></td>
+                        <td><a href="mailto:">pushpa.choudhary@galgotiacollege.edu</a></td>
                     </tr>
                     <tr>
                         <td>Contact No.</td>
-                        <td><a href="tel:">+91-7835878146</a></td>
+                        <td><a href="tel:">+91-7309755555</a></td>
                     </tr>
                     <tr>
                         <td>Email:</td>
-                        <td><a href="mailto:">vishnu.sharma@galgotiacollege.edu</a></td>
+                        <td><a href="mailto:">pushpak2728@gmail.com</a></td>
                     </tr>
                     </tbody>
-                </table> */}
-                {/* <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700"/> */}
+                </table>
+                
+                <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700"/>
                 <h1 className={"heading"}>Location</h1>
                 <p><strong>Galgotias College of Engineering and Technology</strong>, 1, Knowledge Park II, Greater
                     Noida,

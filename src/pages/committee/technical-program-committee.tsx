@@ -39,29 +39,29 @@ const TechnicalProgramCommittee = () => {
     return(
         <>
             <Head>
-                <title>Technical Program Committee - ICAC3N - Galgotias College of Engineering</title>
-                <meta name="title" content="Technical Program Committee - ICAC3N - Galgotias College of Engineering and Technology"/>
+                <title>Technical Program Committee - ICRTICC - Galgotias College of Engineering</title>
+                <meta name="title" content="Technical Program Committee - ICRTICC - Galgotias College of Engineering and Technology"/>
                 <meta name="description"
-                      content="Technical Program Committee - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                      content="Technical Program Committee - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
 
                 <meta property="og:type" content="website"/>
-                <meta property="og:url" content="https://icac3n.in/"/>
-                <meta property="og:title" content="Technical Program Committee - ICAC3N - Galgotias College of Engineering and Technology"/>
+                <meta property="og:url" content="https://ICRTICC.com/"/>
+                <meta property="og:title" content="Technical Program Committee - ICRTICC - Galgotias College of Engineering and Technology"/>
                 <meta name="description"
-                      content="Technical Program Committee - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                      content="Technical Program Committee - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
                 <meta property="og:image"
-                      content="https://icac3n.in/api/og"/>
+                      content="https://ICRTICC.com/api/og"/>
 
 
                 <meta property="twitter:card" content="summary_large_image"/>
-                <meta property="twitter:url" content="https://icac3n.in/"/>
-                <meta property="Technical Program Committee - twitter:title" content="Technical Program Committee - ICAC3N - Galgotias College of Engineering and Technology"/>
+                <meta property="twitter:url" content="https://ICRTICC.com/"/>
+                <meta property="Technical Program Committee - twitter:title" content="Technical Program Committee - ICRTICC - Galgotias College of Engineering and Technology"/>
                 <meta property="twitter:description"
-                      content="Technical Program Committee - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                      content="Technical Program Committee - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
                 <meta property="twitter:image"
-                      content="https://icac3n.in/api/og"/>
+                      content="https://ICRTICC.com/api/og"/>
             </Head>
             <div className={"prose mx-4"}>
                 <h1 className={"heading"}>Technical Program Committee</h1>

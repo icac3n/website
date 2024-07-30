@@ -12,13 +12,13 @@ const Footer = () => {
                     <div className="mb-6 md:mb-0">
                         <Link href="/" className="flex items-center">
                             <div className={'h-8'}>
-                                <Image width={35} height={35} src="/icac3nlogo.png" className="mr-3 object-cover" alt="Logo" />
+                                <Image width={35} height={35} src="/ICRTICClogo.png" className="mr-3 object-cover" alt="Logo" />
                             </div>
                             <span
-                                className="self-center text-2xl font-semibold whitespace-nowrap text-white">ICAC3N-25</span>
+                                className="self-center text-2xl font-semibold whitespace-nowrap text-white">ICRTICC-25</span>
                         </Link>
                         <p className={"my-4 max-w-xs text-white"}>International Conference on Advances in
-                            Computing, Communication Control and Networking (ICAC3N–25)</p>
+                            Computing, Communication Control and Networking (ICRTICC–25)</p>
 
 
                         {/*<div*/}
@@ -85,17 +85,17 @@ const Footer = () => {
                     </span>
                     <div
                         className={"flex mt-4 space-x-6 text-2xl text-white sm:justify-center sm:mt-0"}>
-                        <Link href={"https://twitter.com/icac3n"}>
-                            <RiTwitterFill className={'cursor-pointer grow-on-hover hover:text-sky-400'} aria-label={'icac3n twitter'} />
+                        <Link href={"https://twitter.com/ICRTICC"}>
+                            <RiTwitterFill className={'cursor-pointer grow-on-hover hover:text-sky-400'} aria-label={'ICRTICC twitter'} />
                         </Link>
                         <Link href={"tel:+91-7835878146"}>
-                            <RiPhoneFill className={'cursor-pointer  grow-on-hover hover:text-emerald-500'} aria-label={'icac3n phone'} />
+                            <RiPhoneFill className={'cursor-pointer  grow-on-hover hover:text-emerald-500'} aria-label={'ICRTICC phone'} />
                         </Link>
-                        <Link href={"https://www.facebook.com/IEEE.ICAC3N.21"}>
-                            <RiFacebookBoxFill className={'cursor-pointer  grow-on-hover hover:text-indigo-500'} aria-label={'icac3n facebook'} />
+                        <Link href={"https://www.facebook.com/IEEE.ICRTICC.21"}>
+                            <RiFacebookBoxFill className={'cursor-pointer  grow-on-hover hover:text-indigo-500'} aria-label={'ICRTICC facebook'} />
                         </Link>
                         <Link href={"mailto:vishnu.sharma@galgotiacollege.edu"}>
-                            <RiMailFill className={'cursor-pointer  grow-on-hover hover:text-amber-400'} aria-label={'icac3n mail'} />
+                            <RiMailFill className={'cursor-pointer  grow-on-hover hover:text-amber-400'} aria-label={'ICRTICC mail'} />
                         </Link>
                     </div>
 

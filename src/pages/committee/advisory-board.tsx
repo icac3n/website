@@ -67,29 +67,29 @@ const AdvisoryBorad = () => {
     return(
         <>
             <Head>
-                <title>Advisory Board - ICAC3N - Galgotias College of Engineering</title>
-                <meta name="title" content="Advisory Board - ICAC3N - Galgotias College of Engineering and Technology"/>
+                <title>Advisory Board - ICRTICC - Galgotias College of Engineering</title>
+                <meta name="title" content="Advisory Board - ICRTICC - Galgotias College of Engineering and Technology"/>
                 <meta name="description"
-                      content="Advisory Board - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                      content="Advisory Board - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
 
                 <meta property="og:type" content="website"/>
-                <meta property="og:url" content="https://icac3n.in/"/>
-                <meta property="og:title" content="Advisory Board - ICAC3N - Galgotias College of Engineering and Technology"/>
+                <meta property="og:url" content="https://ICRTICC.com/"/>
+                <meta property="og:title" content="Advisory Board - ICRTICC - Galgotias College of Engineering and Technology"/>
                 <meta name="description"
-                      content="Advisory Board - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                      content="Advisory Board - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
                 <meta property="og:image"
-                      content="https://icac3n.in/api/og"/>
+                      content="https://ICRTICC.com/api/og"/>
 
 
                 <meta property="twitter:card" content="summary_large_image"/>
-                <meta property="twitter:url" content="https://icac3n.in/"/>
-                <meta property="Advisory Board - twitter:title" content="Advisory Board - ICAC3N - Galgotias College of Engineering and Technology"/>
+                <meta property="twitter:url" content="https://ICRTICC.com/"/>
+                <meta property="Advisory Board - twitter:title" content="Advisory Board - ICRTICC - Galgotias College of Engineering and Technology"/>
                 <meta property="twitter:description"
-                      content="Advisory Board - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                      content="Advisory Board - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
                 <meta property="twitter:image"
-                      content="https://icac3n.in/api/og"/>
+                      content="https://ICRTICC.com/api/og"/>
             </Head>
             <div className={"prose mx-4"}>
                 <h1 className={"heading"}>Advisory Board</h1>

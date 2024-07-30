@@ -7,29 +7,29 @@ const callForPapers = () => {
     return (
         <>
             <Head>
-                <title>404 - ICAC3N - Galgotias College of Engineering</title>
-                <meta name="title" content="404 - ICAC3N - Galgotias College of Engineering and Technology"/>
+                <title>404 - ICRTICC - Galgotias College of Engineering</title>
+                <meta name="title" content="404 - ICRTICC - Galgotias College of Engineering and Technology"/>
                 <meta name="description"
-                      content="404 - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                      content="404 - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
 
                 <meta property="og:type" content="website"/>
-                <meta property="og:url" content="https://icac3n.in/"/>
-                <meta property="og:title" content="404 - ICAC3N - Galgotias College of Engineering and Technology"/>
+                <meta property="og:url" content="https://ICRTICC.com/"/>
+                <meta property="og:title" content="404 - ICRTICC - Galgotias College of Engineering and Technology"/>
                 <meta name="description"
-                      content="404 - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                      content="404 - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
                 <meta property="og:image"
-                      content="https://icac3n.in/api/og"/>
+                      content="https://ICRTICC.com/api/og"/>
 
 
                 <meta property="twitter:card" content="summary_large_image"/>
-                <meta property="twitter:url" content="https://icac3n.in/"/>
-                <meta property="404 - twitter:title" content="404 - ICAC3N - Galgotias College of Engineering and Technology"/>
+                <meta property="twitter:url" content="https://ICRTICC.com/"/>
+                <meta property="404 - twitter:title" content="404 - ICRTICC - Galgotias College of Engineering and Technology"/>
                 <meta property="twitter:description"
-                      content="404 - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                      content="404 - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
                 <meta property="twitter:image"
-                      content="https://icac3n.in/api/og"/>
+                      content="https://ICRTICC.com/api/og"/>
             </Head>
             <div className={"min-h-screen flex items-center justify-center"}>
                 <section className="flex items-center h-full p-16 dark:bg-gray-900 dark:text-gray-100">

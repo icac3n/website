@@ -6,29 +6,29 @@ const AboutPage = () => {
     return (
         <>
             <Head>
-                <title>About - ICAC3N - Galgotias College of Engineering</title>
-                <meta name="title" content="About - ICAC3N - Galgotias College of Engineering and Technology" />
+                <title>About - ICRTICC - Galgotias College of Engineering</title>
+                <meta name="title" content="About - ICRTICC - Galgotias College of Engineering and Technology" />
                 <meta name="description"
-                    content="ICAC3N is a prestigious international conference that brings together top researchers, scientists, engineers, and scholars from around the world to share their latest research findings and experiences in computing, communication control, and networking. Featuring keynote speeches, technical sessions, and workshops, the conference covers a wide range of topics such as cloud computing, AI, wireless communication systems, IoT, and cybersecurity. Organized annually by IEEE at various global locations, ICAC3N offers a stimulating platform for participants to network, collaborate and engage with experts in their fields. The conference proceedings are published on IEEE Xplore, making it accessible to researchers and scholars worldwide." />
+                    content="ICRTICC is a prestigious international conference that brings together top researchers, scientists, engineers, and scholars from around the world to share their latest research findings and experiences in computing, communication control, and networking. Featuring keynote speeches, technical sessions, and workshops, the conference covers a wide range of topics such as cloud computing, AI, wireless communication systems, IoT, and cybersecurity. Organized annually by IEEE at various global locations, ICRTICC offers a stimulating platform for participants to network, collaborate and engage with experts in their fields. The conference proceedings are published on IEEE Xplore, making it accessible to researchers and scholars worldwide." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
 
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://icac3n.in/" />
-                <meta property="og:title" content="About - ICAC3N - Galgotias College of Engineering and Technology" />
+                <meta property="og:url" content="https://ICRTICC.com/" />
+                <meta property="og:title" content="About - ICRTICC - Galgotias College of Engineering and Technology" />
                 <meta name="description"
-                    content="ICAC3N is a prestigious international conference that brings together top researchers, scientists, engineers, and scholars from around the world to share their latest research findings and experiences in computing, communication control, and networking. Featuring keynote speeches, technical sessions, and workshops, the conference covers a wide range of topics such as cloud computing, AI, wireless communication systems, IoT, and cybersecurity. Organized annually by IEEE at various global locations, ICAC3N offers a stimulating platform for participants to network, collaborate and engage with experts in their fields. The conference proceedings are published on IEEE Xplore, making it accessible to researchers and scholars worldwide." />
+                    content="ICRTICC is a prestigious international conference that brings together top researchers, scientists, engineers, and scholars from around the world to share their latest research findings and experiences in computing, communication control, and networking. Featuring keynote speeches, technical sessions, and workshops, the conference covers a wide range of topics such as cloud computing, AI, wireless communication systems, IoT, and cybersecurity. Organized annually by IEEE at various global locations, ICRTICC offers a stimulating platform for participants to network, collaborate and engage with experts in their fields. The conference proceedings are published on IEEE Xplore, making it accessible to researchers and scholars worldwide." />
                 <meta property="og:image"
-                    content="https://icac3n.in/api/og" />
+                    content="https://ICRTICC.com/api/og" />
 
 
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content="https://icac3n.in/" />
-                <meta property="About - twitter:title" content="About - ICAC3N - Galgotias College of Engineering and Technology" />
+                <meta property="twitter:url" content="https://ICRTICC.com/" />
+                <meta property="About - twitter:title" content="About - ICRTICC - Galgotias College of Engineering and Technology" />
                 <meta property="twitter:description"
-                    content="ICAC3N is a prestigious international conference that brings together top researchers, scientists, engineers, and scholars from around the world to share their latest research findings and experiences in computing, communication control, and networking. Featuring keynote speeches, technical sessions, and workshops, the conference covers a wide range of topics such as cloud computing, AI, wireless communication systems, IoT, and cybersecurity. Organized annually by IEEE at various global locations, ICAC3N offers a stimulating platform for participants to network, collaborate and engage with experts in their fields. The conference proceedings are published on IEEE Xplore, making it accessible to researchers and scholars worldwide." />
+                    content="ICRTICC is a prestigious international conference that brings together top researchers, scientists, engineers, and scholars from around the world to share their latest research findings and experiences in computing, communication control, and networking. Featuring keynote speeches, technical sessions, and workshops, the conference covers a wide range of topics such as cloud computing, AI, wireless communication systems, IoT, and cybersecurity. Organized annually by IEEE at various global locations, ICRTICC offers a stimulating platform for participants to network, collaborate and engage with experts in their fields. The conference proceedings are published on IEEE Xplore, making it accessible to researchers and scholars worldwide." />
                 <meta property="twitter:image"
-                    content="https://icac3n.in/api/og" />
+                    content="https://ICRTICC.com/api/og" />
             </Head>
             <div>
                 <div className={"prose max-w-screen-lg mx-4"}>

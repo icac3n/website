@@ -7,29 +7,29 @@ const Speakers = () => {
     return (
         <>
             <Head>
-                <title>Speakers - ICAC3N - Galgotias College of Engineering and Technology</title>
-                <meta name="title" content="Speakers - ICAC3N - Galgotias College of Engineering"/>
+                <title>Speakers - ICRTICC - Galgotias College of Engineering and Technology</title>
+                <meta name="title" content="Speakers - ICRTICC - Galgotias College of Engineering"/>
                 <meta name="description"
-                      content="Speakers - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                      content="Speakers - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
 
                 <meta property="og:type" content="website"/>
-                <meta property="og:url" content="https://icac3n.in/"/>
-                <meta property="og:title" content="Speakers - ICAC3N - Galgotias College of Engineering"/>
+                <meta property="og:url" content="https://ICRTICC.com/"/>
+                <meta property="og:title" content="Speakers - ICRTICC - Galgotias College of Engineering"/>
                 <meta name="description"
-                      content="Speakers - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                      content="Speakers - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
                 <meta property="og:image"
-                      content="https://icac3n.in/api/og"/>
+                      content="https://ICRTICC.com/api/og"/>
 
 
                 <meta property="twitter:card" content="summary_large_image"/>
-                <meta property="twitter:url" content="https://icac3n.in/"/>
-                <meta property="twitter:title" content="Speakers - ICAC3N - Galgotias College of Engineering"/>
+                <meta property="twitter:url" content="https://ICRTICC.com/"/>
+                <meta property="twitter:title" content="Speakers - ICRTICC - Galgotias College of Engineering"/>
                 <meta property="twitter:description"
-                      content="Speakers - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                      content="Speakers - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
                 <meta property="twitter:image"
-                      content="https://icac3n.in/api/og"/>
+                      content="https://ICRTICC.com/api/og"/>
             </Head>
             <div className={"my-8 min-h-[calc(100vh-28.8rem)]"}>
                 <h1 className={'text-3xl font-bold text-center mb-10'}>Past Speakers of ICACCCN 2023</h1>

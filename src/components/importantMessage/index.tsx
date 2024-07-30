@@ -11,14 +11,14 @@ interface imporatantNotice {
 const impImpData : imporatantNotice[] = [
     // {
     //     title: "Paper submission link open",
-    //     description: "5th ICAC3N-23 paper submission link is open till August 31, 2023",
+    //     description: "5th ICRTICC-23 paper submission link is open till August 31, 2023",
     //     link: "/registration",
     //     isImportant: true,
     //     enabled: true,
     // },
     // {
-    //     title: "4th ICAC3N-22 Proceedings",
-    //     description: "4th ICAC3N-22 Proceedings are available online now on Xplore",
+    //     title: "4th ICRTICC-22 Proceedings",
+    //     description: "4th ICRTICC-22 Proceedings are available online now on Xplore",
     //     link: "https://ieeexplore.ieee.org/xpl/conhome/10073967/proceeding",
     //     isImportant: false,
     //     enabled: true,

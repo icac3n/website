@@ -9,29 +9,29 @@ const callForPapers = () => {
         <>
 
             <Head>
-                <title>Call for Paper - ICAC3N - Galgotias College of Engineering and Technology</title>
-                <meta name="title" content="Call for Paper - ICAC3N - Galgotias College of Engineering and Technology"/>
+                <title>Call for Paper - ICRTICC - Galgotias College of Engineering and Technology</title>
+                <meta name="title" content="Call for Paper - ICRTICC - Galgotias College of Engineering and Technology"/>
                 <meta name="description"
-                      content="Call for Paper - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                      content="Call for Paper - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
 
                 <meta property="og:type" content="website"/>
-                <meta property="og:url" content="https://icac3n.in/"/>
-                <meta property="og:title" content="Call for Paper - ICAC3N - Galgotias College of Engineering and Technology"/>
+                <meta property="og:url" content="https://ICRTICC.com/"/>
+                <meta property="og:title" content="Call for Paper - ICRTICC - Galgotias College of Engineering and Technology"/>
                 <meta name="description"
-                      content="Call for Paper - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                      content="Call for Paper - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
                 <meta property="og:image"
-                      content="https://icac3n.in/api/og"/>
+                      content="https://ICRTICC.com/api/og"/>
 
 
                 <meta property="twitter:card" content="summary_large_image"/>
-                <meta property="twitter:url" content="https://icac3n.in/"/>
-                <meta property="Call for Paper - twitter:title" content="Call for Paper - ICAC3N - Galgotias College of Engineering and Technology"/>
+                <meta property="twitter:url" content="https://ICRTICC.com/"/>
+                <meta property="Call for Paper - twitter:title" content="Call for Paper - ICRTICC - Galgotias College of Engineering and Technology"/>
                 <meta property="twitter:description"
-                      content="Call for Paper - 5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N"/>
+                      content="Call for Paper - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
                 <meta property="twitter:image"
-                      content="https://icac3n.in/api/og"/>
+                      content="https://ICRTICC.com/api/og"/>
             </Head>
             <div className={"prose mx-4 my-8"}>
                 <h1 className={"heading"}>Call for Papers</h1>
@@ -60,7 +60,7 @@ const callForPapers = () => {
                     <li>Researches and Innovations on COVID-19</li>
                 </ul>
 
-                {/*<Button link={"https://cmt3.research.microsoft.com/ICAC3N2023"} className={''} hideIcon={null}> Submit a Paper</Button>*/}
+                {/*<Button link={"https://cmt3.research.microsoft.com/ICRTICC2023"} className={''} hideIcon={null}> Submit a Paper</Button>*/}
             </div>
         </>
     )

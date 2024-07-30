@@ -130,29 +130,29 @@ const Home = () => {
     return (
         <>
             <Head>
-                <title>ICAC3N - Galgotias College of Engineering and Technology </title>
-                <meta name="title" content="ICAC3N - Galgotias College of Engineering and Technology" />
+                <title>ICRTICC - Galgotias College of Engineering and Technology </title>
+                <meta name="title" content="ICRTICC - Galgotias College of Engineering and Technology" />
                 <meta name="description"
-                    content="5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N" />
+                    content="International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
 
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://icac3n.in/" />
-                <meta property="og:title" content="ICAC3N - Galgotias College of Engineering and Technology" />
+                <meta property="og:url" content="https://ICRTICC.com/" />
+                <meta property="og:title" content="ICRTICC - Galgotias College of Engineering and Technology" />
                 <meta name="description"
-                    content="5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N" />
+                    content="International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC" />
                 <meta property="og:image"
-                    content="https://icac3n.in/api/og" />
+                    content="https://ICRTICC.com/api/og" />
 
 
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content="https://icac3n.in/" />
-                <meta property="twitter:title" content="ICAC3N - Galgotias College of Engineering and Technology" />
+                <meta property="twitter:url" content="https://ICRTICC.com/" />
+                <meta property="twitter:title" content="ICRTICC - Galgotias College of Engineering and Technology" />
                 <meta property="twitter:description"
-                    content="5th International Conference on Advances in Computing, Communication Control and Networking- ICAC3N" />
+                    content="International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC" />
                 <meta property="twitter:image"
-                    content="https://icac3n.in/api/og" />
+                    content="https://ICRTICC.com/api/og" />
 
             </Head>
             <main className={"mx-8"}>
@@ -164,7 +164,7 @@ const Home = () => {
                         className={"col-span-full lg:col-span-2 flex flex-col justify-between h-full self-start gap-2"}>
                         <div className={"flex items-center space-x-2 lg:justify-start justify-center"}>
                             <RiCalendarTodoFill className={"hidden text-xl lg:block text-red-800"} />
-                            <p className={"text-red-800 font-semibold"}>7th & 8th March, 2025</p>
+                            <p className={"text-red-800 font-semibold"}>30th & 31st October, 2024</p>
                         </div>
 
                         {/*<div className={" lg:hidden flex items-center space-x-2 lg:justify-start justify-center"}>*/}
@@ -185,8 +185,8 @@ const Home = () => {
                         {/*</div>*/}
 
                         <p className={"text-3xl lg:text-4xl break-words my-3 lg:my-2 font-bold mx-2 lg:mx-0"}>6th
-                            International Conference on Advances in Computing, Communication Control and Networking-
-                            ICAC3N</p>
+                            International Conference on Recent Trends in Intelligent Computing and Communication-
+                            ICRTICC</p>
 
                         {/*<div className={"hidden lg:flex items-center space-x-2 lg:justify-start justify-center"}>*/}
                         {/*    <RiArticleLine className={"hidden text-xl self-start lg:block text-red-800"}/>*/}
@@ -226,22 +226,22 @@ const Home = () => {
                         </div>
 
                         {/*<div className={"flex items-center justify-center mt-4"}>*/}
-                        {/*    <Link href={'https://cmt3.research.microsoft.com/ICAC3N2023'}*/}
+                        {/*    <Link href={'https://cmt3.research.microsoft.com/ICRTICC2023'}*/}
                         {/*          className={'px-4 h-fit py-2 bg-red-700 rounded-lg w-fit md:hidden block text-white cursor-pointer '}>Submit&nbsp;Paper</Link>*/}
                         {/*</div>*/}
                         <div
                             className={"flex space-x-5 text-2xl text-red-800 mt-4 items-center lg:justify-start justify-center"}>
-                            <Link href={"https://twitter.com/icac3n"} aria-label={'icac3n twitter'}>
+                            <Link href={"https://twitter.com/ICRTICC"} aria-label={'ICRTICC twitter'}>
                                 <RiTwitterFill className={'cursor-pointer grow-on-hover hover:text-sky-500'} />
                             </Link>
-                            <Link href={"tel:+91-7835878146"} aria-label={'icac3n phone'}>
+                            <Link href={"tel:+91-7835878146"} aria-label={'ICRTICC phone'}>
                                 <RiPhoneFill className={'cursor-pointer  grow-on-hover hover:text-emerald-500'} />
                             </Link>
-                            <Link href={"https://www.facebook.com/IEEE.ICAC3N.21"} aria-label={'icac3n facebook'}>
+                            <Link href={"https://www.facebook.com/IEEE.ICRTICC.21"} aria-label={'ICRTICC facebook'}>
                                 <RiFacebookBoxFill
                                     className={'cursor-pointer  grow-on-hover hover:text-indigo-700'} />
                             </Link>
-                            <Link href={"mailto:sachin.kumar@galgotiacollege.edu"} aria-label={'icac3n mail'}>
+                            <Link href={"mailto:pushpa.choudhary@galgotiacollege.edu"} aria-label={'ICRTICC mail'}>
                                 <RiMailFill className={'cursor-pointer  grow-on-hover hover:text-amber-400'} />
                             </Link>
                         </div>
@@ -314,7 +314,7 @@ const Home = () => {
                             <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
                                 ICACCCN</h2>
                             <p className={'text-justify'}>
-                                ICAC3N is a prestigious international conference that brings together top
+                                ICRTICC is a prestigious international conference that brings together top
                                 researchers,
                                 scientists, engineers, and scholars from around the world to share their latest
                                 research
