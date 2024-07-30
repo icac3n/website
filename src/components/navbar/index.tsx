@@ -244,7 +244,7 @@ function Index() {
                                             }
                                             {
                                                 link.enabled && link.dropdown &&
-                                                <Dropdown title={link.title} dropdown={link.dropdown}/>
+                                                <Dropdown title={link?.title} dropdown={link.dropdown}/>
                                             }
                                         </div>
                                     }
