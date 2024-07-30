@@ -184,8 +184,7 @@ const Home = () => {
                         {/*    </div>*/}
                         {/*</div>*/}
 
-                        <p className={"text-3xl lg:text-4xl break-words my-3 lg:my-2 font-bold mx-2 lg:mx-0"}>6th
-                            International Conference on Recent Trends in Intelligent Computing and Communication-
+                        <p className={"text-3xl lg:text-4xl break-words my-3 lg:my-2 font-bold mx-2 lg:mx-0"}>International Conference on Recent Trends in Intelligent Computing and Communication-
                             ICRTICC</p>
 
                         {/*<div className={"hidden lg:flex items-center space-x-2 lg:justify-start justify-center"}>*/}
