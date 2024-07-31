@@ -75,29 +75,6 @@ const AboutPage = () => {
                     </p>
                 </div>
 
-                <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
-
-                <div className={"prose max-w-screen-lg mx-4"}>
-                    <h1 className={"heading"}>About Information Technology Department</h1>
-                    <p className={'text-justify'}>
-                        The department of Information Technology offers engineering programme at the undergraduate as well as at the post graduate levels. The course is designed to provide comprehensive knowledge of information technology with emphasis on applications together with a judicious blend of technical skills. The department emphasis the use of learning tools for the acquisition of knowledge and skills. Role-play, case study, project work, practical exposure, assignments, quiz, seminars, industry visits are some of the methods used for teaching learning process. The curriculum provides not only technical knowledge but also the exposure to recent technologies. To impart good quality engineering education, the department focuses on development of practical and application oriented minds. It is our attempt to make students learn by doing rather than by simply learning of topics and subjects.
-
-                        The vibrant faculty members of the department possess demonstrated expertise in many areas of information technology and flair for teaching different courses. The department consists of a medley of faculty members with industrial and academic experience. The department has qualified and experienced faculty in the areas of Artificial Intelligence, Computer Networks, Data Mining, Database Systems, Neural Networks, Web Technology, Wireless and Sensor Networks, and Operating System. There are fully equipped laboratories in department such as: Computer Programming Lab, DBMS Lab, Software Engineering Lab, Networking Lab, Project Lab, R & D Lab. Research in the department focuses on creating and evaluating innovative learning that is inspired by technical progress. The key areas of research of the faculty members include semantic web, data mining, software reliability, wireless sensor networks, network security, big data analytics and cloud computing. The department has organized various national and international conferences.
-                    </p>
-                </div>
-                <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
-                <div className={"prose max-w-screen-lg mx-4"}>
-                    <h1 className={"heading"}>About Computer Applications Department</h1>
-                    <p className={'text-justify'}>
-                        The Department of Computer Applications, established in the year 2003 is one of the oldest and pioneer departments of Galgotias College of Engineering and Technology. It offers the two year Post Graduate Program – Masters of Computer Applications (MCA), which is affiliated to Abdul Kalam Technical University (AKTU). It has highly qualified, committed and research-oriented faculty members who share the mission and vision of the institution in imparting quality education to the students.
-
-                        <br />
-                        The focus of the Department is to develop and to strengthen young minds to make them globally competitive by inculcating the capabilities of critical thinking, problem solving, analysis, design, research, team work, communication skills, and readiness for lifelong learning in areas of Artificial Intelligence, Machine Learning, Pattern Recognition, Cloud Computing, Internet of Things and Blockchain.
-
-                        <br />
-                        To keep itself abreast with latest developments in Computer Applications, the department makes extensive efforts to develop partnerships with industry. The department enjoys the privilege of having spacious and well-equipped laboratories that provide students, the industrial environment much needed for real life training
-                    </p>
-                </div>
 
             </div>
         </>
