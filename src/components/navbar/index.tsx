@@ -73,12 +73,12 @@ function Index() {
             link: "/about",
             enabled: true,
         },
-        // {
-        //     title: "Guidelines",
-        //     link: "/guidelines",
-        //     enabled: false,
-        // },
-        // {
+        {
+            title: "Guidelines",
+            link: "/guidelines",
+            enabled: false,
+        },
+        {
         //     title: "Speakers",
         //     link: "/speakers",
         //     enabled: true,
@@ -104,7 +104,7 @@ function Index() {
         {
             title: "Call for Papers",
             link: "/call-for-papers",
-            enabled: false,
+            enabled: true,
         },
         {
             title: "Register",

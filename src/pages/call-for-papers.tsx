@@ -35,7 +35,8 @@ const callForPapers = () => {
             </Head>
             <div className={"prose mx-4 my-8"}>
                 <h1 className={"heading"}>Call for Papers</h1>
-                <p>Authors are solicited to contribute to the conference by submitting articles that illustrate research
+                <h3>Not Announced Yet</h3>
+                {/* <p>Authors are solicited to contribute to the conference by submitting articles that illustrate research
                     results- projects, surveying works and industrial experiences that describe significant advances in
                     computing, communication control and Networking. Topics of interest for submission include, but are not
                     limited to:</p>
@@ -58,7 +59,7 @@ const callForPapers = () => {
                     <li>Control Systems &amp; Automation, IoT with Control Systems &amp; Information Systems</li>
                     <li>Machine Learning &amp; Deep Learning with Cyber Security</li>
                     <li>Researches and Innovations on COVID-19</li>
-                </ul>
+                </ul> */}
 
                 {/*<Button link={"https://cmt3.research.microsoft.com/ICRTICC2023"} className={''} hideIcon={null}> Submit a Paper</Button>*/}
             </div>
