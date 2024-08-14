@@ -78,7 +78,7 @@ function Index() {
             link: "/guidelines",
             enabled: false,
         },
-        {
+        //{
         //     title: "Speakers",
         //     link: "/speakers",
         //     enabled: true,
