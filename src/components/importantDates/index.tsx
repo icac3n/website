@@ -9,30 +9,31 @@ interface ImportantDate {
 }
 
 const impDateData: ImportantDate[] = [
+     {
+         title: "Paper Submission Starts",
+         date: "25th October 2024",
+    
+         isImportant: true,
+         enabled: true,
+     },
+     {
+         title: "Notification of Acceptance",
+         date: "10th December 2024",
+    
+         isImportant: true,
+         enabled: true,
+     },
+     {
+         title: "Final Paper Submission Date",
+         date: "25th December 2024",
+    
+         isImportant: true,
+         enabled: true,
+     }, 
     // {
-    //     title: "Paper Submission Starts",
-    //     date: "Yet to be Announced",
-    //
-    //     isImportant: false,
-    //     enabled: true,
-    // },
-    // {
-    //     title: "Abstract Submission Deadline",
-    //     date: "Yet to be Announced",
-    //
-    //     isImportant: true,
-    //     enabled: true,
-    // },
-    // {
-    //     title: "Paper Submission Deadline",
-    //     date: "Yet to be Announced",
-    //
-    //     isImportant: true,
-    //     enabled: true,
-    // }, {
     //     title: "Notification of Acceptance",
     //     subtitle: "(within 4weeks from submission)",
-    //     date: "Yet to be Announced",
+    //     date: "Yet to be Announc",
     //
     //     isImportant: false,
     //     enabled: true,
