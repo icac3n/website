@@ -66,6 +66,15 @@ const organizingCommittee = [
         ]
     },
     {
+        "Category": "Conference Co-Conveners",
+        "Members": [
+            {
+                "Name": "Dr. Sambit Satpathy",
+                "Designation": "Galgotias College of Engineering and Technology, Greater Noida"
+            }
+        ]
+    },
+    {
         "Category": "Conference Organizing Chairs",
         "Members": [
             {
@@ -73,20 +82,19 @@ const organizingCommittee = [
                 "Designation": "HOD CSE & Allied Specialized Branches, Galgotias College of Engineering and Technology, Greater Noida"
             },
             {
-                "Name": "Prof.(Dr.) Yashveer Singh",
-                "Designation": "Galgotias College of Engineering and Technology, Greater Noida"
-            }
-        ]
-    },
-    {
-        "Category": "Conference Co-Conveners",
-        "Members": [
-            {
-                "Name": "Dr. Krishan Kumar Saraswat",
+                "Name": "Prof.(Dr.) Sambit Satpathy",
                 "Designation": "Galgotias College of Engineering and Technology, Greater Noida"
             },
             {
-                "Name": "Dr. Vandna Rani Verma",
+                "Name": "Prof. Mohit Chowdhary",
+                "Designation": "Galgotias College of Engineering and Technology, Greater Noida"
+            },
+            {
+                "Name": "Prof.(Dr.) Avjeet Singh",
+                "Designation": "Galgotias College of Engineering and Technology, Greater Noida"
+            },
+            {
+                "Name": "Prof.(Dr.) Yashveer Singh",
                 "Designation": "Galgotias College of Engineering and Technology, Greater Noida"
             }
         ]
