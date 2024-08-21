@@ -121,7 +121,7 @@ const callForPapers = () => {
 
                 <section>
                     <h2>Submit your article</h2>
-                    <p>Link will be shown soon.</p>
+                    <Button link={"#"} className={''} hideIcon={null}>Comming Soon</Button>
                 </section>
 
             </div>
