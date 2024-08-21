@@ -33,7 +33,7 @@ const impDownloadData : Downloads[] = [
 export default function ImportantDownloads() {
 
     return (
-        <div className={"w-full lg:w-min-sm"}>
+        <div className={"w-full lg:w-min-sm"} id="downloads">
             <div className={"mt-5 p-4 rounded-t-md bg-gray-200 border-l-4 border-red-600 w-full lg:max-w-sm"}>
                 <p className={"font-semibold text-lg"}>Important Downloads</p>
             </div>

@@ -107,8 +107,8 @@ function Index() {
             enabled: true,
         },
         {
-            title: "Registeration",
-            link: "/registeration",
+            title: "Registration",
+            link: "/registration",
             enabled: true,
         },
         {

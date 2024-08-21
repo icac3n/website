@@ -31,16 +31,14 @@ const Footer = () => {
                             <ul className="text-gray-200 font-medium">
                                 <li className="mb-4">
                                     <button disabled={true} className="flex items-center justify-center gap-2">
-                                        <p className="text-gray-100/60">Dates</p>
-                                        <span className="px-2 py-0.5 rounded-full bg-black/30 text-xs">Soon</span>
-                                        {/* <Link href="/dates" className="text-gray-100/60">Dates</Link> */}
+                                        <Link href="/dates" className="text-gray-100/60">Dates</Link>
                                     </button>
                                 </li>
                                 <li>
                                     <button disabled={true} className="flex items-center justify-center gap-2">
-                                        <p className="text-gray-100/60">Downloads</p>
-                                        <span className="px-2 py-0.5 rounded-full bg-black/30 text-xs">Soon</span>
-                                        {/* <Link href="/dates" className="text-gray-100/60">Downloads</Link> */}
+                                        {/* <p className="text-gray-100/60">Downloads</p>
+                                        <span className="px-2 py-0.5 rounded-full bg-black/30 text-xs">Soon</span> */}
+                                        <Link href="/#downloads" className="text-gray-100/60">Downloads</Link>
                                     </button>
                                 </li>
                             </ul>
@@ -49,12 +47,12 @@ const Footer = () => {
                             <h2 className="mb-4 font-semibold uppercase text-white underline">Resources</h2>
                             <ul className="text-gray-200 font-medium">
                                 <li className="flex mb-4 items-center justify-start gap-2">
-                                    <p className="text-gray-100/60">Register</p>
-                                    <span className="px-2 py-0.5 rounded-full bg-black/30 text-xs">Soon</span>
-                                    {/* <Link href="/register" className="hover:underline">Register</Link> */}
+                                    {/* <p className="text-gray-100/60">Register</p>
+                                    <span className="px-2 py-0.5 rounded-full bg-black/30 text-xs">Soon</span> */}
+                                    <Link href="/registeration" className="hover:underline">Register</Link>
                                 </li>
                                 <li>
-                                    <Link href="/guidelines" className="hover:underline">Guidelines
+                                    <Link href="/author-instructions" className="hover:underline">Author Instructions
                                     </Link>
                                 </li>
                             </ul>
@@ -63,8 +61,8 @@ const Footer = () => {
                             <h2 className="mb-4 font-semibold uppercase text-white underline">Latest</h2>
                             <ul className="text-gray-200 font-medium">
                                 <li className="flex items-centermb-4">
-                                <p className="text-gray-100/60">Speakers</p>
-                                    <span className="px-2 py-0.5 rounded-full bg-black/30 text-xs">Soon</span>
+                                    <Link href="/speakers" className="hover:underline">Speakers
+                                    </Link>
                                 </li>
                                 <li>
                                     <Link href="/committee/organizing-committee" className="hover:underline">Committee
