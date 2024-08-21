@@ -10,7 +10,6 @@ import {FaAngleLeft, FaAngleRight} from "react-icons/fa";
 import {useCallback, useRef} from "react";
 import Link from "next/link";
 import Carousel from 'framer-motion-carousel';
-import register from "@/pages/register";
 
 interface Message {
     id : number
