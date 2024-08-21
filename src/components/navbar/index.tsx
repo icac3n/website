@@ -107,8 +107,13 @@ function Index() {
             enabled: true,
         },
         {
-            title: "Registeration Fees",
-            link: "/registeration-fees",
+            title: "Registeration",
+            link: "/registeration",
+            enabled: true,
+        },
+        {
+            title: "Authour Instructions",
+            link: "/author-instruction",
             enabled: true,
         },
         {

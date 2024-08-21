@@ -311,7 +311,7 @@ const Home = () => {
                     <div className={"grid grid-cols-1 lg:grid-cols-3 mx-2 md:mx-auto"}>
                         <div className={"lg:col-span-2 lg:mr-10 col-span-full"}>
                             <h2 className={"font-bold text-lg text-center lg:text-2xl lg:text-start my-3"}>About
-                                ICACCCN</h2>
+                                ICRTICC</h2>
                             <p className={'text-justify'}>
                                 ICRTICC is a prestigious international conference that brings together top
                                 researchers,
@@ -432,7 +432,7 @@ const Home = () => {
                 
                 <div className={'select-none'}>
                     <div className={'flex flex-row items-center mx-5 md:mx-auto'}>
-                        <h1 className='text-2xl text-black font-extrabold my-5'>Hon&apos;ble Past Speakers</h1>
+                        <h1 className='text-2xl text-black font-extrabold my-5'>Hon&apos;ble Speakers</h1>
                     </div>
 
 
