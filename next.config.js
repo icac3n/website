@@ -7,10 +7,6 @@ const nextConfig = {
                 source: '/dates',
                 destination: '/#important',
                 permanent: true,
-            }, {
-                source: '/registration',
-                destination: '/register',
-                permanent: true,
             },
             {
                 source: '/callforpapers',

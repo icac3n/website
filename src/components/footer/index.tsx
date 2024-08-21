@@ -49,7 +49,7 @@ const Footer = () => {
                                 <li className="flex mb-4 items-center justify-start gap-2">
                                     {/* <p className="text-gray-100/60">Register</p>
                                     <span className="px-2 py-0.5 rounded-full bg-black/30 text-xs">Soon</span> */}
-                                    <Link href="/registeration" className="hover:underline">Register</Link>
+                                    <Link href="/registration" className="hover:underline">Registration</Link>
                                 </li>
                                 <li>
                                     <Link href="/author-instruction" className="hover:underline">Author Instruction
