@@ -1,54 +1,53 @@
 import React from "react";
 
 interface ImportantDate {
-    title : string
-    subtitle : string
-    date : string
-    isImportant : boolean
-    enabled : boolean
+    title: string
+    subtitle: string
+    date: string
+    isImportant: boolean
+    enabled: boolean
 }
 
 const impDateData: ImportantDate[] = [
-     {
-         title: "Paper Submission Starts",
-         date: "25th October 2024",
-subtitle:"",
-         isImportant: true,
-         enabled: true,
-     },
-     {
-         title: "Notification of Acceptance",
-         date: "10th December 2024",
-subtitle:"",
-         isImportant: true,
-         enabled: true,
-     },
-     {
-         title: "Final Paper Submission Date",
-         date: "25th December 2024",
-subtitle:"",
-    
-         isImportant: true,
-         enabled: true,
-     }, 
+    {
+        title: "Paper Submission Starts",
+        date: "25th October 2024",
+        subtitle: "",
+        isImportant: false,
+        enabled: true,
+    },
+    {
+        title: "Notification of Acceptance",
+        date: "10th December 2024",
+        subtitle: "",
+        isImportant: false,
+        enabled: true,
+    },
+    {
+        title: "Final Paper Submission Date",
+        date: "25th December 2024",
+        subtitle: "",
+        isImportant: true,
+        enabled: true,
+    },
+    {
+        title: "Camera Ready Paper",
+        date: "5th January 2025",
+        subtitle:"",    
+        isImportant: false,
+        enabled: true,
+    },
+    {
+        title: "Microsoft CMT",
+        date: "Yet to be Announced",
+        subtitle:"Microsoft CMT link for paper submission",
+        isImportant: false,
+        enabled: true,
+    },
     // {
     //     title: "Notification of Acceptance",
     //     subtitle: "(within 4weeks from submission)",
     //     date: "Yet to be Announc",
-    //
-    //     isImportant: false,
-    //     enabled: true,
-    // },
-    // {
-    //     title: "Registration",
-    //     date: "Yet to be Announced",
-    //
-    //     isImportant: false,
-    //     enabled: true,
-    // },
-    // {
-    //     title: "Camera Ready Paper",
-    //     date: "Yet to be Announced",
     //
     //     isImportant: false,
     //     enabled: true,
@@ -84,11 +83,11 @@ export default function ImportantDates() {
                                         <p className={`text-sm text-gray-700 ${item.isImportant ? "text-red-800" : ""}`}>{item.date}</p>
                                     </div>
 
-                                    {index === 0 &&
+                                    {/* {index === 0 &&
                                         <div className={"rounded-full bg-blue-800 font-semibold bg-opacity-20"}>
                                             <p className={"px-2 py-0.5 text-xs text-blue-800"}>New</p>
                                         </div>
-                                    }
+                                    } */}
                                     {item.isImportant &&
                                         <div className={"flex space-x-2 items-center justify-center"}>
                                             <div
@@ -101,7 +100,7 @@ export default function ImportantDates() {
                                     }
                                 </div>
                                 {index !== impDateData.length - 1 &&
-                                    <hr className={`h-px my-5 bg-gray-200 border-0 dark:bg-gray-700 ${(item.isImportant && impDateData[index + 1].isImportant) ? "bg-red-200" : ""}`}/>
+                                    <hr className={`h-px my-5 bg-gray-200 border-0 dark:bg-gray-700 ${(item.isImportant && impDateData[index + 1].isImportant) ? "bg-red-200" : ""}`} />
                                 }
                             </div>
                         )

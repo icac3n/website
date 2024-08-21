@@ -429,7 +429,7 @@ const Home = () => {
 
                 {/* SPEAKERS SECTION STARTS HERE */}
 
-                {/* 
+                
                 <div className={'select-none'}>
                     <div className={'flex flex-row items-center mx-5 md:mx-auto'}>
                         <h1 className='text-2xl text-black font-extrabold my-5'>Hon&apos;ble Past Speakers</h1>
@@ -501,7 +501,7 @@ const Home = () => {
                     </div>
 
                 </div>
-                */}
+               
             </main >
         </>
     )

@@ -10,41 +10,24 @@ interface Downloads {
 }
 
 const impDownloadData : Downloads[] = [
-    // {
-    //     title: "Final Presntation Schedule ICRTICC-2023 (.pdf)",
-    //     link: "/documents/Final Presentation Schedule ICRTICC-2023.pdf",
-    //     isImportant: true,
-    //     enabled: true,
-    // },
-    // {
-    //     title: "Zoom Link for Presentation ICRTICC-2023 (.pdf)",
-    //     link: "/documents/Zoom Link for Presentation ICRTICC-2023.pdf",
-    //     isImportant: true,
-    //     enabled: true,
-    // },
-    // {
-    //     title: "ICRTICC-2023 Brochure (.pdf)",
-    //     link: "/documents/ICRTICC-2023 Brochure.pdf",
-    //     isImportant: false,
-    //     enabled: true,
-    // },
-    // {
-    //     title: "Paper Format (.docx)",
-    //     link: "/documents/PAPER_ID_ICRTICC23.docx",
-    //     isImportant: false,
-    //     enabled: true,
-    // },
-    // {
-    //     title: "Paper Format (.pdf)",
-    //     link: "/documents/PAPER_ID_ICRTICC23.pdf",
-    //     isImportant: false,
-    //     enabled: true,
-    // }, {
-    //     title: "Sample PPT (.pptx)",
-    //     link: "/documents/SamplePPTICRTICC-2023.pptx",
-    //     isImportant: false,
-    //     enabled: true,
-    // },
+    {
+        title: "Paper Format (.docx)",
+        link: "/documents/Submission_Format_Doc.zip",
+        isImportant: true,
+        enabled: true,
+    },
+    {
+        title: "Paper Format (.pdf)",
+        link: "/documents/Submission_Format_LaTeX.zip",
+        isImportant: true,
+        enabled: true,
+    },
+    {
+        title: "Copyright Form ICRTICC-2025 (.pdf)",
+        link: "/documents/copyright_ICRTICC-2025.pdf",
+        isImportant: false,
+        enabled: true,
+    }
 ]
 
 export default function ImportantDownloads() {

@@ -1,4 +1,4 @@
-import {StarterLayout} from "layout";
+import { StarterLayout } from "layout";
 import Head from "next/head";
 import React from "react";
 import Button from "@/components/button";
@@ -10,58 +10,120 @@ const callForPapers = () => {
 
             <Head>
                 <title>Call for Paper - ICRTICC - Galgotias College of Engineering and Technology</title>
-                <meta name="title" content="Call for Paper - ICRTICC - Galgotias College of Engineering and Technology"/>
+                <meta name="title" content="Call for Paper - ICRTICC - Galgotias College of Engineering and Technology" />
                 <meta name="description"
-                      content="Call for Paper - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <link rel="icon" href="/favicon.ico"/>
+                    content="Call for Paper - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href="/favicon.ico" />
 
-                <meta property="og:type" content="website"/>
-                <meta property="og:url" content="https://ICRTICC.com/"/>
-                <meta property="og:title" content="Call for Paper - ICRTICC - Galgotias College of Engineering and Technology"/>
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://ICRTICC.com/" />
+                <meta property="og:title" content="Call for Paper - ICRTICC - Galgotias College of Engineering and Technology" />
                 <meta name="description"
-                      content="Call for Paper - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
+                    content="Call for Paper - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC" />
                 <meta property="og:image"
-                      content="https://ICRTICC.com/api/og"/>
+                    content="https://ICRTICC.com/api/og" />
 
 
-                <meta property="twitter:card" content="summary_large_image"/>
-                <meta property="twitter:url" content="https://ICRTICC.com/"/>
-                <meta property="Call for Paper - twitter:title" content="Call for Paper - ICRTICC - Galgotias College of Engineering and Technology"/>
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://ICRTICC.com/" />
+                <meta property="Call for Paper - twitter:title" content="Call for Paper - ICRTICC - Galgotias College of Engineering and Technology" />
                 <meta property="twitter:description"
-                      content="Call for Paper - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC"/>
+                    content="Call for Paper - International Conference on Recent Trends in Intelligent Computing and Communication- ICRTICC" />
                 <meta property="twitter:image"
-                      content="https://ICRTICC.com/api/og"/>
+                    content="https://ICRTICC.com/api/og" />
             </Head>
             <div className={"prose mx-4 my-8"}>
-                <h1 className={"heading"}>Call for Papers</h1>
-                <h3>Not Announced Yet</h3>
-                {/* <p>Authors are solicited to contribute to the conference by submitting articles that illustrate research
-                    results- projects, surveying works and industrial experiences that describe significant advances in
-                    computing, communication control and Networking. Topics of interest for submission include, but are not
-                    limited to:</p>
-    
-                <ul>
-                    <li>Data Analytics, Data Science and Data Mining</li>
-                    <li>Machine Learning And Its Application</li>
-                    <li>Big Data Mining and Deep Learning</li>
-                    <li>Machine Learning &amp; Deep Learning in Image Processing</li>
-                    <li>Artificial Intelligence with Internet of Things</li>
-                    <li>Internet of Things (IOT) with Robotics and Automation</li>
-                    <li>Artificial Intelligence with Natural Language Processing and Fuzzy Logic</li>
-                    <li>Artificial Neural Networks and Convolution Neural Networks</li>
-                    <li>Signals and Systems, VLSI Design, Antennas &amp; Embedded Systems</li>
-                    <li>Computer Networks, Wireless Sensor Networks and Mobile Communication</li>
-                    <li>Network Security, Internet of Things (IoT) Security, Cloud Security and Cyber Security</li>
-                    <li>Parallel and Distributed Systems, Cloud Computing, Green Computing &amp; Block Chain Technology</li>
-                    <li>Computer Systems, Software Engineering &amp; Web Development</li>
-                    <li>Image / Video Processing &amp; Data Compression</li>
-                    <li>Control Systems &amp; Automation, IoT with Control Systems &amp; Information Systems</li>
-                    <li>Machine Learning &amp; Deep Learning with Cyber Security</li>
-                    <li>Researches and Innovations on COVID-19</li>
-                </ul> */}
+                <header>
+                    <h1 className={"heading"}>Call for Papers : Submission Guidelines</h1>
+                </header>
 
-                {/*<Button link={"https://cmt3.research.microsoft.com/ICRTICC2023"} className={''} hideIcon={null}> Submit a Paper</Button>*/}
+                <section>
+                    <h2>Author Instruction</h2>
+                    <p>The authors are instructed to follow the Taylor and Francis template for typesetting and content formatting. The templates can be found here:</p>
+                    <ul>
+                        <li>
+                            <Button link={"/documents/Submission_Format_Doc.zip"} className={''} hideIcon={null}>Document Template</Button>
+                        </li>
+                        <li>
+                            <Button link={"/documents/Submission_Format_LaTeX.zip"} className={''} hideIcon={null}>LaTeX Template</Button>
+                        </li>
+                        <li>
+                            <Button link={"/documents/copyright_ICRTICC-2025.pdf"} className={''} hideIcon={null}>Copyright Form</Button>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>General Guidelines for Paper Submission</h2>
+                    <ul>
+                        <li><strong>Maximum Pages Allowed</strong>: 6 (Six)</li>
+                        <li><strong>Maximum Number of Authors Allowed</strong>: 6 (Six)</li>
+                        <li><strong>Maximum Text Plagiarism Allowed</strong>: 10%</li>
+                        <li><strong>Maximum AI Plagiarism Allowed</strong>: 5%</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Formatting Requirements</h2>
+                    <p>Ensure your paper follows the formatting guidelines as per the link provided above. The Taylor and Francis conference template provided typically includes font size, margins, line spacing, and citation style.</p>
+                </section>
+
+                <section>
+                    <h2>Title and Abstract</h2>
+                    <p>Craft a clear and descriptive title for your paper. Write an informative abstract that summarizes the main objectives, methods, results, and conclusions of your research.</p>
+                </section>
+
+                <section>
+                    <h2>Keywords</h2>
+                    <p>Include a list of keywords that accurately represent the content of your paper. These keywords help index your paper for search engines and databases.</p>
+                </section>
+
+                <section>
+                    <h2>Introduction</h2>
+                    <p>Provide a comprehensive introduction that outlines the background, significance, and objectives of your research. Clearly state the research questions or hypotheses.</p>
+                </section>
+
+                <section>
+                    <h2>Methods</h2>
+                    <p>Describe the methodology and techniques used in your study in sufficient detail to allow replication. Include information on data collection, analysis, and any experimental procedures.</p>
+                </section>
+
+                <section>
+                    <h2>Results</h2>
+                    <p>Present your findings clearly and concisely. Use tables, figures, and graphs where appropriate to enhance understanding.</p>
+                </section>
+
+                <section>
+                    <h2>Discussion</h2>
+                    <p>Interpret your results and discuss their implications. Compare your findings with existing literature and explain any limitations or future directions for research.</p>
+                </section>
+
+                <section>
+                    <h2>Conclusion</h2>
+                    <p>Summarize the main findings of your study and restate the importance of your research in the broader context.</p>
+                </section>
+
+                <section>
+                    <h2>References</h2>
+                    <p>Cite all sources used in your paper accurately. Follow the citation style specified by the journal or conference guidelines.</p>
+                </section>
+
+                <section>
+                    <h2>Ethical Considerations</h2>
+                    <p>Ensure your research complies with ethical standards, including obtaining necessary permissions for data collection and respecting participant confidentiality.</p>
+                </section>
+
+                <section>
+                    <h2>Proofreading</h2>
+                    <p>Proofread your paper carefully for grammar, spelling, and formatting errors. Consider seeking feedback from colleagues or mentors before submission.</p>
+                </section>
+
+                <section>
+                    <h2>Submit your article</h2>
+                    <p>Link will be shown soon.</p>
+                </section>
+
             </div>
         </>
     )

@@ -33,13 +33,93 @@ const Register = () => {
                     content="https://ICRTICC.com/api/og" />
             </Head>
             <div className={"prose mx-4 my-8"}>
-                <h1 className={"heading"}>Registration</h1>
-                <p>Learn How to Register for ICRTICC-23: A Guide to Submitting Your Papers for the International Conference
-                    on Advances in Computing, Communication Control and Networking.</p>
-                <h3>Yet to be Announced</h3>
+                <header>
+                    <h1 className={"heading"}>Registration Fees</h1>
+                </header>
+
+                <section>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Fees</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Student/ Research Scholar</td>
+                                <td>INR 7000</td>
+                            </tr>
+                            <tr>
+                                <td>Academics</td>
+                                <td>INR 8000</td>
+                            </tr>
+                            <tr>
+                                <td>Industry</td>
+                                <td>INR 10000</td>
+                            </tr>
+                            <tr>
+                                <td>Foreign Student/ Research Scholar</td>
+                                <td>USD 200</td>
+                            </tr>
+                            <tr>
+                                <td>Foreign Academics</td>
+                                <td>USD 250</td>
+                            </tr>
+                            <tr>
+                                <td>Foreign Industry</td>
+                                <td>USD 300</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>Registration Link (Coming Soon)</h2>
+                </section>
+
+                <section>
+                    <h2 className={"heading"}>Bank Account Details</h2>
+                    <p>
+                        bank account details for the registration fee payment will be announced soon.
+                    </p>
+
+                    <table className="table-auto">
+                        <tbody>
+                            <tr>
+                                <td>Account Number</td>
+                                <td>Yet to be announced</td>
+                            </tr>
+                            <tr>
+                                <td>Account Name</td>
+                                <td>Yet to be announced</td>
+                            </tr>
+                            <tr>
+                                <td>IFSC Code</td>
+                                <td>Yet to be announced</td>
+                            </tr>
+                            <tr>
+                                <td>Swift Code</td>
+                                <td>Yet to be announced</td>
+                            </tr>
+                            <tr>
+                                <td>Bank Name</td>
+                                <td>Yet to be announced</td>
+                            </tr>
+                            <tr>
+                                <td>Account Type</td>
+                                <td>Yet to be announced</td>
+                            </tr>
+                            <tr>
+                                <td>Bank Address</td>
+                                <td>Yet to be announced</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
                 {/*<Button link={"https://forms.gle/NR6eA7N2Akp9S51XA"}>Register Now</Button>*/}
                 {/* <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700" /> */}
-                    {/* <h2 className={"heading"}>Registration Fee</h2>
+                {/* <h2 className={"heading"}>Registration Fee</h2>
                     <h3>Yet to be Announced</h3> */}
                 {/*<div>*/}
                 {/*    <img src="images/misc/registration_fee.png" alt=""/>*/}
