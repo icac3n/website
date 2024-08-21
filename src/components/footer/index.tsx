@@ -30,12 +30,12 @@ const Footer = () => {
                             <h2 className="mb-4 font-semibold uppercase text-white underline">Important</h2>
                             <ul className="text-gray-200 font-medium">
                                 <li className="mb-4">
-                                    <button disabled={true} className="flex items-center justify-center gap-2">
+                                    <button disabled={false} className="flex items-center justify-center gap-2">
                                         <Link href="/dates" className="text-gray-100/60">Dates</Link>
                                     </button>
                                 </li>
                                 <li>
-                                    <button disabled={true} className="flex items-center justify-center gap-2">
+                                    <button disabled={false} className="flex items-center justify-center gap-2">
                                         {/* <p className="text-gray-100/60">Downloads</p>
                                         <span className="px-2 py-0.5 rounded-full bg-black/30 text-xs">Soon</span> */}
                                         <Link href="/#downloads" className="text-gray-100/60">Downloads</Link>
