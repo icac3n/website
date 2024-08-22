@@ -48,7 +48,7 @@ const callForPapers = () => {
                             <Button link={"/documents/Submission_Format_LaTeX.zip"} className={''} hideIcon={null}>LaTeX Template</Button>
                         </li>
                         <li>
-                            <Button link={"/documents/copyright_ICRTICC-2025.pdf"} className={''} hideIcon={null}>Copyright Form</Button>
+                            <Button link={"#"} className={''} hideIcon={null}>Copyright Form</Button>
                         </li>
                     </ul>
                 </section>
