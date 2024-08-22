@@ -22,12 +22,12 @@ const impDownloadData : Downloads[] = [
         isImportant: true,
         enabled: true,
     },
-    {
-        title: "Copyright Form ICRTICC-2025 (.pdf)",
-        link: "/documents/copyright_ICRTICC-2025.pdf",
-        isImportant: false,
-        enabled: true,
-    }
+    // {
+    //     title: "Copyright Form ICRTICC-2025 (.pdf)",
+    //     link: "/documents/copyright_ICRTICC-2025.pdf",
+    //     isImportant: false,
+    //     enabled: true,
+    // }
 ]
 
 export default function ImportantDownloads() {
