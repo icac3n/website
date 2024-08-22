@@ -49,7 +49,7 @@ const callForPapers = () => {
                             <Button link={"/documents/Submission_Format_LaTeX.zip"} className={''} hideIcon={null}>LaTeX Template</Button>
                         </li>
                         <li>
-                            <Button link={"/documents/copyright_ICRTICC-2025.pdf"} className={''} hideIcon={null}>Copyright Form</Button>
+                            <Button link={""} onClick={()=>{alert("File will be uploaded soon.")}} className={''} hideIcon={null}>Copyright Form</Button>
                         </li>
                     </ul>
                 </section>
@@ -121,7 +121,7 @@ const callForPapers = () => {
 
                 <section>
                     <h2>Submit your article</h2>
-                    <Button link={"#"} className={''} hideIcon={null}>Comming Soon</Button>
+                    <Button link={"https://cmt3.research.microsoft.com/ICRTICC2025"} className={''} hideIcon={null}>Register Now</Button>
                 </section>
 
             </div>

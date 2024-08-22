@@ -75,7 +75,7 @@ const Guidelines = () => {
                     <p>Interested authors are invited to submit full papers including results, figures and references.
                         Papers will be accepted only by electronic submission through easy-chair link given below</p> 
 
-                    <Button link={"https://cmt3.research.microsoft.com/ICRTICC2023"} className={''} hideIcon={null}> Submit a Paper</Button>
+                    <Button link={"https://cmt3.research.microsoft.com/ICRTICC2025"} className={''} hideIcon={null}> Submit a Paper</Button>
                     <p>Authors need to submit the full final paper (Maximum 6 pages, double-column US letter size) as PDF
                         using the IEEE templates. Extra pages beyond this would require additional page length charges. The
                         additional payment required for extra pages is Rs.2000/page for Indian authors of all categories and

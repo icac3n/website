@@ -210,8 +210,8 @@ function Index() {
 
                         <div className={'flex flex-row gap-1 justify-normal items-center'}>
 
-                            {/*<Link href={'https://cmt3.research.microsoft.com/ICRTICC2023'}*/}
-                            {/*      className={'px-4 h-fit py-2 bg-sky-600 mx-2 rounded-lg hidden md:block text-white cursor-pointer '}>Submit&nbsp;Paper</Link>*/}
+                            <Link href={'https://cmt3.research.microsoft.com/ICRTICC2025'}
+                                 className={'px-4 h-fit py-2 bg-sky-600 mx-2 rounded-lg hidden md:block text-white cursor-pointer '}>Submit&nbsp;Paper</Link>
 
                             <span onClick={menuToggle}
                                   className="inline-flex order-last items-center md:hidden p-2 text-sm text-red-800 rounded-lg  hover:bg-red-700 focus:outline-none focus:ring-none cursor-pointer">
@@ -259,8 +259,7 @@ function Index() {
                             ))}
                         </ul>
                         <div className={"block md:hidden mb-6 mt-8"}>
-                            {/*<Link href={'https://cmt3.research.microsoft.com/ICRTICC2023'}*/}
-                            {/*      className={'px-4 h-fit py-3 bg-sky-600 rounded-lg md:hidden text-white cursor-pointer '}>Submit&nbsp;Paper</Link>*/}
+                            <Link href={'https://cmt3.research.microsoft.com/ICRTICC2025'} className={'px-4 h-fit py-3 bg-sky-600 rounded-lg md:hidden text-white cursor-pointer '}>Submit&nbsp;Paper</Link>
                         </div>
                     </div>
                     }

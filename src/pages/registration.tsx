@@ -75,7 +75,8 @@ const Register = () => {
                 </section>
 
                 <section>
-                    <h2>Registration Link (Coming Soon)</h2>
+                    <h2>Registration Link</h2>
+                    <Button link={"https://cmt3.research.microsoft.com/ICRTICC2025"} className={''} hideIcon={null}>Register Now</Button>
                 </section>
 
                 <section>

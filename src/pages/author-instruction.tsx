@@ -120,7 +120,7 @@ const callForPapers = () => {
 
                 <section>
                     <h2>Submit your article</h2>
-                    <Button link={"#"} className={''} hideIcon={null}>Comming Soon</Button>
+                    <Button link={"https://cmt3.research.microsoft.com/ICRTICC2025"} className={''} hideIcon={null}>Register Now</Button>
                 </section>
 
             </div>

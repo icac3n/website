@@ -224,10 +224,10 @@ const Home = () => {
 
                         </div>
 
-                        {/*<div className={"flex items-center justify-center mt-4"}>*/}
-                        {/*    <Link href={'https://cmt3.research.microsoft.com/ICRTICC2023'}*/}
-                        {/*          className={'px-4 h-fit py-2 bg-red-700 rounded-lg w-fit md:hidden block text-white cursor-pointer '}>Submit&nbsp;Paper</Link>*/}
-                        {/*</div>*/}
+                        <div className={"flex items-center justify-center mt-4"}>
+                           <Link href={'https://cmt3.research.microsoft.com/ICRTICC2025'}
+                                  className={'px-4 h-fit py-2 bg-red-700 rounded-lg w-fit md:hidden block text-white cursor-pointer '}>Submit&nbsp;Paper</Link>
+                        </div>
                         <div
                             className={"flex space-x-5 text-2xl text-red-800 mt-4 items-center lg:justify-start justify-center"}>
                             <Link href={"https://twitter.com/ICRTICC"} aria-label={'ICRTICC twitter'}>
